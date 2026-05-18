@@ -1,0 +1,145 @@
+2026-05-10 10:55:05 - PHP Warning:  mkdir(): File exists in C:\xampp\htdocs\opencart4\system\storage\vendor\twig\twig\src\Cache\FilesystemCache.php on line 50
+2026-05-10 10:55:05 - PHP Warning:  mkdir(): File exists in C:\xampp\htdocs\opencart4\system\storage\vendor\twig\twig\src\Cache\FilesystemCache.php on line 50
+2026-05-10 10:55:05 - PHP Warning:  mkdir(): File exists in C:\xampp\htdocs\opencart4\system\storage\vendor\twig\twig\src\Cache\FilesystemCache.php on line 50
+2026-05-10 10:55:05 - PHP Warning:  rename(C:\xampp\htdocs\opencart4\system\storage\cache\template\9c\9c2B75D.tmp,C:/xampp/htdocs/opencart4/system/storage/cache/template/9c/9c2a4fbcb7b18cae75162c27bd0f90294a0a225d6ab1d90ab43ee097718a9c30.php): Access is denied (code: 5) in C:\xampp\htdocs\opencart4\system\storage\vendor\twig\twig\src\Cache\FilesystemCache.php on line 61
+2026-05-10 10:55:05 - Error: Failed to write cache file "C:/xampp/htdocs/opencart4/system/storage/cache/template/9c/9c2a4fbcb7b18cae75162c27bd0f90294a0a225d6ab1d90ab43ee097718a9c30.php".
+File: C:\xampp\htdocs\opencart4\system\storage\vendor\twig\twig\src\Cache\FilesystemCache.php
+Line: 76
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencart4\system\storage\vendor\twig\twig\src\Environment.php
+Line: 397
+Class: Twig\Cache\FilesystemCache
+Function: write
+
+Backtrace: 1
+File: C:\xampp\htdocs\opencart4\system\storage\vendor\twig\twig\src\Environment.php
+Line: 357
+Class: Twig\Environment
+Function: loadTemplate
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencart4\system\storage\vendor\twig\twig\src\Environment.php
+Line: 320
+Class: Twig\Environment
+Function: load
+
+Backtrace: 3
+File: C:\xampp\htdocs\opencart4\system\library\template\twig.php
+Line: 119
+Class: Twig\Environment
+Function: render
+
+Backtrace: 4
+File: C:\xampp\htdocs\opencart4\system\library\template.php
+Line: 58
+Class: Opencart\System\Library\Template\Twig
+Function: render
+
+Backtrace: 5
+File: C:\xampp\htdocs\opencart4\system\engine\loader.php
+Line: 187
+Class: Opencart\System\Library\Template
+Function: render
+
+Backtrace: 6
+File: C:\xampp\htdocs\opencart4\install\controller\install\step_1.php
+Line: 31
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 7
+File: C:\xampp\htdocs\opencart4\system\engine\action.php
+Line: 96
+Class: Opencart\Install\Controller\Install\Step1
+Function: index
+
+Backtrace: 8
+File: C:\xampp\htdocs\opencart4\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 9
+File: C:\xampp\htdocs\opencart4\install\index.php
+Line: 42
+Function: require_once
+2026-05-17 06:04:30 - PHP Warning:  Undefined array key "file" in C:\xampp\htdocs\opencart4\adminnew\controller\startup\error.php on line 78
+2026-05-17 06:04:30 - PHP Warning:  Undefined array key "line" in C:\xampp\htdocs\opencart4\adminnew\controller\startup\error.php on line 79
+2026-05-17 06:04:30 - Error: syntax error, unexpected identifier "var_dump"
+File: C:\xampp\htdocs\opencart4\adminnew\controller\extension\theme.php
+Line: 32
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencart4\system\engine\autoloader.php
+Line: 26
+Class: Opencart\System\Engine\Autoloader
+Function: load
+
+Backtrace: 1
+File: 
+Line: 
+Class: Opencart\System\Engine\Autoloader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencart4\system\engine\factory.php
+Line: 44
+Function: class_exists
+
+Backtrace: 3
+File: C:\xampp\htdocs\opencart4\system\engine\action.php
+Line: 81
+Class: Opencart\System\Engine\Factory
+Function: controller
+
+Backtrace: 4
+File: C:\xampp\htdocs\opencart4\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 5
+File: C:\xampp\htdocs\opencart4\adminnew\index.php
+Line: 20
+Function: require_once
+2026-05-17 06:04:51 - PHP Warning:  Undefined array key "file" in C:\xampp\htdocs\opencart4\adminnew\controller\startup\error.php on line 78
+2026-05-17 06:04:51 - PHP Warning:  Undefined array key "line" in C:\xampp\htdocs\opencart4\adminnew\controller\startup\error.php on line 79
+2026-05-17 06:04:51 - Error: syntax error, unexpected identifier "var_dump"
+File: C:\xampp\htdocs\opencart4\adminnew\controller\extension\theme.php
+Line: 32
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencart4\system\engine\autoloader.php
+Line: 26
+Class: Opencart\System\Engine\Autoloader
+Function: load
+
+Backtrace: 1
+File: 
+Line: 
+Class: Opencart\System\Engine\Autoloader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencart4\system\engine\factory.php
+Line: 44
+Function: class_exists
+
+Backtrace: 3
+File: C:\xampp\htdocs\opencart4\system\engine\action.php
+Line: 81
+Class: Opencart\System\Engine\Factory
+Function: controller
+
+Backtrace: 4
+File: C:\xampp\htdocs\opencart4\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 5
+File: C:\xampp\htdocs\opencart4\adminnew\index.php
+Line: 20
+Function: require_once
+2026-05-17 06:43:54 - PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\opencart4\system\library\language.php:176) in C:\xampp\htdocs\opencart4\adminnew\controller\startup\session.php on line 42
