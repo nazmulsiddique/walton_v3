@@ -1,0 +1,49 @@
+.bb-main-menu-desk .bb-inner-menu-desk .bb-main-menu ul.navbar-nav .bb-main-dropdown .bb-dropdown-item:after {
+    content: "⌄" !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid #3d4750;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    right: -10px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #3d4750;
+}
+
+.tab-line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #6c7fd8;
+    transition: all 0.3s ease;
+}
+.tab-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #6c7fd8;
+}
+.tab-btn:hover .tab-line,
+.active-tab .tab-line {
+    width: 100%;
+}
+.tab-btn:hover .tab-arrow,
+.active-tab .tab-arrow {
+    opacity: 1;
+}
+.active-tab {
+    color: #6c7fd8 !important;
+}

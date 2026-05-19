@@ -10,7 +10,8 @@ class Blueberry extends \Opencart\System\Engine\Controller {
 	}
 
 	public function event(string &$route, array &$args, mixed &$output): void {
-		$override = ['common/header'];
+		// $override = ['common/header'];
+		$override = ['common/header', 'common/footer'];
 
 		if (in_array($route, $override)) {
 			$route = 'extension/blueberry/' . $route;
