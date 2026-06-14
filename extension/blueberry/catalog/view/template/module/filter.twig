@@ -1,0 +1,94 @@
+
+<div class="bb-shop-wrap bg-[#f8f8fb] border border-solid border-[#eee] rounded-[20px] sticky top-0">
+
+    <div class="bb-sidebar-block p-[20px]">
+
+        <div class="bb-sidebar-title mb-[20px]">
+            <h3 class="font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]">
+                {{ heading_title }}
+            </h3>
+        </div>
+
+        {% for filter_group in filter_groups %}
+
+            <div class="border-b border-solid border-[#eee] pb-[20px] mb-[20px] last:border-b-0">
+
+                <h4 class="text-[16px] font-semibold text-[#3d4750] mb-[15px]">
+                    {{ filter_group.name }}
+                </h4>
+
+                <div id="filter-group-{{ filter_group.filter_group_id }}">
+                    <ul>
+
+                        {% for filter in filter_group.filter %}
+
+                            <li class="relative block mb-[14px]">
+
+                                <label class="bb-sidebar-block-item relative flex items-center cursor-pointer">
+
+                                    <input
+                                        type="checkbox"
+                                        name="filter[]"
+                                        value="{{ filter.filter_id }}"
+                                        id="input-filter-{{ filter.filter_id }}"
+                                        class="mr-3 h-[18px] w-[18px] rounded border-[#ddd]"
+                                        {% if filter.filter_id in filter_category %}checked{% endif %}
+                                    >
+
+                                    <span class="text-[#777] text-[14px] leading-[20px] font-normal capitalize">
+                                        {{ filter.name }}
+                                    </span>
+
+                                </label>
+
+                            </li>
+
+                        {% endfor %}
+
+                    </ul>
+                </div>
+
+            </div>
+
+        {% endfor %}
+
+        <button
+          type="button"
+          id="button-reset-filter"
+          class="w-full bg-[#ef4444] hover:bg-[#dc2626] text-white font-medium py-[12px] px-[20px] rounded-[10px] transition-all duration-300">
+          <i class="ri-refresh-line mr-2"></i>
+          Reset Filter
+      </button>
+
+    </div>
+
+</div>
+<script>
+let filterTimeout;
+
+$('input[name^="filter"]').on('change', function() {
+
+    clearTimeout(filterTimeout);
+
+    filterTimeout = setTimeout(function() {
+
+        let filter = [];
+
+        $('input[name^="filter"]:checked').each(function() {
+            filter.push($(this).val());
+        });
+
+        if (filter.length) {
+            location = '{{ action|escape('js') }}&filter=' + filter.join(',');
+        } else {
+            location = '{{ action|escape('js') }}';
+        }
+
+    }, 500);
+
+});
+$('#button-reset-filter').on('click', function() {
+    window.location.href = '{{ action|escape('js') }}';
+});
+</script>
+

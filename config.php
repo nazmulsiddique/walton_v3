@@ -3,7 +3,7 @@
 define('APPLICATION', 'Catalog');
 
 // HTTP
-define('HTTP_SERVER', 'http://localhost/walton_v3/');
+define('HTTP_SERVER', 'http://192.168.9.222/walton_v3/');
 
 // DIR
 define('DIR_OPENCART', 'C:/xampp/htdocs/walton_v3/');

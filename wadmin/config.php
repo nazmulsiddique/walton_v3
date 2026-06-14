@@ -3,8 +3,8 @@
 define('APPLICATION', 'Admin');
 
 // HTTP
-define('HTTP_SERVER', 'http://localhost/walton_v3/wadmin/');
-define('HTTP_CATALOG', 'http://localhost/walton_v3/');
+define('HTTP_SERVER', 'http://192.168.9.222/walton_v3/wadmin/');
+define('HTTP_CATALOG', 'http://192.168.9.222/walton_v3/');
 
 // DIR
 define('DIR_OPENCART', 'C:/xampp/htdocs/walton_v3/');

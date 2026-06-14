@@ -206,6 +206,7 @@
         </div>
     </footer>
 
+    {% include 'extension/blueberry/catalog/view/template/common/category_popup.twig' %}
 
     <!-- Back to top  -->
     <a href="#Top" class="back-to-top result-placeholder transition-all duration-[0.3s] ease-in-out w-[38px] h-[38px] hidden fixed right-[15px] bottom-[15px] z-[10] rounded-[20px] cursor-pointer bg-[#fff] text-[#6c7fd8] border-[1px] border-solid border-[#6c7fd8] text-center text-[22px] leading-[1.6]">
@@ -216,12 +217,11 @@
             </svg>
         </div>
     </a>
-<!-- </div> -->
+    <!-- </div> -->
 
 
     <!-- My Theme JS -->
     <!-- Plugins -->
-    <script src="{{ base }}extension/blueberry/catalog/view/javascript/vendor/jquery.min.js"></script>
     <script src="{{ base }}extension/blueberry/catalog/view/javascript/vendor/jquery.zoom.min.js"></script>
     <script src="{{ base }}extension/blueberry/catalog/view/javascript/vendor/aos.js"></script>
     <script src="{{ base }}extension/blueberry/catalog/view/javascript/vendor/swiper-bundle.min.js"></script>
@@ -234,5 +234,6 @@
     <!-- main-js -->
     <script src="{{ base }}extension/blueberry/catalog/view/javascript/main.js"></script>
     <script src="{{ base }}extension/blueberry/catalog/view/javascript/custom.js"></script>
+    <script src="{{ base }}extension/blueberry/catalog/view/javascript/common.js"></script>
 
 </body></html>

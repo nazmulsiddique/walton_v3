@@ -1,40 +1,105 @@
 <div class="product-thumb">
-  <div class="image"><a href="{{ href }}"><img src="{{ thumb }}" alt="{{ name }}" title="{{ name }}" class="img-fluid"/></a></div>
-  <div class="content">
-    <div class="description">
-      <h4><a href="{{ href }}">{{ name }}</a></h4>
-      <p>{{ description }}</p>
-      {% if price %}
-        <div class="price">
-          {% if not special %}
-            <span class="price-new">{{ price }}</span>
-          {% else %}
-            <span class="price-new">{{ special }}</span> <span class="price-old">{{ price }}</span>
-          {% endif %}
-          {% if tax %}
-            <span class="price-tax">{{ text_tax }} {{ tax }}</span>
-          {% endif %}
-        </div>
-      {% endif %}
-      {% if review_status and rating %}
-        <div class="rating">
-          {% for i in 1..5 %}
-            {% if rating < i %}
-              <span class="fa-stack"><i class="fa-regular fa-star fa-stack-1x"></i></span>
-            {% else %}
-              <span class="fa-stack"><i class="fa-solid fa-star fa-stack-1x"></i><i class="fa-regular fa-star fa-stack-1x"></i></span>
-            {% endif %}
-          {% endfor %}
-        </div>
-      {% endif %}
-    </div>
-    <form method="post" data-oc-toggle="ajax" data-oc-load="{{ cart }}" data-oc-target="#cart">
-      <div class="button">
-        <button type="submit" formaction="{{ cart_add }}" data-bs-toggle="tooltip" title="{{ button_cart }}"><i class="fa-solid fa-shopping-cart"></i></button>
-        <button type="submit" formaction="{{ wishlist_add }}" data-bs-toggle="tooltip" title="{{ button_wishlist }}" ><i class="fa-solid fa-heart"></i></button>
-        <button type="submit" formaction="{{ compare_add }}" data-bs-toggle="tooltip" title="{{ button_compare }}"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+    <div class="bb-pro-box bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[20px]">
+      <div class="bb-pro-img overflow-hidden relative border-b-[1px] border-solid border-[#eee] z-[4]">
+          <span class="flags transition-all duration-[0.3s] ease-in-out absolute z-[5] top-[10px] left-[6px]">
+              <span class="text-[14px] text-[#777] font-medium uppercase bg-[#ff0000] text-[#fff] py-[2px] px-[6px] rounded-full">New</span>
+          </span>
+          <a href="{{ href }}">
+              <div class="inner-img relative block overflow-hidden pointer-events-none rounded-t-[20px]">
+                  <img class="main-img transition-all duration-[0.3s] ease-in-out w-full" src="{{ thumb }}" alt="{{ name }}" title="{{ name }}" >
+                  <img class="hover-img transition-all duration-[0.3s] ease-in-out absolute z-[2] top-[0] left-[0] opacity-[0] w-full" src="extension/blueberry/catalog/view/img/product/refrigerator/WNR-6D6-GDFS-DI/04.jpg"
+                      alt="product-3">
+              </div>
+          </a>
+          <form method="post"
+                data-oc-toggle="ajax">
+                <ul class="bb-pro-actions transition-all duration-300 ease-in-out my-0 mx-auto absolute z-[9] left-0 right-0 bottom-0 flex flex-row items-center justify-center opacity-0 group-hover:opacity-100">
+                    <!-- WISHLIST -->
+                    <li class="w-[35px] h-[35px] mx-[2px] flex items-center justify-center bg-white border border-gray-200 rounded-[10px] hover:bg-red-50 transition">
+
+                        <button type="submit"
+                            formaction="{{ wishlist_add }}"
+                            title="{{ button_wishlist }}"
+                            class="w-full h-full flex items-center justify-center">
+
+                            <i class="ri-heart-line text-[18px] text-gray-600 hover:text-red-500 transition"></i>
+                        </button>
+
+                    </li>
+
+                    <!-- QUICK VIEW (NO FORM ACTION NEEDED) -->
+                    <li class="w-[35px] h-[35px] mx-[2px] flex items-center justify-center bg-white border border-gray-200 rounded-[10px] hover:bg-blue-50 transition">
+
+                        <a href="javascript:void(0)"
+                        class="bb-modal-toggle w-full h-full flex items-center justify-center"
+                        title="Quick View"
+                        data-product-id="{{product_id}}">
+
+                            <i class="ri-eye-line text-[18px] text-gray-600 hover:text-blue-500 transition"></i>
+                        </a>
+
+                    </li>
+
+                    <!-- COMPARE -->
+                    <li class="w-[35px] h-[35px] mx-[2px] flex items-center justify-center bg-white border border-gray-200 rounded-[10px] hover:bg-purple-50 transition">
+
+                        <button type="submit"
+                            formaction="{{ compare_add }}"
+                            title="{{ button_compare }}"
+                            class="w-full h-full flex items-center justify-center">
+
+                            <i class="ri-repeat-line text-[18px] text-gray-600 hover:text-purple-500 transition"></i>
+                        </button>
+
+                    </li>
+
+                </ul>
+
+                <!-- hidden fields (VERY IMPORTANT for OpenCart) -->
+                <input type="hidden" name="product_id" value="{{ product_id }}"/>
+
+            </form>
+          {# <ul class="bb-pro-actions transition-all duration-[0.3s] ease-in-out my-[0] mx-[auto] absolute z-[9] left-[0] right-[0] bottom-[0] flex flex-row items-center justify-center opacity-[0]">
+              <li class="bb-btn-group transition-all duration-[0.3s] ease-in-out w-[35px] h-[35px] mx-[2px] flex items-center justify-center text-[#fff] bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[10px]">
+                  <a href="javascript:void(0)" title="Wishlist" class="w-[35px] h-[35px] flex items-center justify-center">
+                      <i class="ri-heart-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#777] leading-[10px]"></i>
+                  </a>
+              </li>
+              <li class="bb-btn-group transition-all duration-[0.3s] ease-in-out w-[35px] h-[35px] mx-[2px] flex items-center justify-center text-[#fff] bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[10px]">
+                  <a href="javascript:void(0)" title="43" class="bb-modal-toggle w-[35px] h-[35px] flex items-center justify-center" data-product-id="{{ product.product_id }}">
+                      <i class="ri-eye-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#777] leading-[10px]"></i> 
+                  </a>
+              </li>
+              <li class="bb-btn-group transition-all duration-[0.3s] ease-in-out w-[35px] h-[35px] mx-[2px] flex items-center justify-center text-[#fff] bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[10px]">
+                  <a href="" title="Compare" class="w-[35px] h-[35px] flex items-center justify-center">
+                      <i class="ri-repeat-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#777] leading-[10px]"></i>
+                  </a>
+              </li>
+          </ul> #}
       </div>
-      <input type="hidden" name="product_id" value="{{ product_id }}"/> <input type="hidden" name="quantity" value="{{ minimum }}"/>
-    </form>
+      <div class="bb-pro-contact p-[20px]">
+          <div class="bb-pro-subtitle mb-[8px] flex flex-wrap justify-between">
+              <a href="" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[13px] leading-[16px] text-[#777] font-light tracking-[0.03rem]">Refrigerator</a>
+          </div>
+          <h4 class="bb-pro-title mb-[8px] text-[16px] leading-[18px]">
+          <a href="{{ href }}" class="transition-all duration-[0.3s] ease-in-out font-quicksand w-full block whitespace-nowrap overflow-hidden text-ellipsis text-[15px] leading-[18px] text-[#3d4750] font-semibold tracking-[0.03rem]">{{ name }}</a></h4>
+          <p class="hidden font-Poppins text-[14px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]">
+              {{ description }}
+          </p>
+          {% if price %}
+          <div class="bb-price flex flex-wrap justify-between">
+               {% if not special %}
+              <div class="inner-price mx-[-3px]">
+                  <span class="new-price px-[3px] text-[16px] text-[#686e7d] font-bold">{{ price }}</span>
+              </div>
+              {% else %}
+              <div class="inner-price mx-[-3px]">
+                  <span class="new-price px-[3px] text-[16px] text-[#686e7d] font-bold">{{ special }}</span>
+                  <span class="old-price px-[3px] text-[14px] text-[#686e7d] line-through">{{ price }}</span>
+              </div>
+              {% endif %}
+          </div>
+          {% endif %}
+      </div>
   </div>
 </div>

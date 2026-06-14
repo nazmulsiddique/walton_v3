@@ -268,7 +268,11 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
         </div>
     </footer>
 
-
+    ";
+        // line 209
+        yield from $this->loadTemplate("extension/blueberry/catalog/view/template/common/category_popup.twig", "extension/blueberry/catalog/view/template/common/footer.twig", 209)->unwrap()->yield($context);
+        // line 210
+        yield "
     <!-- Back to top  -->
     <a href=\"#Top\" class=\"back-to-top result-placeholder transition-all duration-[0.3s] ease-in-out w-[38px] h-[38px] hidden fixed right-[15px] bottom-[15px] z-[10] rounded-[20px] cursor-pointer bg-[#fff] text-[#6c7fd8] border-[1px] border-solid border-[#6c7fd8] text-center text-[22px] leading-[1.6]\">
         <i class=\"ri-arrow-up-line text-[20px]\"></i>
@@ -278,15 +282,11 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
             </svg>
         </div>
     </a>
-<!-- </div> -->
+    <!-- </div> -->
 
 
     <!-- My Theme JS -->
     <!-- Plugins -->
-    <script src=\"";
-        // line 224
-        yield ($context["base"] ?? null);
-        yield "extension/blueberry/catalog/view/javascript/vendor/jquery.min.js\"></script>
     <script src=\"";
         // line 225
         yield ($context["base"] ?? null);
@@ -329,6 +329,10 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
         // line 236
         yield ($context["base"] ?? null);
         yield "extension/blueberry/catalog/view/javascript/custom.js\"></script>
+    <script src=\"";
+        // line 237
+        yield ($context["base"] ?? null);
+        yield "extension/blueberry/catalog/view/javascript/common.js\"></script>
 
 </body></html>
 ";
@@ -356,7 +360,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
      */
     public function getDebugInfo(): array
     {
-        return array (  330 => 236,  326 => 235,  320 => 232,  316 => 231,  312 => 230,  308 => 229,  304 => 228,  300 => 227,  296 => 226,  292 => 225,  288 => 224,  241 => 180,  233 => 175,  225 => 170,  217 => 165,  209 => 160,  201 => 155,  47 => 4,  42 => 1,);
+        return array (  334 => 237,  330 => 236,  326 => 235,  320 => 232,  316 => 231,  312 => 230,  308 => 229,  304 => 228,  300 => 227,  296 => 226,  292 => 225,  275 => 210,  273 => 209,  241 => 180,  233 => 175,  225 => 170,  217 => 165,  209 => 160,  201 => 155,  47 => 4,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -569,6 +573,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
         </div>
     </footer>
 
+    {% include 'extension/blueberry/catalog/view/template/common/category_popup.twig' %}
 
     <!-- Back to top  -->
     <a href=\"#Top\" class=\"back-to-top result-placeholder transition-all duration-[0.3s] ease-in-out w-[38px] h-[38px] hidden fixed right-[15px] bottom-[15px] z-[10] rounded-[20px] cursor-pointer bg-[#fff] text-[#6c7fd8] border-[1px] border-solid border-[#6c7fd8] text-center text-[22px] leading-[1.6]\">
@@ -579,12 +584,11 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
             </svg>
         </div>
     </a>
-<!-- </div> -->
+    <!-- </div> -->
 
 
     <!-- My Theme JS -->
     <!-- Plugins -->
-    <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/jquery.min.js\"></script>
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/jquery.zoom.min.js\"></script>
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/aos.js\"></script>
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/swiper-bundle.min.js\"></script>
@@ -597,6 +601,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
     <!-- main-js -->
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/main.js\"></script>
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/custom.js\"></script>
+    <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/common.js\"></script>
 
 </body></html>
 ", "extension/blueberry/catalog/view/template/common/footer.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\common\\footer.twig");

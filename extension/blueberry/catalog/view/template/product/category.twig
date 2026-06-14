@@ -1,110 +1,435 @@
 {{ header }}
-<div id="product-category" class="container">
-  <ul class="breadcrumb">
-    {% for breadcrumb in breadcrumbs %}
-      <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
-    {% endfor %}
-  </ul>
-  <div class="row">{{ column_left }}
-    <div id="content" class="col">{{ content_top }}
-      <h1>{{ heading_title }}</h1>
-      {% if image or description %}
-        <div class="row">
-          {% if image %}
-            <div class="col-3"><img src="{{ image }}" alt="{{ heading_title }}" title="{{ heading_title }}" class="img-thumbnail"/></div>
-          {% endif %}
-          {% if description %}
-            <div class="col-9">{{ description }}</div>
-          {% endif %}
-        </div>
-        <hr/>
-      {% endif %}
-
-      {% if categories %}
-        <h3>{{ text_refine }}</h3>
-        {% if categories|length <= 5 %}
-          <div class="row">
-            <div class="col-sm-3">
-              <ul>
-                {% for category in categories %}
-                  <li><a href="{{ category.href }}">{{ category.name }}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        {% else %}
-          <div class="row row-cols-sm-2 row-cols-lg-4">
-            {% set total = category.children|length %}
-            {% if total > 20 %}
-              {% set batch = (total / 4)|round(0, 'ceil') %}
-            {% else %}
-              {% set batch = 5 %}
-            {% endif %}
-            {% for category in categories|batch(batch) %}
-              <div class="col">
-                <ul>
-                  {% for child in category %}
-                    <li><a href="{{ child.href }}">{{ child.name }}</a></li>
-                  {% endfor %}
-                </ul>
+<div id="product-category">
+  <!-- Breadcrumb -->
+  <section class="section-breadcrumb mb-[20px] max-[1199px]:mb-[15px] border-b border-solid border-[#eee] bg-[#f8f8fb]">
+      <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
+          <div class="flex flex-wrap w-full">
+              <div class="w-full px-[12px]">
+                  <div class="flex flex-wrap w-full bb-breadcrumb-inner m-0 py-[20px] items-center">
+                      <!-- Breadcrumb List -->
+                      <div class="w-full px-[12px]">
+                          <ul class="bb-breadcrumb-list mx-[-5px] flex justify-start max-[767px]:justify-center flex-wrap">
+                              <li class="bb-breadcrumb-item text-[14px] font-normal px-[5px]"><a href="{{ base }}" class="font-Poppins text-[14px] leading-[28px] tracking-[0.03rem] font-semibold text-[#686e7d]"> Home</a></li>
+                              {% for breadcrumb in breadcrumbs %}
+                                  {% if not loop.first %}
+                                      <li class="text-[14px] font-normal px-[5px]">
+                                          <i class="ri-arrow-right-double-fill text-[14px] font-semibold leading-[28px]"></i>
+                                      </li>
+                                  {% endif %}
+                                  <li class="bb-breadcrumb-item px-[5px]">
+                                      {% if loop.last %}
+                                          <span class="font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem]">
+                                              {{ breadcrumb.text }}
+                                          </span>
+                                      {% else %}
+                                          <a href="{{ breadcrumb.href }}"
+                                            class="font-Poppins text-[14px] leading-[28px] tracking-[0.03rem] font-semibold text-[#686e7d] hover:text-[#3bb77e] transition-all duration-300">
+                                              {{ breadcrumb.text }}
+                                          </a>
+                                      {% endif %}
+                                  </li>
+                              {% endfor %}
+                          </ul>
+                      </div>
+                  </div>
               </div>
-            {% endfor %}
           </div>
-          <br/>
-        {% endif %}
-      {% endif %}
+      </div>
+  </section> 
+    {{ content_top }}
 
-      {% if products %}
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="mb-3">
-              <a href="{{ compare }}" id="compare-total" class="btn btn-primary d-block"><i class="fa-solid fa-arrow-right-arrow-left"></i> <span class="d-none d-xl-inline">{{ text_compare }}</span></a>
-            </div>
-          </div>
-          <div class="col-lg-1 d-none d-lg-block">
-            <div class="btn-group">
-              <button type="button" id="button-list" class="btn btn-light" data-bs-toggle="tooltip" title="{{ button_list }}"><i class="fa-solid fa-table-list"></i></button>
-              <button type="button" id="button-grid" class="btn btn-light" data-bs-toggle="tooltip" title="{{ button_grid }}"><i class="fa-solid fa-table-cells"></i></button>
-            </div>
-          </div>
-          <div class="col-lg-4 offset-lg-1 col-6">
-            <div class="input-group mb-3">
-              <label for="input-sort" class="input-group-text">{{ text_sort }}</label>
-              <select id="input-sort" class="form-select" onchange="location = this.value;">
-                {% for sorts in sorts %}
-                  <option value="{{ sorts.href }}"{% if sorts.value == '%s-%s'|format(sort, order) %} selected{% endif %}>{{ sorts.text }}</option>
-                {% endfor %}
-              </select>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6">
-            <div class="input-group mb-3">
-              <label for="input-limit" class="input-group-text">{{ text_limit }}</label>
-              <select id="input-limit" class="form-select" onchange="location = this.value;">
-                {% for limits in limits %}
-                  <option value="{{ limits.href }}"{% if limits.value == limit %} selected{% endif %}>{{ limits.text }}</option>
-                {% endfor %}
-              </select>
-            </div>
-          </div>
-        </div>
+    <!-- Button Section-->
+    <section>
+        <!-- Tabs / big rounded-top buttons -->
+        <div class="max-w-6xl mx-auto pt-5 lg:pt-0 pb-4 px-[12px] lg:px-0">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg6488:gap-10">
+                <button
+                type="button"
+                class="w-full h-24 rounded-t-3xl rounded-b-none
+                        bg-gradient-to-b from-sky-100 to-sky-300
+                        border border-sky-200 shadow-sm
+                        text-3xl font-semibold text-slate-900
+                        flex items-center justify-center
+                        hover:from-sky-200 hover:to-sky-400
+                        focus:outline-none focus:ring-4 focus:ring-sky-200"
+                >
+                Dreamer's Canvas
+                </button>
 
-        <div id="product-list" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
-          {% for product in products %}
-            <div class="col mb-3">{{ product }}</div>
-          {% endfor %}
+                <button
+                type="button"
+                class="w-full h-24 rounded-t-3xl rounded-b-none
+                        bg-gradient-to-b from-sky-100 to-sky-300
+                        border border-sky-200 shadow-sm
+                        text-3xl font-semibold text-slate-900
+                        flex items-center justify-center
+                        hover:from-sky-200 hover:to-sky-400
+                        focus:outline-none focus:ring-4 focus:ring-sky-200"
+                >
+                Find Your Perfect Fridge
+                </button>
+            </div>
         </div>
+    </section>
+    
+    <!-- Category section -->
+    <section class="section-category pt-[10px] max-[1199px]:pt-[15px] mb-[24px]">
+        <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
+            <div class="flex flex-wrap w-full">
+                <div class="w-full px-[12px]">
+                    <div class="bb-category-5-colum owl-carousel">
+                    {# Background color classes to rotate #}
+                    {% set bg_classes = [
+                        'bg-[#fef1f1]',
+                        'bg-[#e1fcf2]',
+                        'bg-[#f4f1fe]',
+                        'bg-[#e1fcf2]',
+                        'bg-[#fbf9e4]'
+                    ] %}
+                    {% for category in categories %}
+                        {% set bg_class = bg_classes[loop.index0 % bg_classes|length] %}
+                        {% set delay = loop.index * 200 %}
+                        <div class="bb-category-box p-[15px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] {{ bg_class }}"
+                             data-aos="flip-left"
+                             data-aos-duration="1000"
+                             data-aos-delay="{{ delay }}">
+                            <!-- Category Image -->
+                            <div class="category-image mb-[12px]">
+                                {% if category.thumb is defined and category.thumb %}
+                                    <img src="{{ category.thumb }}"
+                                         alt="{{ category.name }}"
+                                         class="w-[80px] h-[80px] object-contain
+                                                max-[1399px]:h-[65px] max-[1399px]:w-[65px]
+                                                max-[1199px]:h-[50px] max-[1199px]:w-[50px]">
+                                {% else %}
+                                    <img src="catalog/view/theme/your_theme/assets/img/category/default-category.png"
+                                         alt="{{ category.name }}"
+                                         class="w-[80px] h-[80px] object-contain
+                                                max-[1399px]:h-[65px] max-[1399px]:w-[65px]
+                                                max-[1199px]:h-[50px] max-[1199px]:w-[50px]">
+                                {% endif %}
+                            </div>
+                            <!-- Category Content -->
+                            <div class="category-sub-contact">
+                                <h5 class="mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2] h-[35px]">
+                                    <a href="{{ category.href }}"
+                                       class="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize hover:text-[#3bb77e] transition-all duration-300">
+                                        {{ category.name }}
+                                    </a>
+                                </h5>
+                                {% if category.product_count is defined %}
+                                    <p class="font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]">
+                                        {{ category.product_count }} items
+                                    </p>
+                                {% endif %}
+                            </div>
 
-        <div class="row">
-          <div class="col-sm-6 text-start">{{ pagination }}</div>
-          <div class="col-sm-6 text-end">{{ results }}</div>
+                        </div>
+                    {% endfor %}
+
+                </div>
+                </div>
+            </div>
         </div>
-      {% endif %}
-      {% if not categories and not products %}
-        <p>{{ text_no_results }}</p>
-        <div class="text-end"><a href="{{ continue }}" class="btn btn-primary">{{ button_continue }}</a></div>
-      {% endif %}
-      {{ content_bottom }}</div>
-    {{ column_right }}</div>
+    </section>
+
+    <!-- Shop section -->
+    <section class="section-shop pb-[50px] max-[1199px]:pb-[35px]">
+        <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
+            <div class="flex flex-wrap w-full mb-[-24px]">
+                <div class="min-[992px]:w-[25%] w-full px-[12px] mb-[24px]">
+                    <div class="bb-shop-wrap bg-[#f8f8fb] border-[1px] border-solid border-[#eee] rounded-[20px] sticky top-[0]">
+                        <div class="bb-sidebar-block p-[20px] border-b-[1px] border-solid border-[#eee]">
+                            <div class="bb-sidebar-title mb-[20px]">
+                                <h3 class="font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]">Category</h3>
+                            </div>
+                            <div class="bb-sidebar-contact">
+                                {% for category in categories %}
+                                    <ul>
+                                        <li class="relative block mb-[14px]">
+                                            <div class="bb-sidebar-block-item relative">
+                                                <input type="checkbox" class="w-full h-[calc(100%-5px)] absolute opacity-[0] cursor-pointer z-[999] top-[50%] left-[0] translate-y-[-50%]">
+                                                <a href="javascript:void(0)" class="ml-[30px] block text-[#777] text-[14px] leading-[20px] font-normal capitalize cursor-pointer">{{ category.name }}</a>
+                                                <span class="checked absolute top-[0] left-[0] h-[18px] w-[18px] bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[5px] overflow-hidden"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="bb-sidebar-block p-[20px] border-b-[1px] border-solid border-[#eee]">
+                            <div class="bb-sidebar-title mb-[20px]">
+                                <h3 class="font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]">Color</h3>
+                            </div>
+                            <div class="bb-color-contact">
+                                <ul>
+                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px] color-sidebar-active">
+                                        <div class="bb-sidebar-block-item relative">
+                                            <span class="pro-color-1 w-[22px] h-[22px] block rounded-[20px] bg-[#c4d6f9]"></span>
+                                        </div>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
+                                        <div class="bb-sidebar-block-item relative">
+                                            <span class="pro-color-2 w-[22px] h-[22px] block rounded-[20px] bg-[#ff748b]"></span>
+                                        </div>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
+                                        <div class="bb-sidebar-block-item relative">
+                                            <span class="pro-color-3 w-[22px] h-[22px] block rounded-[20px] bg-[#000000]"></span>
+                                        </div>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
+                                        <div class="bb-sidebar-block-item relative">
+                                            <span class="pro-color-4 w-[22px] h-[22px] block rounded-[20px] bg-[#2bff4a]"></span>
+                                        </div>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
+                                        <div class="bb-sidebar-block-item relative">
+                                            <span class="pro-color-5 w-[22px] h-[22px] block rounded-[20px] bg-[#ff7c5e]"></span>
+                                        </div>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
+                                        <div class="bb-sidebar-block-item relative">
+                                            <span class="pro-color-6 w-[22px] h-[22px] block rounded-[20px] bg-[#f155ff]"></span>
+                                        </div>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
+                                        <div class="bb-sidebar-block-item relative">
+                                            <span class="pro-color-7 w-[22px] h-[22px] block rounded-[20px] bg-[#ffef00]"></span>
+                                        </div>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
+                                        <div class="bb-sidebar-block-item relative">
+                                            <span class="pro-color-8 w-[22px] h-[22px] block rounded-[20px] bg-[#c89fff]"></span>
+                                        </div>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
+                                        <div class="bb-sidebar-block-item relative">
+                                            <span class="pro-color-9 w-[22px] h-[22px] block rounded-[20px] bg-[#7bfffa]"></span>
+                                        </div>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
+                                        <div class="bb-sidebar-block-item relative">
+                                            <span class="pro-color-10 w-[22px] h-[22px] block rounded-[20px] bg-[#56ffc1]"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bb-sidebar-block p-[20px] border-b-[1px] border-solid border-[#eee]">
+                            <div class="bb-sidebar-title mb-[20px]">
+                                <h3 class="font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]">Price</h3>
+                            </div>
+                            <div class="bb-price-range">
+                                <div class="price-range-slider relative w-full mb-[7px]">
+                                    <p class="range-value m-[0]">
+                                        <input type="text" id="amount" readonly class="w-full bg-[#fff] text-[#000] text-[16px] mb-[15px] font-initial border-[1px] border-solid border-[#eee] p-[10px] text-center outline-[0] rounded-[10px]">
+                                    </p>
+                                    <div id="slider-range" class="range-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bb-sidebar-block p-[20px]">
+                            <div class="bb-sidebar-title mb-[20px]">
+                                <h3 class="font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]">Tags</h3>
+                            </div>
+                            <div class="bb-tags">
+                                <ul class="flex flex-wrap m-[-5px]">
+                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
+                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Refrigerator & Freezer</a>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
+                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Air Conditioner</a>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
+                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Mobile</a>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
+                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Computer</a>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
+                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Microwave and Electric Oven</a>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
+                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Washing Machine</a>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
+                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Television</a>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
+                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">E-Bike</a>
+                                    </li>
+                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
+                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">PCB</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        {{ column_left }}
+                    </div>
+                </div>
+
+                <!-- {% if products %} -->
+
+                <div class="min-[992px]:w-[75%] w-full px-[12px] mb-[24px]">
+                    <div class="bb-shop-pro-inner">
+                        <div class="flex flex-wrap mx-[-12px] mb-[-24px]">
+                            <div class="w-full px-[12px]">
+                                <div class="bb-pro-list-top mb-[24px] rounded-[20px] flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between">
+                                    <div class="flex flex-wrap w-full">
+                                        <div class="w-[30%] px-[12px] max-[420px]:w-full">
+                                            <div class="bb-bl-btn py-[10px] flex max-[420px]:justify-center">
+                                                <button type="button" class="grid-btn btn-grid-100 h-[38px] w-[38px] flex justify-center items-center border-[0] p-[5px] bg-transparent mr-[5px] active" title="grid">
+                                                    <i class="ri-apps-line text-[20px]"></i>
+                                                </button>
+                                                <button type="button" class="grid-btn btn-list-100 h-[38px] w-[38px] flex justify-center items-center border-[0] p-[5px] bg-transparent" title="grid">
+                                                    <i class="ri-list-unordered text-[20px]"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="w-[40%] px-[12px] max-[420px]:w-full">
+                                            <a href="{{ compare }}"
+                                                id="compare-total"
+                                                class="inline-flex items-center gap-2 mt-2 px-4 py-2 text-dark rounded-md transition duration-200">
+                                                    <i class="ri-arrow-left-right-line text-lg"></i>
+                                                    <span class="hidden xl:inline">
+                                                        {{ text_compare }}
+                                                    </span>
+                                            </a>
+                                        </div>
+
+
+    
+                                        <div class="w-[30%] px-[12px] max-[420px]:w-full">
+                                            <select onchange="if(this.value) window.location.href=this.value"
+                                                    class="sort-select w-full mt-2 px-3 py-2 text-gray-700 bg-transparent border-none rounded-md">
+
+                                                {% for item in sorts %}
+                                                    {% if item.text != 'Default' %}
+                                                        <option value="{{ item.href }}"
+                                                            {% if item.value == '%s-%s'|format(sort_by, order) %}selected{% endif %}>
+                                                            {{ item.text }}
+                                                        </option>
+                                                    {% endif %}
+                                                {% endfor %}
+
+                                            </select>
+                                        </div>
+                                        <style>
+                                        .hide-select {
+                                            display: block !important;
+                                            visibility: visible !important;
+                                            opacity: 1 !important;
+                                            pointer-events: auto !important;
+                                            position: relative !important;
+                                            z-index: 10;
+                                        }
+                                        .custom-select{
+                                            display: none !important;
+                                            visibility: hidden !important;
+                                            opacity: 0 !important;
+                                            pointer-events: none !important;
+                                            position: absolute !important;
+                                            z-index: -1 !important;
+                                        }
+                                        </style>
+
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            {% for product in products %}
+                            <div class="min-[1200px]:w-[25%] min-[768px]:w-[33.33%] w-[50%] max-[480px]:w-full px-[12px] mb-[24px] pro-bb-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                                {{ product }}
+                            </div>
+                            
+                            {% endfor %}
+
+                            <div class="w-full px-[12px]">
+                                <div class="bb-pro-pagination mb-[24px] flex justify-between items-center max-[575px]:flex-col max-[575px]:items-center">
+
+                                    {# Results Text #}
+                                    <p class="font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem] max-[575px]:mb-[10px]">
+                                        {{ results }}
+                                    </p>
+
+                                    {# Pagination Links #}
+                                    <div class="bb-pagination">
+                                        {{ pagination }}
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- {% endif %} -->
+            </div>
+        </div>
+    </section>
+
+
+    {{ content_bottom }}</div>
+{% include 'extension/blueberry/catalog/view/template/product/product_quickview.twig' %}
+{# {{quickview}} #}
 </div>
 {{ footer }}
+<script>
+    document.addEventListener('submit', function (e) {
+
+        const form = e.target;
+
+        if (!form.matches('[data-oc-toggle="ajax"]')) return;
+
+        setTimeout(() => {
+
+            // refresh compare total
+            fetch('index.php?route=product/compare|info'.replace('|',''))
+                .then(res => res.text())
+                .then(html => {
+                    const temp = document.createElement('div');
+                    temp.innerHTML = html;
+
+                    const newCompare = temp.querySelector('#compare-total');
+
+                    if (newCompare) {
+                        document.querySelector('#compare-total').innerHTML =
+                            newCompare.innerHTML;
+                    }
+                });
+
+        }, 300);
+
+    });
+</script>
+<script>
+
+$(document).on("click", ".bb-modal-toggle", function () {
+    let product_id = $(this).attr("data-product-id");
+    $.ajax({
+        url: 'index.php?route=extension/blueberry/product/quickview&product_id=' + product_id,
+        type: 'GET',
+        success: function (html) {
+
+            $("body").append(html);
+
+            $(".bb-modal-overlay, .bb-modal")
+                .removeClass("opacity-0 pointer-events-none")
+                .addClass("opacity-100 pointer-events-auto");
+
+        }
+    });
+});
+// $(document).on("click", ".bb-close-modal, .bb-modal-overlay", function () {
+
+//     $(".bb-modal-overlay, .bb-modal")
+//         .removeClass("opacity-100 pointer-events-auto")
+//         .addClass("opacity-0 pointer-events-none");
+
+//     $("body").removeClass("bb-overflow-hidden");
+
+// });
+</script>

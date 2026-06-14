@@ -1,0 +1,179 @@
+<div id="carousel-banner-{{ module }}" class="relative w-full overflow-hidden max-w-[1320px] mx-auto px-4 pb-5">
+
+  {# Indicators #}
+  {% if indicators and banners|batch(items)|length > 1 %}
+    <div class="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2" id="carousel-indicators-{{ module }}">
+      {% for i in range(0, banners|batch(items)|length - 1) %}
+        <button
+          type="button"
+          data-index="{{ i }}"
+          class="h-2 w-2 rounded-full bg-white/50 transition-all duration-300 carousel-dot-{{ module }}"
+          aria-label="Slide {{ i + 1 }}"
+        ></button>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {# Slides #}
+  <div class="relative w-full">
+    {% set banner_row = 0 %}
+    {% for carousel in banners|batch(items) %}
+      <div
+        class="w-full carousel-slide-{{ module }}{% if effect == 'fade' %} absolute inset-0{% endif %}{% if banner_row == 0 %} opacity-100 relative z-10{% else %} opacity-0{% if effect == 'fade' %} z-0{% else %} hidden{% endif %}{% endif %} transition-opacity duration-700"
+        data-index="{{ banner_row }}"
+      >
+        <div class="flex flex-wrap justify-center">
+          {% for banner in carousel %}
+            {% set col_width = (12 / items)|round %}
+            <div class="{% if col_width == 12 %}w-full{% elseif col_width == 6 %}w-1/2{% elseif col_width == 4 %}w-1/3{% elseif col_width == 3 %}w-1/4{% elseif col_width == 2 %}w-1/6{% else %}w-full{% endif %} text-center px-2">
+              {% if banner.link %}
+                <a href="{{ banner.link }}" class="bg-[#ededed] inline-block">
+                  <img src="{{ banner.image }}" alt="{{ banner.title }}" class="max-w-full h-auto mx-auto rounded-lg"/>
+                </a>
+              {% else %}
+                <div class="bg-[#ededed] inline-block">
+                  <img src="{{ banner.image }}" alt="{{ banner.title }}" class="max-w-full h-auto mx-auto rounded-lg"/>
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% set banner_row = banner_row + 1 %}
+    {% endfor %}
+  </div>
+
+  {# Controls #}
+  {% if controls and banners|batch(items)|length > 1 %}
+    <button
+      type="button"
+      class="carousel-prev-{{ module }} absolute left-2 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer"
+      aria-label="Previous"
+    >
+      <span class="fa-solid fa-chevron-left"></span>
+    </button>
+    <button
+      type="button"
+      class="carousel-next-{{ module }} absolute right-2 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer"
+      aria-label="Next"
+    >
+      <span class="fa-solid fa-chevron-right"></span>
+    </button>
+  {% endif %}
+
+</div>
+
+<script type="text/javascript"><!--
+$(document).ready(function () {
+  var id       = '#carousel-banner-{{ module }}';
+  var slideSel = '.carousel-slide-{{ module }}';
+  var dotSel   = '.carousel-dot-{{ module }}';
+  var fade     = {{ effect == 'fade' ? 'true' : 'false' }};
+  var interval = {{ interval|escape('js') }};
+  var total    = $(slideSel).length;
+  var current  = 0;
+  var timer    = null;
+
+  function goTo(index) {
+    $(slideSel).each(function () {
+      var i = parseInt($(this).data('index'));
+      if (i === index) {
+        if (fade) {
+          $(this).removeClass('opacity-0 z-0').addClass('opacity-100 z-10');
+        } else {
+          $(this).removeClass('hidden opacity-0').addClass('opacity-100');
+        }
+      } else {
+        if (fade) {
+          $(this).removeClass('opacity-100 z-10').addClass('opacity-0 z-0');
+        } else {
+          $(this).removeClass('opacity-100').addClass('hidden opacity-0');
+        }
+      }
+    });
+
+    $(dotSel).each(function () {
+      var i = parseInt($(this).data('index'));
+      if (i === index) {
+        $(this).removeClass('bg-white/50 w-2').addClass('bg-white w-6');
+      } else {
+        $(this).removeClass('bg-white w-6').addClass('bg-white/50 w-2');
+      }
+    });
+
+    current = index;
+  }
+
+  function next() { goTo((current + 1) % total); }
+  function prev() { goTo((current - 1 + total) % total); }
+
+  function startAuto() {
+    if (interval > 0) {
+      timer = setInterval(next, interval);
+    }
+  }
+
+  function resetAuto() {
+    clearInterval(timer);
+    startAuto();
+  }
+
+  // Init first dot
+  $(dotSel).first().removeClass('bg-white/50 w-2').addClass('bg-white w-6');
+
+  // Bind controls
+  $(id).find('.carousel-prev-{{ module }}').on('click', function () { prev(); resetAuto(); });
+  $(id).find('.carousel-next-{{ module }}').on('click', function () { next(); resetAuto(); });
+
+  // Bind dots
+  $(dotSel).on('click', function () {
+    goTo(parseInt($(this).data('index')));
+    resetAuto();
+  });
+
+  startAuto();
+});
+//--></script>
+
+
+
+{# 
+<section class="mx-auto max-w-[1320px] section-certificate overflow-hidden pt-[15px] pb-[10px] max-[1199px]:pb-[10px]">
+    <div id="swiper-certificate-{{ module }}" class="myCertificate-{{ module }} swiper px-[12px] lg:px-0">
+        <div class="swiper-wrapper">
+            {% for banner in banners %}
+                <div class="swiper-slide">
+                    <div class="bg-[#ededed] rounded-lg flex items-center justify-center">
+                        {% if banner.link %}
+                            <a href="{{ banner.link }}" class="block">
+                                <img
+                                    src="{{ banner.image }}"
+                                    alt="{{ banner.title }}"
+                                    class="max-w-full h-auto"
+                                    loading="lazy"
+                                />
+                            </a>
+                        {% else %}
+                            <img
+                                src="{{ banner.image }}"
+                                alt="{{ banner.title }}"
+                                class="max-w-full h-auto"
+                                loading="lazy"
+                            />
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        {% if indicators and banners|length > 1 %}
+            <div class="swiper-pagination mt-4"></div>
+        {% endif %}
+
+        {% if controls and banners|length > 1 %}
+            <div class="swiper-button-prev !text-black after:!text-xl"></div>
+            <div class="swiper-button-next !text-black after:!text-xl"></div>
+        {% endif %}
+    </div>
+</section>
+ #}

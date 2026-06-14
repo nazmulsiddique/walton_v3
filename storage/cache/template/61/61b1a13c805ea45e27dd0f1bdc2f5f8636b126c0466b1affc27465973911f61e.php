@@ -77,7 +77,9 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
   ";
         }
         // line 15
-        yield "
+        yield "  <link href=\"";
+        yield ($context["base"] ?? null);
+        yield "extension/blueberry/catalog/view/img/favicon/favicon.png\" rel=\"icon\"/>
   
   <!-- My custom styles -->
   <link rel=\"stylesheet\" href=\"";
@@ -108,13 +110,16 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
         // line 24
         yield ($context["base"] ?? null);
         yield "extension/blueberry/catalog/view/stylesheet/assets/css/vendor/jquery-range-ui.css\">
-  <!-- <link href=\"https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css\" rel=\"stylesheet\"> -->
 
     <!-- tailwindcss -->
     <script src=\"";
-        // line 28
+        // line 27
         yield ($context["base"] ?? null);
         yield "extension/blueberry/catalog/view/javascript/vendor/tailwindcss3.4.5.js\"></script>
+    <!-- <script src=\"";
+        // line 28
+        yield ($context["base"] ?? null);
+        yield "extension/blueberry/catalog/view/javascript/common.js\"></script> -->
 
     <!-- Main Style -->
     <link rel=\"stylesheet\" href=\"";
@@ -127,7 +132,11 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
         yield ($context["base"] ?? null);
         yield "extension/blueberry/catalog/view/stylesheet/assets/css/customstyle.css\">
 
-
+    <!-- My Theme JS -->
+    <script src=\"";
+        // line 36
+        yield ($context["base"] ?? null);
+        yield "extension/blueberry/catalog/view/javascript/vendor/jquery.min.js\"></script>
     
 </head>
 <body>
@@ -155,15 +164,6 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                         </ul>
                                     </div>
                                 </div>
-                                <!-- <div class=\"cols px-[12px]\">
-                                    <div class=\"custom-dropdown relative z-[5]\">
-                                        <a class=\"bb-dropdown-toggle transition-all duration-[0.3s] ease-in-out font-Poppins text-[14px] text-[#fff] relative pr-[15px] font-light leading-[28px] tracking-[0.03rem]\" href=\"#\">Currency</a>
-                                        <ul class=\"dropdown transition-all duration-[0.3s] ease-in-out min-w-[150px] py-[10px] px-[10px] mt-[25px] absolute z-[16] text-left opacity-[0] invisible left-[0] right-[auto] bg-[#fff] block border-[1px] border-solid border-[#eee] block rounded-[10px]\">
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[13px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">USD \$</a></li>
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[13px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">EUR €</a></li>
-                                        </ul>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -178,7 +178,10 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                             <div class=\"cols bb-logo-detail flex max-[767px]:justify-between\">
                                 <!-- Header Logo Start -->
                                 <div class=\"header-logo flex items-center max-[575px]:justify-center\">
-                                    <a href=\"index.php\">
+                                    <a href=\"";
+        // line 78
+        yield ($context["base"] ?? null);
+        yield "\">
                                         <img src=\"extension/blueberry/catalog/view/img/logo/logo.png\" alt=\"logo\" class=\"light w-[112px] max-[991px]:w-[70px] block\">
                                         <img src=\"extension/blueberry/catalog/view/img/logo/logo.png\" alt=\"logo\" class=\"dark w-[112px] max-[991px]:w-[70px] hidden\">
                                     </a>
@@ -214,36 +217,6 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                             <div class=\"cols flex justify-center\">
                                 <div class=\"header-search w-[650px] max-[1399px]:w-[550px] max-[1199px]:w-[400px] max-[991px]:w-full max-[991px]:min-w-[300px] max-[767px]:py-[15px] max-[480px]:min-w-[auto]\">
                                     <form class=\"bb-btn-group-form flex relative max-[991px]:ml-[20px] max-[767px]:m-[0]\" action=\"#\">
-                                        <div class=\"inner-select border-r-[1px] border-solid border-[#eee] h-full px-[20px] flex items-center absolute top-[0] left-[0] max-[991px]:hidden\">
-                                            <div class=\"custom-select w-[150px] capitalize text-[#777] flex items-center justify-between transition-all duration-[0.2s] ease-in text-[14px] relative\">
-                                                <select>
-                                                    <option value=\"\">Select Category</option>
-                                                    <option value=\"option1\">Refrigerator & Freezer</option>
-                                                    <option value=\"option2\">Television</option>
-                                                    <option value=\"option3\">Air conditioner</option>
-                                                    <option value=\"option4\">Mobile</option>
-                                                    <option value=\"option5\">Computer</option>
-                                                    <option value=\"option6\">E-Bike</option>
-                                                    <option value=\"option7\">PCB</option>
-                                                    <option value=\"option8\">Microwave and Electric Oven</option>
-                                                    <option value=\"option9\">Blender and Mixer Grinder</option>
-                                                    <option value=\"option10\">Washing machine</option>
-                                                    <option value=\"option11\">Water Heater (Geyser)</option>
-                                                    <option value=\"option12\">Home Appliances</option>
-                                                    <option value=\"option13\">Hardware Items</option>
-                                                    <option value=\"option14\">Kitchen Appliances</option>
-                                                    <option value=\"option15\">Fan</option>
-                                                    <option value=\"option16\">LED Light</option>
-                                                    <option value=\"option17\">Electrical Accessories</option>
-                                                    <option value=\"option18\">Cables</option>
-                                                    <option value=\"option19\">Elevator</option>
-                                                    <option value=\"option20\">Compressor</option>
-                                                    <option value=\"option21\">Battery</option>
-                                                    <option value=\"option22\">Hardware & Sanitary Solutions</option>
-                                                    <option value=\"option23\">Industrial Solutions</option>
-                                                </select>
-                                            </div>
-                                        </div>
                                         <input class=\"form-control bb-search-bar bg-[#fff] block w-full min-h-[45px] h-[48px] py-[10px] pr-[10px] pl-[210px] max-[991px]:min-h-[40px] max-[991px]:h-[40px] max-[991px]:p-[10px] text-[14px] font-normal leading-[1] text-[#777] rounded-[10px] border-[1px] border-solid border-[#eee] tracking-[0.5px]\" placeholder=\"Search products...\" type=\"text\">
                                         <button class=\"submit absolute top-[0] left-[auto] right-[0] flex items-center justify-center w-[45px] h-full bg-transparent text-[#555] text-[16px] rounded-[0] outline-[0] border-[0] padding-[0]\" type=\"submit\">
                                             <i class=\"ri-search-line text-[18px] leading-[12px] text-[#555]\"></i>
@@ -319,7 +292,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                         <ul class=\"mega-menu min-w-full transition-all duration-[0.3s] ease-in-out mt-[25px] pl-[30px] absolute top-[40px] z-[16] text-left opacity-[0] invisible left-[0] right-[auto] bg-[#fff] border-[1px] border-solid border-[#eee] flex flex-col rounded-[10px]\">
                                             <li class=\"m-[0] flex items-start w-full\">
                                                 <ul class=\"mega-block w-[calc(25%-30px)] mr-[30px] py-[15px]\">
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"category.php\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Refrigerator & Freezer</a></li>
+                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"catalog/refrigerator-freezer/\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Refrigerator & Freezer</a></li>
                                                     <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Television</a></li>
                                                     <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Air Conditioner</a></li>
                                                     <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Mobile</a></li>
@@ -458,45 +431,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
 
 
 
-        <!-- Hero Slider-->
-    <section class=\"section-hero relative overflow-hidden\">
-        <div class=\"flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]\">
-            <div class=\"flex flex-wrap w-full\">
-                <div class=\"w-full\">
-                    <div class=\"hero-slider swiper\">
-                        <div class=\"swiper-wrapper\">
-                            <div class=\"swiper-slide\">
-                                <!-- Desktop Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/category/banner/refrigerator/slider/fridge-slider-1.jpg\" alt=\"Slider Image\" class=\"hidden md:block w-full\" >
-                                <!-- Mobile Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/category/banner/refrigerator/slider/fridge-slider-m-1.jpg\" alt=\"Slider Image\" class=\"block md:hidden w-full\" >
-                            </div>
-                            <div class=\"swiper-slide\">
-                                <!-- Desktop Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/category/banner/refrigerator/slider/fridge-slider-2.jpg\" alt=\"Slider Image\" class=\"hidden md:block w-full\" >
-                                <!-- Mobile Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/category/banner/refrigerator/slider/fridge-slider-m-2.jpg\" alt=\"Slider Image\" class=\"block md:hidden w-full\" >
-                            </div>
-                            <div class=\"swiper-slide\">
-                                <!-- Desktop Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/hero/S01.jpg\" alt=\"Slider Image\" class=\"hidden md:block w-full\" >
-                                <!-- Mobile Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/hero/S01-m.jpeg\" alt=\"Slider Image\" class=\"block md:hidden w-full\" >
-                            </div>
-                            <div class=\"swiper-slide\">
-                                <!-- Desktop Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/hero/S02.jpg\" alt=\"Slider Image\" class=\"hidden md:block w-full\" >
-                                <!-- Mobile Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/hero/S02-m.jpg\" alt=\"Slider Image\" class=\"block md:hidden w-full\" >
-                            </div>
-                            
-                        </div>
-                        <div class=\"swiper-pagination !bottom-[30px] !left-[20px]\"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>";
+";
         yield from [];
     }
 
@@ -521,7 +456,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
      */
     public function getDebugInfo(): array
     {
-        return array (  127 => 33,  122 => 31,  116 => 28,  109 => 24,  105 => 23,  101 => 22,  97 => 21,  93 => 20,  89 => 19,  85 => 18,  80 => 15,  74 => 13,  71 => 12,  65 => 10,  63 => 9,  59 => 8,  55 => 7,  45 => 2,  42 => 1,);
+        return array (  183 => 78,  138 => 36,  132 => 33,  127 => 31,  121 => 28,  117 => 27,  111 => 24,  107 => 23,  103 => 22,  99 => 21,  95 => 20,  91 => 19,  87 => 18,  80 => 15,  74 => 13,  71 => 12,  65 => 10,  63 => 9,  59 => 8,  55 => 7,  45 => 2,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -540,7 +475,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
   {% if keywords %}
     <meta name=\"keywords\" content=\"{{ keywords }}\"/>
   {% endif %}
-
+  <link href=\"{{ base }}extension/blueberry/catalog/view/img/favicon/favicon.png\" rel=\"icon\"/>
   
   <!-- My custom styles -->
   <link rel=\"stylesheet\" href=\"{{ base }}extension/blueberry/catalog/view/stylesheet/assets/css/vendor/remixicon.css\">
@@ -550,17 +485,18 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
   <link rel=\"stylesheet\" href=\"{{ base }}extension/blueberry/catalog/view/stylesheet/assets/css/vendor/slick.min.css\">
   <link rel=\"stylesheet\" href=\"{{ base }}extension/blueberry/catalog/view/stylesheet/assets/css/vendor/animate.min.css\">
   <link rel=\"stylesheet\" href=\"{{ base }}extension/blueberry/catalog/view/stylesheet/assets/css/vendor/jquery-range-ui.css\">
-  <!-- <link href=\"https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css\" rel=\"stylesheet\"> -->
 
     <!-- tailwindcss -->
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/tailwindcss3.4.5.js\"></script>
+    <!-- <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/common.js\"></script> -->
 
     <!-- Main Style -->
     <link rel=\"stylesheet\" href=\"{{ base }}extension/blueberry/catalog/view/stylesheet/assets/css/style.css\">
     <!-- Custom Style -->
     <link rel=\"stylesheet\" href=\"{{ base }}extension/blueberry/catalog/view/stylesheet/assets/css/customstyle.css\">
 
-
+    <!-- My Theme JS -->
+    <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/jquery.min.js\"></script>
     
 </head>
 <body>
@@ -588,15 +524,6 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                         </ul>
                                     </div>
                                 </div>
-                                <!-- <div class=\"cols px-[12px]\">
-                                    <div class=\"custom-dropdown relative z-[5]\">
-                                        <a class=\"bb-dropdown-toggle transition-all duration-[0.3s] ease-in-out font-Poppins text-[14px] text-[#fff] relative pr-[15px] font-light leading-[28px] tracking-[0.03rem]\" href=\"#\">Currency</a>
-                                        <ul class=\"dropdown transition-all duration-[0.3s] ease-in-out min-w-[150px] py-[10px] px-[10px] mt-[25px] absolute z-[16] text-left opacity-[0] invisible left-[0] right-[auto] bg-[#fff] block border-[1px] border-solid border-[#eee] block rounded-[10px]\">
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[13px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">USD \$</a></li>
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[13px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">EUR €</a></li>
-                                        </ul>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -611,7 +538,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                             <div class=\"cols bb-logo-detail flex max-[767px]:justify-between\">
                                 <!-- Header Logo Start -->
                                 <div class=\"header-logo flex items-center max-[575px]:justify-center\">
-                                    <a href=\"index.php\">
+                                    <a href=\"{{ base }}\">
                                         <img src=\"extension/blueberry/catalog/view/img/logo/logo.png\" alt=\"logo\" class=\"light w-[112px] max-[991px]:w-[70px] block\">
                                         <img src=\"extension/blueberry/catalog/view/img/logo/logo.png\" alt=\"logo\" class=\"dark w-[112px] max-[991px]:w-[70px] hidden\">
                                     </a>
@@ -647,36 +574,6 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                             <div class=\"cols flex justify-center\">
                                 <div class=\"header-search w-[650px] max-[1399px]:w-[550px] max-[1199px]:w-[400px] max-[991px]:w-full max-[991px]:min-w-[300px] max-[767px]:py-[15px] max-[480px]:min-w-[auto]\">
                                     <form class=\"bb-btn-group-form flex relative max-[991px]:ml-[20px] max-[767px]:m-[0]\" action=\"#\">
-                                        <div class=\"inner-select border-r-[1px] border-solid border-[#eee] h-full px-[20px] flex items-center absolute top-[0] left-[0] max-[991px]:hidden\">
-                                            <div class=\"custom-select w-[150px] capitalize text-[#777] flex items-center justify-between transition-all duration-[0.2s] ease-in text-[14px] relative\">
-                                                <select>
-                                                    <option value=\"\">Select Category</option>
-                                                    <option value=\"option1\">Refrigerator & Freezer</option>
-                                                    <option value=\"option2\">Television</option>
-                                                    <option value=\"option3\">Air conditioner</option>
-                                                    <option value=\"option4\">Mobile</option>
-                                                    <option value=\"option5\">Computer</option>
-                                                    <option value=\"option6\">E-Bike</option>
-                                                    <option value=\"option7\">PCB</option>
-                                                    <option value=\"option8\">Microwave and Electric Oven</option>
-                                                    <option value=\"option9\">Blender and Mixer Grinder</option>
-                                                    <option value=\"option10\">Washing machine</option>
-                                                    <option value=\"option11\">Water Heater (Geyser)</option>
-                                                    <option value=\"option12\">Home Appliances</option>
-                                                    <option value=\"option13\">Hardware Items</option>
-                                                    <option value=\"option14\">Kitchen Appliances</option>
-                                                    <option value=\"option15\">Fan</option>
-                                                    <option value=\"option16\">LED Light</option>
-                                                    <option value=\"option17\">Electrical Accessories</option>
-                                                    <option value=\"option18\">Cables</option>
-                                                    <option value=\"option19\">Elevator</option>
-                                                    <option value=\"option20\">Compressor</option>
-                                                    <option value=\"option21\">Battery</option>
-                                                    <option value=\"option22\">Hardware & Sanitary Solutions</option>
-                                                    <option value=\"option23\">Industrial Solutions</option>
-                                                </select>
-                                            </div>
-                                        </div>
                                         <input class=\"form-control bb-search-bar bg-[#fff] block w-full min-h-[45px] h-[48px] py-[10px] pr-[10px] pl-[210px] max-[991px]:min-h-[40px] max-[991px]:h-[40px] max-[991px]:p-[10px] text-[14px] font-normal leading-[1] text-[#777] rounded-[10px] border-[1px] border-solid border-[#eee] tracking-[0.5px]\" placeholder=\"Search products...\" type=\"text\">
                                         <button class=\"submit absolute top-[0] left-[auto] right-[0] flex items-center justify-center w-[45px] h-full bg-transparent text-[#555] text-[16px] rounded-[0] outline-[0] border-[0] padding-[0]\" type=\"submit\">
                                             <i class=\"ri-search-line text-[18px] leading-[12px] text-[#555]\"></i>
@@ -752,7 +649,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                         <ul class=\"mega-menu min-w-full transition-all duration-[0.3s] ease-in-out mt-[25px] pl-[30px] absolute top-[40px] z-[16] text-left opacity-[0] invisible left-[0] right-[auto] bg-[#fff] border-[1px] border-solid border-[#eee] flex flex-col rounded-[10px]\">
                                             <li class=\"m-[0] flex items-start w-full\">
                                                 <ul class=\"mega-block w-[calc(25%-30px)] mr-[30px] py-[15px]\">
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"category.php\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Refrigerator & Freezer</a></li>
+                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"catalog/refrigerator-freezer/\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Refrigerator & Freezer</a></li>
                                                     <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Television</a></li>
                                                     <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Air Conditioner</a></li>
                                                     <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Mobile</a></li>
@@ -891,44 +788,6 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
 
 
 
-        <!-- Hero Slider-->
-    <section class=\"section-hero relative overflow-hidden\">
-        <div class=\"flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]\">
-            <div class=\"flex flex-wrap w-full\">
-                <div class=\"w-full\">
-                    <div class=\"hero-slider swiper\">
-                        <div class=\"swiper-wrapper\">
-                            <div class=\"swiper-slide\">
-                                <!-- Desktop Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/category/banner/refrigerator/slider/fridge-slider-1.jpg\" alt=\"Slider Image\" class=\"hidden md:block w-full\" >
-                                <!-- Mobile Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/category/banner/refrigerator/slider/fridge-slider-m-1.jpg\" alt=\"Slider Image\" class=\"block md:hidden w-full\" >
-                            </div>
-                            <div class=\"swiper-slide\">
-                                <!-- Desktop Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/category/banner/refrigerator/slider/fridge-slider-2.jpg\" alt=\"Slider Image\" class=\"hidden md:block w-full\" >
-                                <!-- Mobile Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/category/banner/refrigerator/slider/fridge-slider-m-2.jpg\" alt=\"Slider Image\" class=\"block md:hidden w-full\" >
-                            </div>
-                            <div class=\"swiper-slide\">
-                                <!-- Desktop Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/hero/S01.jpg\" alt=\"Slider Image\" class=\"hidden md:block w-full\" >
-                                <!-- Mobile Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/hero/S01-m.jpeg\" alt=\"Slider Image\" class=\"block md:hidden w-full\" >
-                            </div>
-                            <div class=\"swiper-slide\">
-                                <!-- Desktop Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/hero/S02.jpg\" alt=\"Slider Image\" class=\"hidden md:block w-full\" >
-                                <!-- Mobile Image -->
-                                <img src=\"extension/blueberry/catalog/view/img/hero/S02-m.jpg\" alt=\"Slider Image\" class=\"block md:hidden w-full\" >
-                            </div>
-                            
-                        </div>
-                        <div class=\"swiper-pagination !bottom-[30px] !left-[20px]\"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>", "extension/blueberry/catalog/view/template/common/header.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\common\\header.twig");
+", "extension/blueberry/catalog/view/template/common/header.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\common\\header.twig");
     }
 }

@@ -1,351 +1,814 @@
 {{ header }}
-<div id="product-info" class="container">
-  <ul class="breadcrumb">
-    {% for breadcrumb in breadcrumbs %}
-      <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
-    {% endfor %}
-  </ul>
-  <div class="row">{{ column_left }}
-    <div id="content" class="col">
-      {{ content_top }}
-      <div class="row mb-3">
-        {% if thumb or images %}
-          <div class="col-sm">
-            <div class="image magnific-popup">
-              {% if thumb %}
-                <a href="{{ popup }}" title="{{ heading_title }}"><img src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" class="img-thumbnail mb-3"/></a>
-              {% endif %}
-              {% if images %}
-                <div>
-                  {% for image in images %}
-                    <a href="{{ image.popup }}" title="{{ heading_title }}"><img src="{{ image.thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" class="img-thumbnail"/></a>&nbsp;
-                  {% endfor %}
-                </div>
-              {% endif %}
-            </div>
-          </div>
-        {% endif %}
-        <div class="col-sm">
-          <h1>{{ heading_title }}</h1>
-          <ul class="list-unstyled">
-            {% if manufacturer %}
-              <li>{{ text_manufacturer }} <a href="{{ manufacturers }}">{{ manufacturer }}</a></li>
-            {% endif %}
-            <li>{{ text_model }} {{ model }}</li>
-            {% for product_code in product_codes %}
-              <li>{{ product_code.code }}: {{ product_code.value }}</li>
-            {% endfor %}
-            {% if reward %}
-              <li>{{ text_reward }} {{ reward }}</li>
-            {% endif %}
-            <li>{{ text_stock }} {{ stock }}</li>
-          </ul>
-          {% if review_status %}
-            <div class="rating">
-              <p>
-                {% for i in 1..5 %}
-                  {% if rating < i %}
-                    <span class="fa-stack"><i class="fa-regular fa-star fa-stack-1x"></i></span>
-                  {% else %}
-                    <span class="fa-stack"><i class="fa-solid fa-star fa-stack-1x"></i><i class="fa-regular fa-star fa-stack-1x"></i></span>
-                  {% endif %}
-                {% endfor %}
-                <a href="#" onclick="$('a[href=\'#tab-review\']').tab('show'); return false;">{{ text_reviews }}</a> / <a href="#" onclick="$('a[href=\'#tab-review\']').tab('show'); return false;">{{ text_write }}</a></p>
-            </div>
-          {% endif %}
-          {% if price %}
-            <ul class="list-unstyled">
-              {% if not special %}
-                <li><h2><span class="price-new">{{ price }}</span></h2></li>
-              {% else %}
-                <li><span class="price-old">{{ price }}</span></li>
-                <li><h2><span class="price-new">{{ special }}</span></h2></li>
-              {% endif %}
-              {% if tax %}
-                <li>{{ text_tax }} {{ tax }}</li>
-              {% endif %}
-              {% if points %}
-                <li>{{ text_points }} {{ points }}</li>
-              {% endif %}
-              {% if discounts %}
-                <li>
-                  <hr>
-                </li>
-                {% for discount in discounts %}
-                  <li>{{ discount.quantity }}{{ text_discount }}{{ discount.price }}</li>
-                {% endfor %}
-              {% endif %}
-            </ul>
-          {% endif %}
-          <form method="post" data-oc-toggle="ajax">
-            <div class="btn-group">
-              <button type="submit" formaction="{{ wishlist_add }}" data-bs-toggle="tooltip" class="btn btn-light btn-lg" title="{{ button_wishlist }}"><i class="fa-solid fa-heart"></i></button>
-              <button type="submit" formaction="{{ compare_add }}" data-bs-toggle="tooltip" class="btn btn-light btn-lg" title="{{ button_compare }}"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
-            </div>
-            <input type="hidden" name="product_id" value="{{ product_id }}"/>
-          </form>
-          <br/>
-          <div id="product">
-            <form id="form-product">
-              {% if options %}
-                <hr>
-                <h3>{{ text_option }}</h3>
-                <div>
-                  {% for option in options %}
-
-                    {% if option.type == 'select' %}
-                      <div class="mb-3{% if option.required %} required{% endif %}">
-                        <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
-                        <select name="option[{{ option.product_option_id }}]" id="input-option-{{ option.product_option_id }}" class="form-select">
-                          <option value="">{{ text_select }}</option>
-                          {% for option_value in option.product_option_value %}
-                            <option value="{{ option_value.product_option_value_id }}">{{ option_value.name }}
-                              {% if option_value.price %}
-                                ({{ option_value.price_prefix }}{{ option_value.price }})
-                              {% endif %}</option>
-                          {% endfor %}
-                        </select>
-                        <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+<div id="product-info" class="max-w-[1320px] mx-auto px-4">
+  <!-- Breadcrumb -->
+  <section class="section-breadcrumb mb-[20px] max-[1199px]:mb-[15px] border-b border-solid border-[#eee] bg-[#f8f8fb]">
+      <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
+          <div class="flex flex-wrap w-full">
+              <div class="w-full px-[12px]">
+                  <div class="flex flex-wrap w-full bb-breadcrumb-inner m-0 py-[20px] items-center">
+                      <!-- Breadcrumb List -->
+                      <div class="w-full px-[12px]">
+                          <ul class="bb-breadcrumb-list mx-[-5px] flex justify-start max-[767px]:justify-center flex-wrap">
+                              <li class="bb-breadcrumb-item text-[14px] font-normal px-[5px]"><a href="{{ base }}" class="font-Poppins text-[14px] leading-[28px] tracking-[0.03rem] font-semibold text-[#686e7d]"> Home</a></li>
+                              {% for breadcrumb in breadcrumbs %}
+                                  {% if not loop.first %}
+                                      <li class="text-[14px] font-normal px-[5px]">
+                                          <i class="ri-arrow-right-double-fill text-[14px] font-semibold leading-[28px]"></i>
+                                      </li>
+                                  {% endif %}
+                                  <li class="bb-breadcrumb-item px-[5px]">
+                                      {% if loop.last %}
+                                          <span class="font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem]">
+                                              {{ breadcrumb.text }}
+                                          </span>
+                                      {% else %}
+                                          <a href="{{ breadcrumb.href }}"
+                                            class="font-Poppins text-[14px] leading-[28px] tracking-[0.03rem] font-semibold text-[#686e7d] hover:text-[#3bb77e] transition-all duration-300">
+                                              {{ breadcrumb.text }}
+                                          </a>
+                                      {% endif %}
+                                  </li>
+                              {% endfor %}
+                          </ul>
                       </div>
-                    {% endif %}
-
-                    {% if option.type == 'radio' %}
-                      <div class="mb-3{% if option.required %} required{% endif %}">
-                        <label class="form-label">{{ option.name }}</label>
-                        <div id="input-option-{{ option.product_option_id }}">
-                          {% for option_value in option.product_option_value %}
-                            <div class="form-check">
-                              <input type="radio" name="option[{{ option.product_option_id }}]" value="{{ option_value.product_option_value_id }}" id="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-input"/>
-                              <label for="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-label">
-                                {% if option_value.image %}
-                                  <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %}{{ option_value.price_prefix }} {{ option_value.price }}{% endif %}" class="img-thumbnail"/>{% endif %}
-                                {{ option_value.name }}
-                                {% if option_value.price %}
-                                  ({{ option_value.price_prefix }}{{ option_value.price }})
-                                {% endif %}</label>
-                            </div>
-                          {% endfor %}
-                        </div>
-                        <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-                      </div>
-                    {% endif %}
-
-                    {% if option.type == 'checkbox' %}
-                      <div class="mb-3{% if option.required %} required{% endif %}">
-                        <label class="form-label">{{ option.name }}</label>
-                        <div id="input-option-{{ option.product_option_id }}">
-                          {% for option_value in option.product_option_value %}
-                            <div class="form-check">
-                              <input type="checkbox" name="option[{{ option.product_option_id }}][]" value="{{ option_value.product_option_value_id }}" id="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-input"/> 
-							                <label for="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-label">
-                                {% if option_value.image %}
-                                  <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %}{{ option_value.price_prefix }} {{ option_value.price }}{% endif %}" class="img-thumbnail"/>{% endif %}
-                                {{ option_value.name }}
-                                {% if option_value.price %}
-                                  ({{ option_value.price_prefix }}{{ option_value.price }})
-                                {% endif %}</label>
-                            </div>
-                          {% endfor %}
-                        </div>
-                        <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-                      </div>
-                    {% endif %}
-
-                    {% if option.type == 'text' %}
-                      <div class="mb-3{% if option.required %} required{% endif %}">
-                        <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label> <input type="text" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" placeholder="{{ option.name }}" id="input-option-{{ option.product_option_id }}" class="form-control"/>
-                        <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-                      </div>
-                    {% endif %}
-
-                    {% if option.type == 'textarea' %}
-                      <div class="mb-3{% if option.required %} required{% endif %}">
-                        <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label> <textarea name="option[{{ option.product_option_id }}]" rows="5" placeholder="{{ option.name }}" id="input-option-{{ option.product_option_id }}" class="form-control">{{ option.value }}</textarea>
-                        <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-                      </div>
-                    {% endif %}
-
-                    {% if option.type == 'file' %}
-                      <div class="mb-3{% if option.required %} required{% endif %}">
-                        <label for="button-upload-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
-                        <div>
-                          <button type="button" id="button-upload-{{ option.product_option_id }}" data-oc-toggle="upload" data-oc-url="{{ upload }}" data-oc-target="#input-option-{{ option.product_option_id }}" data-oc-size-max="{{ config_file_max_size }}" data-oc-size-error="{{ error_upload_size }}" class="btn btn-light btn-block"><i class="fa-solid fa-upload"></i> {{ button_upload }}</button>
-                          <input type="hidden" name="option[{{ option.product_option_id }}]" value="" id="input-option-{{ option.product_option_id }}"/>
-                        </div>
-                        <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-                      </div>
-                    {% endif %}
-
-                    {% if option.type == 'date' %}
-                      <div class="mb-3{% if option.required %} required{% endif %}">
-                        <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
-                        <input type="date" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" id="input-option-{{ option.product_option_id }}" class="form-control"/>
-                        <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-                      </div>
-                    {% endif %}
-
-                    {% if option.type == 'time' %}
-                      <div class="mb-3{% if option.required %} required{% endif %}">
-                        <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
-                        <input type="time" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" id="input-option-{{ option.product_option_id }}" class="form-control"/>
-                        <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-                      </div>
-                    {% endif %}
-
-                    {% if option.type == 'datetime' %}
-                      <div class="mb-3{% if option.required %} required{% endif %}">
-                        <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
-                        <input type="datetime-local" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" id="input-option-{{ option.product_option_id }}" class="form-control"/>
-                        <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-                      </div>
-                    {% endif %}
-                  {% endfor %}
-                </div>
-              {% endif %}
-
-              {% if subscription_plans %}
-                <hr/>
-                <h3>{{ text_subscription }}</h3>
-                <div class="mb-3 required">
-                  <select name="subscription_plan_id" id="input-subscription" class="form-select">
-                    <option value="">{{ text_select }}</option>
-                    {% for subscription_plan in subscription_plans %}
-                      <option value="{{ subscription_plan.subscription_plan_id }}">{{ subscription_plan.name }}</option>
-                    {% endfor %}
-                  </select>
-                  {% for subscription_plan in subscription_plans %}
-                    <div id="subscription-description-{{ subscription_plan.subscription_plan_id }}" class="form-text subscription d-none">{{ subscription_plan.description }}</div>
-                  {% endfor %}
-                  <div id="error-subscription" class="invalid-feedback"></div>
-                </div>
-              {% endif %}
-              <div class="mb-3">
-                <div class="input-group">
-                  <div class="input-group-text">{{ entry_qty }}</div>
-                  <input type="text" name="quantity" value="{{ minimum }}" size="2" id="input-quantity" class="form-control"/>
-                  <button type="submit" id="button-cart" class="btn btn-primary btn-lg btn-block">{{ button_cart }}</button>
-                </div>
-                <input type="hidden" name="product_id" value="{{ product_id }}" id="input-product-id"/>
-                <div id="error-quantity" class="form-text"></div>
+                  </div>
               </div>
-              {% if minimum > 1 %}
-                <div class="alert alert-warning"><i class="fa-solid fa-circle-info"></i> {{ text_minimum }}</div>
-              {% endif %}
-            </form>
           </div>
-        </div>
       </div>
-      <ul class="nav nav-tabs">
-        <li class="nav-item"><a href="#tab-description" data-bs-toggle="tab" class="nav-link active">{{ tab_description }}</a></li>
-        {% if attribute_groups %}
-          <li class="nav-item"><a href="#tab-specification" data-bs-toggle="tab" class="nav-link">{{ tab_attribute }}</a></li>
-        {% endif %}
-        {% if review_status %}
-          <li class="nav-item"><a href="#tab-review" data-bs-toggle="tab" class="nav-link">{{ tab_review }}</a></li>
-        {% endif %}
-      </ul>
-      <div class="tab-content">
-        <div id="tab-description" class="tab-pane fade show active mb-4">{{ description }}
-          {% if tags %}
-            <p>{{ text_tags }}
-              {% for tag in tags %}
-                <a href="{{ tag.href }}">{{ tag.tag }}</a>{% if not loop.last %},{% endif %}
-              {% endfor %}
-            </p>
-          {% endif %}
-        </div>
-        {% if attribute_groups %}
-          <div id="tab-specification" class="tab-pane fade">
-            <div class="table-responsive">
-              <table class="table table-bordered">
-                {% for attribute_group in attribute_groups %}
-                  <thead>
-                    <tr>
-                      <td colspan="2"><strong>{{ attribute_group.name }}</strong></td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {% for attribute in attribute_group.attribute %}
-                      <tr>
-                        <td>{{ attribute.name }}</td>
-                        <td>{{ attribute.text }}</td>
-                      </tr>
-                    {% endfor %}
-                  </tbody>
-                {% endfor %}
-              </table>
+  </section> 
+<div class="w-full">
+   {# {{ column_left }} #}
+   <div id="content1" class="w-full">
+      {{ content_top }}
+        <section class="section-product py-[20px] max-[1199px]:py-[15px]">
+            <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
+               <div class="flex flex-wrap w-full">
+                  <div class="w-full px-[12px] mb-3"> 
+                     <div class="bb-single-pro mb-[24px]">
+                        <div class="flex flex-wrap mx-[-12px]">
+                           <div class="min-[992px]:w-[41.66%] h-full w-full px-[12px] mb-[24px]">
+                                <div class="single-pro-slider h-full sticky top-[0] p-[15px] border-[1px] border-solid border-[#eee] rounded-[24px] max-[991px]:max-w-[500px] max-[991px]:m-auto">
+                                    {% if thumb or images %}
+                                    <!-- Main Images -->
+                                    <div class="single-product-cover">
+                                       {% if thumb %}
+                                       <div class="single-slide zoom-image-hover rounded-tl-[15px] rounded-tr-[15px]">
+                                          <img
+                                             src="{{ thumb }}"
+                                             title="{{ heading_title }}"
+                                             alt="{{ heading_title }}"
+                                             class="w-full rounded-tl-[15px] rounded-tr-[15px]">
+                                       </div>
+                                       {% endif %}
+                                       {% for image in images %}
+                                       <div class="single-slide zoom-image-hover rounded-tl-[15px] rounded-tr-[15px]">
+                                          <img
+                                             src="{{ image.thumb }}"
+                                             title="{{ heading_title }}"
+                                             alt="{{ heading_title }}"
+                                             class="w-full rounded-tl-[15px] rounded-tr-[15px]">
+                                       </div>
+                                       {% endfor %}
+                                    </div>
+                                    <div class="single-nav-thumb w-full overflow-hidden">
+                                        {% if thumb %}
+                                       <div class="single-slide px-[10px] block">
+                                          <img
+                                             src="{{ thumb }}"
+                                             title="{{ heading_title }}"
+                                             alt="{{ heading_title }}"
+                                             class="w-full border border-solid border-transparent transition-all duration-300 cursor-pointer rounded-[15px]">
+                                       </div>
+                                       {% endif %}
+                                        {% for image in images %}
+                                          <div class="single-slide px-[10px] block">
+                                             <img
+                                                src="{{ image.thumb }}"
+                                                title="{{ heading_title }}"
+                                                alt="{{ heading_title }}"
+                                                class="w-full border border-solid border-transparent transition-all duration-300 cursor-pointer rounded-[15px]">
+                                          </div>
+                                          {% endfor %}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                           <div class="min-[992px]:w-[33.33%] w-full px-[12px] mb-[24px]">
+                              {# <div class="bb-single-pro-contact">
+                                 <div class="bb-sub-title mb-[10px]">
+                                    <h4 class="font-quicksand text-[22px] tracking-[0.03rem] font-bold leading-[1.2] text-[#3d4750]">WNR-6D6-GDFS-DI</h4>
+                                 </div>
+                                 <ul class="font-Poppins text-[15px] font-light leading-[28px] tracking-[0.03rem] pl-[8px]">
+                                    <li>- Type: No-Frost</li>
+                                    <li>- HCFC free: Cyclopentane</li>
+                                    <li>- Gross Volume: 646 Ltr (V.0101)</li>
+                                    <li>- Net Volume: 598 Ltr (V.0101)</li>
+                                    <li>- CFC Free: R600a</li>
+                                    <li>- Using Latest MSO Plus INVERTER technology</li>
+                                    <li>- No need to use Voltage Stabilizer</li>
+                                 </ul>
+                                 <div class="bb-single-price-wrap flex justify-between py-[10px]">
+                                    <div class="bb-single-price py-[15px]">
+                                       <div class="price mb-[8px]">
+                                          <h5 class="font-quicksand leading-[1.2] tracking-[0.03rem] text-[20px] font-extrabold text-[#3d4750]">৳149990 </h5>
+                                       </div>
+                                       <div class="mrp">
+                                          <p class="font-Poppins text-[16px] font-light text-[#686e7d] leading-[28px] tracking-[0.03rem]">M.S.R.P. : <span class="text-[15px] line-through">৳159990</span></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="bb-single-pro-weight mb-[24px]">
+                                    <div class="pro-title mb-[12px]">
+                                       <h4 class="font-quicksand leading-[1.2] tracking-[0.03rem] text-[16px] font-bold uppercase text-[#3d4750]">Color</h4>
+                                    </div>
+                                    <div class="bb-pro-variation-contant">
+                                       <ul class="flex flex-wrap m-[-2px]">
+                                          <li class="my-[10px] mx-[2px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] cursor-pointer active-variation">
+                                             <span class="font-Poppins text-[#686e7d] font-light text-[14px] leading-[28px] tracking-[0.03rem]">Grey</span>
+                                          </li>
+                                          <li class="my-[10px] mx-[2px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] cursor-pointer">
+                                             <span class="font-Poppins text-[#686e7d] font-light text-[14px] leading-[28px] tracking-[0.03rem]">White</span>
+                                          </li>
+                                          <li class="my-[10px] mx-[2px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] cursor-pointer">
+                                             <span class="font-Poppins text-[#686e7d] font-light text-[14px] leading-[28px] tracking-[0.03rem]">Light</span>
+                                          </li>
+                                          <li class="my-[10px] mx-[2px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] cursor-pointer">
+                                             <span class="font-Poppins text-[#686e7d] font-light text-[14px] leading-[28px] tracking-[0.03rem]">Blue</span>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div> #}
+                              <div class="product-attribute-info my-[20px]">
+                                 <h1>{{ heading_title }}</h1>
+                                 <ul class="list-unstyled">
+                                    {% if manufacturer %}
+                                    <li>{{ text_manufacturer }} <a href="{{ manufacturers }}">{{ manufacturer }}</a></li>
+                                    {% endif %}
+                                    <li>{{ text_model }} {{ model }}</li>
+                                    {% for product_code in product_codes %}
+                                    <li>{{ product_code.code }}: {{ product_code.value }}</li>
+                                    {% endfor %}
+                                    {% if reward %}
+                                    <li>{{ text_reward }} {{ reward }}</li>
+                                    {% endif %}
+                                    <li>{{ text_stock }} {{ stock }}</li>
+                                 </ul>
+                                 
+                                 {% if price %}
+                                 <ul class="list-unstyled">
+                                    {% if not special %}
+                                    <li>
+                                       <h2><span class="price-new">{{ price }}</span></h2>
+                                    </li>
+                                    {% else %}
+                                    <li><span class="price-old">{{ price }}</span></li>
+                                    <li>
+                                       <h2><span class="price-new">{{ special }}</span></h2>
+                                    </li>
+                                    {% endif %}
+                                    {% if tax %}
+                                    <li>{{ text_tax }} {{ tax }}</li>
+                                    {% endif %}
+                                    {% if points %}
+                                    <li>{{ text_points }} {{ points }}</li>
+                                    {% endif %}
+                                    {% if discounts %}
+                                    <li>
+                                       <hr>
+                                    </li>
+                                    {% for discount in discounts %}
+                                    <li>{{ discount.quantity }}{{ text_discount }}{{ discount.price }}</li>
+                                    {% endfor %}
+                                    {% endif %}
+                                 </ul>
+                                 {% endif %}
+                                 <form method="post" data-oc-toggle="ajax">
+                                    <div class="btn-group">
+                                       <button type="submit" formaction="{{ wishlist_add }}" data-bs-toggle="tooltip" class="btn btn-light btn-lg" title="{{ button_wishlist }}"><i class="fa-solid fa-heart"></i></button>
+                                       <button type="submit" formaction="{{ compare_add }}" data-bs-toggle="tooltip" class="btn btn-light btn-lg" title="{{ button_compare }}"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                                    </div>
+                                    <input type="hidden" name="product_id" value="{{ product_id }}"/>
+                                 </form>
+                                 <br/>
+                                 <div id="product">
+                                    <form id="form-product">
+                                       {% if options %}
+                                       <hr>
+                                       <h3>{{ text_option }}</h3>
+                                       <div>
+                                          {% for option in options %}
+                                          {% if option.type == 'select' %}
+                                          <div class="mb-3{% if option.required %} required{% endif %}">
+                                             <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
+                                             <select name="option[{{ option.product_option_id }}]" id="input-option-{{ option.product_option_id }}" class="form-select">
+                                                <option value="">{{ text_select }}</option>
+                                                {% for option_value in option.product_option_value %}
+                                                <option value="{{ option_value.product_option_value_id }}">{{ option_value.name }}
+                                                   {% if option_value.price %}
+                                                   ({{ option_value.price_prefix }}{{ option_value.price }})
+                                                   {% endif %}
+                                                </option>
+                                                {% endfor %}
+                                             </select>
+                                             <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+                                          </div>
+                                          {% endif %}
+                                          {% if option.type == 'radio' %}
+                                          <div class="mb-3{% if option.required %} required{% endif %}">
+                                             <label class="form-label">{{ option.name }}</label>
+                                             <div id="input-option-{{ option.product_option_id }}">
+                                                {% for option_value in option.product_option_value %}
+                                                <div class="form-check">
+                                                   <input type="radio" name="option[{{ option.product_option_id }}]" value="{{ option_value.product_option_value_id }}" id="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-input"/>
+                                                   <label for="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-label">
+                                                   {% if option_value.image %}
+                                                   <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %}{{ option_value.price_prefix }} {{ option_value.price }}{% endif %}" class="img-thumbnail"/>{% endif %}
+                                                   {{ option_value.name }}
+                                                   {% if option_value.price %}
+                                                   ({{ option_value.price_prefix }}{{ option_value.price }})
+                                                   {% endif %}</label>
+                                                </div>
+                                                {% endfor %}
+                                             </div>
+                                             <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+                                          </div>
+                                          {% endif %}
+                                          {% if option.type == 'checkbox' %}
+                                          <div class="mb-3{% if option.required %} required{% endif %}">
+                                             <label class="form-label">{{ option.name }}</label>
+                                             <div id="input-option-{{ option.product_option_id }}">
+                                                {% for option_value in option.product_option_value %}
+                                                <div class="form-check">
+                                                   <input type="checkbox" name="option[{{ option.product_option_id }}][]" value="{{ option_value.product_option_value_id }}" id="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-input"/> 
+                                                   <label for="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-label">
+                                                   {% if option_value.image %}
+                                                   <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %}{{ option_value.price_prefix }} {{ option_value.price }}{% endif %}" class="img-thumbnail"/>{% endif %}
+                                                   {{ option_value.name }}
+                                                   {% if option_value.price %}
+                                                   ({{ option_value.price_prefix }}{{ option_value.price }})
+                                                   {% endif %}</label>
+                                                </div>
+                                                {% endfor %}
+                                             </div>
+                                             <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+                                          </div>
+                                          {% endif %}
+                                          {% if option.type == 'text' %}
+                                          <div class="mb-3{% if option.required %} required{% endif %}">
+                                             <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label> <input type="text" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" placeholder="{{ option.name }}" id="input-option-{{ option.product_option_id }}" class="form-control"/>
+                                             <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+                                          </div>
+                                          {% endif %}
+                                          {% if option.type == 'textarea' %}
+                                          <div class="mb-3{% if option.required %} required{% endif %}">
+                                             <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label> 
+                                             <textarea name="option[{{ option.product_option_id }}]" rows="5" placeholder="{{ option.name }}" id="input-option-{{ option.product_option_id }}" class="form-control">{{ option.value }}</textarea>
+                                             <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+                                          </div>
+                                          {% endif %}
+                                          {% if option.type == 'file' %}
+                                          <div class="mb-3{% if option.required %} required{% endif %}">
+                                             <label for="button-upload-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
+                                             <div>
+                                                <button type="button" id="button-upload-{{ option.product_option_id }}" data-oc-toggle="upload" data-oc-url="{{ upload }}" data-oc-target="#input-option-{{ option.product_option_id }}" data-oc-size-max="{{ config_file_max_size }}" data-oc-size-error="{{ error_upload_size }}" class="btn btn-light btn-block"><i class="fa-solid fa-upload"></i> {{ button_upload }}</button>
+                                                <input type="hidden" name="option[{{ option.product_option_id }}]" value="" id="input-option-{{ option.product_option_id }}"/>
+                                             </div>
+                                             <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+                                          </div>
+                                          {% endif %}
+                                          {% if option.type == 'date' %}
+                                          <div class="mb-3{% if option.required %} required{% endif %}">
+                                             <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
+                                             <input type="date" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" id="input-option-{{ option.product_option_id }}" class="form-control"/>
+                                             <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+                                          </div>
+                                          {% endif %}
+                                          {% if option.type == 'time' %}
+                                          <div class="mb-3{% if option.required %} required{% endif %}">
+                                             <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
+                                             <input type="time" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" id="input-option-{{ option.product_option_id }}" class="form-control"/>
+                                             <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+                                          </div>
+                                          {% endif %}
+                                          {% if option.type == 'datetime' %}
+                                          <div class="mb-3{% if option.required %} required{% endif %}">
+                                             <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
+                                             <input type="datetime-local" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" id="input-option-{{ option.product_option_id }}" class="form-control"/>
+                                             <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+                                          </div>
+                                          {% endif %}
+                                          {% endfor %}
+                                       </div>
+                                       {% endif %}
+                                       {% if subscription_plans %}
+                                       <hr/>
+                                       <h3>{{ text_subscription }}</h3>
+                                       <div class="mb-3 required">
+                                          <select name="subscription_plan_id" id="input-subscription" class="form-select">
+                                             <option value="">{{ text_select }}</option>
+                                             {% for subscription_plan in subscription_plans %}
+                                             <option value="{{ subscription_plan.subscription_plan_id }}">{{ subscription_plan.name }}</option>
+                                             {% endfor %}
+                                          </select>
+                                          {% for subscription_plan in subscription_plans %}
+                                          <div id="subscription-description-{{ subscription_plan.subscription_plan_id }}" class="form-text subscription d-none">{{ subscription_plan.description }}</div>
+                                          {% endfor %}
+                                          <div id="error-subscription" class="invalid-feedback"></div>
+                                       </div>
+                                       {% endif %}
+                                       <div class="mb-3">
+                                          <div class="input-group">
+                                             <div class="input-group-text">{{ entry_qty }}</div>
+                                             <input type="text" name="quantity" value="{{ minimum }}" size="2" id="input-quantity" class="form-control"/>
+                                             <button type="submit" id="button-cart" class="btn btn-primary btn-lg btn-block">{{ button_cart }}</button>
+                                          </div>
+                                          <input type="hidden" name="product_id" value="{{ product_id }}" id="input-product-id"/>
+                                          <div id="error-quantity" class="form-text"></div>
+                                       </div>
+                                       {% if minimum > 1 %}
+                                       <div class="alert alert-warning"><i class="fa-solid fa-circle-info"></i> {{ text_minimum }}</div>
+                                       {% endif %}
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="min-[992px]:w-[25%] w-full px-[12px] mb-[24px]">
+                              <div class="w-full">
+                                 <div class="w-full px-[12px]">
+                                    <div class="sub-title mb-[20px] flex justify-between">
+                                       <h4 class="font-quicksand tracking-[0.03rem] leading-[1.2] text-[20px] font-bold text-[#3d4750] uppercase">Recent View Product</h4>
+                                    </div>
+                                 </div>
+                                 <div class="w-full px-[12px] mb-[24px]">
+                                    <div class="group p-[15px] overflow-hidden bg-[#f8f8fb] border border-[#eee] rounded-[12px] flex items-center 
+                                       transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-white">
+                                       <span class="pro-img mr-[12px] overflow-hidden rounded-[10px]">
+                                       <img src="assets/img/product/refrigerator/WNR-6D6-GDFS-DI.jpg"
+                                          class="w-[80px] border border-[#eee] rounded-[10px] 
+                                          transition-all duration-300 group-hover:scale-110">
+                                       </span>
+                                       <div class="side-contact flex flex-col">
+                                          <h4 class="text-[15px]">
+                                             <a href="product.php">
+                                                <p class="font-Poppins text-[15px] leading-[24px] font-medium text-[#3d4750] 
+                                                   transition-all duration-300 group-hover:text-[#6c7fd8]">
+                                                   WNR-6D6-GDFS-DI
+                                                </p>
+                                                <p class="text-[16px] font-bold text-[#686e7d] 
+                                                   transition-all duration-300 group-hover:text-black">
+                                                   ৳149990
+                                                </p>
+                                             </a>
+                                          </h4>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="w-full px-[12px] mb-[24px]">
+                                    <div class="group p-[15px] overflow-hidden bg-[#f8f8fb] border border-[#eee] rounded-[12px] flex items-center 
+                                       transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-white">
+                                       <span class="pro-img mr-[12px] overflow-hidden rounded-[10px]">
+                                       <img src="assets/img/product/refrigerator/WNR-6D6-GDFS-DI.jpg"
+                                          class="w-[80px] border border-[#eee] rounded-[10px] 
+                                          transition-all duration-300 group-hover:scale-110">
+                                       </span>
+                                       <div class="side-contact flex flex-col">
+                                          <h4 class="text-[15px]">
+                                             <a href="product.php">
+                                                <p class="font-Poppins text-[15px] leading-[24px] font-medium text-[#3d4750] 
+                                                   transition-all duration-300 group-hover:text-[#6c7fd8]">
+                                                   WNR-6D6-GDFS-DI
+                                                </p>
+                                                <p class="text-[16px] font-bold text-[#686e7d] 
+                                                   transition-all duration-300 group-hover:text-black">
+                                                   ৳149990
+                                                </p>
+                                             </a>
+                                          </h4>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="w-full px-[12px] mb-[24px]">
+                                    <div class="group p-[15px] overflow-hidden bg-[#f8f8fb] border border-[#eee] rounded-[12px] flex items-center 
+                                       transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-white">
+                                       <span class="pro-img mr-[12px] overflow-hidden rounded-[10px]">
+                                       <img src="assets/img/product/refrigerator/WNR-6D6-GDFS-DI.jpg"
+                                          class="w-[80px] border border-[#eee] rounded-[10px] 
+                                          transition-all duration-300 group-hover:scale-110">
+                                       </span>
+                                       <div class="side-contact flex flex-col">
+                                          <h4 class="text-[15px]">
+                                             <a href="product.php">
+                                                <p class="font-Poppins text-[15px] leading-[24px] font-medium text-[#3d4750] 
+                                                   transition-all duration-300 group-hover:text-[#6c7fd8]">
+                                                   WNR-6D6-GDFS-DI
+                                                </p>
+                                                <p class="text-[16px] font-bold text-[#686e7d] 
+                                                   transition-all duration-300 group-hover:text-black">
+                                                   ৳149990
+                                                </p>
+                                             </a>
+                                          </h4>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+                     <div class="bb-single-pro-tab">
+
+                        <!-- Tabs Navigation -->
+                        <div id="productTabSection" class="w-full">
+                           <div class="flex flex-wrap border-b border-gray-200">
+
+                                 <!-- Description -->
+                                 <button data-tab="description"
+                                    class="tab-btn relative px-5 py-3 text-[16px] font-medium text-[#6c7fd8] active-tab">
+                                    {{ tab_description }}
+                                    <span class="tab-line"></span>
+                                    <span class="tab-arrow"></span>
+                                 </button>
+
+                                 {% if attribute_groups %}
+                                 <!-- Specification -->
+                                 <button data-tab="specification"
+                                    class="tab-btn relative px-5 py-3 text-[16px] font-medium text-[#686e7d]">
+                                    {{ tab_attribute }}
+                                    <span class="tab-line"></span>
+                                    <span class="tab-arrow"></span>
+                                 </button>
+                                 {% endif %}
+
+                                 <!-- Gallery -->
+                                 <button data-tab="gallery" class="tab-btn relative px-5 py-3 text-[16px] font-medium text-[#686e7d]">
+                                    Picture Gallery
+                                    <span class="tab-line"></span>
+                                    <span class="tab-arrow"></span>
+                                 </button>
+                                 <!-- Video Gallery -->
+                                 <button data-tab="videos" class="tab-btn relative px-5 py-3 text-[16px] font-medium text-[#686e7d]">
+                                    Video Gallery
+                                    <span class="tab-line"></span>
+                                    <span class="tab-arrow"></span>
+                                 </button>
+                                 <!-- Supports -->
+                                 <button data-tab="supports" class="tab-btn relative px-5 py-3 text-[16px] font-medium text-[#686e7d]">
+                                    Support
+                                    <span class="tab-line"></span>
+                                    <span class="tab-arrow"></span>
+                                 </button>
+                                 <!-- Download -->
+                                 <button data-tab="download" class="tab-btn relative px-5 py-3 text-[16px] font-medium text-[#686e7d]">
+                                    Download
+                                    <span class="tab-line"></span>
+                                    <span class="tab-arrow"></span>
+                                 </button>
+
+                           </div>
+
+                           <!-- Tab Contents -->
+                           <div class="pt-6">
+
+                                 <!-- Description -->
+                                 <div id="description" class="tab-content block">
+                                    <div class="bb-inner-tabs border border-[#eee] p-[20px] rounded-[20px]">
+                                       {{ description }}
+                                    </div>
+                                 </div>
+
+                                 {% if attribute_groups %}
+                                 <!-- Specification -->
+                                 <div id="specification" class="tab-content hidden">
+                                    <div class="bb-inner-tabs border border-[#eee] p-[20px] rounded-[20px] overflow-x-auto">
+
+                                       <table class="w-full border border-[#eee]">
+                                             {% for attribute_group in attribute_groups %}
+
+                                             <thead>
+                                                <tr>
+                                                   <th colspan="2"
+                                                         class="bg-[#f8f8fb] p-3 text-left border border-[#eee] font-semibold">
+                                                         {{ attribute_group.name }}
+                                                   </th>
+                                                </tr>
+                                             </thead>
+
+                                             <tbody>
+                                                {% for attribute in attribute_group.attribute %}
+                                                <tr>
+                                                   <td class="p-3 border border-[#eee] w-[40%]">
+                                                         {{ attribute.name }}
+                                                   </td>
+                                                   <td class="p-3 border border-[#eee]">
+                                                         {{ attribute.text }}
+                                                   </td>
+                                                </tr>
+                                                {% endfor %}
+                                             </tbody>
+
+                                             {% endfor %}
+                                       </table>
+
+                                    </div>
+                                 </div>
+                                 {% endif %}
+
+                                    <!-- Gallery -->
+                                          <div id="gallery" class="tab-content hidden">
+                                             <div class="bb-inner-tabs border border-[#eee] p-[15px] rounded-[20px]">
+                                                   <div class="information overflow-x-auto rounded-xl border border-gray-200">
+
+                                                      {% if thumb %}
+                                                         <img src="{{ thumb }}" alt="{{ heading_title }}"
+                                                               class="w-full max-w-[800px] mx-auto">
+                                                      {% endif %}
+
+                                                      {% if images %}
+                                                         {% for image in images %}
+                                                               <img src="{{ image.thumb }}" alt="{{ heading_title }}"
+                                                                  class="w-full max-w-[800px] mx-auto">
+                                                         {% endfor %}
+                                                      {% endif %}
+
+                                                   </div>
+                                             </div>
+                                          </div>
+
+                                          <!-- Video -->
+                                          <div id="videos" class="tab-content hidden">
+                                             <div class="bb-inner-tabs border border-[#eee] p-[15px] rounded-[20px]">
+                                                <!-- Video Tutorial Section -->
+                                                   <section class="py-8 lg:py-12">
+                                                      <!-- Video Grid -->
+                                                      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+                                                         <!-- Video Card 1 -->
+                                                         <div class="group bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                                                               <div class="aspect-video overflow-hidden">
+                                                                  <iframe
+                                                                     class="w-full h-full transform transition-transform duration-700 group-hover:scale-105"
+                                                                     src="https://www.youtube.com/embed/f-NUHvKL6WM"
+                                                                     title="How to Use, Clean & Maintain the Walton WNR-6D6 Fridge Water Dispenser"
+                                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                     referrerpolicy="strict-origin-when-cross-origin"
+                                                                     allowfullscreen>
+                                                                  </iframe>
+                                                               </div>
+                                                               <!-- Optional glossy overlay -->
+                                                               <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-gradient-to-tr from-white/0 via-white/10 to-white/20"></div>
+                                                         </div>
+
+                                                         <!-- Video Card 2 -->
+                                                         <div class="group bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                                                               <div class="aspect-video overflow-hidden">
+                                                                  <iframe
+                                                                     class="w-full h-full transform transition-transform duration-700 group-hover:scale-105"
+                                                                     src="https://www.youtube.com/embed/yMCbCMUBp4Y"
+                                                                     title="How to Operate Convertible Modes"
+                                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                     referrerpolicy="strict-origin-when-cross-origin"
+                                                                     allowfullscreen>
+                                                                  </iframe>
+                                                               </div>
+                                                               <!-- Optional glossy overlay -->
+                                                               <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-gradient-to-tr from-white/0 via-white/10 to-white/20"></div>
+                                                         </div>
+
+                                                         <!-- Video Card 3 -->
+                                                         <div class="group bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                                                               <div class="aspect-video overflow-hidden">
+                                                                  <iframe
+                                                                     class="w-full h-full transform transition-transform duration-700 group-hover:scale-105"
+                                                                     src="https://www.youtube.com/embed/rTzN2lRv-nA"
+                                                                     title="How to Connect Wi-Fi"
+                                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                     referrerpolicy="strict-origin-when-cross-origin"
+                                                                     allowfullscreen>
+                                                                  </iframe>
+                                                               </div>
+                                                               <!-- Optional glossy overlay -->
+                                                               <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-gradient-to-tr from-white/0 via-white/10 to-white/20"></div>
+                                                         </div>
+
+                                                      </div>
+                                                   </section>
+               
+
+                                             </div>
+                                          </div>
+
+                                          <!-- Supports -->
+                                          <div id="supports" class="tab-content hidden">
+                                             <div class="bb-inner-tabs border border-[#eee] p-[15px] rounded-[20px]">
+                                                   <div class="w-full mx-auto rounded-3xl overflow-hidden border border-gray-200 shadow-lg bg-white font-Poppins">
+
+                                                      <!-- Main Header -->
+                                                      <div class="bg-gradient-to-r from-[#6c7fd8] to-[#4f46e5] px-8 py-6">
+                                                         <h2 class="text-white text-[28px] font-bold tracking-wide uppercase">
+                                                               Warranty Information
+                                                         </h2>
+                                                         <p class="text-white/80 text-[14px] mt-1">
+                                                               Complete coverage details for Residential & Commercial use
+                                                         </p>
+                                                      </div>
+
+                                                      <!-- Warranty Cards -->
+                                                      <div class="grid md:grid-cols-2 gap-8 p-8">
+
+                                                         <!-- Residential -->
+                                                         <div class="rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                                                               <div class="bg-[#f3f4f6] px-6 py-4 border-b">
+                                                                  <h3 class="text-[#3d4750] text-[20px] font-bold">Residential Use</h3>
+                                                               </div>
+
+                                                               <div class="divide-y divide-gray-100">
+                                                                  <div class="flex justify-between px-6 py-4 hover:bg-gray-50">
+                                                                     <span class="font-medium text-[#3d4750]">Replacement Guarantee</span>
+                                                                     <span class="text-[#686e7d]">1 Year</span>
+                                                                  </div>
+                                                                  <div class="flex justify-between px-6 py-4 hover:bg-gray-50">
+                                                                     <span class="font-medium text-[#3d4750]">Main Parts (Compressor)</span>
+                                                                     <span class="text-[#686e7d]">12 Years</span>
+                                                                  </div>
+                                                                  <div class="flex justify-between px-6 py-4 hover:bg-gray-50">
+                                                                     <span class="font-medium text-[#3d4750]">Door</span>
+                                                                     <span class="text-[#686e7d]">3 Years *</span>
+                                                                  </div>
+                                                                  <div class="flex justify-between px-6 py-4 hover:bg-gray-50">
+                                                                     <span class="font-medium text-[#3d4750]">Spare Parts</span>
+                                                                     <span class="text-[#686e7d]">4 Years *</span>
+                                                                  </div>
+                                                                  <div class="flex justify-between px-6 py-4 hover:bg-gray-50">
+                                                                     <span class="font-medium text-[#3d4750]">After Sales Service</span>
+                                                                     <span class="text-[#686e7d]">5 Years *</span>
+                                                                  </div>
+                                                               </div>
+                                                         </div>
+
+                                                         <!-- Commercial -->
+                                                         <div class="rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                                                               <div class="bg-[#f3f4f6] px-6 py-4 border-b">
+                                                                  <h3 class="text-[#3d4750] text-[20px] font-bold">Commercial Use</h3>
+                                                               </div>
+
+                                                               <div class="divide-y divide-gray-100">
+                                                                  <div class="flex justify-between px-6 py-4 hover:bg-gray-50">
+                                                                     <span class="font-medium text-[#3d4750]">Main Parts (Compressor)</span>
+                                                                     <span class="text-[#686e7d]">4 Years</span>
+                                                                  </div>
+                                                                  <div class="flex justify-between px-6 py-4 hover:bg-gray-50">
+                                                                     <span class="font-medium text-[#3d4750]">Door</span>
+                                                                     <span class="text-[#686e7d]">1 Year *</span>
+                                                                  </div>
+                                                                  <div class="flex justify-between px-6 py-4 hover:bg-gray-50">
+                                                                     <span class="font-medium text-[#3d4750]">Spare Parts</span>
+                                                                     <span class="text-[#686e7d]">2 Years *</span>
+                                                                  </div>
+                                                                  <div class="flex justify-between px-6 py-4 hover:bg-gray-50">
+                                                                     <span class="font-medium text-[#3d4750]">After Sales Service</span>
+                                                                     <span class="text-[#686e7d]">2 Years *</span>
+                                                                  </div>
+                                                               </div>
+                                                         </div>
+
+                                                      </div>
+
+                                                      <!-- Exclusions -->
+                                                      <div class="px-8 pb-8">
+                                                         <div class="rounded-2xl border border-red-100 bg-red-50 p-6 mb-6">
+                                                               <h3 class="text-[20px] font-bold text-red-600 mb-4">
+                                                                  Warranty Does Not Cover:
+                                                               </h3>
+
+                                                               <div class="space-y-3 text-[15px] text-[#555] leading-[28px]">
+                                                                  <p>• Any damage due to accident, electrical fault, natural causes, negligence or improper installation.</p>
+                                                                  <p>• Any damage or failure caused by unauthorized modification or alteration.</p>
+                                                                  <p>• Products with removed, distorted or unrecognized serial numbers.</p>
+                                                               </div>
+                                                         </div>
+
+                                                         <!-- Important Notice -->
+                                                         <div class="rounded-2xl border border-yellow-200 bg-yellow-50 p-6">
+                                                               <h3 class="text-[18px] font-bold text-[#3d4750] mb-3">
+                                                                  Important Notice
+                                                               </h3>
+
+                                                               <p class="text-[15px] text-[#555] leading-[28px] mb-3">
+                                                                  Authority reserves the right to change, extend, correct, stop or cancel the warranty period without prior notice.
+                                                               </p>
+
+                                                               <p class="text-[14px] italic text-[#777] leading-[26px]">
+                                                                  *Warranty covers manufacturing defects in products & workmanship only, subject to verification by company personnel.
+                                                               </p>
+                                                         </div>
+                                                      </div>
+
+                                                   </div>
+                                             </div>
+                                          </div>
+
+                                          <!-- Download -->
+                                          <div id="download" class="tab-content hidden">
+                                             <div class="bb-inner-tabs border border-[#eee] p-[15px] rounded-[20px]">
+                                                   <div class="py-6 text-center">
+                                                      <a 
+                                                         href="https://waltonbd.com/user-manuals/refrigerator/side-by-side-manual-5th-version-06-10-25.pdf"
+                                                         target="_blank"
+                                                         rel="noopener noreferrer"
+                                                         class="inline-flex items-center gap-3 px-6 py-3 rounded-full
+                                                               bg-[#6c7fd8] text-white font-semibold text-sm md:text-base
+                                                               shadow-md hover:shadow-xl hover:-translate-y-1
+                                                               hover:bg-[#5a6ecf]
+                                                               transition-all duration-300 ease-in-out"
+                                                      >
+                                                         <!-- Download Icon -->
+                                                         <svg xmlns="http://www.w3.org/2000/svg"
+                                                               class="w-5 h-5"
+                                                               fill="none"
+                                                               viewBox="0 0 24 24"
+                                                               stroke="currentColor"
+                                                               stroke-width="2">
+                                                               <path stroke-linecap="round"
+                                                                  stroke-linejoin="round"
+                                                                  d="M12 3v12m0 0l4-4m-4 4l-4-4m-6 8h16" />
+                                                         </svg>
+                                                         Download User Manual
+                                                      </a>
+                                                   </div>
+                                             </div>
+                                          </div>
+
+                           </div>
+                        </div>
+
+                     </div>
+
+
+                  </div>
+               </div>
             </div>
-          </div>
-        {% endif %}
-        {% if review_status %}
-          <div id="tab-review" class="tab-pane fade mb-4">{{ review }}</div>
-        {% endif %}
-      </div>
+         </section>
+
+      
       {{ related }}
       {{ content_bottom }}
-    </div>
-    {{ column_right }}
-  </div>
+   </div>
+   {# {{ column_right }} #}
+</div>
 </div>
 <script type="text/javascript"><!--
-$('#input-subscription').on('change', function(e) {
-    var element = this;
+   $('#input-subscription').on('change', function(e) {
+      var element = this;
 
-    $('.subscription').addClass('d-none');
+      $('.subscription').addClass('d-none');
 
-    $('#subscription-description-' + $(element).val()).removeClass('d-none');
-});
+      $('#subscription-description-' + $(element).val()).removeClass('d-none');
+   });
 
-$('#form-product').on('submit', function(e) {
-    e.preventDefault();
+   $('#form-product').on('submit', function(e) {
+      e.preventDefault();
 
-    $.ajax({
-        url: 'index.php?route=checkout/cart.add&language={{ language }}',
-        type: 'post',
-        data: $('#form-product').serialize(),
-        dataType: 'json',
-        contentType: 'application/x-www-form-urlencoded',
-        cache: false,
-        processData: false,
-        beforeSend: function() {
-            $('#button-cart').button('loading');
-        },
-        complete: function() {
-            $('#button-cart').button('reset');
-        },
-        success: function(json) {
-            console.log(json);
+      $.ajax({
+         url: 'index.php?route=checkout/cart.add&language={{ language }}',
+         type: 'post',
+         data: $('#form-product').serialize(),
+         dataType: 'json',
+         contentType: 'application/x-www-form-urlencoded',
+         cache: false,
+         processData: false,
+         beforeSend: function() {
+               $('#button-cart').button('loading');
+         },
+         complete: function() {
+               $('#button-cart').button('reset');
+         },
+         success: function(json) {
+               console.log(json);
 
-            $('#form-product').find('.is-invalid').removeClass('is-invalid');
-            $('#form-product').find('.invalid-feedback').removeClass('d-block');
+               $('#form-product').find('.is-invalid').removeClass('is-invalid');
+               $('#form-product').find('.invalid-feedback').removeClass('d-block');
 
-            if (json['error']) {
-                for (key in json['error']) {
-                    $('#input-' + key.replaceAll('_', '-')).addClass('is-invalid').find('.form-control, .form-select, .form-check-input, .form-check-label').addClass('is-invalid');
-                    $('#error-' + key.replaceAll('_', '-')).html(json['error'][key]).addClass('d-block');
-                }
-            }
+               if (json['error']) {
+                  for (key in json['error']) {
+                     $('#input-' + key.replaceAll('_', '-')).addClass('is-invalid').find('.form-control, .form-select, .form-check-input, .form-check-label').addClass('is-invalid');
+                     $('#error-' + key.replaceAll('_', '-')).html(json['error'][key]).addClass('d-block');
+                  }
+               }
 
-            if (json['success']) {
-                $('#alert').prepend('<div class="alert alert-success alert-dismissible"><i class="fa-solid fa-circle-check"></i> ' + json['success'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+               if (json['success']) {
+                  $('#alert').prepend('<div class="alert alert-success alert-dismissible"><i class="fa-solid fa-circle-check"></i> ' + json['success'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
 
-                $('#cart').load('index.php?route=common/cart.info&language={{ language }}');
-            }
-        },
-        error: function(xhr, ajaxOptions, thrownError) {
-            console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-        }
-    });
-});
+                  $('#cart').load('index.php?route=common/cart.info&language={{ language }}');
+               }
+         },
+         error: function(xhr, ajaxOptions, thrownError) {
+               console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+         }
+      });
+   });
 
-$(document).ready(function() {
-    $('.magnific-popup').magnificPopup({
-        type: 'image',
-        delegate: 'a',
-        gallery: {
-            enabled: true
-        }
-    });
-});
-//--></script>
+</script>
 {{ footer }}
