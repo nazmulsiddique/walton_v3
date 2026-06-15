@@ -23,12 +23,14 @@ class Blueberry extends \Opencart\System\Engine\Controller {
 			'common/footer',
 			'common/home',
 			'common/pagination',
+			'common/search',
 			'information/information',
 			'product/category',
 			'product/product',
 			'product/thumb',
     		'product/quickview',
-    		'product/compare'
+    		'product/compare',
+			'product/search'
 			])) {
 			$route = 'extension/blueberry/' . $route;
 		}

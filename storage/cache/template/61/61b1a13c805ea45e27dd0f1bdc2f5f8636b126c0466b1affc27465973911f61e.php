@@ -215,14 +215,11 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                 </div>
                             </div>
                             <div class=\"cols flex justify-center\">
-                                <div class=\"header-search w-[650px] max-[1399px]:w-[550px] max-[1199px]:w-[400px] max-[991px]:w-full max-[991px]:min-w-[300px] max-[767px]:py-[15px] max-[480px]:min-w-[auto]\">
-                                    <form class=\"bb-btn-group-form flex relative max-[991px]:ml-[20px] max-[767px]:m-[0]\" action=\"#\">
-                                        <input class=\"form-control bb-search-bar bg-[#fff] block w-full min-h-[45px] h-[48px] py-[10px] pr-[10px] pl-[210px] max-[991px]:min-h-[40px] max-[991px]:h-[40px] max-[991px]:p-[10px] text-[14px] font-normal leading-[1] text-[#777] rounded-[10px] border-[1px] border-solid border-[#eee] tracking-[0.5px]\" placeholder=\"Search products...\" type=\"text\">
-                                        <button class=\"submit absolute top-[0] left-[auto] right-[0] flex items-center justify-center w-[45px] h-full bg-transparent text-[#555] text-[16px] rounded-[0] outline-[0] border-[0] padding-[0]\" type=\"submit\">
-                                            <i class=\"ri-search-line text-[18px] leading-[12px] text-[#555]\"></i>
-                                        </button>
-                                    </form>
-                                </div>
+                            ";
+        // line 112
+        yield ($context["search"] ?? null);
+        yield "
+                                
                             </div>
                             <div class=\"cols bb-icons flex justify-center\">
                                 <div class=\"bb-flex-justify max-[575px]:flex max-[575px]:justify-between\">
@@ -456,7 +453,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
      */
     public function getDebugInfo(): array
     {
-        return array (  183 => 78,  138 => 36,  132 => 33,  127 => 31,  121 => 28,  117 => 27,  111 => 24,  107 => 23,  103 => 22,  99 => 21,  95 => 20,  91 => 19,  87 => 18,  80 => 15,  74 => 13,  71 => 12,  65 => 10,  63 => 9,  59 => 8,  55 => 7,  45 => 2,  42 => 1,);
+        return array (  220 => 112,  183 => 78,  138 => 36,  132 => 33,  127 => 31,  121 => 28,  117 => 27,  111 => 24,  107 => 23,  103 => 22,  99 => 21,  95 => 20,  91 => 19,  87 => 18,  80 => 15,  74 => 13,  71 => 12,  65 => 10,  63 => 9,  59 => 8,  55 => 7,  45 => 2,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -572,14 +569,8 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                 </div>
                             </div>
                             <div class=\"cols flex justify-center\">
-                                <div class=\"header-search w-[650px] max-[1399px]:w-[550px] max-[1199px]:w-[400px] max-[991px]:w-full max-[991px]:min-w-[300px] max-[767px]:py-[15px] max-[480px]:min-w-[auto]\">
-                                    <form class=\"bb-btn-group-form flex relative max-[991px]:ml-[20px] max-[767px]:m-[0]\" action=\"#\">
-                                        <input class=\"form-control bb-search-bar bg-[#fff] block w-full min-h-[45px] h-[48px] py-[10px] pr-[10px] pl-[210px] max-[991px]:min-h-[40px] max-[991px]:h-[40px] max-[991px]:p-[10px] text-[14px] font-normal leading-[1] text-[#777] rounded-[10px] border-[1px] border-solid border-[#eee] tracking-[0.5px]\" placeholder=\"Search products...\" type=\"text\">
-                                        <button class=\"submit absolute top-[0] left-[auto] right-[0] flex items-center justify-center w-[45px] h-full bg-transparent text-[#555] text-[16px] rounded-[0] outline-[0] border-[0] padding-[0]\" type=\"submit\">
-                                            <i class=\"ri-search-line text-[18px] leading-[12px] text-[#555]\"></i>
-                                        </button>
-                                    </form>
-                                </div>
+                            {{ search }}
+                                
                             </div>
                             <div class=\"cols bb-icons flex justify-center\">
                                 <div class=\"bb-flex-justify max-[575px]:flex max-[575px]:justify-between\">

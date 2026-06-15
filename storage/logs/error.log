@@ -1979,3 +1979,191 @@ Function: require_once
 2026-06-13 15:21:22 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
 2026-06-13 15:22:11 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
 2026-06-13 15:22:11 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 09:54:17 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 487
+2026-06-14 09:54:17 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 487
+2026-06-14 10:10:06 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:10:06 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:10:22 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:10:22 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:10:39 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:10:39 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:11:53 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:11:53 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:12:18 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:12:18 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:12:28 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:12:28 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:13:05 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:13:05 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:15:39 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:15:39 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:16:04 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:16:04 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:16:21 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:16:21 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:16:35 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:16:35 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 10:27:10 - PHP Warning:  Undefined array key "" in C:\xampp\htdocs\walton_v3\catalog\controller\common\language.php on line 37
+2026-06-14 10:27:10 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\controller\common\language.php on line 37
+2026-06-14 10:27:10 - PHP Warning:  Undefined array key "" in C:\xampp\htdocs\walton_v3\catalog\controller\common\language.php on line 38
+2026-06-14 10:27:10 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\controller\common\language.php on line 38
+2026-06-14 15:07:45 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 487
+2026-06-14 15:07:45 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 487
+2026-06-14 15:39:13 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 15:39:13 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\product.php on line 1751
+2026-06-14 16:31:42 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 487
+2026-06-14 16:31:42 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 487
+2026-06-14 16:47:15 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 487
+2026-06-14 16:47:15 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 487
+2026-06-14 17:37:51 - Error: Error: Could not load template extension/blueberry/product/search!
+File: C:\xampp\htdocs\walton_v3\system\library\template\twig.php
+Line: 121
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\template.php
+Line: 58
+Class: Opencart\System\Library\Template\Twig
+Function: render
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 187
+Class: Opencart\System\Library\Template
+Function: render
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\catalog\controller\product\search.php
+Line: 445
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Product\Search
+Function: index
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-06-14 17:38:15 - Error: Error: Could not load template extension/blueberry/product/search!
+File: C:\xampp\htdocs\walton_v3\system\library\template\twig.php
+Line: 121
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\template.php
+Line: 58
+Class: Opencart\System\Library\Template\Twig
+Function: render
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 187
+Class: Opencart\System\Library\Template
+Function: render
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\catalog\controller\product\search.php
+Line: 445
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Product\Search
+Function: index
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-06-14 17:38:24 - Error: Error: Could not load template extension/blueberry/product/search!
+File: C:\xampp\htdocs\walton_v3\system\library\template\twig.php
+Line: 121
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\template.php
+Line: 58
+Class: Opencart\System\Library\Template\Twig
+Function: render
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 187
+Class: Opencart\System\Library\Template
+Function: render
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\catalog\controller\product\search.php
+Line: 445
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Product\Search
+Function: index
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-06-14 17:41:27 - Error: Error: Could not load template extension/blueberry/product/search!
+File: C:\xampp\htdocs\walton_v3\system\library\template\twig.php
+Line: 121
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\template.php
+Line: 58
+Class: Opencart\System\Library\Template\Twig
+Function: render
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 187
+Class: Opencart\System\Library\Template
+Function: render
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\catalog\controller\product\search.php
+Line: 445
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Product\Search
+Function: index
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once

@@ -66,24 +66,9 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
                 data-oc-toggle=\"ajax\">
                 <ul class=\"bb-pro-actions transition-all duration-300 ease-in-out my-0 mx-auto absolute z-[9] left-0 right-0 bottom-0 flex flex-row items-center justify-center opacity-0 group-hover:opacity-100\">
                     <!-- WISHLIST -->
-                    <li class=\"w-[35px] h-[35px] mx-[2px] flex items-center justify-center bg-white border border-gray-200 rounded-[10px] hover:bg-red-50 transition\">
-
-                        <button type=\"submit\"
-                            formaction=\"";
-        // line 21
-        yield ($context["wishlist_add"] ?? null);
-        yield "\"
-                            title=\"";
-        // line 22
-        yield ($context["button_wishlist"] ?? null);
-        yield "\"
-                            class=\"w-full h-full flex items-center justify-center\">
-
-                            <i class=\"ri-heart-line text-[18px] text-gray-600 hover:text-red-500 transition\"></i>
-                        </button>
-
-                    </li>
-
+                    ";
+        // line 29
+        yield "
                     <!-- QUICK VIEW (NO FORM ACTION NEEDED) -->
                     <li class=\"w-[35px] h-[35px] mx-[2px] flex items-center justify-center bg-white border border-gray-200 rounded-[10px] hover:bg-blue-50 transition\">
 
@@ -210,7 +195,7 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
      */
     public function getDebugInfo(): array
     {
-        return array (  186 => 103,  182 => 101,  176 => 98,  172 => 97,  169 => 96,  163 => 93,  160 => 92,  158 => 91,  155 => 90,  153 => 89,  148 => 87,  141 => 85,  133 => 79,  127 => 59,  113 => 48,  109 => 47,  95 => 36,  78 => 22,  74 => 21,  55 => 9,  50 => 7,  42 => 1,);
+        return array (  171 => 103,  167 => 101,  161 => 98,  157 => 97,  154 => 96,  148 => 93,  145 => 92,  143 => 91,  140 => 90,  138 => 89,  133 => 87,  126 => 85,  118 => 79,  112 => 59,  98 => 48,  94 => 47,  80 => 36,  71 => 29,  55 => 9,  50 => 7,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -232,7 +217,7 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
                 data-oc-toggle=\"ajax\">
                 <ul class=\"bb-pro-actions transition-all duration-300 ease-in-out my-0 mx-auto absolute z-[9] left-0 right-0 bottom-0 flex flex-row items-center justify-center opacity-0 group-hover:opacity-100\">
                     <!-- WISHLIST -->
-                    <li class=\"w-[35px] h-[35px] mx-[2px] flex items-center justify-center bg-white border border-gray-200 rounded-[10px] hover:bg-red-50 transition\">
+                    {# <li class=\"w-[35px] h-[35px] mx-[2px] flex items-center justify-center bg-white border border-gray-200 rounded-[10px] hover:bg-red-50 transition\">
 
                         <button type=\"submit\"
                             formaction=\"{{ wishlist_add }}\"
@@ -242,7 +227,7 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
                             <i class=\"ri-heart-line text-[18px] text-gray-600 hover:text-red-500 transition\"></i>
                         </button>
 
-                    </li>
+                    </li> #}
 
                     <!-- QUICK VIEW (NO FORM ACTION NEEDED) -->
                     <li class=\"w-[35px] h-[35px] mx-[2px] flex items-center justify-center bg-white border border-gray-200 rounded-[10px] hover:bg-blue-50 transition\">

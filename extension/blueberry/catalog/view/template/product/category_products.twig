@@ -1,0 +1,24 @@
+{% if products %}
+  {% for product in products %}
+    <div class="min-[1200px]:w-[25%] min-[768px]:w-[33.33%] w-[50%] max-[480px]:w-full px-[12px] mb-[24px] pro-bb-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+      {{ product }}
+    </div>
+  {% endfor %}
+
+  <div class="w-full px-[12px]">
+    <div class="bb-pro-pagination mb-[24px] flex justify-between items-center max-[575px]:flex-col max-[575px]:items-center">
+      <p class="font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem] max-[575px]:mb-[10px]">
+        {{ results }}
+      </p>
+      <div class="bb-pagination">
+        {{ pagination }}
+      </div>
+    </div>
+  </div>
+{% else %}
+  <div class="w-full px-[12px]">
+    <p class="font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem] py-[30px] text-center">
+      {{ text_no_results }}
+    </p>
+  </div>
+{% endif %}
