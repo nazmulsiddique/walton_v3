@@ -14,8 +14,8 @@ use Twig\Source;
 use Twig\Template;
 use Twig\TemplateWrapper;
 
-/* extension/blueberry/catalog/view/template/error/not_found.twig */
-class __TwigTemplate_3311bbe98be10a7241474d7230b173d4bd2cc22ed5c21dd488bbfd57ab332aea extends Template
+/* catalog/view/template/error/not_found.twig */
+class __TwigTemplate_d5192f3a50ac69e95db64042abbc2715bc20c7b59eb4bb5842b87fea50e4f68c extends Template
 {
     private Source $source;
     /**
@@ -175,6 +175,8 @@ class __TwigTemplate_3311bbe98be10a7241474d7230b173d4bd2cc22ed5c21dd488bbfd57ab3
 ";
         // line 62
         yield ($context["footer"] ?? null);
+        yield "
+";
         yield from [];
     }
 
@@ -183,7 +185,7 @@ class __TwigTemplate_3311bbe98be10a7241474d7230b173d4bd2cc22ed5c21dd488bbfd57ab3
      */
     public function getTemplateName(): string
     {
-        return "extension/blueberry/catalog/view/template/error/not_found.twig";
+        return "catalog/view/template/error/not_found.twig";
     }
 
     /**
@@ -265,6 +267,7 @@ class __TwigTemplate_3311bbe98be10a7241474d7230b173d4bd2cc22ed5c21dd488bbfd57ab3
 
 </div>
 
-{{ footer }}", "extension/blueberry/catalog/view/template/error/not_found.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\error\\not_found.twig");
+{{ footer }}
+", "catalog/view/template/error/not_found.twig", "C:\\xampp\\htdocs\\walton_v3\\catalog\\view\\template\\error\\not_found.twig");
     }
 }

@@ -24,6 +24,7 @@ class Blueberry extends \Opencart\System\Engine\Controller {
 			'common/home',
 			'common/pagination',
 			'common/search',
+			'common/menu',
 			'information/information',
 			'product/category',
 			'product/product',
@@ -44,18 +45,14 @@ class Blueberry extends \Opencart\System\Engine\Controller {
 
 public function controller(string &$route, array &$args): void {
 
-    if ($route == 'product/category') {
-        $route = 'extension/blueberry/product/category';
-    }
+		if ($route == 'product/category') {
+			$route = 'extension/blueberry/product/category';
+		}
 
-    if ($route == 'product/quickview') {
-        $route = 'extension/blueberry/product/quickview';
-    }
-}
-
-
-
-	
+		if ($route == 'product/quickview') {
+			$route = 'extension/blueberry/product/quickview';
+		}
+	}
 
 
 }

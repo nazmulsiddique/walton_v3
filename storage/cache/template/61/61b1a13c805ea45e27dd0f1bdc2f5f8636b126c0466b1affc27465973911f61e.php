@@ -149,11 +149,11 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                     <div class=\"w-full px-[12px]\">
                         <div class=\"inner-top-header flex justify-between\">
                             <div class=\"col-left-bar\">
-                                <a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins font-light text-[14px] text-[#fff] leading-[28px] tracking-[0.03rem]\">Call: 16267/08000016267</a>
+                                <a href=\"tel:08000016267\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins font-light text-[14px] text-[#fff] leading-[28px] tracking-[0.03rem]\">Call: 16267/08000016267</a>
                             </div>
                             <div class=\"col-right-bar flex\">
                                 <div class=\"cols px-[12px]\">
-                                    <a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins text-[14px] text-[#fff] font-light leading-[28px] tracking-[0.03rem]\">Contact Us</a>
+                                    <a href=\"contact\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins text-[14px] text-[#fff] font-light leading-[28px] tracking-[0.03rem]\">Contact Us</a>
                                 </div>
                                 <div class=\"cols px-[12px]\">
                                     <div class=\"custom-dropdown relative z-50\">
@@ -192,12 +192,13 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                     <div class=\"custom-dropdown relative z-[5] ml-[30px] max-[1199px]:ml-[20px]\">
                                         <a class=\"bb-dropdown-toggle transition-all duration-[0.3s] ease-in-out font-Poppins text-[12px] text-[#3d4750] relative pr-[15px] font-light leading-[28px] tracking-[0.03rem] font-medium\" href=\"#\">Support</a>
                                         <ul class=\"dropdown transition-all duration-[0.3s] ease-in-out min-w-[250px] py-[10px] px-[10px] mt-[25px] absolute z-[16] text-right opacity-[0] invisible !left-auto !right-[0] bg-[#fff] block border-[1px] border-solid border-[#eee] block rounded-[10px]\" style=\"left:auto !important; right:0 !important; text-align: end !important;\">
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">16267/08000016267</a></li>
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Store Locator </a></li>
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Customer Care</a></li>
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Request </a></li>
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Status </a></li>
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">About Product Registration </a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"tel:08000016267\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">16267/08000016267</a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"sales-outlet\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Store Locator </a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"plaza-list\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Sales Outlets</a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"sales-outlet\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Customer Care</a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"service-request\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Request </a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"csm-status\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Status </a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"about-product-registration\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">About Product Registration </a></li> 
                                         </ul>
                                     </div>
 
@@ -216,7 +217,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                             </div>
                             <div class=\"cols flex justify-center\">
                             ";
-        // line 112
+        // line 113
         yield ($context["search"] ?? null);
         yield "
                                 
@@ -225,13 +226,13 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                 <div class=\"bb-flex-justify max-[575px]:flex max-[575px]:justify-between\">
                                     <div class=\"bb-header-buttons h-full flex justify-end items-center\">
                                         <div class=\"bb-acc-drop relative\">
-                                            <a href=\"javascript:void(0)\" class=\"bb-header-btn bb-header-user dropdown-toggle bb-user-toggle transition-all duration-[0.3s] ease-in-out relative flex w-[auto] items-center whitespace-nowrap ml-[30px] max-[1199px]:ml-[20px] max-[767px]:ml-[0]\" title=\"Account\">
+                                            <a href=\"about\" class=\"bb-header-btn bb-header-user dropdown-toggle bb-user-toggle transition-all duration-[0.3s] ease-in-out relative flex w-[auto] items-center whitespace-nowrap ml-[30px] max-[1199px]:ml-[20px] max-[767px]:ml-[0]\" title=\"Account\">
                                                 <div class=\"bb-btn-desc flex flex-col ml-[10px] max-[1199px]:hidden\">
                                                     <span class=\"bb-btn-title font-Poppins transition-all duration-[0.3s] ease-in-out text-[12px] leading-[1] text-[#3d4750] mb-[4px] tracking-[0.6px] capitalize font-medium whitespace-nowrap\">About Us</span>
                                                 </div>
                                             </a>
                                         </div>
-                                        <a href=\"javascript:void(0)\" class=\"bb-header-btn bb-wish-toggle transition-all duration-[0.3s] ease-in-out relative flex w-[auto] items-center ml-[30px] max-[1199px]:ml-[20px]\" title=\"Wishlist\">
+                                        <a href=\"blog\" class=\"bb-header-btn bb-wish-toggle transition-all duration-[0.3s] ease-in-out relative flex w-[auto] items-center ml-[30px] max-[1199px]:ml-[20px]\" title=\"Wishlist\">
                                             <div class=\"bb-btn-desc flex flex-col ml-[10px] max-[1199px]:hidden\">
                                                 <span class=\"bb-btn-title font-Poppins transition-all duration-[0.3s] ease-in-out text-[12px] leading-[1] text-[#3d4750] mb-[4px] tracking-[0.6px] capitalize font-medium whitespace-nowrap\">Blog</span>
                                             </div>
@@ -239,19 +240,15 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                          <div class=\"custom-dropdown relative z-[5] ml-[30px] max-[1199px]:ml-[20px] hidden min-[991px]:flex\">
                                             <a class=\"bb-dropdown-toggle transition-all duration-[0.3s] ease-in-out font-Poppins text-[12px] text-[#3d4750] relative pr-[15px] font-light leading-[28px] tracking-[0.03rem] font-medium\" href=\"#\">Support</a>
                                             <ul class=\"dropdown transition-all duration-[0.3s] ease-in-out min-w-[250px] py-[10px] px-[10px] mt-[25px] absolute z-[16] text-right opacity-[0] invisible !left-auto !right-[0] bg-[#fff] block border-[1px] border-solid border-[#eee] block rounded-[10px]\" style=\"left:auto !important; right:0 !important; text-align: end !important;\">
-                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">16267/08000016267</a></li>
-                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Store Locator </a></li>
-                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Customer Care</a></li>
-                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Request </a></li>
-                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Status </a></li>
-                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">About Product Registration </a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"tel:08000016267\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">16267/08000016267</a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"sales-outlet\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Store Locator </a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"plaza-list\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Sales Outlets </a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"sales-outlet\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Customer Care</a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"service-request\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Request </a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"csm-status\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Status </a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"about-product-registration\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">About Product Registration </a></li>
                                             </ul>
                                         </div>
-                                        <!-- <a href=\"javascript:void(0)\" class=\"bb-header-btn bb-cart-toggle transition-all duration-[0.3s] ease-in-out relative flex w-[auto] items-center ml-[30px] max-[1199px]:ml-[20px]\" title=\"Cart\">
-                                            <div class=\"bb-btn-desc flex flex-col ml-[10px] max-[1199px]:hidden\">
-                                                <span class=\"bb-btn-title font-Poppins transition-all duration-[0.3s] ease-in-out text-[12px] leading-[1] text-[#3d4750] mb-[4px] tracking-[0.6px] capitalize font-medium whitespace-nowrap\">Support</span>
-                                            </div>
-                                        </a> -->
                                         <a href=\"javascript:void(0)\" class=\"bb-toggle-menu  hidden md:flex lg:hidden ml-[20px]\">
                                             <div class=\"header-icon\">
                                                 <i class=\"ri-menu-3-fill text-[22px] text-[#6c7fd8]\"></i>
@@ -287,39 +284,10 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                     <li class=\"nav-item bb-main-dropdown flex items-center mr-[45px]\">
                                         <a class=\"nav-link bb-dropdown-item font-Poppins relative p-[0] leading-[28px] text-[15px] font-medium text-[#3d4750] block tracking-[0.03rem]\" href=\"javascript:void(0)\">Categories</a>
                                         <ul class=\"mega-menu min-w-full transition-all duration-[0.3s] ease-in-out mt-[25px] pl-[30px] absolute top-[40px] z-[16] text-left opacity-[0] invisible left-[0] right-[auto] bg-[#fff] border-[1px] border-solid border-[#eee] flex flex-col rounded-[10px]\">
-                                            <li class=\"m-[0] flex items-start w-full\">
-                                                <ul class=\"mega-block w-[calc(25%-30px)] mr-[30px] py-[15px]\">
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"catalog/refrigerator-freezer/\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Refrigerator & Freezer</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Television</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Air Conditioner</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Mobile</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Computer</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">E-Bike</a></li>
-                                                </ul>
-                                                <ul class=\"mega-block w-[calc(25%-30px)] mr-[30px] py-[15px]\">
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">PCB</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Microwave and Electric Oven</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Blender and Mixer Grinder</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Washing Machine</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Water Heater (Geyser)</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Home Appliances</a></li>
-                                                </ul>
-                                                <ul class=\"mega-block w-[calc(25%-30px)] mr-[30px] py-[15px]\">
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Hardware Items</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Kitchen Appliances</a> </li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Fan</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">LED Light</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Electrical Accessories</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Cables</a></li>
-                                                </ul>
-                                                <ul class=\"mega-block w-[calc(25%-30px)] mr-[30px] py-[15px]\">
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Lift</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Compressor</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Battery</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Hardware & Sanitary Solutions</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Industrial Solutions</a></li>
-                                                </ul>
-                                            </li>
+                                            ";
+        // line 178
+        yield ($context["menu"] ?? null);
+        yield "
                                         </ul>
                                     </li>
                                     <li class=\"nav-item flex items-center mr-[45px]\">
@@ -349,53 +317,26 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                 <div class=\"bb-menu-content\">
                     <ul>
                         <li class=\"relative\">
-                            <a href=\"index.php\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">Home</a>
+                            <a href=\"";
+        // line 208
+        yield ($context["base"] ?? null);
+        yield "\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">Home</a>
                         </li>
                         <li class=\"relative\">
                             <a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">Categories</a>
-                            <ul class=\"sub-menu w-full min-w-[auto] p-[0] mb-[10px] static hidden visible opacity-[1]\">
-                                <li class=\"relative\">
-                                    <a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out mb-[0] pl-[15px] pr-[0] py-[12px] capitalize block text-[14px] font-normal text-[#686e7d]\">Refrigerator & Freezer </a>
-                                    <ul class=\"sub-menu w-full min-w-[auto] p-[0] mb-[10px] static hidden visible opacity-[1]\">
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">No-Frost Refrigerator </a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Direct Cool Refrigerator</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Freezer</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Beverage Cooler</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Upcoming Refrigerator & Freezer</a></li>
-                                    </ul>
-                                </li>
-                                <li class=\"relative\">
-                                    <a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out mb-[0] pl-[15px] pr-[0] py-[12px] capitalize block text-[14px] font-normal text-[#686e7d]\">Television</a>
-                                    <ul class=\"sub-menu w-full min-w-[auto] p-[0] mb-[10px] static hidden visible opacity-[1]\">
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">All TV</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">4K Ultra HD TV</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">SMART TV</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Basic LED TV</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\"> TV Accessories</a></li>
-                                    </ul>
-                                </li>
-                                <li class=\"relative\">
-                                    <a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out mb-[0] pl-[15px] pr-[0] py-[12px] capitalize block text-[14px] font-normal text-[#686e7d]\">Air Conditioner</a>
-                                    <ul class=\"sub-menu w-full min-w-[auto] p-[0] mb-[10px] static hidden visible opacity-[1]\">
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\"> Split AC</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Light Commercial AC</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Industrial HVAC</a></li>
-                                    </ul>
-                                </li>
-                                <li class=\"relative\">
-                                    <a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out mb-[0] pl-[15px] pr-[0] py-[12px] capitalize block text-[14px] font-normal text-[#686e7d]\">Mobile</a>
-                                    <ul class=\"sub-menu w-full min-w-[auto] p-[0] mb-[10px] static hidden visible opacity-[1]\">
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Smart Phone</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Feature Phone</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            ";
+        // line 213
+        yield "                                ";
+        yield ($context["menu"] ?? null);
+        yield "
+                            ";
+        // line 215
+        yield "                        </li>
+                        <li class=\"relative\">
+                            <a href=\"https://waltonplaza.com.bd\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">Walton Plaza</a>
                         </li>
                         <li class=\"relative\">
-                            <a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">Walton Plaza</a>
-                        </li>
-                        <li class=\"relative\">
-                            <a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">How to & Tips</a>
+                            <a href=\"how-to-and-tips\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">How to & Tips</a>
                         </li>
                     </ul>
                 </div>
@@ -404,17 +345,53 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                     <div class=\"header-res-social mt-[30px]\">
                         <div class=\"header-top-social\">
                             <ul class=\"flex flex-row justify-center mb-[0]\">
-                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center bg-[#3d4750] rounded-[10px] mr-[.5rem]\">
-                                    <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out\"><i class=\"ri-facebook-fill text-[#fff] text-[15px]\"></i></a>
+                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center mr-[.5rem]\">
+                                    <a href=\"https://www.facebook.com/Waltonbd\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal bg-[#002453] rounded-full\">
+                                        <img src=\"";
+        // line 231
+        yield ($context["base"] ?? null);
+        yield "extension/blueberry/catalog/view/img/social-media/fb.png\" alt=\"Facebook\" />
+                                            </a>
                                 </li>
-                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center bg-[#3d4750] rounded-[10px] mr-[.5rem]\">
-                                    <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out\"><i class=\"ri-twitter-fill text-[#fff] text-[15px]\"></i></a>
+                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center mr-[.5rem]\">
+                                    <a href=\"https://x.com/WaltonBD_\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal bg-[#002453] rounded-full\">
+                                            <img src=\"";
+        // line 236
+        yield ($context["base"] ?? null);
+        yield "extension/blueberry/catalog/view/img/social-media/twitter.png\" alt=\"Twitter\" />
+                                            </a>
                                 </li>
-                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center bg-[#3d4750] rounded-[10px] mr-[.5rem]\">
-                                    <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out\"><i class=\"ri-instagram-line text-[#fff] text-[15px]\"></i></a>
+                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center mr-[.5rem]\">
+                                    <a href=\"https://www.youtube.com/user/WaltonHil\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal bg-[#002453] rounded-full\">
+                                        <img src=\"";
+        // line 241
+        yield ($context["base"] ?? null);
+        yield "extension/blueberry/catalog/view/img/social-media/youtube.png\" alt=\"YouTube\" />
+                                    </a>
                                 </li>
-                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center bg-[#3d4750] rounded-[10px]\">
-                                    <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out\"><i class=\"ri-linkedin-fill text-[#fff] text-[15px]\"></i></a>
+                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center mr-[.5rem]\">
+                                    <a href=\"https://www.instagram.com/walton.refrigerator/\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal bg-[#002453] rounded-full\">
+                                        <img src=\"";
+        // line 246
+        yield ($context["base"] ?? null);
+        yield "extension/blueberry/catalog/view/img/social-media/instagram.png\" alt=\"Instagram\" />
+                                    </a>
+                                </li>
+                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center mr-[.5rem]\">
+                                    <a href=\"https://www.linkedin.com/company/walton-group/\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal bg-[#002453] rounded-full\">
+                                        <img src=\"";
+        // line 251
+        yield ($context["base"] ?? null);
+        yield "extension/blueberry/catalog/view/img/social-media/linkedin.png\" alt=\"LinkedIn\" />
+                                    </a>
+                                </li>
+                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center\">
+                                    <a href=\"https://www.pinterest.com/waltongroupBD/\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal bg-[#002453] rounded-full\">
+                                        <img src=\"";
+        // line 256
+        yield ($context["base"] ?? null);
+        yield "extension/blueberry/catalog/view/img/social-media/printerest.png\" alt=\"Pinterest\" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -428,7 +405,9 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
 
 
 
-";
+    ";
+        // line 271
+        yield from $this->loadTemplate("extension/blueberry/catalog/view/template/common/category_popup.twig", "extension/blueberry/catalog/view/template/common/header.twig", 271)->unwrap()->yield($context);
         yield from [];
     }
 
@@ -453,7 +432,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
      */
     public function getDebugInfo(): array
     {
-        return array (  220 => 112,  183 => 78,  138 => 36,  132 => 33,  127 => 31,  121 => 28,  117 => 27,  111 => 24,  107 => 23,  103 => 22,  99 => 21,  95 => 20,  91 => 19,  87 => 18,  80 => 15,  74 => 13,  71 => 12,  65 => 10,  63 => 9,  59 => 8,  55 => 7,  45 => 2,  42 => 1,);
+        return array (  410 => 271,  392 => 256,  384 => 251,  376 => 246,  368 => 241,  360 => 236,  352 => 231,  334 => 215,  329 => 213,  322 => 208,  289 => 178,  221 => 113,  183 => 78,  138 => 36,  132 => 33,  127 => 31,  121 => 28,  117 => 27,  111 => 24,  107 => 23,  103 => 22,  99 => 21,  95 => 20,  91 => 19,  87 => 18,  80 => 15,  74 => 13,  71 => 12,  65 => 10,  63 => 9,  59 => 8,  55 => 7,  45 => 2,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -506,11 +485,11 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                     <div class=\"w-full px-[12px]\">
                         <div class=\"inner-top-header flex justify-between\">
                             <div class=\"col-left-bar\">
-                                <a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins font-light text-[14px] text-[#fff] leading-[28px] tracking-[0.03rem]\">Call: 16267/08000016267</a>
+                                <a href=\"tel:08000016267\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins font-light text-[14px] text-[#fff] leading-[28px] tracking-[0.03rem]\">Call: 16267/08000016267</a>
                             </div>
                             <div class=\"col-right-bar flex\">
                                 <div class=\"cols px-[12px]\">
-                                    <a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins text-[14px] text-[#fff] font-light leading-[28px] tracking-[0.03rem]\">Contact Us</a>
+                                    <a href=\"contact\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins text-[14px] text-[#fff] font-light leading-[28px] tracking-[0.03rem]\">Contact Us</a>
                                 </div>
                                 <div class=\"cols px-[12px]\">
                                     <div class=\"custom-dropdown relative z-50\">
@@ -546,12 +525,13 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                     <div class=\"custom-dropdown relative z-[5] ml-[30px] max-[1199px]:ml-[20px]\">
                                         <a class=\"bb-dropdown-toggle transition-all duration-[0.3s] ease-in-out font-Poppins text-[12px] text-[#3d4750] relative pr-[15px] font-light leading-[28px] tracking-[0.03rem] font-medium\" href=\"#\">Support</a>
                                         <ul class=\"dropdown transition-all duration-[0.3s] ease-in-out min-w-[250px] py-[10px] px-[10px] mt-[25px] absolute z-[16] text-right opacity-[0] invisible !left-auto !right-[0] bg-[#fff] block border-[1px] border-solid border-[#eee] block rounded-[10px]\" style=\"left:auto !important; right:0 !important; text-align: end !important;\">
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">16267/08000016267</a></li>
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Store Locator </a></li>
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Customer Care</a></li>
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Request </a></li>
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Status </a></li>
-                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">About Product Registration </a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"tel:08000016267\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">16267/08000016267</a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"sales-outlet\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Store Locator </a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"plaza-list\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Sales Outlets</a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"sales-outlet\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Customer Care</a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"service-request\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Request </a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"csm-status\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Status </a></li>
+                                            <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"about-product-registration\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">About Product Registration </a></li> 
                                         </ul>
                                     </div>
 
@@ -576,13 +556,13 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                 <div class=\"bb-flex-justify max-[575px]:flex max-[575px]:justify-between\">
                                     <div class=\"bb-header-buttons h-full flex justify-end items-center\">
                                         <div class=\"bb-acc-drop relative\">
-                                            <a href=\"javascript:void(0)\" class=\"bb-header-btn bb-header-user dropdown-toggle bb-user-toggle transition-all duration-[0.3s] ease-in-out relative flex w-[auto] items-center whitespace-nowrap ml-[30px] max-[1199px]:ml-[20px] max-[767px]:ml-[0]\" title=\"Account\">
+                                            <a href=\"about\" class=\"bb-header-btn bb-header-user dropdown-toggle bb-user-toggle transition-all duration-[0.3s] ease-in-out relative flex w-[auto] items-center whitespace-nowrap ml-[30px] max-[1199px]:ml-[20px] max-[767px]:ml-[0]\" title=\"Account\">
                                                 <div class=\"bb-btn-desc flex flex-col ml-[10px] max-[1199px]:hidden\">
                                                     <span class=\"bb-btn-title font-Poppins transition-all duration-[0.3s] ease-in-out text-[12px] leading-[1] text-[#3d4750] mb-[4px] tracking-[0.6px] capitalize font-medium whitespace-nowrap\">About Us</span>
                                                 </div>
                                             </a>
                                         </div>
-                                        <a href=\"javascript:void(0)\" class=\"bb-header-btn bb-wish-toggle transition-all duration-[0.3s] ease-in-out relative flex w-[auto] items-center ml-[30px] max-[1199px]:ml-[20px]\" title=\"Wishlist\">
+                                        <a href=\"blog\" class=\"bb-header-btn bb-wish-toggle transition-all duration-[0.3s] ease-in-out relative flex w-[auto] items-center ml-[30px] max-[1199px]:ml-[20px]\" title=\"Wishlist\">
                                             <div class=\"bb-btn-desc flex flex-col ml-[10px] max-[1199px]:hidden\">
                                                 <span class=\"bb-btn-title font-Poppins transition-all duration-[0.3s] ease-in-out text-[12px] leading-[1] text-[#3d4750] mb-[4px] tracking-[0.6px] capitalize font-medium whitespace-nowrap\">Blog</span>
                                             </div>
@@ -590,19 +570,15 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                          <div class=\"custom-dropdown relative z-[5] ml-[30px] max-[1199px]:ml-[20px] hidden min-[991px]:flex\">
                                             <a class=\"bb-dropdown-toggle transition-all duration-[0.3s] ease-in-out font-Poppins text-[12px] text-[#3d4750] relative pr-[15px] font-light leading-[28px] tracking-[0.03rem] font-medium\" href=\"#\">Support</a>
                                             <ul class=\"dropdown transition-all duration-[0.3s] ease-in-out min-w-[250px] py-[10px] px-[10px] mt-[25px] absolute z-[16] text-right opacity-[0] invisible !left-auto !right-[0] bg-[#fff] block border-[1px] border-solid border-[#eee] block rounded-[10px]\" style=\"left:auto !important; right:0 !important; text-align: end !important;\">
-                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">16267/08000016267</a></li>
-                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Store Locator </a></li>
-                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Customer Care</a></li>
-                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Request </a></li>
-                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Status </a></li>
-                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">About Product Registration </a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"tel:08000016267\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">16267/08000016267</a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"sales-outlet\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Store Locator </a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"plaza-list\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Sales Outlets </a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"sales-outlet\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Customer Care</a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"service-request\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Request </a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"csm-status\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Service Status </a></li>
+                                                <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"about-product-registration\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">About Product Registration </a></li>
                                             </ul>
                                         </div>
-                                        <!-- <a href=\"javascript:void(0)\" class=\"bb-header-btn bb-cart-toggle transition-all duration-[0.3s] ease-in-out relative flex w-[auto] items-center ml-[30px] max-[1199px]:ml-[20px]\" title=\"Cart\">
-                                            <div class=\"bb-btn-desc flex flex-col ml-[10px] max-[1199px]:hidden\">
-                                                <span class=\"bb-btn-title font-Poppins transition-all duration-[0.3s] ease-in-out text-[12px] leading-[1] text-[#3d4750] mb-[4px] tracking-[0.6px] capitalize font-medium whitespace-nowrap\">Support</span>
-                                            </div>
-                                        </a> -->
                                         <a href=\"javascript:void(0)\" class=\"bb-toggle-menu  hidden md:flex lg:hidden ml-[20px]\">
                                             <div class=\"header-icon\">
                                                 <i class=\"ri-menu-3-fill text-[22px] text-[#6c7fd8]\"></i>
@@ -638,39 +614,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                     <li class=\"nav-item bb-main-dropdown flex items-center mr-[45px]\">
                                         <a class=\"nav-link bb-dropdown-item font-Poppins relative p-[0] leading-[28px] text-[15px] font-medium text-[#3d4750] block tracking-[0.03rem]\" href=\"javascript:void(0)\">Categories</a>
                                         <ul class=\"mega-menu min-w-full transition-all duration-[0.3s] ease-in-out mt-[25px] pl-[30px] absolute top-[40px] z-[16] text-left opacity-[0] invisible left-[0] right-[auto] bg-[#fff] border-[1px] border-solid border-[#eee] flex flex-col rounded-[10px]\">
-                                            <li class=\"m-[0] flex items-start w-full\">
-                                                <ul class=\"mega-block w-[calc(25%-30px)] mr-[30px] py-[15px]\">
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"catalog/refrigerator-freezer/\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Refrigerator & Freezer</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Television</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Air Conditioner</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Mobile</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Computer</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">E-Bike</a></li>
-                                                </ul>
-                                                <ul class=\"mega-block w-[calc(25%-30px)] mr-[30px] py-[15px]\">
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">PCB</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Microwave and Electric Oven</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Blender and Mixer Grinder</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Washing Machine</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Water Heater (Geyser)</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Home Appliances</a></li>
-                                                </ul>
-                                                <ul class=\"mega-block w-[calc(25%-30px)] mr-[30px] py-[15px]\">
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Hardware Items</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Kitchen Appliances</a> </li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Fan</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">LED Light</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Electrical Accessories</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Cables</a></li>
-                                                </ul>
-                                                <ul class=\"mega-block w-[calc(25%-30px)] mr-[30px] py-[15px]\">
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Lift</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Compressor</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Battery</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Hardware & Sanitary Solutions</a></li>
-                                                    <li class=\"flex items-center leading-[28px]\"><a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] leading-[22px] text-[14px] font-normal tracking-[0.03rem] text-[#686e7d] hover:text-[#6c7fd8] capitalize\">Industrial Solutions</a></li>
-                                                </ul>
-                                            </li>
+                                            {{menu}}
                                         </ul>
                                     </li>
                                     <li class=\"nav-item flex items-center mr-[45px]\">
@@ -700,53 +644,19 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                 <div class=\"bb-menu-content\">
                     <ul>
                         <li class=\"relative\">
-                            <a href=\"index.php\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">Home</a>
+                            <a href=\"{{base}}\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">Home</a>
                         </li>
                         <li class=\"relative\">
                             <a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">Categories</a>
-                            <ul class=\"sub-menu w-full min-w-[auto] p-[0] mb-[10px] static hidden visible opacity-[1]\">
-                                <li class=\"relative\">
-                                    <a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out mb-[0] pl-[15px] pr-[0] py-[12px] capitalize block text-[14px] font-normal text-[#686e7d]\">Refrigerator & Freezer </a>
-                                    <ul class=\"sub-menu w-full min-w-[auto] p-[0] mb-[10px] static hidden visible opacity-[1]\">
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">No-Frost Refrigerator </a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Direct Cool Refrigerator</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Freezer</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Beverage Cooler</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Upcoming Refrigerator & Freezer</a></li>
-                                    </ul>
-                                </li>
-                                <li class=\"relative\">
-                                    <a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out mb-[0] pl-[15px] pr-[0] py-[12px] capitalize block text-[14px] font-normal text-[#686e7d]\">Television</a>
-                                    <ul class=\"sub-menu w-full min-w-[auto] p-[0] mb-[10px] static hidden visible opacity-[1]\">
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">All TV</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">4K Ultra HD TV</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">SMART TV</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Basic LED TV</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\"> TV Accessories</a></li>
-                                    </ul>
-                                </li>
-                                <li class=\"relative\">
-                                    <a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out mb-[0] pl-[15px] pr-[0] py-[12px] capitalize block text-[14px] font-normal text-[#686e7d]\">Air Conditioner</a>
-                                    <ul class=\"sub-menu w-full min-w-[auto] p-[0] mb-[10px] static hidden visible opacity-[1]\">
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\"> Split AC</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Light Commercial AC</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Industrial HVAC</a></li>
-                                    </ul>
-                                </li>
-                                <li class=\"relative\">
-                                    <a href=\"javascript:void(0)\" class=\"transition-all duration-[0.3s] ease-in-out mb-[0] pl-[15px] pr-[0] py-[12px] capitalize block text-[14px] font-normal text-[#686e7d]\">Mobile</a>
-                                    <ul class=\"sub-menu w-full min-w-[auto] p-[0] mb-[10px] static hidden visible opacity-[1]\">
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Smart Phone</a></li>
-                                        <li class=\"relative\"><a href=\"\" class=\"font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[30px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]\">Feature Phone</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            {# <ul class=\"sub-menu w-full min-w-[auto] p-[0] mb-[10px] static hidden visible opacity-[1]\"> #}
+                                {{menu}}
+                            {# </ul> #}
                         </li>
                         <li class=\"relative\">
-                            <a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">Walton Plaza</a>
+                            <a href=\"https://waltonplaza.com.bd\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">Walton Plaza</a>
                         </li>
                         <li class=\"relative\">
-                            <a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">How to & Tips</a>
+                            <a href=\"how-to-and-tips\" class=\"transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]\">How to & Tips</a>
                         </li>
                     </ul>
                 </div>
@@ -755,17 +665,35 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                     <div class=\"header-res-social mt-[30px]\">
                         <div class=\"header-top-social\">
                             <ul class=\"flex flex-row justify-center mb-[0]\">
-                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center bg-[#3d4750] rounded-[10px] mr-[.5rem]\">
-                                    <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out\"><i class=\"ri-facebook-fill text-[#fff] text-[15px]\"></i></a>
+                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center mr-[.5rem]\">
+                                    <a href=\"https://www.facebook.com/Waltonbd\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal bg-[#002453] rounded-full\">
+                                        <img src=\"{{ base }}extension/blueberry/catalog/view/img/social-media/fb.png\" alt=\"Facebook\" />
+                                            </a>
                                 </li>
-                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center bg-[#3d4750] rounded-[10px] mr-[.5rem]\">
-                                    <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out\"><i class=\"ri-twitter-fill text-[#fff] text-[15px]\"></i></a>
+                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center mr-[.5rem]\">
+                                    <a href=\"https://x.com/WaltonBD_\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal bg-[#002453] rounded-full\">
+                                            <img src=\"{{ base }}extension/blueberry/catalog/view/img/social-media/twitter.png\" alt=\"Twitter\" />
+                                            </a>
                                 </li>
-                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center bg-[#3d4750] rounded-[10px] mr-[.5rem]\">
-                                    <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out\"><i class=\"ri-instagram-line text-[#fff] text-[15px]\"></i></a>
+                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center mr-[.5rem]\">
+                                    <a href=\"https://www.youtube.com/user/WaltonHil\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal bg-[#002453] rounded-full\">
+                                        <img src=\"{{ base }}extension/blueberry/catalog/view/img/social-media/youtube.png\" alt=\"YouTube\" />
+                                    </a>
                                 </li>
-                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center bg-[#3d4750] rounded-[10px]\">
-                                    <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out\"><i class=\"ri-linkedin-fill text-[#fff] text-[15px]\"></i></a>
+                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center mr-[.5rem]\">
+                                    <a href=\"https://www.instagram.com/walton.refrigerator/\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal bg-[#002453] rounded-full\">
+                                        <img src=\"{{ base }}extension/blueberry/catalog/view/img/social-media/instagram.png\" alt=\"Instagram\" />
+                                    </a>
+                                </li>
+                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center mr-[.5rem]\">
+                                    <a href=\"https://www.linkedin.com/company/walton-group/\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal bg-[#002453] rounded-full\">
+                                        <img src=\"{{ base }}extension/blueberry/catalog/view/img/social-media/linkedin.png\" alt=\"LinkedIn\" />
+                                    </a>
+                                </li>
+                                <li class=\"list-inline-item w-[30px] h-[30px] flex items-center justify-center\">
+                                    <a href=\"https://www.pinterest.com/waltongroupBD/\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal bg-[#002453] rounded-full\">
+                                        <img src=\"{{ base }}extension/blueberry/catalog/view/img/social-media/printerest.png\" alt=\"Pinterest\" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -779,6 +707,6 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
 
 
 
-", "extension/blueberry/catalog/view/template/common/header.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\common\\header.twig");
+    {% include 'extension/blueberry/catalog/view/template/common/category_popup.twig' %}", "extension/blueberry/catalog/view/template/common/header.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\common\\header.twig");
     }
 }

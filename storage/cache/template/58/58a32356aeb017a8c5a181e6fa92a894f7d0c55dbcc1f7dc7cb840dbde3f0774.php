@@ -58,37 +58,40 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
                                 <div class=\"bb-footer-links bb-footer-dropdown hidden max-[991px]:mb-[35px]\">
                                     <ul class=\"align-items-center\">
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center mb-[16px] max-[991px]:mb-[15px] before:content-[''] before:w-[6px] before:h-[6px] before:bg-[#fff] before:rounded-full before:mr-[8px]\">
-                                        <a href=\"\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
+                                        <a href=\"";
+        // line 17
+        yield ($context["base"] ?? null);
+        yield "\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
                                             Home
                                         </a>
                                         </li>
 
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center mb-[16px] max-[991px]:mb-[15px] before:content-[''] before:w-[6px] before:h-[6px] before:bg-[#fff] before:rounded-full before:mr-[8px]\">
-                                        <a href=\"shop-banner-left-sidebar-col-3.html\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
+                                        <a href=\"about\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
                                             About
                                         </a>
                                         </li>
 
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center mb-[16px] max-[991px]:mb-[15px] before:content-[''] before:w-[6px] before:h-[6px] before:bg-[#fff] before:rounded-full before:mr-[8px]\">
-                                        <a href=\"shop-full-width-col-5.html\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
+                                        <a href=\"Message-from-Chairman\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
                                             Message from Chairman
                                         </a>
                                         </li>
 
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center mb-[16px] max-[991px]:mb-[15px] before:content-[''] before:w-[6px] before:h-[6px] before:bg-[#fff] before:rounded-full before:mr-[8px]\">
-                                        <a href=\"shop-list-left-sidebar.html\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
+                                        <a href=\"Global-Operation\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
                                             Global Operation
                                         </a>
                                         </li>
 
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center mb-[16px] max-[991px]:mb-[15px] before:content-[''] before:w-[6px] before:h-[6px] before:bg-[#fff] before:rounded-full before:mr-[8px]\">
-                                        <a href=\"shop-list-full-col-2.html\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
+                                        <a href=\"certificates\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
                                             Certificates
                                         </a>
                                         </li>
 
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center before:content-[''] before:w-[6px] before:h-[6px] before:bg-[#fff] before:rounded-full before:mr-[8px]\">
-                                        <a href=\"shop-banner-right-sidebar-col-4.html\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
+                                        <a href=\"accreditation\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
                                             Accreditation
                                         </a>
                                         </li>
@@ -195,7 +198,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
                                     <div class=\"bb-footer-links bb-footer-dropdown hidden max-[991px]:mb-[35px]\">
                                         <ul class=\"align-items-center flex flex-wrap items-center lg:justify-end\">
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center pr-[5px]\">
-                                            <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
+                                            <a href=\"https://www.facebook.com/Waltonbd\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
                                             <img src=\"";
         // line 155
         yield ($context["base"] ?? null);
@@ -203,7 +206,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
                                             </a>
                                         </li>
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center pr-[5px]\">
-                                            <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
+                                            <a href=\"https://x.com/WaltonBD_\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
                                             <img src=\"";
         // line 160
         yield ($context["base"] ?? null);
@@ -211,7 +214,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
                                             </a>
                                         </li>
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center pr-[5px]\">
-                                            <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
+                                            <a href=\"https://www.youtube.com/user/WaltonHil\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
                                             <img src=\"";
         // line 165
         yield ($context["base"] ?? null);
@@ -219,7 +222,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
                                             </a>
                                         </li>
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center pr-[5px]\">
-                                            <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
+                                            <a href=\"https://www.instagram.com/walton.refrigerator/\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
                                             <img src=\"";
         // line 170
         yield ($context["base"] ?? null);
@@ -227,7 +230,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
                                             </a>
                                         </li>
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center pr-[5px]\">
-                                            <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
+                                            <a href=\"linkedin.com/company/walon-group/\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
                                             <img src=\"";
         // line 175
         yield ($context["base"] ?? null);
@@ -235,7 +238,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
                                             </a>
                                         </li>
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center pr-[5px]\">
-                                            <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
+                                            <a href=\"https://www.pinterest.com/waltongroupBD/\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
                                             <img src=\"";
         // line 180
         yield ($context["base"] ?? null);
@@ -268,11 +271,8 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
         </div>
     </footer>
 
-    ";
-        // line 209
-        yield from $this->loadTemplate("extension/blueberry/catalog/view/template/common/category_popup.twig", "extension/blueberry/catalog/view/template/common/footer.twig", 209)->unwrap()->yield($context);
-        // line 210
-        yield "
+
+
     <!-- Back to top  -->
     <a href=\"#Top\" class=\"back-to-top result-placeholder transition-all duration-[0.3s] ease-in-out w-[38px] h-[38px] hidden fixed right-[15px] bottom-[15px] z-[10] rounded-[20px] cursor-pointer bg-[#fff] text-[#6c7fd8] border-[1px] border-solid border-[#6c7fd8] text-center text-[22px] leading-[1.6]\">
         <i class=\"ri-arrow-up-line text-[20px]\"></i>
@@ -360,7 +360,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
      */
     public function getDebugInfo(): array
     {
-        return array (  334 => 237,  330 => 236,  326 => 235,  320 => 232,  316 => 231,  312 => 230,  308 => 229,  304 => 228,  300 => 227,  296 => 226,  292 => 225,  275 => 210,  273 => 209,  241 => 180,  233 => 175,  225 => 170,  217 => 165,  209 => 160,  201 => 155,  47 => 4,  42 => 1,);
+        return array (  334 => 237,  330 => 236,  326 => 235,  320 => 232,  316 => 231,  312 => 230,  308 => 229,  304 => 228,  300 => 227,  296 => 226,  292 => 225,  244 => 180,  236 => 175,  228 => 170,  220 => 165,  212 => 160,  204 => 155,  63 => 17,  47 => 4,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -381,37 +381,37 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
                                 <div class=\"bb-footer-links bb-footer-dropdown hidden max-[991px]:mb-[35px]\">
                                     <ul class=\"align-items-center\">
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center mb-[16px] max-[991px]:mb-[15px] before:content-[''] before:w-[6px] before:h-[6px] before:bg-[#fff] before:rounded-full before:mr-[8px]\">
-                                        <a href=\"\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
+                                        <a href=\"{{base}}\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
                                             Home
                                         </a>
                                         </li>
 
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center mb-[16px] max-[991px]:mb-[15px] before:content-[''] before:w-[6px] before:h-[6px] before:bg-[#fff] before:rounded-full before:mr-[8px]\">
-                                        <a href=\"shop-banner-left-sidebar-col-3.html\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
+                                        <a href=\"about\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
                                             About
                                         </a>
                                         </li>
 
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center mb-[16px] max-[991px]:mb-[15px] before:content-[''] before:w-[6px] before:h-[6px] before:bg-[#fff] before:rounded-full before:mr-[8px]\">
-                                        <a href=\"shop-full-width-col-5.html\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
+                                        <a href=\"Message-from-Chairman\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
                                             Message from Chairman
                                         </a>
                                         </li>
 
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center mb-[16px] max-[991px]:mb-[15px] before:content-[''] before:w-[6px] before:h-[6px] before:bg-[#fff] before:rounded-full before:mr-[8px]\">
-                                        <a href=\"shop-list-left-sidebar.html\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
+                                        <a href=\"Global-Operation\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
                                             Global Operation
                                         </a>
                                         </li>
 
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center mb-[16px] max-[991px]:mb-[15px] before:content-[''] before:w-[6px] before:h-[6px] before:bg-[#fff] before:rounded-full before:mr-[8px]\">
-                                        <a href=\"shop-list-full-col-2.html\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
+                                        <a href=\"certificates\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
                                             Certificates
                                         </a>
                                         </li>
 
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center before:content-[''] before:w-[6px] before:h-[6px] before:bg-[#fff] before:rounded-full before:mr-[8px]\">
-                                        <a href=\"shop-banner-right-sidebar-col-4.html\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
+                                        <a href=\"accreditation\" class=\"transition-all duration-300 ease-in-out font-Poppins text-[14px] leading-[20px] hover:text-[#6c7fd8] inline-block font-normal\">
                                             Accreditation
                                         </a>
                                         </li>
@@ -518,32 +518,32 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
                                     <div class=\"bb-footer-links bb-footer-dropdown hidden max-[991px]:mb-[35px]\">
                                         <ul class=\"align-items-center flex flex-wrap items-center lg:justify-end\">
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center pr-[5px]\">
-                                            <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
+                                            <a href=\"https://www.facebook.com/Waltonbd\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
                                             <img src=\"{{ base }}extension/blueberry/catalog/view/img/social-media/fb.png\" alt=\"Facebook\" />
                                             </a>
                                         </li>
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center pr-[5px]\">
-                                            <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
+                                            <a href=\"https://x.com/WaltonBD_\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
                                             <img src=\"{{ base }}extension/blueberry/catalog/view/img/social-media/twitter.png\" alt=\"Twitter\" />
                                             </a>
                                         </li>
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center pr-[5px]\">
-                                            <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
+                                            <a href=\"https://www.youtube.com/user/WaltonHil\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
                                             <img src=\"{{ base }}extension/blueberry/catalog/view/img/social-media/youtube.png\" alt=\"YouTube\" />
                                             </a>
                                         </li>
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center pr-[5px]\">
-                                            <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
+                                            <a href=\"https://www.instagram.com/walton.refrigerator/\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
                                             <img src=\"{{ base }}extension/blueberry/catalog/view/img/social-media/instagram.png\" alt=\"Instagram\" />
                                             </a>
                                         </li>
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center pr-[5px]\">
-                                            <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
+                                            <a href=\"linkedin.com/company/walon-group/\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
                                             <img src=\"{{ base }}extension/blueberry/catalog/view/img/social-media/linkedin.png\" alt=\"LinkedIn\" />
                                             </a>
                                         </li>
                                         <li class=\"bb-footer-link leading-[1.5] flex items-center pr-[5px]\">
-                                            <a href=\"#\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
+                                            <a href=\"https://www.pinterest.com/waltongroupBD/\" class=\"transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] flex items-center justify-center text-[15px] leading-[20px] relative break-all font-normal\">
                                             <img src=\"{{ base }}extension/blueberry/catalog/view/img/social-media/printerest.png\" alt=\"Pinterest\" />
                                             </a>
                                         </li>
@@ -573,7 +573,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
         </div>
     </footer>
 
-    {% include 'extension/blueberry/catalog/view/template/common/category_popup.twig' %}
+
 
     <!-- Back to top  -->
     <a href=\"#Top\" class=\"back-to-top result-placeholder transition-all duration-[0.3s] ease-in-out w-[38px] h-[38px] hidden fixed right-[15px] bottom-[15px] z-[10] rounded-[20px] cursor-pointer bg-[#fff] text-[#6c7fd8] border-[1px] border-solid border-[#6c7fd8] text-center text-[22px] leading-[1.6]\">
