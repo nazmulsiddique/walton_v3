@@ -41,8 +41,27 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
         // line 1
         yield ($context["header"] ?? null);
         yield "
-<div id=\"product-category\">
-  <!-- Breadcrumb -->
+<div id=\"product-category\" class=\"max-w-[1320px] mx-auto\">
+    ";
+        // line 3
+        $context["content_class"] = "col-span-12";
+        // line 4
+        yield "    ";
+        if ((($context["column_left"] ?? null) && ($context["column_right"] ?? null))) {
+            // line 5
+            yield "        ";
+            $context["content_class"] = "col-span-12 lg:col-span-6";
+            // line 6
+            yield "    ";
+        } elseif ((($context["column_left"] ?? null) || ($context["column_right"] ?? null))) {
+            // line 7
+            yield "        ";
+            $context["content_class"] = "col-span-12 lg:col-span-9";
+            // line 8
+            yield "    ";
+        }
+        // line 9
+        yield "  <!-- Breadcrumb -->
   <section class=\"section-breadcrumb mb-[20px] max-[1199px]:mb-[15px] border-b border-solid border-[#eee] bg-[#f8f8fb]\">
       <div class=\"flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]\">
           <div class=\"flex flex-wrap w-full\">
@@ -52,11 +71,11 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
                       <div class=\"w-full px-[12px]\">
                           <ul class=\"bb-breadcrumb-list mx-[-5px] flex justify-start max-[767px]:justify-center flex-wrap\">
                               <li class=\"bb-breadcrumb-item text-[14px] font-normal px-[5px]\"><a href=\"";
-        // line 12
+        // line 18
         yield ($context["base"] ?? null);
         yield "\" class=\"font-Poppins text-[14px] leading-[28px] tracking-[0.03rem] font-semibold text-[#686e7d]\"> Home</a></li>
                               ";
-        // line 13
+        // line 19
         $context['_parent'] = $context;
         $context['_seq'] = CoreExtension::ensureTraversable(($context["breadcrumbs"] ?? null));
         $context['loop'] = [
@@ -73,42 +92,42 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["breadcrumb"]) {
-            // line 14
+            // line 20
             yield "                                  ";
-            if ( !CoreExtension::getAttribute($this->env, $this->source, $context["loop"], "first", [], "any", false, false, false, 14)) {
-                // line 15
+            if ( !CoreExtension::getAttribute($this->env, $this->source, $context["loop"], "first", [], "any", false, false, false, 20)) {
+                // line 21
                 yield "                                      <li class=\"text-[14px] font-normal px-[5px]\">
                                           <i class=\"ri-arrow-right-double-fill text-[14px] font-semibold leading-[28px]\"></i>
                                       </li>
                                   ";
             }
-            // line 19
+            // line 25
             yield "                                  <li class=\"bb-breadcrumb-item px-[5px]\">
                                       ";
-            // line 20
-            if (CoreExtension::getAttribute($this->env, $this->source, $context["loop"], "last", [], "any", false, false, false, 20)) {
-                // line 21
+            // line 26
+            if (CoreExtension::getAttribute($this->env, $this->source, $context["loop"], "last", [], "any", false, false, false, 26)) {
+                // line 27
                 yield "                                          <span class=\"font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem]\">
                                               ";
-                // line 22
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["breadcrumb"], "text", [], "any", false, false, false, 22);
+                // line 28
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["breadcrumb"], "text", [], "any", false, false, false, 28);
                 yield "
                                           </span>
                                       ";
             } else {
-                // line 25
+                // line 31
                 yield "                                          <a href=\"";
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["breadcrumb"], "href", [], "any", false, false, false, 25);
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["breadcrumb"], "href", [], "any", false, false, false, 31);
                 yield "\"
                                             class=\"font-Poppins text-[14px] leading-[28px] tracking-[0.03rem] font-semibold text-[#686e7d] hover:text-[#3bb77e] transition-all duration-300\">
                                               ";
-                // line 27
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["breadcrumb"], "text", [], "any", false, false, false, 27);
+                // line 33
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["breadcrumb"], "text", [], "any", false, false, false, 33);
                 yield "
                                           </a>
                                       ";
             }
-            // line 30
+            // line 36
             yield "                                  </li>
                               ";
             ++$context['loop']['index0'];
@@ -123,7 +142,7 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_key'], $context['breadcrumb'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 32
+        // line 38
         yield "                          </ul>
                       </div>
                   </div>
@@ -132,43 +151,34 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
       </div>
   </section> 
     ";
-        // line 39
+        // line 45
         yield ($context["content_top"] ?? null);
         yield "
 
     <!-- Button Section-->
-    <section>
-        <!-- Tabs / big rounded-top buttons -->
-        <div class=\"max-w-6xl mx-auto pt-5 lg:pt-0 pb-4 px-[12px] lg:px-0\">
-            <div class=\"grid grid-cols-1 lg:grid-cols-2 gap-4 lg6488:gap-10\">
-                <button
-                type=\"button\"
-                class=\"w-full h-24 rounded-t-3xl rounded-b-none
-                        bg-gradient-to-b from-sky-100 to-sky-300
-                        border border-sky-200 shadow-sm
-                        text-3xl font-semibold text-slate-900
-                        flex items-center justify-center
-                        hover:from-sky-200 hover:to-sky-400
-                        focus:outline-none focus:ring-4 focus:ring-sky-200\"
-                >
-                Dreamer's Canvas
-                </button>
+<section>
+    <div class=\"max-w-7xl mx-auto pt-5 lg:pt-0 pb-4 px-[12px] lg:px-0\">
+        <div class=\"grid grid-cols-1 lg:grid-cols-2 gap-5\">
 
-                <button
-                type=\"button\"
-                class=\"w-full h-24 rounded-t-3xl rounded-b-none
-                        bg-gradient-to-b from-sky-100 to-sky-300
-                        border border-sky-200 shadow-sm
-                        text-3xl font-semibold text-slate-900
-                        flex items-center justify-center
-                        hover:from-sky-200 hover:to-sky-400
-                        focus:outline-none focus:ring-4 focus:ring-sky-200\"
-                >
-                Find Your Perfect Fridge
-                </button>
-            </div>
+            <button
+                class=\"w-full h-20 bg-[#6c7fd8] text-white rounded-2xl shadow-md hover:bg-[#5b6fd1] hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3\">
+                <i class=\"ri-brush-line text-3xl\"></i>
+                <span class=\"text-xl font-semibold\">
+                    Dreamer's Canvas
+                </span>
+            </button>
+
+            <button
+                class=\"w-full h-20 bg-[#6c7fd8] text-white rounded-2xl shadow-md hover:bg-[#5b6fd1] hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3\">
+                <i class=\"ri-home-gear-line text-3xl\"></i>
+                <span class=\"text-xl font-semibold\">
+                    Find Your Perfect Fridge
+                </span>
+            </button>
+
         </div>
-    </section>
+    </div>
+</section>
     
     <!-- Category section -->
     <section class=\"section-category pt-[10px] max-[1199px]:pt-[15px] mb-[24px]\">
@@ -177,10 +187,10 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
                 <div class=\"w-full px-[12px]\">
                     <div class=\"bb-category-5-colum owl-carousel\">
                     ";
-        // line 82
+        // line 79
         yield "                    ";
         $context["bg_classes"] = ["bg-[#fef1f1]", "bg-[#e1fcf2]", "bg-[#f4f1fe]", "bg-[#e1fcf2]", "bg-[#fbf9e4]"];
-        // line 89
+        // line 86
         yield "                    ";
         $context['_parent'] = $context;
         $context['_seq'] = CoreExtension::ensureTraversable(($context["categories"] ?? null));
@@ -198,80 +208,80 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
-            // line 90
+            // line 87
             yield "                        ";
-            $context["bg_class"] = (($_v0 = ($context["bg_classes"] ?? null)) && is_array($_v0) || $_v0 instanceof ArrayAccess ? ($_v0[(CoreExtension::getAttribute($this->env, $this->source, $context["loop"], "index0", [], "any", false, false, false, 90) % Twig\Extension\CoreExtension::length($this->env->getCharset(), ($context["bg_classes"] ?? null)))] ?? null) : null);
-            // line 91
+            $context["bg_class"] = (($_v0 = ($context["bg_classes"] ?? null)) && is_array($_v0) || $_v0 instanceof ArrayAccess ? ($_v0[(CoreExtension::getAttribute($this->env, $this->source, $context["loop"], "index0", [], "any", false, false, false, 87) % Twig\Extension\CoreExtension::length($this->env->getCharset(), ($context["bg_classes"] ?? null)))] ?? null) : null);
+            // line 88
             yield "                        ";
-            $context["delay"] = (CoreExtension::getAttribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 91) * 200);
-            // line 92
+            $context["delay"] = (CoreExtension::getAttribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 88) * 200);
+            // line 89
             yield "                        <div class=\"bb-category-box p-[15px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] ";
             yield ($context["bg_class"] ?? null);
             yield "\"
                              data-aos=\"flip-left\"
                              data-aos-duration=\"1000\"
                              data-aos-delay=\"";
-            // line 95
+            // line 92
             yield ($context["delay"] ?? null);
             yield "\">
                             <!-- Category Image -->
                             <div class=\"category-image mb-[12px]\">
                                 ";
-            // line 98
-            if ((CoreExtension::getAttribute($this->env, $this->source, $context["category"], "thumb", [], "any", true, true, false, 98) && CoreExtension::getAttribute($this->env, $this->source, $context["category"], "thumb", [], "any", false, false, false, 98))) {
-                // line 99
+            // line 95
+            if ((CoreExtension::getAttribute($this->env, $this->source, $context["category"], "thumb", [], "any", true, true, false, 95) && CoreExtension::getAttribute($this->env, $this->source, $context["category"], "thumb", [], "any", false, false, false, 95))) {
+                // line 96
                 yield "                                    <img src=\"";
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "thumb", [], "any", false, false, false, 99);
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "thumb", [], "any", false, false, false, 96);
                 yield "\"
                                          alt=\"";
-                // line 100
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 100);
+                // line 97
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 97);
                 yield "\"
                                          class=\"w-[80px] h-[80px] object-contain
                                                 max-[1399px]:h-[65px] max-[1399px]:w-[65px]
                                                 max-[1199px]:h-[50px] max-[1199px]:w-[50px]\">
                                 ";
             } else {
-                // line 105
+                // line 102
                 yield "                                    <img src=\"catalog/view/theme/your_theme/assets/img/category/default-category.png\"
                                          alt=\"";
-                // line 106
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 106);
+                // line 103
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 103);
                 yield "\"
                                          class=\"w-[80px] h-[80px] object-contain
                                                 max-[1399px]:h-[65px] max-[1399px]:w-[65px]
                                                 max-[1199px]:h-[50px] max-[1199px]:w-[50px]\">
                                 ";
             }
-            // line 111
+            // line 108
             yield "                            </div>
                             <!-- Category Content -->
                             <div class=\"category-sub-contact\">
                                 <h5 class=\"mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2] h-[35px]\">
                                     <a href=\"";
-            // line 115
-            yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "href", [], "any", false, false, false, 115);
+            // line 112
+            yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "href", [], "any", false, false, false, 112);
             yield "\"
                                        class=\"font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize hover:text-[#3bb77e] transition-all duration-300\">
                                         ";
-            // line 117
-            yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 117);
+            // line 114
+            yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 114);
             yield "
                                     </a>
                                 </h5>
                                 ";
-            // line 120
-            if (CoreExtension::getAttribute($this->env, $this->source, $context["category"], "product_count", [], "any", true, true, false, 120)) {
-                // line 121
+            // line 117
+            if (CoreExtension::getAttribute($this->env, $this->source, $context["category"], "product_count", [], "any", true, true, false, 117)) {
+                // line 118
                 yield "                                    <p class=\"font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]\">
                                         ";
-                // line 122
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "product_count", [], "any", false, false, false, 122);
+                // line 119
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "product_count", [], "any", false, false, false, 119);
                 yield " items
                                     </p>
                                 ";
             }
-            // line 125
+            // line 122
             yield "                            </div>
 
                         </div>
@@ -288,337 +298,87 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 129
+        // line 126
         yield "
                 </div>
                 </div>
             </div>
         </div>
     </section>
+    <div class=\"grid grid-cols-12 gap-6\">
 
-    <!-- Shop section -->
-    <section class=\"section-shop pb-[50px] max-[1199px]:pb-[35px]\">
-        <div class=\"flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]\">
-            <div class=\"flex flex-wrap w-full mb-[-24px]\">
-                <div class=\"min-[992px]:w-[25%] w-full px-[12px] mb-[24px]\">
-                    <div class=\"bb-shop-wrap bg-[#f8f8fb] border-[1px] border-solid border-[#eee] rounded-[20px] sticky top-[0]\">
-                        <div class=\"bb-sidebar-block p-[20px] border-b-[1px] border-solid border-[#eee]\">
-                            <div class=\"bb-sidebar-title mb-[20px]\">
-                                <h3 class=\"font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]\">Category</h3>
-                            </div>
-                            <div class=\"bb-sidebar-contact\">
-                                ";
-        // line 147
-        $context['_parent'] = $context;
-        $context['_seq'] = CoreExtension::ensureTraversable(($context["categories"] ?? null));
-        foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
+        ";
+        // line 134
+        if (($context["column_left"] ?? null)) {
+            // line 135
+            yield "            <aside id=\"mobile_filter_content_top\" class=\"col-span-12 lg:col-span-3 hidden lg:block\">
+                <div class=\"bb-shop-wrap bg-[#f8f8fb] border border-solid border-[#eee] rounded-[20px] sticky top-0 p-[20px]\">
+                    ";
+            // line 137
+            yield ($context["column_left"] ?? null);
+            yield "
+                </div>
+            </aside>
+        ";
+        }
+        // line 141
+        yield "
+        <div class=\"
+            ";
+        // line 143
+        if ((($context["column_left"] ?? null) && ($context["column_right"] ?? null))) {
+            // line 144
+            yield "                col-span-12 lg:col-span-6
+            ";
+        } elseif ((        // line 145
+($context["column_left"] ?? null) || ($context["column_right"] ?? null))) {
+            // line 146
+            yield "                col-span-12 lg:col-span-9
+            ";
+        } else {
             // line 148
-            yield "                                    <ul>
-                                        <li class=\"relative block mb-[14px]\">
-                                            <div class=\"bb-sidebar-block-item relative\">
-                                                <input type=\"checkbox\" class=\"w-full h-[calc(100%-5px)] absolute opacity-[0] cursor-pointer z-[999] top-[50%] left-[0] translate-y-[-50%]\">
-                                                <a href=\"javascript:void(0)\" class=\"ml-[30px] block text-[#777] text-[14px] leading-[20px] font-normal capitalize cursor-pointer\">";
-            // line 152
-            yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 152);
-            yield "</a>
-                                                <span class=\"checked absolute top-[0] left-[0] h-[18px] w-[18px] bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[5px] overflow-hidden\"></span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                ";
+            yield "                col-span-12
+            ";
         }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_key'], $context['category'], $context['_parent']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 158
-        yield "                            </div>
-                        </div>
-                        <div class=\"bb-sidebar-block p-[20px] border-b-[1px] border-solid border-[#eee]\">
-                            <div class=\"bb-sidebar-title mb-[20px]\">
-                                <h3 class=\"font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]\">Color</h3>
-                            </div>
-                            <div class=\"bb-color-contact\">
-                                <ul>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px] color-sidebar-active\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-1 w-[22px] h-[22px] block rounded-[20px] bg-[#c4d6f9]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-2 w-[22px] h-[22px] block rounded-[20px] bg-[#ff748b]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-3 w-[22px] h-[22px] block rounded-[20px] bg-[#000000]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-4 w-[22px] h-[22px] block rounded-[20px] bg-[#2bff4a]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-5 w-[22px] h-[22px] block rounded-[20px] bg-[#ff7c5e]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-6 w-[22px] h-[22px] block rounded-[20px] bg-[#f155ff]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-7 w-[22px] h-[22px] block rounded-[20px] bg-[#ffef00]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-8 w-[22px] h-[22px] block rounded-[20px] bg-[#c89fff]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-9 w-[22px] h-[22px] block rounded-[20px] bg-[#7bfffa]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-10 w-[22px] h-[22px] block rounded-[20px] bg-[#56ffc1]\"></span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class=\"bb-sidebar-block p-[20px] border-b-[1px] border-solid border-[#eee]\">
-                            <div class=\"bb-sidebar-title mb-[20px]\">
-                                <h3 class=\"font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]\">Price</h3>
-                            </div>
-                            <div class=\"bb-price-range\">
-                                <div class=\"price-range-slider relative w-full mb-[7px]\">
-                                    <p class=\"range-value m-[0]\">
-                                        <input type=\"text\" id=\"amount\" readonly class=\"w-full bg-[#fff] text-[#000] text-[16px] mb-[15px] font-initial border-[1px] border-solid border-[#eee] p-[10px] text-center outline-[0] rounded-[10px]\">
-                                    </p>
-                                    <div id=\"slider-range\" class=\"range-bar\"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=\"bb-sidebar-block p-[20px]\">
-                            <div class=\"bb-sidebar-title mb-[20px]\">
-                                <h3 class=\"font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]\">Tags</h3>
-                            </div>
-                            <div class=\"bb-tags\">
-                                <ul class=\"flex flex-wrap m-[-5px]\">
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Refrigerator & Freezer</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Air Conditioner</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Mobile</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Computer</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Microwave and Electric Oven</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Washing Machine</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Television</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">E-Bike</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">PCB</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        ";
-        // line 268
-        yield ($context["column_left"] ?? null);
+        // line 150
+        yield "        \">
+            <div id=\"category-products\" class=\"px-2\">
+                ";
+        // line 152
+        yield ($context["products_html"] ?? null);
         yield "
-                    </div>
-                </div>
-
-                <!-- ";
-        // line 272
-        if (($context["products"] ?? null)) {
-            yield " -->
-
-                <div class=\"min-[992px]:w-[75%] w-full px-[12px] mb-[24px]\">
-                    <div class=\"bb-shop-pro-inner\">
-                        <div class=\"flex flex-wrap mx-[-12px] mb-[-24px]\">
-                            <div class=\"w-full px-[12px]\">
-                                <div class=\"bb-pro-list-top mb-[24px] rounded-[20px] flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between\">
-                                    <div class=\"flex flex-wrap w-full\">
-                                        <div class=\"w-[30%] px-[12px] max-[420px]:w-full\">
-                                            <div class=\"bb-bl-btn py-[10px] flex max-[420px]:justify-center\">
-                                                <button type=\"button\" class=\"grid-btn btn-grid-100 h-[38px] w-[38px] flex justify-center items-center border-[0] p-[5px] bg-transparent mr-[5px] active\" title=\"grid\">
-                                                    <i class=\"ri-apps-line text-[20px]\"></i>
-                                                </button>
-                                                <button type=\"button\" class=\"grid-btn btn-list-100 h-[38px] w-[38px] flex justify-center items-center border-[0] p-[5px] bg-transparent\" title=\"grid\">
-                                                    <i class=\"ri-list-unordered text-[20px]\"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class=\"w-[40%] px-[12px] max-[420px]:w-full\">
-                                            <a href=\"";
-            // line 291
-            yield ($context["compare"] ?? null);
-            yield "\"
-                                                id=\"compare-total\"
-                                                class=\"inline-flex items-center gap-2 mt-2 px-4 py-2 text-dark rounded-md transition duration-200\">
-                                                    <i class=\"ri-arrow-left-right-line text-lg\"></i>
-                                                    <span class=\"hidden xl:inline\">
-                                                        ";
-            // line 296
-            yield ($context["text_compare"] ?? null);
-            yield "
-                                                    </span>
-                                            </a>
-                                        </div>
-
-
-    
-                                        <div class=\"w-[30%] px-[12px] max-[420px]:w-full\">
-                                            <select onchange=\"if(this.value) window.location.href=this.value\"
-                                                    class=\"sort-select w-full mt-2 px-3 py-2 text-gray-700 bg-transparent border-none rounded-md\">
-
-                                                ";
-            // line 307
-            $context['_parent'] = $context;
-            $context['_seq'] = CoreExtension::ensureTraversable(($context["sorts"] ?? null));
-            foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-                // line 308
-                yield "                                                    ";
-                if ((CoreExtension::getAttribute($this->env, $this->source, $context["item"], "text", [], "any", false, false, false, 308) != "Default")) {
-                    // line 309
-                    yield "                                                        <option value=\"";
-                    yield CoreExtension::getAttribute($this->env, $this->source, $context["item"], "href", [], "any", false, false, false, 309);
-                    yield "\"
-                                                            ";
-                    // line 310
-                    if ((CoreExtension::getAttribute($this->env, $this->source, $context["item"], "value", [], "any", false, false, false, 310) == Twig\Extension\CoreExtension::sprintf("%s-%s", ($context["sort_by"] ?? null), ($context["order"] ?? null)))) {
-                        yield "selected";
-                    }
-                    yield ">
-                                                            ";
-                    // line 311
-                    yield CoreExtension::getAttribute($this->env, $this->source, $context["item"], "text", [], "any", false, false, false, 311);
-                    yield "
-                                                        </option>
-                                                    ";
-                }
-                // line 314
-                yield "                                                ";
-            }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_key'], $context['item'], $context['_parent']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 315
-            yield "
-                                            </select>
-                                        </div>
-                                        <style>
-                                        .hide-select {
-                                            display: block !important;
-                                            visibility: visible !important;
-                                            opacity: 1 !important;
-                                            pointer-events: auto !important;
-                                            position: relative !important;
-                                            z-index: 10;
-                                        }
-                                        .custom-select{
-                                            display: none !important;
-                                            visibility: hidden !important;
-                                            opacity: 0 !important;
-                                            pointer-events: none !important;
-                                            position: absolute !important;
-                                            z-index: -1 !important;
-                                        }
-                                        </style>
-
-
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            ";
-            // line 343
-            $context['_parent'] = $context;
-            $context['_seq'] = CoreExtension::ensureTraversable(($context["products"] ?? null));
-            foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-                // line 344
-                yield "                            <div class=\"min-[1200px]:w-[25%] min-[768px]:w-[33.33%] w-[50%] max-[480px]:w-full px-[12px] mb-[24px] pro-bb-content\" data-aos=\"fade-up\" data-aos-duration=\"1000\" data-aos-delay=\"100\">
-                                ";
-                // line 345
-                yield $context["product"];
-                yield "
-                            </div>
-                            
-                            ";
-            }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_key'], $context['product'], $context['_parent']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 349
-            yield "
-                            <div class=\"w-full px-[12px]\">
-                                <div class=\"bb-pro-pagination mb-[24px] flex justify-between items-center max-[575px]:flex-col max-[575px]:items-center\">
-
-                                    ";
-            // line 354
-            yield "                                    <p class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem] max-[575px]:mb-[10px]\">
-                                        ";
-            // line 355
-            yield ($context["results"] ?? null);
-            yield "
-                                    </p>
-
-                                    ";
-            // line 359
-            yield "                                    <div class=\"bb-pagination\">
-                                        ";
-            // line 360
-            yield ($context["pagination"] ?? null);
-            yield "
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ";
-        }
-        // line 369
-        yield " -->
             </div>
         </div>
-    </section>
 
+        ";
+        // line 156
+        if (($context["column_right"] ?? null)) {
+            // line 157
+            yield "            <aside class=\"col-span-12 lg:col-span-3\">
+                ";
+            // line 158
+            yield ($context["column_right"] ?? null);
+            yield "
+            </aside>
+        ";
+        }
+        // line 161
+        yield "
+    </div>
 
     ";
-        // line 375
+        // line 164
         yield ($context["content_bottom"] ?? null);
+        yield "
+    
+</div>
+";
+        // line 167
+        yield from $this->loadTemplate("extension/blueberry/catalog/view/template/product/product_quickview.twig", "extension/blueberry/catalog/view/template/product/category.twig", 167)->unwrap()->yield($context);
+        // line 169
         yield "</div>
 ";
-        // line 376
-        yield from $this->loadTemplate("extension/blueberry/catalog/view/template/product/product_quickview.twig", "extension/blueberry/catalog/view/template/product/category.twig", 376)->unwrap()->yield($context);
-        // line 378
-        yield "</div>
-";
-        // line 379
+        // line 170
         yield ($context["footer"] ?? null);
         yield "
 <script>
@@ -702,13 +462,19 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
      */
     public function getDebugInfo(): array
     {
-        return array (  622 => 379,  619 => 378,  617 => 376,  613 => 375,  605 => 369,  592 => 360,  589 => 359,  583 => 355,  580 => 354,  574 => 349,  564 => 345,  561 => 344,  557 => 343,  527 => 315,  521 => 314,  515 => 311,  509 => 310,  504 => 309,  501 => 308,  497 => 307,  483 => 296,  475 => 291,  453 => 272,  446 => 268,  334 => 158,  322 => 152,  316 => 148,  312 => 147,  292 => 129,  275 => 125,  269 => 122,  266 => 121,  264 => 120,  258 => 117,  253 => 115,  247 => 111,  239 => 106,  236 => 105,  228 => 100,  223 => 99,  221 => 98,  215 => 95,  208 => 92,  205 => 91,  202 => 90,  184 => 89,  181 => 82,  136 => 39,  127 => 32,  112 => 30,  106 => 27,  100 => 25,  94 => 22,  91 => 21,  89 => 20,  86 => 19,  80 => 15,  77 => 14,  60 => 13,  56 => 12,  42 => 1,);
+        return array (  382 => 170,  379 => 169,  377 => 167,  371 => 164,  366 => 161,  360 => 158,  357 => 157,  355 => 156,  348 => 152,  344 => 150,  340 => 148,  336 => 146,  334 => 145,  331 => 144,  329 => 143,  325 => 141,  318 => 137,  314 => 135,  312 => 134,  302 => 126,  285 => 122,  279 => 119,  276 => 118,  274 => 117,  268 => 114,  263 => 112,  257 => 108,  249 => 103,  246 => 102,  238 => 97,  233 => 96,  231 => 95,  225 => 92,  218 => 89,  215 => 88,  212 => 87,  194 => 86,  191 => 79,  155 => 45,  146 => 38,  131 => 36,  125 => 33,  119 => 31,  113 => 28,  110 => 27,  108 => 26,  105 => 25,  99 => 21,  96 => 20,  79 => 19,  75 => 18,  64 => 9,  61 => 8,  58 => 7,  55 => 6,  52 => 5,  49 => 4,  47 => 3,  42 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("{{ header }}
-<div id=\"product-category\">
+<div id=\"product-category\" class=\"max-w-[1320px] mx-auto\">
+    {% set content_class = 'col-span-12' %}
+    {% if column_left and column_right %}
+        {% set content_class = 'col-span-12 lg:col-span-6' %}
+    {% elseif column_left or column_right %}
+        {% set content_class = 'col-span-12 lg:col-span-9' %}
+    {% endif %}
   <!-- Breadcrumb -->
   <section class=\"section-breadcrumb mb-[20px] max-[1199px]:mb-[15px] border-b border-solid border-[#eee] bg-[#f8f8fb]\">
       <div class=\"flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]\">
@@ -748,38 +514,29 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
     {{ content_top }}
 
     <!-- Button Section-->
-    <section>
-        <!-- Tabs / big rounded-top buttons -->
-        <div class=\"max-w-6xl mx-auto pt-5 lg:pt-0 pb-4 px-[12px] lg:px-0\">
-            <div class=\"grid grid-cols-1 lg:grid-cols-2 gap-4 lg6488:gap-10\">
-                <button
-                type=\"button\"
-                class=\"w-full h-24 rounded-t-3xl rounded-b-none
-                        bg-gradient-to-b from-sky-100 to-sky-300
-                        border border-sky-200 shadow-sm
-                        text-3xl font-semibold text-slate-900
-                        flex items-center justify-center
-                        hover:from-sky-200 hover:to-sky-400
-                        focus:outline-none focus:ring-4 focus:ring-sky-200\"
-                >
-                Dreamer's Canvas
-                </button>
+<section>
+    <div class=\"max-w-7xl mx-auto pt-5 lg:pt-0 pb-4 px-[12px] lg:px-0\">
+        <div class=\"grid grid-cols-1 lg:grid-cols-2 gap-5\">
 
-                <button
-                type=\"button\"
-                class=\"w-full h-24 rounded-t-3xl rounded-b-none
-                        bg-gradient-to-b from-sky-100 to-sky-300
-                        border border-sky-200 shadow-sm
-                        text-3xl font-semibold text-slate-900
-                        flex items-center justify-center
-                        hover:from-sky-200 hover:to-sky-400
-                        focus:outline-none focus:ring-4 focus:ring-sky-200\"
-                >
-                Find Your Perfect Fridge
-                </button>
-            </div>
+            <button
+                class=\"w-full h-20 bg-[#6c7fd8] text-white rounded-2xl shadow-md hover:bg-[#5b6fd1] hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3\">
+                <i class=\"ri-brush-line text-3xl\"></i>
+                <span class=\"text-xl font-semibold\">
+                    Dreamer's Canvas
+                </span>
+            </button>
+
+            <button
+                class=\"w-full h-20 bg-[#6c7fd8] text-white rounded-2xl shadow-md hover:bg-[#5b6fd1] hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3\">
+                <i class=\"ri-home-gear-line text-3xl\"></i>
+                <span class=\"text-xl font-semibold\">
+                    Find Your Perfect Fridge
+                </span>
+            </button>
+
         </div>
-    </section>
+    </div>
+</section>
     
     <!-- Category section -->
     <section class=\"section-category pt-[10px] max-[1199px]:pt-[15px] mb-[24px]\">
@@ -841,247 +598,41 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
             </div>
         </div>
     </section>
+    <div class=\"grid grid-cols-12 gap-6\">
 
-    <!-- Shop section -->
-    <section class=\"section-shop pb-[50px] max-[1199px]:pb-[35px]\">
-        <div class=\"flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]\">
-            <div class=\"flex flex-wrap w-full mb-[-24px]\">
-                <div class=\"min-[992px]:w-[25%] w-full px-[12px] mb-[24px]\">
-                    <div class=\"bb-shop-wrap bg-[#f8f8fb] border-[1px] border-solid border-[#eee] rounded-[20px] sticky top-[0]\">
-                        <div class=\"bb-sidebar-block p-[20px] border-b-[1px] border-solid border-[#eee]\">
-                            <div class=\"bb-sidebar-title mb-[20px]\">
-                                <h3 class=\"font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]\">Category</h3>
-                            </div>
-                            <div class=\"bb-sidebar-contact\">
-                                {% for category in categories %}
-                                    <ul>
-                                        <li class=\"relative block mb-[14px]\">
-                                            <div class=\"bb-sidebar-block-item relative\">
-                                                <input type=\"checkbox\" class=\"w-full h-[calc(100%-5px)] absolute opacity-[0] cursor-pointer z-[999] top-[50%] left-[0] translate-y-[-50%]\">
-                                                <a href=\"javascript:void(0)\" class=\"ml-[30px] block text-[#777] text-[14px] leading-[20px] font-normal capitalize cursor-pointer\">{{ category.name }}</a>
-                                                <span class=\"checked absolute top-[0] left-[0] h-[18px] w-[18px] bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[5px] overflow-hidden\"></span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                {% endfor %}
-                            </div>
-                        </div>
-                        <div class=\"bb-sidebar-block p-[20px] border-b-[1px] border-solid border-[#eee]\">
-                            <div class=\"bb-sidebar-title mb-[20px]\">
-                                <h3 class=\"font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]\">Color</h3>
-                            </div>
-                            <div class=\"bb-color-contact\">
-                                <ul>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px] color-sidebar-active\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-1 w-[22px] h-[22px] block rounded-[20px] bg-[#c4d6f9]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-2 w-[22px] h-[22px] block rounded-[20px] bg-[#ff748b]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-3 w-[22px] h-[22px] block rounded-[20px] bg-[#000000]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-4 w-[22px] h-[22px] block rounded-[20px] bg-[#2bff4a]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-5 w-[22px] h-[22px] block rounded-[20px] bg-[#ff7c5e]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-6 w-[22px] h-[22px] block rounded-[20px] bg-[#f155ff]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-7 w-[22px] h-[22px] block rounded-[20px] bg-[#ffef00]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-8 w-[22px] h-[22px] block rounded-[20px] bg-[#c89fff]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-9 w-[22px] h-[22px] block rounded-[20px] bg-[#7bfffa]\"></span>
-                                        </div>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]\">
-                                        <div class=\"bb-sidebar-block-item relative\">
-                                            <span class=\"pro-color-10 w-[22px] h-[22px] block rounded-[20px] bg-[#56ffc1]\"></span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class=\"bb-sidebar-block p-[20px] border-b-[1px] border-solid border-[#eee]\">
-                            <div class=\"bb-sidebar-title mb-[20px]\">
-                                <h3 class=\"font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]\">Price</h3>
-                            </div>
-                            <div class=\"bb-price-range\">
-                                <div class=\"price-range-slider relative w-full mb-[7px]\">
-                                    <p class=\"range-value m-[0]\">
-                                        <input type=\"text\" id=\"amount\" readonly class=\"w-full bg-[#fff] text-[#000] text-[16px] mb-[15px] font-initial border-[1px] border-solid border-[#eee] p-[10px] text-center outline-[0] rounded-[10px]\">
-                                    </p>
-                                    <div id=\"slider-range\" class=\"range-bar\"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=\"bb-sidebar-block p-[20px]\">
-                            <div class=\"bb-sidebar-title mb-[20px]\">
-                                <h3 class=\"font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]\">Tags</h3>
-                            </div>
-                            <div class=\"bb-tags\">
-                                <ul class=\"flex flex-wrap m-[-5px]\">
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Refrigerator & Freezer</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Air Conditioner</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Mobile</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Computer</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Microwave and Electric Oven</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Washing Machine</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">Television</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">E-Bike</a>
-                                    </li>
-                                    <li class=\"transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer\">
-                                        <a href=\"javascript:void(0)\" class=\"font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]\">PCB</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {{ column_left }}
-                    </div>
+        {% if column_left %}
+            <aside id=\"mobile_filter_content_top\" class=\"col-span-12 lg:col-span-3 hidden lg:block\">
+                <div class=\"bb-shop-wrap bg-[#f8f8fb] border border-solid border-[#eee] rounded-[20px] sticky top-0 p-[20px]\">
+                    {{ column_left }}
                 </div>
+            </aside>
+        {% endif %}
 
-                <!-- {% if products %} -->
-
-                <div class=\"min-[992px]:w-[75%] w-full px-[12px] mb-[24px]\">
-                    <div class=\"bb-shop-pro-inner\">
-                        <div class=\"flex flex-wrap mx-[-12px] mb-[-24px]\">
-                            <div class=\"w-full px-[12px]\">
-                                <div class=\"bb-pro-list-top mb-[24px] rounded-[20px] flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between\">
-                                    <div class=\"flex flex-wrap w-full\">
-                                        <div class=\"w-[30%] px-[12px] max-[420px]:w-full\">
-                                            <div class=\"bb-bl-btn py-[10px] flex max-[420px]:justify-center\">
-                                                <button type=\"button\" class=\"grid-btn btn-grid-100 h-[38px] w-[38px] flex justify-center items-center border-[0] p-[5px] bg-transparent mr-[5px] active\" title=\"grid\">
-                                                    <i class=\"ri-apps-line text-[20px]\"></i>
-                                                </button>
-                                                <button type=\"button\" class=\"grid-btn btn-list-100 h-[38px] w-[38px] flex justify-center items-center border-[0] p-[5px] bg-transparent\" title=\"grid\">
-                                                    <i class=\"ri-list-unordered text-[20px]\"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class=\"w-[40%] px-[12px] max-[420px]:w-full\">
-                                            <a href=\"{{ compare }}\"
-                                                id=\"compare-total\"
-                                                class=\"inline-flex items-center gap-2 mt-2 px-4 py-2 text-dark rounded-md transition duration-200\">
-                                                    <i class=\"ri-arrow-left-right-line text-lg\"></i>
-                                                    <span class=\"hidden xl:inline\">
-                                                        {{ text_compare }}
-                                                    </span>
-                                            </a>
-                                        </div>
-
-
-    
-                                        <div class=\"w-[30%] px-[12px] max-[420px]:w-full\">
-                                            <select onchange=\"if(this.value) window.location.href=this.value\"
-                                                    class=\"sort-select w-full mt-2 px-3 py-2 text-gray-700 bg-transparent border-none rounded-md\">
-
-                                                {% for item in sorts %}
-                                                    {% if item.text != 'Default' %}
-                                                        <option value=\"{{ item.href }}\"
-                                                            {% if item.value == '%s-%s'|format(sort_by, order) %}selected{% endif %}>
-                                                            {{ item.text }}
-                                                        </option>
-                                                    {% endif %}
-                                                {% endfor %}
-
-                                            </select>
-                                        </div>
-                                        <style>
-                                        .hide-select {
-                                            display: block !important;
-                                            visibility: visible !important;
-                                            opacity: 1 !important;
-                                            pointer-events: auto !important;
-                                            position: relative !important;
-                                            z-index: 10;
-                                        }
-                                        .custom-select{
-                                            display: none !important;
-                                            visibility: hidden !important;
-                                            opacity: 0 !important;
-                                            pointer-events: none !important;
-                                            position: absolute !important;
-                                            z-index: -1 !important;
-                                        }
-                                        </style>
-
-
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            {% for product in products %}
-                            <div class=\"min-[1200px]:w-[25%] min-[768px]:w-[33.33%] w-[50%] max-[480px]:w-full px-[12px] mb-[24px] pro-bb-content\" data-aos=\"fade-up\" data-aos-duration=\"1000\" data-aos-delay=\"100\">
-                                {{ product }}
-                            </div>
-                            
-                            {% endfor %}
-
-                            <div class=\"w-full px-[12px]\">
-                                <div class=\"bb-pro-pagination mb-[24px] flex justify-between items-center max-[575px]:flex-col max-[575px]:items-center\">
-
-                                    {# Results Text #}
-                                    <p class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem] max-[575px]:mb-[10px]\">
-                                        {{ results }}
-                                    </p>
-
-                                    {# Pagination Links #}
-                                    <div class=\"bb-pagination\">
-                                        {{ pagination }}
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- {% endif %} -->
+        <div class=\"
+            {% if column_left and column_right %}
+                col-span-12 lg:col-span-6
+            {% elseif column_left or column_right %}
+                col-span-12 lg:col-span-9
+            {% else %}
+                col-span-12
+            {% endif %}
+        \">
+            <div id=\"category-products\" class=\"px-2\">
+                {{ products_html }}
             </div>
         </div>
-    </section>
 
+        {% if column_right %}
+            <aside class=\"col-span-12 lg:col-span-3\">
+                {{ column_right }}
+            </aside>
+        {% endif %}
 
-    {{ content_bottom }}</div>
+    </div>
+
+    {{ content_bottom }}
+    
+</div>
 {% include 'extension/blueberry/catalog/view/template/product/product_quickview.twig' %}
 {# {{quickview}} #}
 </div>

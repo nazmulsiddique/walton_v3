@@ -1,17 +1,32 @@
-<div class="list-group mb-3">
-  {% for category in categories %}
-    {% if category.category_id == category_id %}
-      <a href="{{ category.href }}" class="list-group-item active">{{ category.name }}</a>
-      {% if category.children %}
-        {% for child in category.children %}
-          {% if child.category_id == child_id %}
-            <a href="{{ child.href }}" class="list-group-item active">&nbsp;&nbsp;&nbsp;- {{ child.name }}</a>
-          {% else %}
-            <a href="{{ child.href }}" class="list-group-item">&nbsp;&nbsp;&nbsp;- {{ child.name }}</a>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    {% else %} <a href="{{ category.href }}" class="list-group-item">{{ category.name }}</a>
-    {% endif %}
-  {% endfor %}
+<div class="rounded-lg border border-gray-200 overflow-hidden">
+    {% for category in categories %}
+        {% if category.category_id == category_id %}
+            <a href="{{ category.href }}"
+               class="block px-4 py-3 text-sm font-medium text-white bg-blue-600 border-b border-gray-200">
+                {{ category.name }}
+            </a>
+
+            {% if category.children %}
+                {% for child in category.children %}
+                    {% if child.category_id == child_id %}
+                        <a href="{{ child.href }}"
+                           class="block pl-8 pr-4 py-3 text-sm text-white bg-blue-500 border-b border-gray-200">
+                            - {{ child.name }}
+                        </a>
+                    {% else %}
+                        <a href="{{ child.href }}"
+                           class="block pl-8 pr-4 py-3 text-sm text-gray-700 hover:bg-gray-50 border-b border-gray-200 transition">
+                            - {{ child.name }}
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+
+        {% else %}
+            <a href="{{ category.href }}"
+               class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 border-b border-gray-200 transition">
+                {{ category.name }}
+            </a>
+        {% endif %}
+    {% endfor %}
 </div>

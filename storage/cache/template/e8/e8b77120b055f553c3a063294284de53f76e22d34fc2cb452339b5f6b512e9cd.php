@@ -39,7 +39,7 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
     {
         $macros = $this->macros;
         // line 1
-        yield "<div class=\"product-thumb\">
+        yield "<div class=\"product-thumb pro-bb-content aos-init aos-animate width-100\">
     <div class=\"bb-pro-box bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[20px]\">
       <div class=\"bb-pro-img overflow-hidden relative border-b-[1px] border-solid border-[#eee] z-[4]\">
           <span class=\"flags transition-all duration-[0.3s] ease-in-out absolute z-[5] top-[10px] left-[6px]\">
@@ -113,61 +113,59 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
         yield "\"/>
 
             </form>
-          ";
-        // line 79
-        yield "      </div>
+      </div>
       <div class=\"bb-pro-contact p-[20px]\">
           <div class=\"bb-pro-subtitle mb-[8px] flex flex-wrap justify-between\">
               <a href=\"\" class=\"transition-all duration-[0.3s] ease-in-out font-Poppins text-[13px] leading-[16px] text-[#777] font-light tracking-[0.03rem]\">Refrigerator</a>
           </div>
           <h4 class=\"bb-pro-title mb-[8px] text-[16px] leading-[18px]\">
           <a href=\"";
-        // line 85
+        // line 68
         yield ($context["href"] ?? null);
         yield "\" class=\"transition-all duration-[0.3s] ease-in-out font-quicksand w-full block whitespace-nowrap overflow-hidden text-ellipsis text-[15px] leading-[18px] text-[#3d4750] font-semibold tracking-[0.03rem]\">";
         yield ($context["name"] ?? null);
         yield "</a></h4>
           <p class=\"hidden font-Poppins text-[14px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\">
               ";
-        // line 87
+        // line 70
         yield ($context["description"] ?? null);
         yield "
           </p>
           ";
-        // line 89
+        // line 72
         if (($context["price"] ?? null)) {
-            // line 90
+            // line 73
             yield "          <div class=\"bb-price flex flex-wrap justify-between\">
                ";
-            // line 91
+            // line 74
             if ( !($context["special"] ?? null)) {
-                // line 92
+                // line 75
                 yield "              <div class=\"inner-price mx-[-3px]\">
                   <span class=\"new-price px-[3px] text-[16px] text-[#686e7d] font-bold\">";
-                // line 93
+                // line 76
                 yield ($context["price"] ?? null);
                 yield "</span>
               </div>
               ";
             } else {
-                // line 96
+                // line 79
                 yield "              <div class=\"inner-price mx-[-3px]\">
                   <span class=\"new-price px-[3px] text-[16px] text-[#686e7d] font-bold\">";
-                // line 97
+                // line 80
                 yield ($context["special"] ?? null);
                 yield "</span>
                   <span class=\"old-price px-[3px] text-[14px] text-[#686e7d] line-through\">";
-                // line 98
+                // line 81
                 yield ($context["price"] ?? null);
                 yield "</span>
               </div>
               ";
             }
-            // line 101
+            // line 84
             yield "          </div>
           ";
         }
-        // line 103
+        // line 86
         yield "      </div>
   </div>
 </div>";
@@ -195,12 +193,12 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
      */
     public function getDebugInfo(): array
     {
-        return array (  171 => 103,  167 => 101,  161 => 98,  157 => 97,  154 => 96,  148 => 93,  145 => 92,  143 => 91,  140 => 90,  138 => 89,  133 => 87,  126 => 85,  118 => 79,  112 => 59,  98 => 48,  94 => 47,  80 => 36,  71 => 29,  55 => 9,  50 => 7,  42 => 1,);
+        return array (  169 => 86,  165 => 84,  159 => 81,  155 => 80,  152 => 79,  146 => 76,  143 => 75,  141 => 74,  138 => 73,  136 => 72,  131 => 70,  124 => 68,  112 => 59,  98 => 48,  94 => 47,  80 => 36,  71 => 29,  55 => 9,  50 => 7,  42 => 1,);
     }
 
     public function getSourceContext(): Source
     {
-        return new Source("<div class=\"product-thumb\">
+        return new Source("<div class=\"product-thumb pro-bb-content aos-init aos-animate width-100\">
     <div class=\"bb-pro-box bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[20px]\">
       <div class=\"bb-pro-img overflow-hidden relative border-b-[1px] border-solid border-[#eee] z-[4]\">
           <span class=\"flags transition-all duration-[0.3s] ease-in-out absolute z-[5] top-[10px] left-[6px]\">
@@ -261,23 +259,6 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
                 <input type=\"hidden\" name=\"product_id\" value=\"{{ product_id }}\"/>
 
             </form>
-          {# <ul class=\"bb-pro-actions transition-all duration-[0.3s] ease-in-out my-[0] mx-[auto] absolute z-[9] left-[0] right-[0] bottom-[0] flex flex-row items-center justify-center opacity-[0]\">
-              <li class=\"bb-btn-group transition-all duration-[0.3s] ease-in-out w-[35px] h-[35px] mx-[2px] flex items-center justify-center text-[#fff] bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[10px]\">
-                  <a href=\"javascript:void(0)\" title=\"Wishlist\" class=\"w-[35px] h-[35px] flex items-center justify-center\">
-                      <i class=\"ri-heart-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#777] leading-[10px]\"></i>
-                  </a>
-              </li>
-              <li class=\"bb-btn-group transition-all duration-[0.3s] ease-in-out w-[35px] h-[35px] mx-[2px] flex items-center justify-center text-[#fff] bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[10px]\">
-                  <a href=\"javascript:void(0)\" title=\"43\" class=\"bb-modal-toggle w-[35px] h-[35px] flex items-center justify-center\" data-product-id=\"{{ product.product_id }}\">
-                      <i class=\"ri-eye-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#777] leading-[10px]\"></i> 
-                  </a>
-              </li>
-              <li class=\"bb-btn-group transition-all duration-[0.3s] ease-in-out w-[35px] h-[35px] mx-[2px] flex items-center justify-center text-[#fff] bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[10px]\">
-                  <a href=\"\" title=\"Compare\" class=\"w-[35px] h-[35px] flex items-center justify-center\">
-                      <i class=\"ri-repeat-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#777] leading-[10px]\"></i>
-                  </a>
-              </li>
-          </ul> #}
       </div>
       <div class=\"bb-pro-contact p-[20px]\">
           <div class=\"bb-pro-subtitle mb-[8px] flex flex-wrap justify-between\">

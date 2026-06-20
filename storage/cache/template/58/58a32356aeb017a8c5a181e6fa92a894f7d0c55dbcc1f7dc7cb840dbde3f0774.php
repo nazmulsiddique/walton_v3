@@ -324,15 +324,15 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
     <script src=\"";
         // line 235
         yield ($context["base"] ?? null);
-        yield "extension/blueberry/catalog/view/javascript/main.js\"></script>
+        yield "extension/blueberry/catalog/view/javascript/common.js\"></script>
     <script src=\"";
         // line 236
         yield ($context["base"] ?? null);
-        yield "extension/blueberry/catalog/view/javascript/custom.js\"></script>
+        yield "extension/blueberry/catalog/view/javascript/main.js\"></script>
     <script src=\"";
         // line 237
         yield ($context["base"] ?? null);
-        yield "extension/blueberry/catalog/view/javascript/common.js\"></script>
+        yield "extension/blueberry/catalog/view/javascript/custom.js\"></script>
 
 </body></html>
 ";
@@ -599,9 +599,9 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/jquery-range-ui.min.js\"></script>
 
     <!-- main-js -->
+    <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/common.js\"></script>
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/main.js\"></script>
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/custom.js\"></script>
-    <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/common.js\"></script>
 
 </body></html>
 ", "extension/blueberry/catalog/view/template/common/footer.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\common\\footer.twig");

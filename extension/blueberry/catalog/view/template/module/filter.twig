@@ -1,94 +1,152 @@
+<div class="bb-sidebar-block pt-4">
 
-<div class="bb-shop-wrap bg-[#f8f8fb] border border-solid border-[#eee] rounded-[20px] sticky top-0">
-
-    <div class="bb-sidebar-block p-[20px]">
-
-        <div class="bb-sidebar-title mb-[20px]">
+        {# <div class="bb-sidebar-title mb-[20px] flex items-center justify-between">
             <h3 class="font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]">
                 {{ heading_title }}
             </h3>
-        </div>
+        </div> #}
 
-        {% for filter_group in filter_groups %}
+    {% for filter_group in filter_groups %}
 
-            <div class="border-b border-solid border-[#eee] pb-[20px] mb-[20px] last:border-b-0">
+        <div class="border-b border-solid border-[#eee] pt-[10px] mb-[10px] last:border-b-0">
 
-                <h4 class="text-[16px] font-semibold text-[#3d4750] mb-[15px]">
-                    {{ filter_group.name }}
-                </h4>
+            <h4 class="text-[16px] font-semibold text-[#3d4750] mb-[15px]">
+                {{ filter_group.name }}
+            </h4>
 
-                <div id="filter-group-{{ filter_group.filter_group_id }}">
-                    <ul>
+            <div id="filter-group-{{ filter_group.filter_group_id }}">
+                <ul>
 
-                        {% for filter in filter_group.filter %}
+                    {% for filter in filter_group.filter %}
 
-                            <li class="relative block mb-[14px]">
+                        <li class="relative block mb-[14px]">
 
-                                <label class="bb-sidebar-block-item relative flex items-center cursor-pointer">
+                            <label class="bb-sidebar-block-item relative flex items-center cursor-pointer">
 
-                                    <input
-                                        type="checkbox"
-                                        name="filter[]"
-                                        value="{{ filter.filter_id }}"
-                                        id="input-filter-{{ filter.filter_id }}"
-                                        class="mr-3 h-[18px] w-[18px] rounded border-[#ddd]"
-                                        {% if filter.filter_id in filter_category %}checked{% endif %}
-                                    >
+                                <input
+                                    type="checkbox"
+                                    name="filter[]"
+                                    value="{{ filter.filter_id }}"
+                                    id="input-filter-{{ filter.filter_id }}"
+                                    class="mr-3 h-[18px] w-[18px] rounded border-[#ddd]"
+                                    {% if filter.filter_id in filter_category %}checked{% endif %}
+                                >
 
-                                    <span class="text-[#777] text-[14px] leading-[20px] font-normal capitalize">
-                                        {{ filter.name }}
-                                    </span>
+                                <span class="text-[#777] text-[14px] leading-[20px] font-normal capitalize">
+                                    {{ filter.name }}
+                                </span>
 
-                                </label>
+                            </label>
 
-                            </li>
+                        </li>
 
-                        {% endfor %}
+                    {% endfor %}
 
-                    </ul>
-                </div>
-
+                </ul>
             </div>
 
-        {% endfor %}
+        </div>
 
+    {% endfor %}
+
+    <div class="text-center">
         <button
-          type="button"
-          id="button-reset-filter"
-          class="w-full bg-[#ef4444] hover:bg-[#dc2626] text-white font-medium py-[12px] px-[20px] rounded-[10px] transition-all duration-300">
-          <i class="ri-refresh-line mr-2"></i>
-          Reset Filter
-      </button>
-
+            type="button"
+            id="button-clear-filters"
+            class="bg-red-500 hover:bg-red-600 text-white font-medium py-1 px-4 rounded-lg transition-all duration-300">
+            <i class="ri-refresh-line mr-2"></i>
+            Reset
+        </button>
     </div>
 
 </div>
-<script>
-let filterTimeout;
 
-$('input[name^="filter"]').on('change', function() {
 
-    clearTimeout(filterTimeout);
+<script type="text/javascript"><!--
+(function() {
+    var baseUrl = '{{ action|escape('js') }}';
+    var debounceTimer = null;
 
-    filterTimeout = setTimeout(function() {
+    function loadCategoryProducts(url) {
+        var separator = url.indexOf('?') > -1 ? '&' : '?';
+        var ajaxUrl = url + separator + 'ajax=1';
 
-        let filter = [];
+        $('#category-products').css('opacity', '0.5');
+        $('input[name^=\'filter\'], #input-sort, #input-limit').prop('disabled', true);
 
-        $('input[name^="filter"]:checked').each(function() {
-            filter.push($(this).val());
+        $.ajax({
+            url: ajaxUrl,
+            type: 'get',
+            dataType: 'json',
+            success: function(json) {
+                if (json['success']) {
+                    $('#category-products').html(json['html']);
+                    history.pushState({}, '', url);
+                }
+            },
+            error: function() {},
+            complete: function() {
+                $('#category-products').css('opacity', '1');
+                $('input[name^=\'filter\'], #input-sort, #input-limit').prop('disabled', false);
+                $('#input-sort, #input-limit').removeClass('hide-select').addClass('block');
+                $('#category-products .pro-bb-content').removeClass('width-100');
+                
+                updateClearLink();
+            }
+        });
+    }
+
+    function buildFilterUrl() {
+        var filter = [];
+        $('input[name^=\'filter\']:checked').each(function() {
+            filter.push(this.value);
         });
 
-        if (filter.length) {
-            location = '{{ action|escape('js') }}&filter=' + filter.join(',');
-        } else {
-            location = '{{ action|escape('js') }}';
+        var url = baseUrl;
+        if (filter.length > 0) {
+            url += '&filter=' + filter.join(',');
         }
 
-    }, 500);
+        return url;
+    }
 
-});
-$('#button-reset-filter').on('click', function() {
-    window.location.href = '{{ action|escape('js') }}';
-});
-</script>
+    function updateClearLink() {
+        var hasFilters = $('input[name^=\'filter\']:checked').length > 0;
+        $('#button-clear-filters').toggle(hasFilters);
+    }
+
+    // Event delegation for dynamic elements (sort, limit, pagination, view toggle)
+    $(document).on('change', '#input-sort', function() {
+        loadCategoryProducts(this.value);
+    });
+
+    $(document).on('change', '#input-limit', function() {
+        loadCategoryProducts(this.value);
+    });
+
+    $(document).on('click', '.pagination a', function(e) {
+        e.preventDefault();
+        loadCategoryProducts($(this).attr('href'));
+    });
+
+    $('input[name^=\'filter\']').on('change', function() {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(function() {
+            loadCategoryProducts(buildFilterUrl());
+        }, 300);
+    });
+
+    $('#button-clear-filters').on('click', function() {
+        $('input[name^=\'filter\']:checked').prop('checked', false);
+        loadCategoryProducts(baseUrl);
+    });
+
+    window.addEventListener('popstate', function() {
+        var url = window.location.href;
+        url = url.replace(/[&?]ajax=\d/, '');
+        loadCategoryProducts(url);
+    });
+
+})();
+//--></script>
 

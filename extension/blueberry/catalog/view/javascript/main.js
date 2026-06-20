@@ -59,7 +59,7 @@
         var $this = $(this),
             selectOptions = $(this).children("option").length;
 
-        $this.addClass("hide-select");
+        // $this.addClass("hide-select");
         $this.wrap('<div class="select"></div>');
         $this.after('<div class="custom-select active"></div>');
 
@@ -603,30 +603,64 @@ $acTabs.find("li").click(function () {
     });
 
     /* List Grid View */
-    $(document).ready(function () {
-        $(".bb-bl-btn button").on("click", function () {
-            $(this).addClass("active").siblings().removeClass("active");
+   $(document).ready(function () {
+
+        const $productList = $('#product-list');
+        const $gridCont = $('.bb-shop-pro-inner');
+
+        function setGridView() {
+
+            $productList
+                .removeClass('flex flex-col')
+                .addClass('grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 pro-bb-content gap-4');
+
+            $gridCont.removeClass('list-view-100');
+            $('.pro-bb-content').removeClass('width-100');
+
+            // ACTIVE BUTTON FIX
+            $('#button-list').removeClass('active');
+            $('#button-grid').addClass('active');
+
+            localStorage.setItem('display', 'grid');
+        }
+
+        function setListView() {
+
+            $productList
+                .removeClass('grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 pro-bb-content gap-4')
+                .addClass('flex flex-col');
+
+            $gridCont.addClass('list-view-100');
+            $('.pro-bb-content').addClass('width-100');
+
+            // ACTIVE BUTTON FIX
+            $('#button-grid').removeClass('active');
+            $('#button-list').addClass('active');
+
+            localStorage.setItem('display', 'list');
+        }
+
+        // CLICK EVENTS
+        $('#button-list').on('click', function (e) {
+            e.preventDefault();
+            setListView();
         });
+
+        $('#button-grid').on('click', function (e) {
+            e.preventDefault();
+            setGridView();
+        });
+
+        // INIT (IMPORTANT FIX HERE)
+        const display = localStorage.getItem('display');
+
+        if (display === 'list') {
+            setListView();
+        } else {
+            setGridView();   // 👉 ALWAYS GRID DEFAULT
+        }
+
     });
-
-    function showList100(e) {
-        var $gridCont = $('.bb-shop-pro-inner');
-        var $listView = $('.pro-bb-content');
-        e.preventDefault();
-        $gridCont.addClass('list-view-100');
-        $listView.addClass('width-100');
-    }
-
-    function gridList100(e) {
-        var $gridCont = $('.bb-shop-pro-inner');
-        var $gridView = $('.pro-bb-content');
-        e.preventDefault();
-        $gridCont.removeClass('list-view-100');
-        $gridView.removeClass('width-100');
-    }
-
-    $(document).on('click', '.btn-grid-100', gridList100);
-    $(document).on('click', '.btn-list-100', showList100);
 
     /* coupon down box */
     $('.coupon-down-box').hide();

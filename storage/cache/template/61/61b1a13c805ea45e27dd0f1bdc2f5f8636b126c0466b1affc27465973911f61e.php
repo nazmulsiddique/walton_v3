@@ -404,10 +404,9 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
 
 
 
-
     ";
-        // line 271
-        yield from $this->loadTemplate("extension/blueberry/catalog/view/template/common/category_popup.twig", "extension/blueberry/catalog/view/template/common/header.twig", 271)->unwrap()->yield($context);
+        // line 270
+        yield from $this->loadTemplate("extension/blueberry/catalog/view/template/common/category_popup.twig", "extension/blueberry/catalog/view/template/common/header.twig", 270)->unwrap()->yield($context);
         yield from [];
     }
 
@@ -432,7 +431,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
      */
     public function getDebugInfo(): array
     {
-        return array (  410 => 271,  392 => 256,  384 => 251,  376 => 246,  368 => 241,  360 => 236,  352 => 231,  334 => 215,  329 => 213,  322 => 208,  289 => 178,  221 => 113,  183 => 78,  138 => 36,  132 => 33,  127 => 31,  121 => 28,  117 => 27,  111 => 24,  107 => 23,  103 => 22,  99 => 21,  95 => 20,  91 => 19,  87 => 18,  80 => 15,  74 => 13,  71 => 12,  65 => 10,  63 => 9,  59 => 8,  55 => 7,  45 => 2,  42 => 1,);
+        return array (  409 => 270,  392 => 256,  384 => 251,  376 => 246,  368 => 241,  360 => 236,  352 => 231,  334 => 215,  329 => 213,  322 => 208,  289 => 178,  221 => 113,  183 => 78,  138 => 36,  132 => 33,  127 => 31,  121 => 28,  117 => 27,  111 => 24,  107 => 23,  103 => 22,  99 => 21,  95 => 20,  91 => 19,  87 => 18,  80 => 15,  74 => 13,  71 => 12,  65 => 10,  63 => 9,  59 => 8,  55 => 7,  45 => 2,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -703,7 +702,6 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
             </div>
         </div>
     </header>
-
 
 
 

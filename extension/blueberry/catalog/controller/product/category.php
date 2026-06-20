@@ -433,6 +433,25 @@ class Category extends \Opencart\System\Engine\Controller {
 
 			$data['continue'] = $this->url->link('common/home', 'language=' . $this->config->get('config_language'));
 
+
+			// AJAX request - return partial HTML only
+			if (isset($this->request->get['ajax'])) {
+				$this->response->addHeader('Content-Type: application/json');
+
+				$json = [
+					'success' => true,
+					'html'    => $this->load->view('extension/blueberry/product/category_products', $data)
+				];
+
+				$this->response->setOutput(json_encode($json));
+
+				return null;
+			}
+			// Standard request - render partial into wrapper
+			$data['products_html'] = $this->load->view('extension/blueberry/product/category_products', $data);
+
+
+
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');
 			$data['content_top'] = $this->load->controller('common/content_top');

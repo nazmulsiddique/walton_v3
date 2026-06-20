@@ -58,3 +58,15 @@
 .active-tab {
     color: #6c7fd8 !important;
 }
+
+
+.bb-mobile-filter {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.bb-mobile-filter.bb-filter-open {
+    transform: translateX(0);
+    opacity: 1;
+}

@@ -41,7 +41,7 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
         // line 1
         yield "<div id=\"carousel-banner-";
         yield ($context["module"] ?? null);
-        yield "\" class=\"relative w-full overflow-hidden max-w-[1320px] mx-auto px-4 pb-5\">
+        yield "\" class=\"relative w-full overflow-hidden max-w-[1320px] mx-auto pb-5\">
 
   ";
         // line 4
@@ -103,7 +103,7 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
                 yield " absolute inset-0";
             }
             if ((($context["banner_row"] ?? null) == 0)) {
-                yield " opacity-100 relative z-10";
+                yield " opacity-100 relative z-5";
             } else {
                 yield " opacity-0";
                 if ((($context["effect"] ?? null) == "fade")) {
@@ -205,7 +205,7 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
             yield " absolute left-2 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer\"
       aria-label=\"Previous\"
     >
-      <span class=\"fa-solid fa-chevron-left\"></span>
+      <i class=\"ri-arrow-left-s-line\"></i>
     </button>
     <button
       type=\"button\"
@@ -215,7 +215,7 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
             yield " absolute right-2 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer\"
       aria-label=\"Next\"
     >
-      <span class=\"fa-solid fa-chevron-right\"></span>
+      <i class=\"ri-arrow-right-s-line\"></i>
     </button>
   ";
         }
@@ -254,13 +254,13 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
       var i = parseInt(\$(this).data('index'));
       if (i === index) {
         if (fade) {
-          \$(this).removeClass('opacity-0 z-0').addClass('opacity-100 z-10');
+          \$(this).removeClass('opacity-0 z-0').addClass('opacity-100 z-5');
         } else {
           \$(this).removeClass('hidden opacity-0').addClass('opacity-100');
         }
       } else {
         if (fade) {
-          \$(this).removeClass('opacity-100 z-10').addClass('opacity-0 z-0');
+          \$(this).removeClass('opacity-100 z-5').addClass('opacity-0 z-0');
         } else {
           \$(this).removeClass('opacity-100').addClass('hidden opacity-0');
         }
@@ -348,7 +348,7 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
 
     public function getSourceContext(): Source
     {
-        return new Source("<div id=\"carousel-banner-{{ module }}\" class=\"relative w-full overflow-hidden max-w-[1320px] mx-auto px-4 pb-5\">
+        return new Source("<div id=\"carousel-banner-{{ module }}\" class=\"relative w-full overflow-hidden max-w-[1320px] mx-auto pb-5\">
 
   {# Indicators #}
   {% if indicators and banners|batch(items)|length > 1 %}
@@ -369,7 +369,7 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
     {% set banner_row = 0 %}
     {% for carousel in banners|batch(items) %}
       <div
-        class=\"w-full carousel-slide-{{ module }}{% if effect == 'fade' %} absolute inset-0{% endif %}{% if banner_row == 0 %} opacity-100 relative z-10{% else %} opacity-0{% if effect == 'fade' %} z-0{% else %} hidden{% endif %}{% endif %} transition-opacity duration-700\"
+        class=\"w-full carousel-slide-{{ module }}{% if effect == 'fade' %} absolute inset-0{% endif %}{% if banner_row == 0 %} opacity-100 relative z-5{% else %} opacity-0{% if effect == 'fade' %} z-0{% else %} hidden{% endif %}{% endif %} transition-opacity duration-700\"
         data-index=\"{{ banner_row }}\"
       >
         <div class=\"flex flex-wrap justify-center\">
@@ -400,14 +400,14 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
       class=\"carousel-prev-{{ module }} absolute left-2 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer\"
       aria-label=\"Previous\"
     >
-      <span class=\"fa-solid fa-chevron-left\"></span>
+      <i class=\"ri-arrow-left-s-line\"></i>
     </button>
     <button
       type=\"button\"
       class=\"carousel-next-{{ module }} absolute right-2 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer\"
       aria-label=\"Next\"
     >
-      <span class=\"fa-solid fa-chevron-right\"></span>
+      <i class=\"ri-arrow-right-s-line\"></i>
     </button>
   {% endif %}
 
@@ -429,13 +429,13 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
       var i = parseInt(\$(this).data('index'));
       if (i === index) {
         if (fade) {
-          \$(this).removeClass('opacity-0 z-0').addClass('opacity-100 z-10');
+          \$(this).removeClass('opacity-0 z-0').addClass('opacity-100 z-5');
         } else {
           \$(this).removeClass('hidden opacity-0').addClass('opacity-100');
         }
       } else {
         if (fade) {
-          \$(this).removeClass('opacity-100 z-10').addClass('opacity-0 z-0');
+          \$(this).removeClass('opacity-100 z-5').addClass('opacity-0 z-0');
         } else {
           \$(this).removeClass('opacity-100').addClass('hidden opacity-0');
         }

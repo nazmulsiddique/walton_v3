@@ -1,5 +1,11 @@
 {{ header }}
-<div id="product-category">
+<div id="product-category" class="max-w-[1320px] mx-auto">
+    {% set content_class = 'col-span-12' %}
+    {% if column_left and column_right %}
+        {% set content_class = 'col-span-12 lg:col-span-6' %}
+    {% elseif column_left or column_right %}
+        {% set content_class = 'col-span-12 lg:col-span-9' %}
+    {% endif %}
   <!-- Breadcrumb -->
   <section class="section-breadcrumb mb-[20px] max-[1199px]:mb-[15px] border-b border-solid border-[#eee] bg-[#f8f8fb]">
       <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
@@ -39,38 +45,29 @@
     {{ content_top }}
 
     <!-- Button Section-->
-    <section>
-        <!-- Tabs / big rounded-top buttons -->
-        <div class="max-w-6xl mx-auto pt-5 lg:pt-0 pb-4 px-[12px] lg:px-0">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg6488:gap-10">
-                <button
-                type="button"
-                class="w-full h-24 rounded-t-3xl rounded-b-none
-                        bg-gradient-to-b from-sky-100 to-sky-300
-                        border border-sky-200 shadow-sm
-                        text-3xl font-semibold text-slate-900
-                        flex items-center justify-center
-                        hover:from-sky-200 hover:to-sky-400
-                        focus:outline-none focus:ring-4 focus:ring-sky-200"
-                >
-                Dreamer's Canvas
-                </button>
+<section>
+    <div class="max-w-7xl mx-auto pt-5 lg:pt-0 pb-4 px-[12px] lg:px-0">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
-                <button
-                type="button"
-                class="w-full h-24 rounded-t-3xl rounded-b-none
-                        bg-gradient-to-b from-sky-100 to-sky-300
-                        border border-sky-200 shadow-sm
-                        text-3xl font-semibold text-slate-900
-                        flex items-center justify-center
-                        hover:from-sky-200 hover:to-sky-400
-                        focus:outline-none focus:ring-4 focus:ring-sky-200"
-                >
-                Find Your Perfect Fridge
-                </button>
-            </div>
+            <button
+                class="w-full h-20 bg-[#6c7fd8] text-white rounded-2xl shadow-md hover:bg-[#5b6fd1] hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3">
+                <i class="ri-brush-line text-3xl"></i>
+                <span class="text-xl font-semibold">
+                    Dreamer's Canvas
+                </span>
+            </button>
+
+            <button
+                class="w-full h-20 bg-[#6c7fd8] text-white rounded-2xl shadow-md hover:bg-[#5b6fd1] hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3">
+                <i class="ri-home-gear-line text-3xl"></i>
+                <span class="text-xl font-semibold">
+                    Find Your Perfect Fridge
+                </span>
+            </button>
+
         </div>
-    </section>
+    </div>
+</section>
     
     <!-- Category section -->
     <section class="section-category pt-[10px] max-[1199px]:pt-[15px] mb-[24px]">
@@ -132,247 +129,41 @@
             </div>
         </div>
     </section>
+    <div class="grid grid-cols-12 gap-6">
 
-    <!-- Shop section -->
-    <section class="section-shop pb-[50px] max-[1199px]:pb-[35px]">
-        <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
-            <div class="flex flex-wrap w-full mb-[-24px]">
-                <div class="min-[992px]:w-[25%] w-full px-[12px] mb-[24px]">
-                    <div class="bb-shop-wrap bg-[#f8f8fb] border-[1px] border-solid border-[#eee] rounded-[20px] sticky top-[0]">
-                        <div class="bb-sidebar-block p-[20px] border-b-[1px] border-solid border-[#eee]">
-                            <div class="bb-sidebar-title mb-[20px]">
-                                <h3 class="font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]">Category</h3>
-                            </div>
-                            <div class="bb-sidebar-contact">
-                                {% for category in categories %}
-                                    <ul>
-                                        <li class="relative block mb-[14px]">
-                                            <div class="bb-sidebar-block-item relative">
-                                                <input type="checkbox" class="w-full h-[calc(100%-5px)] absolute opacity-[0] cursor-pointer z-[999] top-[50%] left-[0] translate-y-[-50%]">
-                                                <a href="javascript:void(0)" class="ml-[30px] block text-[#777] text-[14px] leading-[20px] font-normal capitalize cursor-pointer">{{ category.name }}</a>
-                                                <span class="checked absolute top-[0] left-[0] h-[18px] w-[18px] bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[5px] overflow-hidden"></span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                {% endfor %}
-                            </div>
-                        </div>
-                        <div class="bb-sidebar-block p-[20px] border-b-[1px] border-solid border-[#eee]">
-                            <div class="bb-sidebar-title mb-[20px]">
-                                <h3 class="font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]">Color</h3>
-                            </div>
-                            <div class="bb-color-contact">
-                                <ul>
-                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px] color-sidebar-active">
-                                        <div class="bb-sidebar-block-item relative">
-                                            <span class="pro-color-1 w-[22px] h-[22px] block rounded-[20px] bg-[#c4d6f9]"></span>
-                                        </div>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
-                                        <div class="bb-sidebar-block-item relative">
-                                            <span class="pro-color-2 w-[22px] h-[22px] block rounded-[20px] bg-[#ff748b]"></span>
-                                        </div>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
-                                        <div class="bb-sidebar-block-item relative">
-                                            <span class="pro-color-3 w-[22px] h-[22px] block rounded-[20px] bg-[#000000]"></span>
-                                        </div>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
-                                        <div class="bb-sidebar-block-item relative">
-                                            <span class="pro-color-4 w-[22px] h-[22px] block rounded-[20px] bg-[#2bff4a]"></span>
-                                        </div>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
-                                        <div class="bb-sidebar-block-item relative">
-                                            <span class="pro-color-5 w-[22px] h-[22px] block rounded-[20px] bg-[#ff7c5e]"></span>
-                                        </div>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
-                                        <div class="bb-sidebar-block-item relative">
-                                            <span class="pro-color-6 w-[22px] h-[22px] block rounded-[20px] bg-[#f155ff]"></span>
-                                        </div>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
-                                        <div class="bb-sidebar-block-item relative">
-                                            <span class="pro-color-7 w-[22px] h-[22px] block rounded-[20px] bg-[#ffef00]"></span>
-                                        </div>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
-                                        <div class="bb-sidebar-block-item relative">
-                                            <span class="pro-color-8 w-[22px] h-[22px] block rounded-[20px] bg-[#c89fff]"></span>
-                                        </div>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
-                                        <div class="bb-sidebar-block-item relative">
-                                            <span class="pro-color-9 w-[22px] h-[22px] block rounded-[20px] bg-[#7bfffa]"></span>
-                                        </div>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out inline-block p-[2px] rounded-[20px] cursor-pointer mr-[5px] w-[26px] h-[26px]">
-                                        <div class="bb-sidebar-block-item relative">
-                                            <span class="pro-color-10 w-[22px] h-[22px] block rounded-[20px] bg-[#56ffc1]"></span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="bb-sidebar-block p-[20px] border-b-[1px] border-solid border-[#eee]">
-                            <div class="bb-sidebar-title mb-[20px]">
-                                <h3 class="font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]">Price</h3>
-                            </div>
-                            <div class="bb-price-range">
-                                <div class="price-range-slider relative w-full mb-[7px]">
-                                    <p class="range-value m-[0]">
-                                        <input type="text" id="amount" readonly class="w-full bg-[#fff] text-[#000] text-[16px] mb-[15px] font-initial border-[1px] border-solid border-[#eee] p-[10px] text-center outline-[0] rounded-[10px]">
-                                    </p>
-                                    <div id="slider-range" class="range-bar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bb-sidebar-block p-[20px]">
-                            <div class="bb-sidebar-title mb-[20px]">
-                                <h3 class="font-quicksand text-[18px] tracking-[0.03rem] leading-[1.2] font-bold text-[#3d4750]">Tags</h3>
-                            </div>
-                            <div class="bb-tags">
-                                <ul class="flex flex-wrap m-[-5px]">
-                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
-                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Refrigerator & Freezer</a>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
-                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Air Conditioner</a>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
-                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Mobile</a>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
-                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Computer</a>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
-                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Microwave and Electric Oven</a>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
-                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Washing Machine</a>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
-                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">Television</a>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
-                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">E-Bike</a>
-                                    </li>
-                                    <li class="transition-all duration-[0.3s] ease-in-out m-[5px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] hover:bg-[#6c7fd8] cursor-pointer">
-                                        <a href="javascript:void(0)" class="font-Poppins text-[13px] capitalize font-light leading-[28px] tracking-[0.03rem] text-[#686e7d]">PCB</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {{ column_left }}
-                    </div>
+        {% if column_left %}
+            <aside id="mobile_filter_content_top" class="col-span-12 lg:col-span-3 hidden lg:block">
+                <div class="bb-shop-wrap bg-[#f8f8fb] border border-solid border-[#eee] rounded-[20px] sticky top-0 p-[20px]">
+                    {{ column_left }}
                 </div>
+            </aside>
+        {% endif %}
 
-                <!-- {% if products %} -->
-
-                <div class="min-[992px]:w-[75%] w-full px-[12px] mb-[24px]">
-                    <div class="bb-shop-pro-inner">
-                        <div class="flex flex-wrap mx-[-12px] mb-[-24px]">
-                            <div class="w-full px-[12px]">
-                                <div class="bb-pro-list-top mb-[24px] rounded-[20px] flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between">
-                                    <div class="flex flex-wrap w-full">
-                                        <div class="w-[30%] px-[12px] max-[420px]:w-full">
-                                            <div class="bb-bl-btn py-[10px] flex max-[420px]:justify-center">
-                                                <button type="button" class="grid-btn btn-grid-100 h-[38px] w-[38px] flex justify-center items-center border-[0] p-[5px] bg-transparent mr-[5px] active" title="grid">
-                                                    <i class="ri-apps-line text-[20px]"></i>
-                                                </button>
-                                                <button type="button" class="grid-btn btn-list-100 h-[38px] w-[38px] flex justify-center items-center border-[0] p-[5px] bg-transparent" title="grid">
-                                                    <i class="ri-list-unordered text-[20px]"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="w-[40%] px-[12px] max-[420px]:w-full">
-                                            <a href="{{ compare }}"
-                                                id="compare-total"
-                                                class="inline-flex items-center gap-2 mt-2 px-4 py-2 text-dark rounded-md transition duration-200">
-                                                    <i class="ri-arrow-left-right-line text-lg"></i>
-                                                    <span class="hidden xl:inline">
-                                                        {{ text_compare }}
-                                                    </span>
-                                            </a>
-                                        </div>
-
-
-    
-                                        <div class="w-[30%] px-[12px] max-[420px]:w-full">
-                                            <select onchange="if(this.value) window.location.href=this.value"
-                                                    class="sort-select w-full mt-2 px-3 py-2 text-gray-700 bg-transparent border-none rounded-md">
-
-                                                {% for item in sorts %}
-                                                    {% if item.text != 'Default' %}
-                                                        <option value="{{ item.href }}"
-                                                            {% if item.value == '%s-%s'|format(sort_by, order) %}selected{% endif %}>
-                                                            {{ item.text }}
-                                                        </option>
-                                                    {% endif %}
-                                                {% endfor %}
-
-                                            </select>
-                                        </div>
-                                        <style>
-                                        .hide-select {
-                                            display: block !important;
-                                            visibility: visible !important;
-                                            opacity: 1 !important;
-                                            pointer-events: auto !important;
-                                            position: relative !important;
-                                            z-index: 10;
-                                        }
-                                        .custom-select{
-                                            display: none !important;
-                                            visibility: hidden !important;
-                                            opacity: 0 !important;
-                                            pointer-events: none !important;
-                                            position: absolute !important;
-                                            z-index: -1 !important;
-                                        }
-                                        </style>
-
-
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            {% for product in products %}
-                            <div class="min-[1200px]:w-[25%] min-[768px]:w-[33.33%] w-[50%] max-[480px]:w-full px-[12px] mb-[24px] pro-bb-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                                {{ product }}
-                            </div>
-                            
-                            {% endfor %}
-
-                            <div class="w-full px-[12px]">
-                                <div class="bb-pro-pagination mb-[24px] flex justify-between items-center max-[575px]:flex-col max-[575px]:items-center">
-
-                                    {# Results Text #}
-                                    <p class="font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem] max-[575px]:mb-[10px]">
-                                        {{ results }}
-                                    </p>
-
-                                    {# Pagination Links #}
-                                    <div class="bb-pagination">
-                                        {{ pagination }}
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- {% endif %} -->
+        <div class="
+            {% if column_left and column_right %}
+                col-span-12 lg:col-span-6
+            {% elseif column_left or column_right %}
+                col-span-12 lg:col-span-9
+            {% else %}
+                col-span-12
+            {% endif %}
+        ">
+            <div id="category-products" class="px-2">
+                {{ products_html }}
             </div>
         </div>
-    </section>
 
+        {% if column_right %}
+            <aside class="col-span-12 lg:col-span-3">
+                {{ column_right }}
+            </aside>
+        {% endif %}
 
-    {{ content_bottom }}</div>
+    </div>
+
+    {{ content_bottom }}
+    
+</div>
 {% include 'extension/blueberry/catalog/view/template/product/product_quickview.twig' %}
 {# {{quickview}} #}
 </div>
