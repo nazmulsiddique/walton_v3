@@ -14,8 +14,8 @@ use Twig\Source;
 use Twig\Template;
 use Twig\TemplateWrapper;
 
-/* extension/blueberry/catalog/view/template/product/product_quickview.twig */
-class __TwigTemplate_06d726c1a695486f523d2b3bc34400f90619293e9c05efdcbe074b9e0d6110b6 extends Template
+/* extension/blueberry/catalog/view/template/product/quickview.twig */
+class __TwigTemplate_612b0bd11c8d29ecc6e701fc17363718654cf333e2849e72f0c1345ad05bf490 extends Template
 {
     private Source $source;
     /**
@@ -64,7 +64,7 @@ class __TwigTemplate_06d726c1a695486f523d2b3bc34400f90619293e9c05efdcbe074b9e0d6
                         <div class=\"min-[768px]:w-[58.33%] min-[576px]:w-full px-[12px] mb-[24px]\">
                             <div class=\"quickview-pro-content\">
                                 <h5 class=\"bb-quick-title\">
-                                    <a href=\"\" class=\"font-Poppins tracking-[0.03rem] mb-[10px] block text-[#3d4750] text-[20px] leading-[30px] font-medium\">aa";
+                                    <a href=\"\" class=\"font-Poppins tracking-[0.03rem] mb-[10px] block text-[#3d4750] text-[20px] leading-[30px] font-medium\">";
         // line 21
         yield ($context["name"] ?? null);
         yield "</a>
@@ -112,7 +112,8 @@ class __TwigTemplate_06d726c1a695486f523d2b3bc34400f90619293e9c05efdcbe074b9e0d6
                 </div>
             </div>
         </div>
-    </div>";
+    </div>
+";
         yield from [];
     }
 
@@ -121,7 +122,7 @@ class __TwigTemplate_06d726c1a695486f523d2b3bc34400f90619293e9c05efdcbe074b9e0d6
      */
     public function getTemplateName(): string
     {
-        return "extension/blueberry/catalog/view/template/product/product_quickview.twig";
+        return "extension/blueberry/catalog/view/template/product/quickview.twig";
     }
 
     /**
@@ -162,7 +163,7 @@ class __TwigTemplate_06d726c1a695486f523d2b3bc34400f90619293e9c05efdcbe074b9e0d6
                         <div class=\"min-[768px]:w-[58.33%] min-[576px]:w-full px-[12px] mb-[24px]\">
                             <div class=\"quickview-pro-content\">
                                 <h5 class=\"bb-quick-title\">
-                                    <a href=\"\" class=\"font-Poppins tracking-[0.03rem] mb-[10px] block text-[#3d4750] text-[20px] leading-[30px] font-medium\">aa{{ name }}</a>
+                                    <a href=\"\" class=\"font-Poppins tracking-[0.03rem] mb-[10px] block text-[#3d4750] text-[20px] leading-[30px] font-medium\">{{ name }}</a>
                                 </h5>
                                 <div class=\"bb-quickview-desc mb-[10px] text-[15px] leading-[24px] text-[#777] font-light\">
                                     <ul class=\"font-Poppins text-[14px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem] list-disc pl-5 space-y-1\">
@@ -201,6 +202,7 @@ class __TwigTemplate_06d726c1a695486f523d2b3bc34400f90619293e9c05efdcbe074b9e0d6
                 </div>
             </div>
         </div>
-    </div>", "extension/blueberry/catalog/view/template/product/product_quickview.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\product\\product_quickview.twig");
+    </div>
+", "extension/blueberry/catalog/view/template/product/quickview.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\product\\quickview.twig");
     }
 }

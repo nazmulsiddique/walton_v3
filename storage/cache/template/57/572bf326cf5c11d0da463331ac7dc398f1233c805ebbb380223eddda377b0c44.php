@@ -372,13 +372,9 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
         yield "
     
 </div>
+</div>
 ";
-        // line 167
-        yield from $this->loadTemplate("extension/blueberry/catalog/view/template/product/product_quickview.twig", "extension/blueberry/catalog/view/template/product/category.twig", 167)->unwrap()->yield($context);
-        // line 169
-        yield "</div>
-";
-        // line 170
+        // line 168
         yield ($context["footer"] ?? null);
         yield "
 <script>
@@ -409,34 +405,6 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
 
     });
 </script>
-<script>
-
-\$(document).on(\"click\", \".bb-modal-toggle\", function () {
-    let product_id = \$(this).attr(\"data-product-id\");
-    \$.ajax({
-        url: 'index.php?route=extension/blueberry/product/quickview&product_id=' + product_id,
-        type: 'GET',
-        success: function (html) {
-
-            \$(\"body\").append(html);
-
-            \$(\".bb-modal-overlay, .bb-modal\")
-                .removeClass(\"opacity-0 pointer-events-none\")
-                .addClass(\"opacity-100 pointer-events-auto\");
-
-        }
-    });
-});
-// \$(document).on(\"click\", \".bb-close-modal, .bb-modal-overlay\", function () {
-
-//     \$(\".bb-modal-overlay, .bb-modal\")
-//         .removeClass(\"opacity-100 pointer-events-auto\")
-//         .addClass(\"opacity-0 pointer-events-none\");
-
-//     \$(\"body\").removeClass(\"bb-overflow-hidden\");
-
-// });
-</script>
 ";
         yield from [];
     }
@@ -462,7 +430,7 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
      */
     public function getDebugInfo(): array
     {
-        return array (  382 => 170,  379 => 169,  377 => 167,  371 => 164,  366 => 161,  360 => 158,  357 => 157,  355 => 156,  348 => 152,  344 => 150,  340 => 148,  336 => 146,  334 => 145,  331 => 144,  329 => 143,  325 => 141,  318 => 137,  314 => 135,  312 => 134,  302 => 126,  285 => 122,  279 => 119,  276 => 118,  274 => 117,  268 => 114,  263 => 112,  257 => 108,  249 => 103,  246 => 102,  238 => 97,  233 => 96,  231 => 95,  225 => 92,  218 => 89,  215 => 88,  212 => 87,  194 => 86,  191 => 79,  155 => 45,  146 => 38,  131 => 36,  125 => 33,  119 => 31,  113 => 28,  110 => 27,  108 => 26,  105 => 25,  99 => 21,  96 => 20,  79 => 19,  75 => 18,  64 => 9,  61 => 8,  58 => 7,  55 => 6,  52 => 5,  49 => 4,  47 => 3,  42 => 1,);
+        return array (  378 => 168,  371 => 164,  366 => 161,  360 => 158,  357 => 157,  355 => 156,  348 => 152,  344 => 150,  340 => 148,  336 => 146,  334 => 145,  331 => 144,  329 => 143,  325 => 141,  318 => 137,  314 => 135,  312 => 134,  302 => 126,  285 => 122,  279 => 119,  276 => 118,  274 => 117,  268 => 114,  263 => 112,  257 => 108,  249 => 103,  246 => 102,  238 => 97,  233 => 96,  231 => 95,  225 => 92,  218 => 89,  215 => 88,  212 => 87,  194 => 86,  191 => 79,  155 => 45,  146 => 38,  131 => 36,  125 => 33,  119 => 31,  113 => 28,  110 => 27,  108 => 26,  105 => 25,  99 => 21,  96 => 20,  79 => 19,  75 => 18,  64 => 9,  61 => 8,  58 => 7,  55 => 6,  52 => 5,  49 => 4,  47 => 3,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -633,8 +601,6 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
     {{ content_bottom }}
     
 </div>
-{% include 'extension/blueberry/catalog/view/template/product/product_quickview.twig' %}
-{# {{quickview}} #}
 </div>
 {{ footer }}
 <script>
@@ -664,34 +630,6 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
         }, 300);
 
     });
-</script>
-<script>
-
-\$(document).on(\"click\", \".bb-modal-toggle\", function () {
-    let product_id = \$(this).attr(\"data-product-id\");
-    \$.ajax({
-        url: 'index.php?route=extension/blueberry/product/quickview&product_id=' + product_id,
-        type: 'GET',
-        success: function (html) {
-
-            \$(\"body\").append(html);
-
-            \$(\".bb-modal-overlay, .bb-modal\")
-                .removeClass(\"opacity-0 pointer-events-none\")
-                .addClass(\"opacity-100 pointer-events-auto\");
-
-        }
-    });
-});
-// \$(document).on(\"click\", \".bb-close-modal, .bb-modal-overlay\", function () {
-
-//     \$(\".bb-modal-overlay, .bb-modal\")
-//         .removeClass(\"opacity-100 pointer-events-auto\")
-//         .addClass(\"opacity-0 pointer-events-none\");
-
-//     \$(\"body\").removeClass(\"bb-overflow-hidden\");
-
-// });
 </script>
 ", "extension/blueberry/catalog/view/template/product/category.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\product\\category.twig");
     }

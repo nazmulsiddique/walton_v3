@@ -3037,3 +3037,760 @@ Function: require_once
 2026-06-20 11:53:37 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 487
 2026-06-20 15:01:06 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 487
 2026-06-20 15:01:06 - PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 487
+2026-06-21 10:11:49 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 250
+2026-06-21 10:11:49 - Error: Opencart\Catalog\Model\Catalog\Product::getProducts(): Return value must be of type array, null returned
+File: C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php
+Line: 255
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 343
+Class: Opencart\Catalog\Model\Catalog\Product
+Function: getProducts
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\proxy.php
+Line: 87
+Class: Opencart\System\Engine\Loader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\category.php
+Line: 231
+Class: Opencart\System\Engine\Proxy
+Function: __call
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Category
+Function: index
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 10:13:50 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\model\catalog\product.php on line 378
+2026-06-21 04:50:18 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\walton_v3\catalog\model\setting\store.php on line 48
+2026-06-21 04:50:18 - Error: Opencart\Catalog\Model\Setting\Store::getStoreByHostname(): Return value must be of type array, null returned
+File: C:\xampp\htdocs\walton_v3\catalog\model\setting\store.php
+Line: 48
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 343
+Class: Opencart\Catalog\Model\Setting\Store
+Function: getStoreByHostname
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\proxy.php
+Line: 87
+Class: Opencart\System\Engine\Loader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\catalog\controller\startup\setting.php
+Line: 20
+Class: Opencart\System\Engine\Proxy
+Function: __call
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Startup\Setting
+Function: index
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 208
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-06-21 12:10:55 - Error: Unable to find template "extension/blueberry/catalog/view/template/product/quickview.twig" (looked into: .).
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 234
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 138
+Class: Twig\Loader\FilesystemLoader
+Function: findTemplate
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 304
+Class: Twig\Loader\FilesystemLoader
+Function: getCacheKey
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 357
+Class: Twig\Environment
+Function: getTemplateClass
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 320
+Class: Twig\Environment
+Function: load
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\library\template\twig.php
+Line: 119
+Class: Twig\Environment
+Function: render
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\library\template.php
+Line: 58
+Class: Opencart\System\Library\Template\Twig
+Function: render
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 187
+Class: Opencart\System\Library\Template
+Function: render
+
+Backtrace: 7
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\quickview.php
+Line: 44
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 8
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Quickview
+Function: index
+
+Backtrace: 9
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 10
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-06-21 12:10:58 - Error: Unable to find template "extension/blueberry/catalog/view/template/product/quickview.twig" (looked into: .).
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 234
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 138
+Class: Twig\Loader\FilesystemLoader
+Function: findTemplate
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 304
+Class: Twig\Loader\FilesystemLoader
+Function: getCacheKey
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 357
+Class: Twig\Environment
+Function: getTemplateClass
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 320
+Class: Twig\Environment
+Function: load
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\library\template\twig.php
+Line: 119
+Class: Twig\Environment
+Function: render
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\library\template.php
+Line: 58
+Class: Opencart\System\Library\Template\Twig
+Function: render
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 187
+Class: Opencart\System\Library\Template
+Function: render
+
+Backtrace: 7
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\quickview.php
+Line: 44
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 8
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Quickview
+Function: index
+
+Backtrace: 9
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 10
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-06-21 12:11:00 - Error: Unable to find template "extension/blueberry/catalog/view/template/product/quickview.twig" (looked into: .).
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 234
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 138
+Class: Twig\Loader\FilesystemLoader
+Function: findTemplate
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 304
+Class: Twig\Loader\FilesystemLoader
+Function: getCacheKey
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 357
+Class: Twig\Environment
+Function: getTemplateClass
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 320
+Class: Twig\Environment
+Function: load
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\library\template\twig.php
+Line: 119
+Class: Twig\Environment
+Function: render
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\library\template.php
+Line: 58
+Class: Opencart\System\Library\Template\Twig
+Function: render
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 187
+Class: Opencart\System\Library\Template
+Function: render
+
+Backtrace: 7
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\quickview.php
+Line: 44
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 8
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Quickview
+Function: index
+
+Backtrace: 9
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 10
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-06-21 12:30:50 - PHP Warning:  rename(C:\xampp\htdocs\walton_v3\storage\cache\template\68\68fC4D8.tmp,C:/xampp/htdocs/walton_v3/storage/cache/template/68/68fc196af7b10b8769e99a302fcedc3b56c3ea8f64de0a083079048545c349ec.php): Access is denied (code: 5) in C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Cache\FilesystemCache.php on line 61
+2026-06-21 12:30:50 - Error: Failed to write cache file "C:/xampp/htdocs/walton_v3/storage/cache/template/68/68fc196af7b10b8769e99a302fcedc3b56c3ea8f64de0a083079048545c349ec.php".
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Cache\FilesystemCache.php
+Line: 76
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 397
+Class: Twig\Cache\FilesystemCache
+Function: write
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 357
+Class: Twig\Environment
+Function: loadTemplate
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 320
+Class: Twig\Environment
+Function: load
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\library\template\twig.php
+Line: 119
+Class: Twig\Environment
+Function: render
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\library\template.php
+Line: 58
+Class: Opencart\System\Library\Template\Twig
+Function: render
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 187
+Class: Opencart\System\Library\Template
+Function: render
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\catalog\controller\error\not_found.php
+Line: 56
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 7
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Error\NotFound
+Function: index
+
+Backtrace: 8
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 9
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once

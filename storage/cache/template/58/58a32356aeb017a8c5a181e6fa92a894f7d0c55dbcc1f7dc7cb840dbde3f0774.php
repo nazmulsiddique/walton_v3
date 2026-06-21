@@ -303,10 +303,10 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
         // line 228
         yield ($context["base"] ?? null);
         yield "extension/blueberry/catalog/view/javascript/vendor/smoothscroll.min.js\"></script>
-    <script src=\"";
+    <!-- <script src=\"";
         // line 229
         yield ($context["base"] ?? null);
-        yield "extension/blueberry/catalog/view/javascript/vendor/countdownTimer.js\"></script>
+        yield "extension/blueberry/catalog/view/javascript/vendor/countdownTimer.js\"></script> -->
     <script src=\"";
         // line 230
         yield ($context["base"] ?? null);
@@ -333,7 +333,10 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
         // line 237
         yield ($context["base"] ?? null);
         yield "extension/blueberry/catalog/view/javascript/custom.js\"></script>
-
+    <script src=\"";
+        // line 238
+        yield ($context["base"] ?? null);
+        yield "extension/blueberry/catalog/view/javascript/quickview.js\"></script>
 </body></html>
 ";
         yield from [];
@@ -360,7 +363,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
      */
     public function getDebugInfo(): array
     {
-        return array (  334 => 237,  330 => 236,  326 => 235,  320 => 232,  316 => 231,  312 => 230,  308 => 229,  304 => 228,  300 => 227,  296 => 226,  292 => 225,  244 => 180,  236 => 175,  228 => 170,  220 => 165,  212 => 160,  204 => 155,  63 => 17,  47 => 4,  42 => 1,);
+        return array (  338 => 238,  334 => 237,  330 => 236,  326 => 235,  320 => 232,  316 => 231,  312 => 230,  308 => 229,  304 => 228,  300 => 227,  296 => 226,  292 => 225,  244 => 180,  236 => 175,  228 => 170,  220 => 165,  212 => 160,  204 => 155,  63 => 17,  47 => 4,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -593,7 +596,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/aos.js\"></script>
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/swiper-bundle.min.js\"></script>
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/smoothscroll.min.js\"></script>
-    <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/countdownTimer.js\"></script>
+    <!-- <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/countdownTimer.js\"></script> -->
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/owl.carousel.min.js\"></script>
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/slick.min.js\"></script>
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/vendor/jquery-range-ui.min.js\"></script>
@@ -602,7 +605,7 @@ class __TwigTemplate_6d15ce1e8860e73eb6ea578c9a230e7b01a26ef869754a648b1e1bc7ec5
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/common.js\"></script>
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/main.js\"></script>
     <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/custom.js\"></script>
-
+    <script src=\"{{ base }}extension/blueberry/catalog/view/javascript/quickview.js\"></script>
 </body></html>
 ", "extension/blueberry/catalog/view/template/common/footer.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\common\\footer.twig");
     }

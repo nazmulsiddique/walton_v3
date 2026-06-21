@@ -164,8 +164,6 @@
     {{ content_bottom }}
     
 </div>
-{% include 'extension/blueberry/catalog/view/template/product/product_quickview.twig' %}
-{# {{quickview}} #}
 </div>
 {{ footer }}
 <script>
@@ -195,32 +193,4 @@
         }, 300);
 
     });
-</script>
-<script>
-
-$(document).on("click", ".bb-modal-toggle", function () {
-    let product_id = $(this).attr("data-product-id");
-    $.ajax({
-        url: 'index.php?route=extension/blueberry/product/quickview&product_id=' + product_id,
-        type: 'GET',
-        success: function (html) {
-
-            $("body").append(html);
-
-            $(".bb-modal-overlay, .bb-modal")
-                .removeClass("opacity-0 pointer-events-none")
-                .addClass("opacity-100 pointer-events-auto");
-
-        }
-    });
-});
-// $(document).on("click", ".bb-close-modal, .bb-modal-overlay", function () {
-
-//     $(".bb-modal-overlay, .bb-modal")
-//         .removeClass("opacity-100 pointer-events-auto")
-//         .addClass("opacity-0 pointer-events-none");
-
-//     $("body").removeClass("bb-overflow-hidden");
-
-// });
 </script>

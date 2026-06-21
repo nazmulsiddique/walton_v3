@@ -29,7 +29,7 @@ class Blueberry extends \Opencart\System\Engine\Controller {
 			'product/category',
 			'product/product',
 			'product/thumb',
-    		'product/quickview',
+    		'product/product_quickview',
     		'product/compare',
 			'product/search'
 			])) {
@@ -49,9 +49,6 @@ public function controller(string &$route, array &$args): void {
 			$route = 'extension/blueberry/product/category';
 		}
 
-		if ($route == 'product/quickview') {
-			$route = 'extension/blueberry/product/quickview';
-		}
 	}
 
 
