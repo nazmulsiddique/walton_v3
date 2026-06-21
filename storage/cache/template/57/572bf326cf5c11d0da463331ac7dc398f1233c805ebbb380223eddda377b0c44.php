@@ -155,42 +155,18 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
         yield ($context["content_top"] ?? null);
         yield "
 
-    <!-- Button Section-->
-<section>
-    <div class=\"max-w-7xl mx-auto pt-5 lg:pt-0 pb-4 px-[12px] lg:px-0\">
-        <div class=\"grid grid-cols-1 lg:grid-cols-2 gap-5\">
-
-            <button
-                class=\"w-full h-20 bg-[#6c7fd8] text-white rounded-2xl shadow-md hover:bg-[#5b6fd1] hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3\">
-                <i class=\"ri-brush-line text-3xl\"></i>
-                <span class=\"text-xl font-semibold\">
-                    Dreamer's Canvas
-                </span>
-            </button>
-
-            <button
-                class=\"w-full h-20 bg-[#6c7fd8] text-white rounded-2xl shadow-md hover:bg-[#5b6fd1] hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3\">
-                <i class=\"ri-home-gear-line text-3xl\"></i>
-                <span class=\"text-xl font-semibold\">
-                    Find Your Perfect Fridge
-                </span>
-            </button>
-
-        </div>
-    </div>
-</section>
     
     <!-- Category section -->
-    <section class=\"section-category pt-[10px] max-[1199px]:pt-[15px] mb-[24px]\">
+    <section class=\"section-category pt-[10px] max-[1199px]:pt-[15px] mb-[15px]\">
         <div class=\"flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]\">
             <div class=\"flex flex-wrap w-full\">
                 <div class=\"w-full px-[12px]\">
                     <div class=\"bb-category-5-colum owl-carousel\">
                     ";
-        // line 79
+        // line 55
         yield "                    ";
         $context["bg_classes"] = ["bg-[#fef1f1]", "bg-[#e1fcf2]", "bg-[#f4f1fe]", "bg-[#e1fcf2]", "bg-[#fbf9e4]"];
-        // line 86
+        // line 62
         yield "                    ";
         $context['_parent'] = $context;
         $context['_seq'] = CoreExtension::ensureTraversable(($context["categories"] ?? null));
@@ -208,80 +184,80 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
-            // line 87
+            // line 63
             yield "                        ";
-            $context["bg_class"] = (($_v0 = ($context["bg_classes"] ?? null)) && is_array($_v0) || $_v0 instanceof ArrayAccess ? ($_v0[(CoreExtension::getAttribute($this->env, $this->source, $context["loop"], "index0", [], "any", false, false, false, 87) % Twig\Extension\CoreExtension::length($this->env->getCharset(), ($context["bg_classes"] ?? null)))] ?? null) : null);
-            // line 88
+            $context["bg_class"] = (($_v0 = ($context["bg_classes"] ?? null)) && is_array($_v0) || $_v0 instanceof ArrayAccess ? ($_v0[(CoreExtension::getAttribute($this->env, $this->source, $context["loop"], "index0", [], "any", false, false, false, 63) % Twig\Extension\CoreExtension::length($this->env->getCharset(), ($context["bg_classes"] ?? null)))] ?? null) : null);
+            // line 64
             yield "                        ";
-            $context["delay"] = (CoreExtension::getAttribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 88) * 200);
-            // line 89
+            $context["delay"] = (CoreExtension::getAttribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 64) * 200);
+            // line 65
             yield "                        <div class=\"bb-category-box p-[15px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] ";
             yield ($context["bg_class"] ?? null);
             yield "\"
                              data-aos=\"flip-left\"
                              data-aos-duration=\"1000\"
                              data-aos-delay=\"";
-            // line 92
+            // line 68
             yield ($context["delay"] ?? null);
             yield "\">
                             <!-- Category Image -->
                             <div class=\"category-image mb-[12px]\">
                                 ";
-            // line 95
-            if ((CoreExtension::getAttribute($this->env, $this->source, $context["category"], "thumb", [], "any", true, true, false, 95) && CoreExtension::getAttribute($this->env, $this->source, $context["category"], "thumb", [], "any", false, false, false, 95))) {
-                // line 96
+            // line 71
+            if ((CoreExtension::getAttribute($this->env, $this->source, $context["category"], "thumb", [], "any", true, true, false, 71) && CoreExtension::getAttribute($this->env, $this->source, $context["category"], "thumb", [], "any", false, false, false, 71))) {
+                // line 72
                 yield "                                    <img src=\"";
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "thumb", [], "any", false, false, false, 96);
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "thumb", [], "any", false, false, false, 72);
                 yield "\"
                                          alt=\"";
-                // line 97
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 97);
+                // line 73
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 73);
                 yield "\"
                                          class=\"w-[80px] h-[80px] object-contain
                                                 max-[1399px]:h-[65px] max-[1399px]:w-[65px]
                                                 max-[1199px]:h-[50px] max-[1199px]:w-[50px]\">
                                 ";
             } else {
-                // line 102
+                // line 78
                 yield "                                    <img src=\"catalog/view/theme/your_theme/assets/img/category/default-category.png\"
                                          alt=\"";
-                // line 103
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 103);
+                // line 79
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 79);
                 yield "\"
                                          class=\"w-[80px] h-[80px] object-contain
                                                 max-[1399px]:h-[65px] max-[1399px]:w-[65px]
                                                 max-[1199px]:h-[50px] max-[1199px]:w-[50px]\">
                                 ";
             }
-            // line 108
+            // line 84
             yield "                            </div>
                             <!-- Category Content -->
                             <div class=\"category-sub-contact\">
                                 <h5 class=\"mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2] h-[35px]\">
                                     <a href=\"";
-            // line 112
-            yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "href", [], "any", false, false, false, 112);
+            // line 88
+            yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "href", [], "any", false, false, false, 88);
             yield "\"
                                        class=\"font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize hover:text-[#3bb77e] transition-all duration-300\">
                                         ";
-            // line 114
-            yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 114);
+            // line 90
+            yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 90);
             yield "
                                     </a>
                                 </h5>
                                 ";
-            // line 117
-            if (CoreExtension::getAttribute($this->env, $this->source, $context["category"], "product_count", [], "any", true, true, false, 117)) {
-                // line 118
+            // line 93
+            if (CoreExtension::getAttribute($this->env, $this->source, $context["category"], "product_count", [], "any", true, true, false, 93)) {
+                // line 94
                 yield "                                    <p class=\"font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]\">
                                         ";
-                // line 119
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "product_count", [], "any", false, false, false, 119);
+                // line 95
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "product_count", [], "any", false, false, false, 95);
                 yield " items
                                     </p>
                                 ";
             }
-            // line 122
+            // line 98
             yield "                            </div>
 
                         </div>
@@ -298,7 +274,7 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 126
+        // line 102
         yield "
                 </div>
                 </div>
@@ -308,73 +284,73 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
     <div class=\"grid grid-cols-12 gap-6\">
 
         ";
-        // line 134
+        // line 110
         if (($context["column_left"] ?? null)) {
-            // line 135
+            // line 111
             yield "            <aside id=\"mobile_filter_content_top\" class=\"col-span-12 lg:col-span-3 hidden lg:block\">
                 <div class=\"bb-shop-wrap bg-[#f8f8fb] border border-solid border-[#eee] rounded-[20px] sticky top-0 p-[20px]\">
                     ";
-            // line 137
+            // line 113
             yield ($context["column_left"] ?? null);
             yield "
                 </div>
             </aside>
         ";
         }
-        // line 141
+        // line 117
         yield "
         <div class=\"
             ";
-        // line 143
+        // line 119
         if ((($context["column_left"] ?? null) && ($context["column_right"] ?? null))) {
-            // line 144
+            // line 120
             yield "                col-span-12 lg:col-span-6
             ";
-        } elseif ((        // line 145
+        } elseif ((        // line 121
 ($context["column_left"] ?? null) || ($context["column_right"] ?? null))) {
-            // line 146
+            // line 122
             yield "                col-span-12 lg:col-span-9
             ";
         } else {
-            // line 148
+            // line 124
             yield "                col-span-12
             ";
         }
-        // line 150
+        // line 126
         yield "        \">
             <div id=\"category-products\" class=\"px-2\">
                 ";
-        // line 152
+        // line 128
         yield ($context["products_html"] ?? null);
         yield "
             </div>
         </div>
 
         ";
-        // line 156
+        // line 132
         if (($context["column_right"] ?? null)) {
-            // line 157
+            // line 133
             yield "            <aside class=\"col-span-12 lg:col-span-3\">
                 ";
-            // line 158
+            // line 134
             yield ($context["column_right"] ?? null);
             yield "
             </aside>
         ";
         }
-        // line 161
+        // line 137
         yield "
     </div>
 
     ";
-        // line 164
+        // line 140
         yield ($context["content_bottom"] ?? null);
         yield "
     
 </div>
 </div>
 ";
-        // line 168
+        // line 144
         yield ($context["footer"] ?? null);
         yield "
 <script>
@@ -430,7 +406,7 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
      */
     public function getDebugInfo(): array
     {
-        return array (  378 => 168,  371 => 164,  366 => 161,  360 => 158,  357 => 157,  355 => 156,  348 => 152,  344 => 150,  340 => 148,  336 => 146,  334 => 145,  331 => 144,  329 => 143,  325 => 141,  318 => 137,  314 => 135,  312 => 134,  302 => 126,  285 => 122,  279 => 119,  276 => 118,  274 => 117,  268 => 114,  263 => 112,  257 => 108,  249 => 103,  246 => 102,  238 => 97,  233 => 96,  231 => 95,  225 => 92,  218 => 89,  215 => 88,  212 => 87,  194 => 86,  191 => 79,  155 => 45,  146 => 38,  131 => 36,  125 => 33,  119 => 31,  113 => 28,  110 => 27,  108 => 26,  105 => 25,  99 => 21,  96 => 20,  79 => 19,  75 => 18,  64 => 9,  61 => 8,  58 => 7,  55 => 6,  52 => 5,  49 => 4,  47 => 3,  42 => 1,);
+        return array (  354 => 144,  347 => 140,  342 => 137,  336 => 134,  333 => 133,  331 => 132,  324 => 128,  320 => 126,  316 => 124,  312 => 122,  310 => 121,  307 => 120,  305 => 119,  301 => 117,  294 => 113,  290 => 111,  288 => 110,  278 => 102,  261 => 98,  255 => 95,  252 => 94,  250 => 93,  244 => 90,  239 => 88,  233 => 84,  225 => 79,  222 => 78,  214 => 73,  209 => 72,  207 => 71,  201 => 68,  194 => 65,  191 => 64,  188 => 63,  170 => 62,  167 => 55,  155 => 45,  146 => 38,  131 => 36,  125 => 33,  119 => 31,  113 => 28,  110 => 27,  108 => 26,  105 => 25,  99 => 21,  96 => 20,  79 => 19,  75 => 18,  64 => 9,  61 => 8,  58 => 7,  55 => 6,  52 => 5,  49 => 4,  47 => 3,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -481,33 +457,9 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
   </section> 
     {{ content_top }}
 
-    <!-- Button Section-->
-<section>
-    <div class=\"max-w-7xl mx-auto pt-5 lg:pt-0 pb-4 px-[12px] lg:px-0\">
-        <div class=\"grid grid-cols-1 lg:grid-cols-2 gap-5\">
-
-            <button
-                class=\"w-full h-20 bg-[#6c7fd8] text-white rounded-2xl shadow-md hover:bg-[#5b6fd1] hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3\">
-                <i class=\"ri-brush-line text-3xl\"></i>
-                <span class=\"text-xl font-semibold\">
-                    Dreamer's Canvas
-                </span>
-            </button>
-
-            <button
-                class=\"w-full h-20 bg-[#6c7fd8] text-white rounded-2xl shadow-md hover:bg-[#5b6fd1] hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3\">
-                <i class=\"ri-home-gear-line text-3xl\"></i>
-                <span class=\"text-xl font-semibold\">
-                    Find Your Perfect Fridge
-                </span>
-            </button>
-
-        </div>
-    </div>
-</section>
     
     <!-- Category section -->
-    <section class=\"section-category pt-[10px] max-[1199px]:pt-[15px] mb-[24px]\">
+    <section class=\"section-category pt-[10px] max-[1199px]:pt-[15px] mb-[15px]\">
         <div class=\"flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]\">
             <div class=\"flex flex-wrap w-full\">
                 <div class=\"w-full px-[12px]\">
