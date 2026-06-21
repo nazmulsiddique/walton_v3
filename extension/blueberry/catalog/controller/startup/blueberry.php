@@ -45,7 +45,7 @@ class Blueberry extends \Opencart\System\Engine\Controller {
 
 public function controller(string &$route, array &$args): void {
 
-		if ($route == 'product/category') {
+	if ($route == 'product/category') {
 			$route = 'extension/blueberry/product/category';
 		}
 
