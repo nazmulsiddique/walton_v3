@@ -78,6 +78,70 @@
                         </div>
                       </div>
                     </div>
+                    <div class="row mb-3">
+                      <label class="col-sm-2 col-form-label" for="input-product-ribbon">
+                          Product Ribbon
+                      </label>
+                      <div class="col-sm-10">
+                          <select name="product_description[{{ language.language_id }}][product_ribbon]"
+                                  id="input-product-ribbon-{{ language.language_id }}"
+                                  class="form-select">
+
+                            <option value="">-- Select Ribbon --</option>
+
+                            <option value="upcoming"
+                              {% if product_description[language.language_id].product_ribbon == 'upcoming' %}selected{% endif %}>
+                              UPCOMING
+                            </option>
+
+                            <option value="available"
+                              {% if product_description[language.language_id].product_ribbon == 'available' %}selected{% endif %}>
+                              AVAILABLE
+                            </option>
+
+                            <option value="available_new"
+                              {% if product_description[language.language_id].product_ribbon == 'available_new' %}selected{% endif %}>
+                              AVAILABLE (NEW)
+                            </option>
+
+                            <option value="5_star_rating"
+                              {% if product_description[language.language_id].product_ribbon == '5_star_rating' %}selected{% endif %}>
+                              5 STAR RATING
+                            </option>
+
+                            <option value="exchange_price"
+                              {% if product_description[language.language_id].product_ribbon == 'exchange_price' %}selected{% endif %}>
+                              EXCHANGE PRICE
+                            </option>
+
+                            <option value="new_arrival"
+                              {% if product_description[language.language_id].product_ribbon == 'new_arrival' %}selected{% endif %}>
+                              NEW ARRIVAL
+                            </option>
+
+                            <option value="limited"
+                              {% if product_description[language.language_id].product_ribbon == 'limited' %}selected{% endif %}>
+                              LIMITED
+                            </option>
+
+                            <option value="stock_out"
+                              {% if product_description[language.language_id].product_ribbon == 'stock_out' %}selected{% endif %}>
+                              STOCK OUT
+                            </option>
+
+                            <option value="export_only"
+                              {% if product_description[language.language_id].product_ribbon == 'export_only' %}selected{% endif %}>
+                              EXPORT ONLY
+                            </option>
+
+                            <option value="stock_limited"
+                              {% if product_description[language.language_id].product_ribbon == 'stock_limited' %}selected{% endif %}>
+                              STOCK LIMITED
+                            </option>
+
+                          </select>
+                      </div>
+                    </div>
                     <div class="row mb-3 required">
                       <label for="input-meta-title-{{ language.language_id }}" class="col-sm-2 col-form-label">{{ entry_meta_title }}</label>
                       <div class="col-sm-10">

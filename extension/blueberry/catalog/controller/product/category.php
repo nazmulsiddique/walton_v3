@@ -263,6 +263,7 @@ class Category extends \Opencart\System\Engine\Controller {
 
 				$product_data = [
 					'description' => $description,
+					'product_ribbon' => $result['product_ribbon'] ?? '',
 					'thumb'       => $this->model_tool_image->resize($image, $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height')),
 					'price'       => $price,
 					'special'     => $special,

@@ -42,16 +42,88 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
         yield "<div class=\"product-thumb pro-bb-content aos-init aos-animate width-100\">
     <div class=\"bb-pro-box bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[20px]\">
       <div class=\"bb-pro-img overflow-hidden relative border-b-[1px] border-solid border-[#eee] z-[4]\">
-          <span class=\"flags transition-all duration-[0.3s] ease-in-out absolute z-[5] top-[10px] left-[6px]\">
-              <span class=\"text-[14px] text-[#777] font-medium uppercase bg-[#ff0000] text-[#fff] py-[2px] px-[6px] rounded-full\">New</span>
-          </span>
           <a href=\"";
-        // line 7
+        // line 4
         yield ($context["href"] ?? null);
         yield "\">
-              <div class=\"inner-img relative block overflow-hidden pointer-events-none rounded-t-[20px]\">
+                ";
+        // line 5
+        if (($context["product_ribbon"] ?? null)) {
+            // line 6
+            yield "                <span class=\"flags transition-all duration-300 ease-in-out absolute z-[5] top-[10px] left-[6px]\">
+                <span class=\"text-[12px] tracking-[-3px] font-bold uppercase text-white px-2 py-2 rounded-full
+                    ";
+            // line 8
+            if ((($context["product_ribbon"] ?? null) == "available")) {
+                // line 9
+                yield "                    bg-green-500
+                    ";
+            } elseif ((            // line 10
+($context["product_ribbon"] ?? null) == "available_new")) {
+                // line 11
+                yield "                    bg-green-600
+                    ";
+            } elseif ((            // line 12
+($context["product_ribbon"] ?? null) == "upcoming")) {
+                // line 13
+                yield "                    bg-blue-500
+                    ";
+            } elseif ((            // line 14
+($context["product_ribbon"] ?? null) == "limited")) {
+                // line 15
+                yield "                    bg-orange-500
+                    ";
+            } elseif ((            // line 16
+($context["product_ribbon"] ?? null) == "stock_out")) {
+                // line 17
+                yield "                    bg-red-600
+                    ";
+            } elseif ((            // line 18
+($context["product_ribbon"] ?? null) == "new_arrival")) {
+                // line 19
+                yield "                    bg-pink-500
+                    ";
+            } elseif ((            // line 20
+($context["product_ribbon"] ?? null) == "5_star_rating")) {
+                // line 21
+                yield "                    bg-yellow-400 text-black
+                    ";
+            } elseif ((            // line 22
+($context["product_ribbon"] ?? null) == "exchange_price")) {
+                // line 23
+                yield "                    bg-purple-500
+                    ";
+            } elseif ((            // line 24
+($context["product_ribbon"] ?? null) == "export_only")) {
+                // line 25
+                yield "                    bg-indigo-500
+                    ";
+            } elseif ((            // line 26
+($context["product_ribbon"] ?? null) == "stock_limited")) {
+                // line 27
+                yield "                    bg-amber-500
+                    ";
+            } else {
+                // line 29
+                yield "                    bg-gray-500
+                    ";
+            }
+            // line 31
+            yield "                \">
+                    ";
+            // line 32
+            yield Twig\Extension\CoreExtension::titleCase($this->env->getCharset(), Twig\Extension\CoreExtension::replace(($context["product_ribbon"] ?? null), ["_" => " "]));
+            yield "
+                </span>
+
+                </span>
+
+                ";
+        }
+        // line 38
+        yield "              <div class=\"inner-img relative block overflow-hidden pointer-events-none rounded-t-[20px]\">
                   <img class=\"main-img transition-all duration-[0.3s] ease-in-out w-full\" src=\"";
-        // line 9
+        // line 39
         yield ($context["thumb"] ?? null);
         yield "\" alt=\"";
         yield ($context["name"] ?? null);
@@ -67,7 +139,7 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
                 <ul class=\"bb-pro-actions transition-all duration-300 ease-in-out my-0 mx-auto absolute z-[9] left-0 right-0 bottom-0 flex flex-row items-center justify-center opacity-0 group-hover:opacity-100\">
                     <!-- WISHLIST -->
                     ";
-        // line 29
+        // line 59
         yield "
                     <!-- QUICK VIEW (NO FORM ACTION NEEDED) -->
                     <li class=\"w-[35px] h-[35px] mx-[2px] flex items-center justify-center bg-white border border-gray-200 rounded-[10px] hover:bg-blue-50 transition\">
@@ -76,7 +148,7 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
                         class=\"bb-modal-toggle w-full h-full flex items-center justify-center\"
                         title=\"Quick View\"
                         data-product-id=\"";
-        // line 36
+        // line 66
         yield ($context["product_id"] ?? null);
         yield "\">
 
@@ -90,11 +162,11 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
 
                         <button type=\"submit\"
                             formaction=\"";
-        // line 47
+        // line 77
         yield ($context["compare_add"] ?? null);
         yield "\"
                             title=\"";
-        // line 48
+        // line 78
         yield ($context["button_compare"] ?? null);
         yield "\"
                             class=\"w-full h-full flex items-center justify-center\">
@@ -108,7 +180,7 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
 
                 <!-- hidden fields (VERY IMPORTANT for OpenCart) -->
                 <input type=\"hidden\" name=\"product_id\" value=\"";
-        // line 59
+        // line 89
         yield ($context["product_id"] ?? null);
         yield "\"/>
 
@@ -120,52 +192,52 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
           </div>
           <h4 class=\"bb-pro-title mb-[8px] text-[16px] leading-[18px]\">
           <a href=\"";
-        // line 68
+        // line 98
         yield ($context["href"] ?? null);
         yield "\" class=\"transition-all duration-[0.3s] ease-in-out font-quicksand w-full block whitespace-nowrap overflow-hidden text-ellipsis text-[15px] leading-[18px] text-[#3d4750] font-semibold tracking-[0.03rem]\">";
         yield ($context["name"] ?? null);
         yield "</a></h4>
           <p class=\"hidden font-Poppins text-[14px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\">
               ";
-        // line 70
+        // line 100
         yield ($context["description"] ?? null);
         yield "
           </p>
           ";
-        // line 72
+        // line 102
         if (($context["price"] ?? null)) {
-            // line 73
+            // line 103
             yield "          <div class=\"bb-price flex flex-wrap justify-between\">
                ";
-            // line 74
+            // line 104
             if ( !($context["special"] ?? null)) {
-                // line 75
+                // line 105
                 yield "              <div class=\"inner-price mx-[-3px]\">
                   <span class=\"new-price px-[3px] text-[16px] text-[#686e7d] font-bold\">";
-                // line 76
+                // line 106
                 yield ($context["price"] ?? null);
                 yield "</span>
               </div>
               ";
             } else {
-                // line 79
+                // line 109
                 yield "              <div class=\"inner-price mx-[-3px]\">
                   <span class=\"new-price px-[3px] text-[16px] text-[#686e7d] font-bold\">";
-                // line 80
+                // line 110
                 yield ($context["special"] ?? null);
                 yield "</span>
                   <span class=\"old-price px-[3px] text-[14px] text-[#686e7d] line-through\">";
-                // line 81
+                // line 111
                 yield ($context["price"] ?? null);
                 yield "</span>
               </div>
               ";
             }
-            // line 84
+            // line 114
             yield "          </div>
           ";
         }
-        // line 86
+        // line 116
         yield "      </div>
   </div>
 </div>";
@@ -193,7 +265,7 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
      */
     public function getDebugInfo(): array
     {
-        return array (  169 => 86,  165 => 84,  159 => 81,  155 => 80,  152 => 79,  146 => 76,  143 => 75,  141 => 74,  138 => 73,  136 => 72,  131 => 70,  124 => 68,  112 => 59,  98 => 48,  94 => 47,  80 => 36,  71 => 29,  55 => 9,  50 => 7,  42 => 1,);
+        return array (  241 => 116,  237 => 114,  231 => 111,  227 => 110,  224 => 109,  218 => 106,  215 => 105,  213 => 104,  210 => 103,  208 => 102,  203 => 100,  196 => 98,  184 => 89,  170 => 78,  166 => 77,  152 => 66,  143 => 59,  127 => 39,  124 => 38,  115 => 32,  112 => 31,  108 => 29,  104 => 27,  102 => 26,  99 => 25,  97 => 24,  94 => 23,  92 => 22,  89 => 21,  87 => 20,  84 => 19,  82 => 18,  79 => 17,  77 => 16,  74 => 15,  72 => 14,  69 => 13,  67 => 12,  64 => 11,  62 => 10,  59 => 9,  57 => 8,  53 => 6,  51 => 5,  47 => 4,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -201,10 +273,40 @@ class __TwigTemplate_61ee5048a849acd7b02dc53617d7f59066156423712f20a7cff08888c8c
         return new Source("<div class=\"product-thumb pro-bb-content aos-init aos-animate width-100\">
     <div class=\"bb-pro-box bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[20px]\">
       <div class=\"bb-pro-img overflow-hidden relative border-b-[1px] border-solid border-[#eee] z-[4]\">
-          <span class=\"flags transition-all duration-[0.3s] ease-in-out absolute z-[5] top-[10px] left-[6px]\">
-              <span class=\"text-[14px] text-[#777] font-medium uppercase bg-[#ff0000] text-[#fff] py-[2px] px-[6px] rounded-full\">New</span>
-          </span>
           <a href=\"{{ href }}\">
+                {% if product_ribbon %}
+                <span class=\"flags transition-all duration-300 ease-in-out absolute z-[5] top-[10px] left-[6px]\">
+                <span class=\"text-[12px] tracking-[-3px] font-bold uppercase text-white px-2 py-2 rounded-full
+                    {% if product_ribbon == 'available' %}
+                    bg-green-500
+                    {% elseif product_ribbon == 'available_new' %}
+                    bg-green-600
+                    {% elseif product_ribbon == 'upcoming' %}
+                    bg-blue-500
+                    {% elseif product_ribbon == 'limited' %}
+                    bg-orange-500
+                    {% elseif product_ribbon == 'stock_out' %}
+                    bg-red-600
+                    {% elseif product_ribbon == 'new_arrival' %}
+                    bg-pink-500
+                    {% elseif product_ribbon == '5_star_rating' %}
+                    bg-yellow-400 text-black
+                    {% elseif product_ribbon == 'exchange_price' %}
+                    bg-purple-500
+                    {% elseif product_ribbon == 'export_only' %}
+                    bg-indigo-500
+                    {% elseif product_ribbon == 'stock_limited' %}
+                    bg-amber-500
+                    {% else %}
+                    bg-gray-500
+                    {% endif %}
+                \">
+                    {{ product_ribbon|replace({'_':' '})|title }}
+                </span>
+
+                </span>
+
+                {% endif %}
               <div class=\"inner-img relative block overflow-hidden pointer-events-none rounded-t-[20px]\">
                   <img class=\"main-img transition-all duration-[0.3s] ease-in-out w-full\" src=\"{{ thumb }}\" alt=\"{{ name }}\" title=\"{{ name }}\" >
                   <img class=\"hover-img transition-all duration-[0.3s] ease-in-out absolute z-[2] top-[0] left-[0] opacity-[0] w-full\" src=\"extension/blueberry/catalog/view/img/product/refrigerator/WNR-6D6-GDFS-DI/04.jpg\"

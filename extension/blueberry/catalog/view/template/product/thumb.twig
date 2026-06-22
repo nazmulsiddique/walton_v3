@@ -1,10 +1,40 @@
 <div class="product-thumb pro-bb-content aos-init aos-animate width-100">
     <div class="bb-pro-box bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[20px]">
       <div class="bb-pro-img overflow-hidden relative border-b-[1px] border-solid border-[#eee] z-[4]">
-          <span class="flags transition-all duration-[0.3s] ease-in-out absolute z-[5] top-[10px] left-[6px]">
-              <span class="text-[14px] text-[#777] font-medium uppercase bg-[#ff0000] text-[#fff] py-[2px] px-[6px] rounded-full">New</span>
-          </span>
           <a href="{{ href }}">
+                {% if product_ribbon %}
+                <span class="flags transition-all duration-300 ease-in-out absolute z-[5] top-[10px] left-[6px]">
+                <span class="text-[12px] tracking-[-3px] font-bold uppercase text-white px-2 py-2 rounded-full
+                    {% if product_ribbon == 'available' %}
+                    bg-green-500
+                    {% elseif product_ribbon == 'available_new' %}
+                    bg-green-600
+                    {% elseif product_ribbon == 'upcoming' %}
+                    bg-blue-500
+                    {% elseif product_ribbon == 'limited' %}
+                    bg-orange-500
+                    {% elseif product_ribbon == 'stock_out' %}
+                    bg-red-600
+                    {% elseif product_ribbon == 'new_arrival' %}
+                    bg-pink-500
+                    {% elseif product_ribbon == '5_star_rating' %}
+                    bg-yellow-400 text-black
+                    {% elseif product_ribbon == 'exchange_price' %}
+                    bg-purple-500
+                    {% elseif product_ribbon == 'export_only' %}
+                    bg-indigo-500
+                    {% elseif product_ribbon == 'stock_limited' %}
+                    bg-amber-500
+                    {% else %}
+                    bg-gray-500
+                    {% endif %}
+                ">
+                    {{ product_ribbon|replace({'_':' '})|title }}
+                </span>
+
+                </span>
+
+                {% endif %}
               <div class="inner-img relative block overflow-hidden pointer-events-none rounded-t-[20px]">
                   <img class="main-img transition-all duration-[0.3s] ease-in-out w-full" src="{{ thumb }}" alt="{{ name }}" title="{{ name }}" >
                   <img class="hover-img transition-all duration-[0.3s] ease-in-out absolute z-[2] top-[0] left-[0] opacity-[0] w-full" src="extension/blueberry/catalog/view/img/product/refrigerator/WNR-6D6-GDFS-DI/04.jpg"
