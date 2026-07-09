@@ -3794,3 +3794,1328 @@ Backtrace: 9
 File: C:\xampp\htdocs\walton_v3\index.php
 Line: 20
 Function: require_once
+2026-07-01 14:55:40 - PHP Warning:  Undefined array key "file" in C:\xampp\htdocs\walton_v3\system\framework.php on line 77
+2026-07-01 14:55:40 - PHP Warning:  Undefined array key "line" in C:\xampp\htdocs\walton_v3\system\framework.php on line 78
+2026-07-01 14:55:40 - Error: Unclosed '{' on line 3
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\startup\blueberry.php
+Line: 57
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\engine\autoloader.php
+Line: 26
+Class: Opencart\System\Engine\Autoloader
+Function: load
+
+Backtrace: 1
+File: 
+Line: 
+Class: Opencart\System\Engine\Autoloader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\engine\factory.php
+Line: 44
+Function: class_exists
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 94
+Class: Opencart\System\Engine\Factory
+Function: controller
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\catalog\controller\startup\startup.php
+Line: 22
+Class: Opencart\System\Engine\Loader
+Function: controller
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Startup\Startup
+Function: index
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 208
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 7
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-01 14:56:20 - PHP Warning:  Undefined array key "file" in C:\xampp\htdocs\walton_v3\system\framework.php on line 77
+2026-07-01 14:56:20 - PHP Warning:  Undefined array key "line" in C:\xampp\htdocs\walton_v3\system\framework.php on line 78
+2026-07-01 14:56:20 - Error: Unclosed '{' on line 3
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\startup\blueberry.php
+Line: 59
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\engine\autoloader.php
+Line: 26
+Class: Opencart\System\Engine\Autoloader
+Function: load
+
+Backtrace: 1
+File: 
+Line: 
+Class: Opencart\System\Engine\Autoloader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\engine\factory.php
+Line: 44
+Function: class_exists
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 94
+Class: Opencart\System\Engine\Factory
+Function: controller
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\catalog\controller\startup\startup.php
+Line: 22
+Class: Opencart\System\Engine\Loader
+Function: controller
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Startup\Startup
+Function: index
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 208
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 7
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-01 15:38:50 - PHP Warning:  Undefined array key "file" in C:\xampp\htdocs\walton_v3\system\framework.php on line 77
+2026-07-01 15:38:50 - PHP Warning:  Undefined array key "line" in C:\xampp\htdocs\walton_v3\system\framework.php on line 78
+2026-07-01 15:38:50 - Error: syntax error, unexpected token "if", expecting "function" or "const"
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\startup\blueberry.php
+Line: 54
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\engine\autoloader.php
+Line: 26
+Class: Opencart\System\Engine\Autoloader
+Function: load
+
+Backtrace: 1
+File: 
+Line: 
+Class: Opencart\System\Engine\Autoloader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\engine\factory.php
+Line: 44
+Function: class_exists
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 94
+Class: Opencart\System\Engine\Factory
+Function: controller
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\catalog\controller\startup\startup.php
+Line: 22
+Class: Opencart\System\Engine\Loader
+Function: controller
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Startup\Startup
+Function: index
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 208
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 7
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-01 15:40:19 - PHP Warning:  Undefined array key "file" in C:\xampp\htdocs\walton_v3\system\framework.php on line 77
+2026-07-01 15:40:19 - PHP Warning:  Undefined array key "line" in C:\xampp\htdocs\walton_v3\system\framework.php on line 78
+2026-07-01 15:40:19 - Error: Unclosed '{' on line 3
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\startup\blueberry.php
+Line: 56
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\engine\autoloader.php
+Line: 26
+Class: Opencart\System\Engine\Autoloader
+Function: load
+
+Backtrace: 1
+File: 
+Line: 
+Class: Opencart\System\Engine\Autoloader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\engine\factory.php
+Line: 44
+Function: class_exists
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 94
+Class: Opencart\System\Engine\Factory
+Function: controller
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\catalog\controller\startup\startup.php
+Line: 22
+Class: Opencart\System\Engine\Loader
+Function: controller
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Startup\Startup
+Function: index
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 208
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 7
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-01 16:09:47 - PHP Warning:  Undefined array key "file" in C:\xampp\htdocs\walton_v3\system\framework.php on line 77
+2026-07-01 16:09:47 - PHP Warning:  Undefined array key "line" in C:\xampp\htdocs\walton_v3\system\framework.php on line 78
+2026-07-01 16:09:47 - Error: Unclosed '{' on line 3
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\startup\blueberry.php
+Line: 55
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\engine\autoloader.php
+Line: 26
+Class: Opencart\System\Engine\Autoloader
+Function: load
+
+Backtrace: 1
+File: 
+Line: 
+Class: Opencart\System\Engine\Autoloader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\engine\factory.php
+Line: 44
+Function: class_exists
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 94
+Class: Opencart\System\Engine\Factory
+Function: controller
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\catalog\controller\startup\startup.php
+Line: 22
+Class: Opencart\System\Engine\Loader
+Function: controller
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Startup\Startup
+Function: index
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 208
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 7
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-04 15:04:27 - PHP Warning:  Undefined array key "" in C:\xampp\htdocs\walton_v3\catalog\controller\common\language.php on line 37
+2026-07-04 15:04:27 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\controller\common\language.php on line 37
+2026-07-04 15:04:27 - PHP Warning:  Undefined array key "" in C:\xampp\htdocs\walton_v3\catalog\controller\common\language.php on line 38
+2026-07-04 15:04:27 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\catalog\controller\common\language.php on line 38
+2026-07-04 16:46:39 - PHP Warning:  Undefined variable $product_data in C:\xampp\htdocs\walton_v3\catalog\controller\product\thumb.php on line 42
+2026-07-04 16:46:39 - Error: Opencart\System\Engine\Loader::view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\walton_v3\catalog\controller\product\thumb.php on line 42
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 174
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\catalog\controller\product\thumb.php
+Line: 42
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 112
+Class: Opencart\Catalog\Controller\Product\Thumb
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\category.php
+Line: 275
+Class: Opencart\System\Engine\Loader
+Function: controller
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Category
+Function: index
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-04 16:46:59 - Error: Unable to find template "catalog/view/template/product/thumb_related.twig" (looked into: .).
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 234
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 138
+Class: Twig\Loader\FilesystemLoader
+Function: findTemplate
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 304
+Class: Twig\Loader\FilesystemLoader
+Function: getCacheKey
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 357
+Class: Twig\Environment
+Function: getTemplateClass
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 320
+Class: Twig\Environment
+Function: load
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\library\template\twig.php
+Line: 119
+Class: Twig\Environment
+Function: render
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\library\template.php
+Line: 58
+Class: Opencart\System\Library\Template\Twig
+Function: render
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 187
+Class: Opencart\System\Library\Template
+Function: render
+
+Backtrace: 7
+File: C:\xampp\htdocs\walton_v3\catalog\controller\product\thumb.php
+Line: 42
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 8
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 112
+Class: Opencart\Catalog\Controller\Product\Thumb
+Function: index
+
+Backtrace: 9
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\category.php
+Line: 275
+Class: Opencart\System\Engine\Loader
+Function: controller
+
+Backtrace: 10
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Category
+Function: index
+
+Backtrace: 11
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 12
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-04 16:47:34 - Error: Unable to find template "catalog/view/template/product/thumb_related.twig" (looked into: .).
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 234
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 138
+Class: Twig\Loader\FilesystemLoader
+Function: findTemplate
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 304
+Class: Twig\Loader\FilesystemLoader
+Function: getCacheKey
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 357
+Class: Twig\Environment
+Function: getTemplateClass
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 320
+Class: Twig\Environment
+Function: load
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\library\template\twig.php
+Line: 119
+Class: Twig\Environment
+Function: render
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\library\template.php
+Line: 58
+Class: Opencart\System\Library\Template\Twig
+Function: render
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 187
+Class: Opencart\System\Library\Template
+Function: render
+
+Backtrace: 7
+File: C:\xampp\htdocs\walton_v3\catalog\controller\product\thumb.php
+Line: 42
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 8
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 112
+Class: Opencart\Catalog\Controller\Product\Thumb
+Function: index
+
+Backtrace: 9
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\category.php
+Line: 275
+Class: Opencart\System\Engine\Loader
+Function: controller
+
+Backtrace: 10
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Category
+Function: index
+
+Backtrace: 11
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 12
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-04 18:47:31 - PHP Warning:  file_put_contents(C:/xampp/htdocs/walton_v3/storage/cache/cache.language.58622f90cb4168292b45d2e36f450ec6.1783172851): Failed to open stream: No such file or directory in C:\xampp\htdocs\walton_v3\system\library\cache\file.php on line 64
+2026-07-04 18:47:32 - PHP Warning:  file_put_contents(C:/xampp/htdocs/walton_v3/storage/cache/cache.language.58622f90cb4168292b45d2e36f450ec6.1783172852): Failed to open stream: No such file or directory in C:\xampp\htdocs\walton_v3\system\library\cache\file.php on line 64
+2026-07-04 18:47:32 - PHP Warning:  file_put_contents(C:/xampp/htdocs/walton_v3/storage/cache/cache.language.58622f90cb4168292b45d2e36f450ec6.1783172852): Failed to open stream: No such file or directory in C:\xampp\htdocs\walton_v3\system\library\cache\file.php on line 64
+2026-07-04 18:47:33 - PHP Warning:  file_put_contents(C:/xampp/htdocs/walton_v3/storage/cache/cache.language.58622f90cb4168292b45d2e36f450ec6.1783172853): Failed to open stream: No such file or directory in C:\xampp\htdocs\walton_v3\system\library\cache\file.php on line 64
+2026-07-04 18:47:43 - PHP Warning:  file_put_contents(C:/xampp/htdocs/walton_v3/storage/cache/cache.language.9ade9cde0c74acd01f05c1bc1e05b2d8.1783172863): Failed to open stream: No such file or directory in C:\xampp\htdocs\walton_v3\system\library\cache\file.php on line 64
+2026-07-04 18:47:43 - PHP Warning:  file_put_contents(C:/xampp/htdocs/walton_v3/storage/cache/cache.currency.172546b4a24d26e125e79d1cefaf1093.1783172863): Failed to open stream: No such file or directory in C:\xampp\htdocs\walton_v3\system\library\cache\file.php on line 64
+2026-07-04 19:23:53 - Error: <b>Notice</b>:  Undefined property: Proxy::getRelatedProducts in <b>C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\related.php</b> on line <b>19</b>
+File: C:\xampp\htdocs\walton_v3\system\engine\proxy.php
+Line: 91
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\related.php
+Line: 19
+Class: Opencart\System\Engine\Proxy
+Function: __call
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 112
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Related
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: controller
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Product\Product
+Function: index
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-05 08:39:02 - Error: Class "Redis" not found
+File: C:\xampp\htdocs\walton_v3\system\library\cache\redis.php
+Line: 26
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\cache.php
+Line: 31
+Class: Opencart\System\Library\Cache\Redis
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 179
+Class: Opencart\System\Library\Cache
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-05 08:39:22 - Error: Class "Redis" not found
+File: C:\xampp\htdocs\walton_v3\system\library\cache\redis.php
+Line: 26
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\cache.php
+Line: 31
+Class: Opencart\System\Library\Cache\Redis
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 179
+Class: Opencart\System\Library\Cache
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-06 10:47:15 - PHP Warning:  unlink(C:/xampp/htdocs/walton_v3/storage/cache/cache.information.cecda141b0e8fe47b602bb0022a4f864.1783312009): Permission denied in C:\xampp\htdocs\walton_v3\system\library\cache\file.php on line 37
+2026-07-06 10:47:37 - PHP Warning:  rename(C:\xampp\htdocs\walton_v3\storage\cache\template\38\38b461B.tmp,C:/xampp/htdocs/walton_v3/storage/cache/template/38/38b15505a30c59bc3dbef0e098272d11cee5d6f1d3051955360a67d8a90519f0.php): Access is denied (code: 5) in C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Cache\FilesystemCache.php on line 61
+2026-07-06 10:47:37 - Error: Failed to write cache file "C:/xampp/htdocs/walton_v3/storage/cache/template/38/38b15505a30c59bc3dbef0e098272d11cee5d6f1d3051955360a67d8a90519f0.php".
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Cache\FilesystemCache.php
+Line: 76
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 397
+Class: Twig\Cache\FilesystemCache
+Function: write
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 357
+Class: Twig\Environment
+Function: loadTemplate
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 320
+Class: Twig\Environment
+Function: load
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\library\template\twig.php
+Line: 119
+Class: Twig\Environment
+Function: render
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\library\template.php
+Line: 58
+Class: Opencart\System\Library\Template\Twig
+Function: render
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 187
+Class: Opencart\System\Library\Template
+Function: render
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\catalog\controller\product\product.php
+Line: 471
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 7
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Product\Product
+Function: index
+
+Backtrace: 8
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 9
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-07 10:29:53 - PHP Warning:  Undefined array key 71 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-08 12:29:53 - PHP Warning:  Undefined array key "file" in C:\xampp\htdocs\walton_v3\catalog\controller\startup\error.php on line 78
+2026-07-08 12:29:53 - PHP Warning:  Undefined array key "line" in C:\xampp\htdocs\walton_v3\catalog\controller\startup\error.php on line 79
+2026-07-08 12:29:53 - Error: syntax error, unexpected token "public", expecting end of file
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\common\menupopup.php
+Line: 2
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\engine\autoloader.php
+Line: 26
+Class: Opencart\System\Engine\Autoloader
+Function: load
+
+Backtrace: 1
+File: 
+Line: 
+Class: Opencart\System\Engine\Autoloader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\engine\factory.php
+Line: 44
+Function: class_exists
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 81
+Class: Opencart\System\Engine\Factory
+Function: controller
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-08 12:31:01 - Error: MENU POPUP
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\common\menupopup.php
+Line: 7
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Common\Menupopup
+Function: index
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-08 12:32:41 - Error: MENU POPUP
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\common\menupopup.php
+Line: 7
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Common\Menupopup
+Function: index
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-09 10:35:12 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:35:12 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:35:12 - PHP Warning:  Undefined array key 25 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:35:12 - PHP Warning:  Undefined array key 25 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:35:12 - PHP Warning:  Undefined array key 25 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:35:12 - PHP Warning:  Undefined array key 25 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:35:12 - PHP Warning:  Undefined array key 25 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:35:12 - PHP Warning:  Undefined array key 25 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:35:42 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:35:42 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:35:42 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+2026-07-09 10:35:42 - Error: oc_strlen(): Argument #1 ($string) must be of type string, null given, called in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+File: C:\xampp\htdocs\walton_v3\system\helper\general.php
+Line: 45
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php
+Line: 225
+Function: oc_strlen
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 343
+Class: Opencart\Admin\Model\Catalog\Category
+Function: editCategory
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\engine\proxy.php
+Line: 87
+Class: Opencart\System\Engine\Loader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\wadmin\controller\catalog\category.php
+Line: 513
+Class: Opencart\System\Engine\Proxy
+Function: __call
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Admin\Controller\Catalog\Category
+Function: save
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\wadmin\index.php
+Line: 20
+Function: require_once
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 10:56:41 - PHP Warning:  Undefined array key 33 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:37:44 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:37:44 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:37:44 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+2026-07-09 14:37:44 - Error: oc_strlen(): Argument #1 ($string) must be of type string, null given, called in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+File: C:\xampp\htdocs\walton_v3\system\helper\general.php
+Line: 45
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php
+Line: 225
+Function: oc_strlen
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 343
+Class: Opencart\Admin\Model\Catalog\Category
+Function: editCategory
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\engine\proxy.php
+Line: 87
+Class: Opencart\System\Engine\Loader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\wadmin\controller\catalog\category.php
+Line: 513
+Class: Opencart\System\Engine\Proxy
+Function: __call
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Admin\Controller\Catalog\Category
+Function: save
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\wadmin\index.php
+Line: 20
+Function: require_once
+2026-07-09 14:39:30 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:39:30 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:39:30 - PHP Warning:  Undefined array key 24 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:39:30 - PHP Warning:  Undefined array key 24 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:39:30 - PHP Warning:  Undefined array key 24 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:41:41 - PHP Warning:  Undefined array key 240 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:43:21 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:43:21 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:49:13 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:49:13 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:49:13 - PHP Warning:  Undefined array key 57 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:49:13 - PHP Warning:  Undefined array key 57 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:49:13 - PHP Warning:  Undefined array key 57 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:49:13 - PHP Warning:  Undefined array key 57 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:49:13 - PHP Warning:  Undefined array key 57 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:49:13 - PHP Warning:  Undefined array key 57 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:51:57 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:51:57 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:51:57 - PHP Warning:  Undefined array key 73 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:51:57 - PHP Warning:  Undefined array key 73 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:53:41 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:53:41 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:53:41 - PHP Warning:  Undefined array key 72 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:53:41 - PHP Warning:  Undefined array key 72 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:53:41 - PHP Warning:  Undefined array key 72 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:58:16 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:58:16 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:58:16 - PHP Warning:  Undefined array key 277 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:58:16 - PHP Warning:  Undefined array key 277 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:58:16 - PHP Warning:  Undefined array key 277 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:58:16 - PHP Warning:  Undefined array key 277 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:58:16 - PHP Warning:  Undefined array key 277 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:58:16 - PHP Warning:  Undefined array key 277 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:58:16 - PHP Warning:  Undefined array key 277 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:58:16 - PHP Warning:  Undefined array key 277 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 14:59:33 - PHP Warning:  Undefined array key 692 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:00:45 - PHP Warning:  Undefined array key 90 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:01:59 - PHP Warning:  Undefined array key 193 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:03:07 - PHP Warning:  Undefined array key 202 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:07:06 - PHP Warning:  Undefined array key 207 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:08:23 - PHP Warning:  Undefined array key 653 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:09:33 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:09:33 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:09:33 - PHP Warning:  Undefined array key 336 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:10:13 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:10:13 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:10:13 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+2026-07-09 15:10:13 - Error: oc_strlen(): Argument #1 ($string) must be of type string, null given, called in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+File: C:\xampp\htdocs\walton_v3\system\helper\general.php
+Line: 45
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php
+Line: 225
+Function: oc_strlen
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 343
+Class: Opencart\Admin\Model\Catalog\Category
+Function: editCategory
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\engine\proxy.php
+Line: 87
+Class: Opencart\System\Engine\Loader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\wadmin\controller\catalog\category.php
+Line: 513
+Class: Opencart\System\Engine\Proxy
+Function: __call
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Admin\Controller\Catalog\Category
+Function: save
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\wadmin\index.php
+Line: 20
+Function: require_once
+2026-07-09 15:11:06 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:11:06 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:11:06 - PHP Warning:  Undefined array key 318 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:11:06 - PHP Warning:  Undefined array key 318 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:11:06 - PHP Warning:  Undefined array key 318 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:11:06 - PHP Warning:  Undefined array key 318 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:11:06 - PHP Warning:  Undefined array key 318 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:12:51 - PHP Warning:  Undefined array key 1210 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:13:45 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:13:45 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:13:45 - PHP Warning:  Undefined array key 34 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:13:45 - PHP Warning:  Undefined array key 34 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:13:45 - PHP Warning:  Undefined array key 34 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:13:45 - PHP Warning:  Undefined array key 34 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:13:45 - PHP Warning:  Undefined array key 34 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:13:45 - PHP Warning:  Undefined array key 34 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:13:45 - PHP Warning:  Undefined array key 34 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:13:45 - PHP Warning:  Undefined array key 34 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:13:45 - PHP Warning:  Undefined array key 34 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:15:59 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:15:59 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:15:59 - PHP Warning:  Undefined array key 363 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:15:59 - PHP Warning:  Undefined array key 363 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:15:59 - PHP Warning:  Undefined array key 363 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:15:59 - PHP Warning:  Undefined array key 363 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:15:59 - PHP Warning:  Undefined array key 363 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:15:59 - PHP Warning:  Undefined array key 363 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:15:59 - PHP Warning:  Undefined array key 363 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:15:59 - PHP Warning:  Undefined array key 363 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:16:56 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:16:56 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:16:56 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+2026-07-09 15:16:56 - Error: oc_strlen(): Argument #1 ($string) must be of type string, null given, called in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+File: C:\xampp\htdocs\walton_v3\system\helper\general.php
+Line: 45
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php
+Line: 225
+Function: oc_strlen
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 343
+Class: Opencart\Admin\Model\Catalog\Category
+Function: editCategory
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\engine\proxy.php
+Line: 87
+Class: Opencart\System\Engine\Loader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\wadmin\controller\catalog\category.php
+Line: 513
+Class: Opencart\System\Engine\Proxy
+Function: __call
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Admin\Controller\Catalog\Category
+Function: save
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\wadmin\index.php
+Line: 20
+Function: require_once
+2026-07-09 15:19:04 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 15:19:04 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223

@@ -21,21 +21,26 @@
                                     <a href="" class="font-Poppins tracking-[0.03rem] mb-[10px] block text-[#3d4750] text-[20px] leading-[30px] font-medium">{{ name }}</a>
                                 </h5>
                                 <div class="bb-quickview-desc mb-[10px] text-[15px] leading-[24px] text-[#777] font-light">
+                                    
                                     <ul class="font-Poppins text-[14px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem] list-disc pl-5 space-y-1">
-                                        <li>Type: No-Frost</li>
-                                        <li>HCFC free: Cyclopentane</li>
-                                        <li>Gross Volume: 646 Ltr (V.0101)</li>
-                                        <li>Net Volume: 598 Ltr (V.0101)</li>
-                                        <li>CFC Free: R600a</li>
-                                        <li>Using Latest MSO Plus INVERTER technology</li>
-                                        <li>No need to use Voltage Stabilizer</li>
+                                        {% if attribute_groups %}
+                                            {% set count = 0 %}
+                                            {% for attribute_group in attribute_groups %}
+                                                    {% for attribute in attribute_group.attribute %}
+                                                        {% if count < 5 %}
+                                                        <li> {{ attribute.name }} : {{ attribute.text|nl2br }} </li>
+                                                        {% set count = count + 1 %}
+                                                        {% endif %}
+                                                    {% endfor %}
+                                            {% endfor %}
+                                        {% endif %}
                                     </ul>
                                 </div>
                                 <div class="bb-quickview-price pt-[5px] pb-[10px] flex items-center justify-left">
                                     <span class="new-price px-[3px] text-[16px] text-[#686e7d] font-bold">{{ price }}</span>
-                                    <span class="old-price px-[3px] text-[14px] text-[#686e7d] line-through">{{ price }}</span>
+                                    <span class="old-price px-[3px] text-[14px] text-[#686e7d] line-through">{{ special }}</span>
                                 </div>
-                                <div class="bb-pro-variation mt-[15px] mb-[25px]">
+                                {# <div class="bb-pro-variation mt-[15px] mb-[25px]">
                                     <ul class="flex flex-wrap m-[-2px]">
                                         <li class="h-[22px] m-[2px] py-[2px] px-[8px] cursor-pointer border-[1px] border-solid border-[#eee] text-[#777] flex items-center justify-center text-[12px] leading-[22px] rounded-[20px] font-normal active">
                                             <a href="javascript:void(0)" class="bb-opt-sz font-Poppins text-[12px] leading-[22px] font-normal text-[#777] tracking-[0.03rem]" data-tooltip="Small">No-Frost</a>
@@ -50,7 +55,7 @@
                                             <a href="javascript:void(0)" class="bb-opt-sz font-Poppins text-[12px] leading-[22px] font-normal text-[#777] tracking-[0.03rem]" data-tooltip="Extra Large">646 Ltr</a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> #}
                             </div>
                         </div>
                     </div>

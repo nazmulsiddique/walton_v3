@@ -1,0 +1,24 @@
+<div class="w-full mb-[10px]">
+    <div class="group p-[10px] overflow-hidden bg-[#f8f8fb] border border-[#eee] rounded-[12px] flex items-center 
+                transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-white">
+        <span class="pro-img mr-[10px] overflow-hidden rounded-[10px]">
+            <img src="{{ thumb }}" alt="{{ name }}" title="{{ name }}"
+                class="w-[100px] border border-[#eee] rounded-[10px] 
+                        transition-all duration-300 group-hover:scale-110">
+        </span>
+        <div class="side-contact flex flex-col">
+            <h4 class="text-[15px]">
+                <a href="product.php">
+                    <p class="font-Poppins text-[15px] leading-[24px] font-medium text-[#3d4750] 
+                            transition-all duration-300 group-hover:text-[#6c7fd8]">
+                        {{ name }}
+                    </p>
+                    <p class="text-[16px] font-bold text-[#686e7d] 
+                            transition-all duration-300 group-hover:text-black">
+                        {{ price }}
+                    </p>
+                </a>
+            </h4>
+        </div>
+    </div>
+</div>

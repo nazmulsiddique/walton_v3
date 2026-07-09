@@ -1,8 +1,8 @@
-<div id="carousel-banner-{{ module }}" class="relative w-full overflow-hidden max-w-[1320px] mx-auto pb-5">
+<div id="carousel-banner-{{ module }}" class="relative w-full overflow-hidden max-w-[1320px] mx-auto pb-3">
 
   {# Indicators #}
   {% if indicators and banners|batch(items)|length > 1 %}
-    <div class="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2" id="carousel-indicators-{{ module }}">
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2" id="carousel-indicators-{{ module }}">
       {% for i in range(0, banners|batch(items)|length - 1) %}
         <button
           type="button"
@@ -47,14 +47,14 @@
   {% if controls and banners|batch(items)|length > 1 %}
     <button
       type="button"
-      class="carousel-prev-{{ module }} absolute left-2 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer"
+      class="carousel-prev-{{ module }} absolute left-5 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer"
       aria-label="Previous"
     >
       <i class="ri-arrow-left-s-line"></i>
     </button>
     <button
       type="button"
-      class="carousel-next-{{ module }} absolute right-2 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer"
+      class="carousel-next-{{ module }} absolute right-5 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer"
       aria-label="Next"
     >
       <i class="ri-arrow-right-s-line"></i>

@@ -78,8 +78,10 @@ class Url {
 		$url = str_replace('%3F', '?', $url);
 
 		if (!$js) {
+			$url = str_replace('/en-gb/', '/', $url);
 			return str_replace('&', '&amp;', $url);
 		} else {
+			$url = str_replace('/en-gb/', '/', $url);
 			return $url;
 		}
 	}

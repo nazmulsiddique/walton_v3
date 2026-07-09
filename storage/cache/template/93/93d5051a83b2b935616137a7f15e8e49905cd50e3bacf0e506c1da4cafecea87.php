@@ -38,17 +38,16 @@ class __TwigTemplate_7b40cb9397cb62748100b844e999b3edc3dcd82b3fdd0f2a6c0a12aa57e
     protected function doDisplay(array $context, array $blocks = []): iterable
     {
         $macros = $this->macros;
-        // line 22
-        yield "
-<ul class=\"flex items-center pagination\">
+        // line 1
+        yield "<ul class=\"flex flex-wrap items-center pagination\">
 
     ";
-        // line 25
+        // line 3
         if (($context["first"] ?? null)) {
-            // line 26
+            // line 4
             yield "        <li class=\"leading-[28px] mr-[6px]\">
             <a href=\"";
-            // line 27
+            // line 5
             yield ($context["first"] ?? null);
             yield "\"
                class=\"transition-all duration-[0.3s] ease-in-out px-[10px] h-[32px] bg-[#f8f8fb] text-[#777] border border-[#eee] rounded-[10px] flex items-center justify-center hover:bg-[#3d4750] hover:text-white\">
@@ -57,15 +56,15 @@ class __TwigTemplate_7b40cb9397cb62748100b844e999b3edc3dcd82b3fdd0f2a6c0a12aa57e
         </li>
     ";
         }
-        // line 33
+        // line 11
         yield "
     ";
-        // line 34
+        // line 12
         if (($context["prev"] ?? null)) {
-            // line 35
+            // line 13
             yield "        <li class=\"leading-[28px] mr-[6px]\">
             <a href=\"";
-            // line 36
+            // line 14
             yield ($context["prev"] ?? null);
             yield "\"
                class=\"transition-all duration-[0.3s] ease-in-out px-[10px] h-[32px] bg-[#f8f8fb] text-[#777] border border-[#eee] rounded-[10px] flex items-center justify-center hover:bg-[#3d4750] hover:text-white\">
@@ -74,57 +73,57 @@ class __TwigTemplate_7b40cb9397cb62748100b844e999b3edc3dcd82b3fdd0f2a6c0a12aa57e
         </li>
     ";
         }
-        // line 42
+        // line 20
         yield "
     ";
-        // line 43
+        // line 21
         $context['_parent'] = $context;
         $context['_seq'] = CoreExtension::ensureTraversable(($context["links"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["link"]) {
-            // line 44
+            // line 22
             yield "        ";
-            if ((CoreExtension::getAttribute($this->env, $this->source, $context["link"], "page", [], "any", false, false, false, 44) == ($context["page"] ?? null))) {
-                // line 45
+            if ((CoreExtension::getAttribute($this->env, $this->source, $context["link"], "page", [], "any", false, false, false, 22) == ($context["page"] ?? null))) {
+                // line 23
                 yield "            <li class=\"leading-[28px] mr-[6px]\">
                 <span class=\"w-[32px] h-[32px] bg-[#3d4750] text-white border border-[#3d4750] rounded-[10px] flex items-center justify-center text-[15px]\">
                     ";
-                // line 47
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["link"], "page", [], "any", false, false, false, 47);
+                // line 25
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["link"], "page", [], "any", false, false, false, 25);
                 yield "
                 </span>
             </li>
         ";
             } else {
-                // line 51
+                // line 29
                 yield "            <li class=\"leading-[28px] mr-[6px]\">
                 <a href=\"";
-                // line 52
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["link"], "href", [], "any", false, false, false, 52);
+                // line 30
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["link"], "href", [], "any", false, false, false, 30);
                 yield "\"
                    class=\"transition-all duration-[0.3s] ease-in-out w-[32px] h-[32px] font-light text-[#777] bg-[#f8f8fb] border border-[#eee] rounded-[10px] flex items-center justify-center text-[15px] hover:bg-[#3d4750] hover:text-white\">
                     ";
-                // line 54
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["link"], "page", [], "any", false, false, false, 54);
+                // line 32
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["link"], "page", [], "any", false, false, false, 32);
                 yield "
                 </a>
             </li>
         ";
             }
-            // line 58
+            // line 36
             yield "    ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_key'], $context['link'], $context['_parent']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 59
+        // line 37
         yield "
     ";
-        // line 60
+        // line 38
         if (($context["next"] ?? null)) {
-            // line 61
+            // line 39
             yield "        <li class=\"leading-[28px] mr-[6px]\">
             <a href=\"";
-            // line 62
+            // line 40
             yield ($context["next"] ?? null);
             yield "\"
                class=\"transition-all duration-[0.3s] ease-in-out px-[10px] h-[32px] bg-[#f8f8fb] text-[#777] border border-[#eee] rounded-[10px] flex items-center justify-center hover:bg-[#3d4750] hover:text-white\">
@@ -133,15 +132,15 @@ class __TwigTemplate_7b40cb9397cb62748100b844e999b3edc3dcd82b3fdd0f2a6c0a12aa57e
         </li>
     ";
         }
-        // line 68
+        // line 46
         yield "
     ";
-        // line 69
+        // line 47
         if (($context["last"] ?? null)) {
-            // line 70
+            // line 48
             yield "        <li class=\"leading-[28px]\">
             <a href=\"";
-            // line 71
+            // line 49
             yield ($context["last"] ?? null);
             yield "\"
                class=\"transition-all duration-[0.3s] ease-in-out px-[10px] h-[32px] bg-[#f8f8fb] text-[#777] border border-[#eee] rounded-[10px] flex items-center justify-center hover:bg-[#3d4750] hover:text-white\">
@@ -150,7 +149,7 @@ class __TwigTemplate_7b40cb9397cb62748100b844e999b3edc3dcd82b3fdd0f2a6c0a12aa57e
         </li>
     ";
         }
-        // line 77
+        // line 55
         yield "
 </ul>";
         yield from [];
@@ -177,34 +176,12 @@ class __TwigTemplate_7b40cb9397cb62748100b844e999b3edc3dcd82b3fdd0f2a6c0a12aa57e
      */
     public function getDebugInfo(): array
     {
-        return array (  154 => 77,  145 => 71,  142 => 70,  140 => 69,  137 => 68,  128 => 62,  125 => 61,  123 => 60,  120 => 59,  114 => 58,  107 => 54,  102 => 52,  99 => 51,  92 => 47,  88 => 45,  85 => 44,  81 => 43,  78 => 42,  69 => 36,  66 => 35,  64 => 34,  61 => 33,  52 => 27,  49 => 26,  47 => 25,  42 => 22,);
+        return array (  153 => 55,  144 => 49,  141 => 48,  139 => 47,  136 => 46,  127 => 40,  124 => 39,  122 => 38,  119 => 37,  113 => 36,  106 => 32,  101 => 30,  98 => 29,  91 => 25,  87 => 23,  84 => 22,  80 => 21,  77 => 20,  68 => 14,  65 => 13,  63 => 12,  60 => 11,  51 => 5,  48 => 4,  46 => 3,  42 => 1,);
     }
 
     public function getSourceContext(): Source
     {
-        return new Source("{# <ul class=\"pagination\">
-  {% if first %}
-    <li class=\"page-item\"><a href=\"{{ first }}\" class=\"page-link\">|&lt;</a></li>
-  {% endif %}
-  {% if prev %}
-    <li class=\"page-item\"><a href=\"{{ prev }}\" class=\"page-link\">&lt;</a></li>
-  {% endif %}
-  {% for link in links %}
-    {% if link.page == page %}
-      <li class=\"page-item active\"><span class=\"page-link\">{{ link.page }}</span></li>
-    {% else %}
-      <li class=\"page-item\"><a href=\"{{ link.href }}\" class=\"page-link\">{{ link.page }}</a></li>
-    {% endif %}
-  {% endfor %}
-  {% if next %}
-    <li class=\"page-item\"><a href=\"{{ next }}\" class=\"page-link\">&gt;</a></li>
-  {% endif %}
-  {% if last %}
-    <li class=\"page-item\"><a href=\"{{ last }}\" class=\"page-link\">&gt;|</a></li>
-  {% endif %}
-</ul> #}
-
-<ul class=\"flex items-center pagination\">
+        return new Source("<ul class=\"flex flex-wrap items-center pagination\">
 
     {% if first %}
         <li class=\"leading-[28px] mr-[6px]\">

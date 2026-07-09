@@ -48,7 +48,51 @@ $(document).ready(function(){
 
     });
 
+
+    // Mobile Filter Show
+    const filterBtn = document.querySelector('.bb-toggle-filter');
+    const filterPanel = document.getElementById('bb-mobile-filter');
+    const overlay = document.querySelector('.bb-mobile-filter-overlay');
+    const closeBtn = document.querySelector('.bb-close-filter');
+
+    if (filterBtn) {
+        filterBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            overlay.classList.remove('hidden');
+            filterPanel.classList.add('bb-filter-open');
+        });
+    }
+
+    if (overlay) {
+        overlay.addEventListener('click', function () {
+            overlay.classList.add('hidden');
+            filterPanel.classList.remove('bb-filter-open');
+        });
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+            overlay.classList.add('hidden');
+            filterPanel.classList.remove('bb-filter-open');
+        });
+    }
+    // Data push for Mobile Filter
+    $('#column_left_content_show').html(
+        $('#column_left_content').html()
+    );
+
    
 
+});
+
+// Header Menu Sticky
+const header = document.getElementById("bottom-header");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        header.classList.add("fixed", "top-0", "left-0", "w-full", "z-150", "shadow-md", "ease-in-out");
+    } else {
+        header.classList.remove("fixed", "top-0", "left-0", "w-full", "z-150", "shadow-md");
+    }
 });
 

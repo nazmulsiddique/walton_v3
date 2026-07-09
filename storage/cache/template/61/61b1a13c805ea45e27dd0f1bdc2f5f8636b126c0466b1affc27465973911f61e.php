@@ -170,7 +170,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                 </div>
             </div>
         </div>
-        <div class=\"bottom-header py-[10px] max-[991px]:py-[10px]\">
+        <div id=\"bottom-header\" class=\"bottom-header py-[10px] bg-white transition-all duration-300 ease-in-out\">
             <div class=\"flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]\">
                 <div class=\"flex flex-wrap w-full\">
                     <div class=\"w-full px-[12px]\">
@@ -182,8 +182,8 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
         // line 78
         yield ($context["base"] ?? null);
         yield "\">
-                                        <img src=\"extension/blueberry/catalog/view/img/logo/logo.png\" alt=\"logo\" class=\"light w-[112px] max-[991px]:w-[70px] block\">
-                                        <img src=\"extension/blueberry/catalog/view/img/logo/logo.png\" alt=\"logo\" class=\"dark w-[112px] max-[991px]:w-[70px] hidden\">
+                                        <img src=\"extension/blueberry/catalog/view/img/logo/logo.png\" alt=\"logo\" class=\"light w-[100px] max-[991px]:w-[70px] block\">
+                                        <img src=\"extension/blueberry/catalog/view/img/logo/logo.png\" alt=\"logo\" class=\"dark w-[100px] max-[991px]:w-[70px] hidden\">
                                     </a>
                                 </div>
                                 <!-- Header Logo End -->
@@ -239,7 +239,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                         </a>
                                          <div class=\"custom-dropdown relative z-[5] ml-[30px] max-[1199px]:ml-[20px] hidden min-[991px]:flex\">
                                             <a class=\"bb-dropdown-toggle transition-all duration-[0.3s] ease-in-out font-Poppins text-[12px] text-[#3d4750] relative pr-[15px] font-light leading-[28px] tracking-[0.03rem] font-medium\" href=\"#\">Support</a>
-                                            <ul class=\"dropdown transition-all duration-[0.3s] ease-in-out min-w-[250px] py-[10px] px-[10px] mt-[25px] absolute z-[16] text-right opacity-[0] invisible !left-auto !right-[0] bg-[#fff] block border-[1px] border-solid border-[#eee] block rounded-[10px]\" style=\"left:auto !important; right:0 !important; text-align: end !important;\">
+                                            <ul class=\"dropdown transition-all duration-[0.3s] ease-in-out min-w-[250px] py-[10px] px-[10px] mt-[25px] absolute z-[16] text-right opacity-[0] invisible !left-auto !right-[0] bg-[#fff] block border-[1px] border-solid border-[#eee] block rounded-[10px]\" style=\"left:auto !important; right:0 !important; text-align: end !important; margin-top: 50px !important;\">
                                                 <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"tel:08000016267\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">16267/08000016267</a></li>
                                                 <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"sales-outlet\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Store Locator </a></li>
                                                 <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"plaza-list\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Sales Outlets </a></li>
@@ -402,11 +402,9 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
         </div>
     </header>
 
-
-
     ";
-        // line 270
-        yield from $this->loadTemplate("extension/blueberry/catalog/view/template/common/category_popup.twig", "extension/blueberry/catalog/view/template/common/header.twig", 270)->unwrap()->yield($context);
+        // line 268
+        yield from $this->loadTemplate("extension/blueberry/catalog/view/template/common/category_popup.twig", "extension/blueberry/catalog/view/template/common/header.twig", 268)->unwrap()->yield($context);
         yield from [];
     }
 
@@ -431,7 +429,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
      */
     public function getDebugInfo(): array
     {
-        return array (  409 => 270,  392 => 256,  384 => 251,  376 => 246,  368 => 241,  360 => 236,  352 => 231,  334 => 215,  329 => 213,  322 => 208,  289 => 178,  221 => 113,  183 => 78,  138 => 36,  132 => 33,  127 => 31,  121 => 28,  117 => 27,  111 => 24,  107 => 23,  103 => 22,  99 => 21,  95 => 20,  91 => 19,  87 => 18,  80 => 15,  74 => 13,  71 => 12,  65 => 10,  63 => 9,  59 => 8,  55 => 7,  45 => 2,  42 => 1,);
+        return array (  407 => 268,  392 => 256,  384 => 251,  376 => 246,  368 => 241,  360 => 236,  352 => 231,  334 => 215,  329 => 213,  322 => 208,  289 => 178,  221 => 113,  183 => 78,  138 => 36,  132 => 33,  127 => 31,  121 => 28,  117 => 27,  111 => 24,  107 => 23,  103 => 22,  99 => 21,  95 => 20,  91 => 19,  87 => 18,  80 => 15,  74 => 13,  71 => 12,  65 => 10,  63 => 9,  59 => 8,  55 => 7,  45 => 2,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -505,7 +503,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                 </div>
             </div>
         </div>
-        <div class=\"bottom-header py-[10px] max-[991px]:py-[10px]\">
+        <div id=\"bottom-header\" class=\"bottom-header py-[10px] bg-white transition-all duration-300 ease-in-out\">
             <div class=\"flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]\">
                 <div class=\"flex flex-wrap w-full\">
                     <div class=\"w-full px-[12px]\">
@@ -514,8 +512,8 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                 <!-- Header Logo Start -->
                                 <div class=\"header-logo flex items-center max-[575px]:justify-center\">
                                     <a href=\"{{ base }}\">
-                                        <img src=\"extension/blueberry/catalog/view/img/logo/logo.png\" alt=\"logo\" class=\"light w-[112px] max-[991px]:w-[70px] block\">
-                                        <img src=\"extension/blueberry/catalog/view/img/logo/logo.png\" alt=\"logo\" class=\"dark w-[112px] max-[991px]:w-[70px] hidden\">
+                                        <img src=\"extension/blueberry/catalog/view/img/logo/logo.png\" alt=\"logo\" class=\"light w-[100px] max-[991px]:w-[70px] block\">
+                                        <img src=\"extension/blueberry/catalog/view/img/logo/logo.png\" alt=\"logo\" class=\"dark w-[100px] max-[991px]:w-[70px] hidden\">
                                     </a>
                                 </div>
                                 <!-- Header Logo End -->
@@ -568,7 +566,7 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
                                         </a>
                                          <div class=\"custom-dropdown relative z-[5] ml-[30px] max-[1199px]:ml-[20px] hidden min-[991px]:flex\">
                                             <a class=\"bb-dropdown-toggle transition-all duration-[0.3s] ease-in-out font-Poppins text-[12px] text-[#3d4750] relative pr-[15px] font-light leading-[28px] tracking-[0.03rem] font-medium\" href=\"#\">Support</a>
-                                            <ul class=\"dropdown transition-all duration-[0.3s] ease-in-out min-w-[250px] py-[10px] px-[10px] mt-[25px] absolute z-[16] text-right opacity-[0] invisible !left-auto !right-[0] bg-[#fff] block border-[1px] border-solid border-[#eee] block rounded-[10px]\" style=\"left:auto !important; right:0 !important; text-align: end !important;\">
+                                            <ul class=\"dropdown transition-all duration-[0.3s] ease-in-out min-w-[250px] py-[10px] px-[10px] mt-[25px] absolute z-[16] text-right opacity-[0] invisible !left-auto !right-[0] bg-[#fff] block border-[1px] border-solid border-[#eee] block rounded-[10px]\" style=\"left:auto !important; right:0 !important; text-align: end !important; margin-top: 50px !important;\">
                                                 <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"tel:08000016267\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">16267/08000016267</a></li>
                                                 <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"sales-outlet\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Store Locator </a></li>
                                                 <li class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]\"><a href=\"plaza-list\" class=\"transition-all duration-[0.3s] ease-in-out text-[12px] text-[#686e7d] hover:text-[#6c7fd8] font-normal font-Poppins py-[12px] block leading-[28px] tracking-[0.03rem]\">Sales Outlets </a></li>
@@ -702,8 +700,6 @@ class __TwigTemplate_631e2d7cbd3d819a7c6d62e1d2ce4010a3a657adee6dc3576cb82763eed
             </div>
         </div>
     </header>
-
-
 
     {% include 'extension/blueberry/catalog/view/template/common/category_popup.twig' %}", "extension/blueberry/catalog/view/template/common/header.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\common\\header.twig");
     }

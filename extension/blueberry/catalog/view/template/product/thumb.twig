@@ -2,46 +2,45 @@
     <div class="bb-pro-box bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[20px]">
       <div class="bb-pro-img overflow-hidden relative border-b-[1px] border-solid border-[#eee] z-[4]">
           <a href="{{ href }}">
-                {% if product_ribbon %}
-                <span class="flags transition-all duration-300 ease-in-out absolute z-[5] top-[10px] left-[6px]">
-                <span class="text-[12px] tracking-[-3px] font-bold uppercase text-white px-2 py-2 rounded-full
+                <div class="mt-2 ml-2 h-[40px]">
+                    {% if product_ribbon %}
                     {% if product_ribbon == 'available' %}
-                    bg-green-500
-                    {% elseif product_ribbon == 'available_new' %}
-                    bg-green-600
-                    {% elseif product_ribbon == 'upcoming' %}
-                    bg-blue-500
-                    {% elseif product_ribbon == 'limited' %}
-                    bg-orange-500
-                    {% elseif product_ribbon == 'stock_out' %}
-                    bg-red-600
-                    {% elseif product_ribbon == 'new_arrival' %}
-                    bg-pink-500
-                    {% elseif product_ribbon == '5_star_rating' %}
-                    bg-yellow-400 text-black
-                    {% elseif product_ribbon == 'exchange_price' %}
-                    bg-purple-500
-                    {% elseif product_ribbon == 'export_only' %}
-                    bg-indigo-500
-                    {% elseif product_ribbon == 'stock_limited' %}
-                    bg-amber-500
+                        {% set ribbon_class = 'bg-green-500' %}
+                    {% elseif product_ribbon == 'Available (New)' %}
+                        {% set ribbon_class = 'bg-green-600' %}
+                    {% elseif product_ribbon == 'Upcoming' %}
+                        {% set ribbon_class = 'bg-blue-500' %}
+                    {% elseif product_ribbon == 'Limited' %}
+                        {% set ribbon_class = 'bg-orange-500' %}
+                    {% elseif product_ribbon == 'Stock Out' %}
+                        {% set ribbon_class = 'bg-red-600' %}
+                    {% elseif product_ribbon == 'New Arrival' %}
+                        {% set ribbon_class = 'bg-pink-500' %}
+                    {% elseif product_ribbon == '5 Star Rating' %}
+                        {% set ribbon_class = 'bg-yellow-400 text-black' %}
+                    {% elseif product_ribbon == 'Exchange Price' %}
+                        {% set ribbon_class = 'bg-purple-500' %}
+                    {% elseif product_ribbon == 'Export Only' %}
+                        {% set ribbon_class = 'bg-indigo-500' %}
+                    {% elseif product_ribbon == 'Stock Limited' %}
+                        {% set ribbon_class = 'bg-amber-500' %}
                     {% else %}
-                    bg-gray-500
+                        {% set ribbon_class = 'bg-black' %}
                     {% endif %}
-                ">
-                    {{ product_ribbon|replace({'_':' '})|title }}
-                </span>
+                    <div class="inline-flex items-center {{ ribbon_class }} text-white text-[12px] pl-1 pr-6 py-1 rounded-[25px_0px_40px_25px]">
+                        <div class="w-5 h-5 bg-white rounded-full flex-shrink-0 mr-2"></div>
+                        <span class="tracking-wide">{{ product_ribbon }}</span>
+                    </div>
+                    {% endif %}
+                </div>
 
-                </span>
-
-                {% endif %}
               <div class="inner-img relative block overflow-hidden pointer-events-none rounded-t-[20px]">
                   <img class="main-img transition-all duration-[0.3s] ease-in-out w-full" src="{{ thumb }}" alt="{{ name }}" title="{{ name }}" >
                   <img class="hover-img transition-all duration-[0.3s] ease-in-out absolute z-[2] top-[0] left-[0] opacity-[0] w-full" src="extension/blueberry/catalog/view/img/product/refrigerator/WNR-6D6-GDFS-DI/04.jpg"
                       alt="product-3">
               </div>
           </a>
-          <form method="post"
+            <form method="post"
                 data-oc-toggle="ajax">
                 <ul class="bb-pro-actions transition-all duration-300 ease-in-out my-0 mx-auto absolute z-[9] left-0 right-0 bottom-0 flex flex-row items-center justify-center opacity-0 group-hover:opacity-100">
                     <!-- WISHLIST -->
@@ -91,9 +90,6 @@
             </form>
       </div>
       <div class="bb-pro-contact p-[20px]">
-          <div class="bb-pro-subtitle mb-[8px] flex flex-wrap justify-between">
-              <a href="" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[13px] leading-[16px] text-[#777] font-light tracking-[0.03rem]">Refrigerator</a>
-          </div>
           <h4 class="bb-pro-title mb-[8px] text-[16px] leading-[18px]">
           <a href="{{ href }}" class="transition-all duration-[0.3s] ease-in-out font-quicksand w-full block whitespace-nowrap overflow-hidden text-ellipsis text-[15px] leading-[18px] text-[#3d4750] font-semibold tracking-[0.03rem]">{{ name }}</a></h4>
           <p class="hidden font-Poppins text-[14px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]">

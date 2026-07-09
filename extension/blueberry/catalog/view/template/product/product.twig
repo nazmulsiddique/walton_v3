@@ -94,103 +94,72 @@
                                 </div>
                             </div>
                            <div class="min-[992px]:w-[33.33%] w-full px-[12px] mb-[24px]">
-                              {# <div class="bb-single-pro-contact">
+                              <div class="bb-single-pro-contact">
                                  <div class="bb-sub-title mb-[10px]">
-                                    <h4 class="font-quicksand text-[22px] tracking-[0.03rem] font-bold leading-[1.2] text-[#3d4750]">WNR-6D6-GDFS-DI</h4>
+                                    <h4 class="font-quicksand text-[22px] tracking-[0.03rem] font-bold leading-[1.2] text-[#3d4750]">{{ model }}</h4>
                                  </div>
-                                 <ul class="font-Poppins text-[15px] font-light leading-[28px] tracking-[0.03rem] pl-[8px]">
-                                    <li>- Type: No-Frost</li>
-                                    <li>- HCFC free: Cyclopentane</li>
-                                    <li>- Gross Volume: 646 Ltr (V.0101)</li>
-                                    <li>- Net Volume: 598 Ltr (V.0101)</li>
-                                    <li>- CFC Free: R600a</li>
-                                    <li>- Using Latest MSO Plus INVERTER technology</li>
-                                    <li>- No need to use Voltage Stabilizer</li>
+                                 <ul class="space-y-2">
+                                    {% if attribute_groups %}
+                                       {% set count = 0 %}
+                                       {% for attribute_group in attribute_groups %}
+                                             {% for attribute in attribute_group.attribute %}
+                                                {% if count < 5 %}
+                                                   <li class="flex items-center gap-3 rounded-lg border border-gray-100 bg-gray-50 px-4 py-3 transition-all duration-200 hover:border-[#6c7fd8] hover:bg-[#f7f8ff]">
+                                                         
+                                                         <span class="mt-1 h-3 w-3 rounded-full bg-[#6c7fd8] shrink-0"></span>
+
+                                                         <div class="text-[15px] leading-6">
+                                                            <span class="text-[#3d4750]">
+                                                               {{ attribute.name }}
+                                                            </span>
+                                                            <span class="text-[#686e7d]">
+                                                               : {{ attribute.text|nl2br }}
+                                                            </span>
+                                                         </div>
+
+                                                   </li>
+                                                   {% set count = count + 1 %}
+                                                {% endif %}
+                                             {% endfor %}
+                                       {% endfor %}
+                                    {% endif %}
                                  </ul>
+                                 {% if price %}
                                  <div class="bb-single-price-wrap flex justify-between py-[10px]">
                                     <div class="bb-single-price py-[15px]">
+                                     {% if not special %}
                                        <div class="price mb-[8px]">
-                                          <h5 class="font-quicksand leading-[1.2] tracking-[0.03rem] text-[20px] font-extrabold text-[#3d4750]">৳149990 </h5>
+                                          <h5 class="font-quicksand leading-[1.2] tracking-[0.03rem] text-[20px] font-extrabold text-[#3d4750]">{{ price }} </h5>
                                        </div>
+                                       {% else %}
                                        <div class="mrp">
-                                          <p class="font-Poppins text-[16px] font-light text-[#686e7d] leading-[28px] tracking-[0.03rem]">M.S.R.P. : <span class="text-[15px] line-through">৳159990</span></p>
+                                          <p class="font-Poppins text-[16px] font-light text-[#686e7d] leading-[28px] tracking-[0.03rem]">M.S.R.P. : <span class="text-[15px] line-through">{{ special }}</span></p>
                                        </div>
+                                       {% endif %}
                                     </div>
                                  </div>
-                                 <div class="bb-single-pro-weight mb-[24px]">
-                                    <div class="pro-title mb-[12px]">
-                                       <h4 class="font-quicksand leading-[1.2] tracking-[0.03rem] text-[16px] font-bold uppercase text-[#3d4750]">Color</h4>
-                                    </div>
-                                    <div class="bb-pro-variation-contant">
-                                       <ul class="flex flex-wrap m-[-2px]">
-                                          <li class="my-[10px] mx-[2px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] cursor-pointer active-variation">
-                                             <span class="font-Poppins text-[#686e7d] font-light text-[14px] leading-[28px] tracking-[0.03rem]">Grey</span>
-                                          </li>
-                                          <li class="my-[10px] mx-[2px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] cursor-pointer">
-                                             <span class="font-Poppins text-[#686e7d] font-light text-[14px] leading-[28px] tracking-[0.03rem]">White</span>
-                                          </li>
-                                          <li class="my-[10px] mx-[2px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] cursor-pointer">
-                                             <span class="font-Poppins text-[#686e7d] font-light text-[14px] leading-[28px] tracking-[0.03rem]">Light</span>
-                                          </li>
-                                          <li class="my-[10px] mx-[2px] py-[2px] px-[15px] border-[1px] border-solid border-[#eee] rounded-[10px] cursor-pointer">
-                                             <span class="font-Poppins text-[#686e7d] font-light text-[14px] leading-[28px] tracking-[0.03rem]">Blue</span>
-                                          </li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div> #}
-                              <div class="product-attribute-info my-[20px]">
-                                 <h1>{{ heading_title }}</h1>
-                                 <ul class="list-unstyled">
-                                    {% if manufacturer %}
-                                    <li>{{ text_manufacturer }} <a href="{{ manufacturers }}">{{ manufacturer }}</a></li>
-                                    {% endif %}
-                                    <li>{{ text_model }} {{ model }}</li>
-                                    {% for product_code in product_codes %}
-                                    <li>{{ product_code.code }}: {{ product_code.value }}</li>
-                                    {% endfor %}
-                                    {% if reward %}
-                                    <li>{{ text_reward }} {{ reward }}</li>
-                                    {% endif %}
-                                    <li>{{ text_stock }} {{ stock }}</li>
-                                 </ul>
-                                 
-                                 {% if price %}
-                                 <ul class="list-unstyled">
-                                    {% if not special %}
-                                    <li>
-                                       <h2><span class="price-new">{{ price }}</span></h2>
-                                    </li>
-                                    {% else %}
-                                    <li><span class="price-old">{{ price }}</span></li>
-                                    <li>
-                                       <h2><span class="price-new">{{ special }}</span></h2>
-                                    </li>
-                                    {% endif %}
-                                    {% if tax %}
-                                    <li>{{ text_tax }} {{ tax }}</li>
-                                    {% endif %}
-                                    {% if points %}
-                                    <li>{{ text_points }} {{ points }}</li>
-                                    {% endif %}
-                                    {% if discounts %}
-                                    <li>
-                                       <hr>
-                                    </li>
-                                    {% for discount in discounts %}
-                                    <li>{{ discount.quantity }}{{ text_discount }}{{ discount.price }}</li>
-                                    {% endfor %}
-                                    {% endif %}
-                                 </ul>
                                  {% endif %}
-                                 <form method="post" data-oc-toggle="ajax">
-                                    <div class="btn-group">
-                                       <button type="submit" formaction="{{ wishlist_add }}" data-bs-toggle="tooltip" class="btn btn-light btn-lg" title="{{ button_wishlist }}"><i class="fa-solid fa-heart"></i></button>
-                                       <button type="submit" formaction="{{ compare_add }}" data-bs-toggle="tooltip" class="btn btn-light btn-lg" title="{{ button_compare }}"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
-                                    </div>
-                                    <input type="hidden" name="product_id" value="{{ product_id }}"/>
-                                 </form>
-                                 <br/>
+
+                                 <div class="mt-6 grid grid-cols-2 gap-2">
+                                    <a href="#" class="flex items-center justify-center gap-2 rounded-xl border-2 border-[#6c7fd8] py-3 font-semibold text-[#6c7fd8] hover:bg-[#6c7fd8] hover:text-white transition-all duration-300">
+                                       <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M15 9h.01M9 13h.01M15 13h.01M9 17h.01M15 17h.01M11 21v-4h2v4" />
+                                       </svg>
+                                       Buy from Plaza
+                                    </a>
+                                    <a href="#" class="flex items-center justify-center gap-2 rounded-xl bg-[#6c7fd8] py-3 font-semibold text-white hover:bg-[#5b6ed0] transition-all duration-300">
+                                       <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 17H6a2 2 0 01-2-2V7a2 2 0 012-2h8a2 2 0 012 2v2h2.586a1 1 0 01.707.293l2.414 2.414A1 1 0 0122 12.414V15a2 2 0 01-2 2h-1M9 17a2 2 0 104 0m-4 0a2 2 0 104 0m5 0a2 2 0 104 0" />
+                                       </svg>
+                                       Buy from Distributor
+                                    </a>
+                                 </div>
+
+
+                              </div>
+                              <div class="product-attribute-info my-[20px]">                                 
                                  <div id="product">
                                     <form id="form-product">
                                        {% if options %}
@@ -317,99 +286,26 @@
                                           <div id="error-subscription" class="invalid-feedback"></div>
                                        </div>
                                        {% endif %}
-                                       <div class="mb-3">
-                                          <div class="input-group">
-                                             <div class="input-group-text">{{ entry_qty }}</div>
-                                             <input type="text" name="quantity" value="{{ minimum }}" size="2" id="input-quantity" class="form-control"/>
-                                             <button type="submit" id="button-cart" class="btn btn-primary btn-lg btn-block">{{ button_cart }}</button>
-                                          </div>
-                                          <input type="hidden" name="product_id" value="{{ product_id }}" id="input-product-id"/>
-                                          <div id="error-quantity" class="form-text"></div>
-                                       </div>
-                                       {% if minimum > 1 %}
-                                       <div class="alert alert-warning"><i class="fa-solid fa-circle-info"></i> {{ text_minimum }}</div>
-                                       {% endif %}
+                                       
                                     </form>
                                  </div>
                               </div>
                            </div>
                            <div class="min-[992px]:w-[25%] w-full px-[12px] mb-[24px]">
                               <div class="w-full">
-                                 <div class="w-full px-[12px]">
-                                    <div class="sub-title mb-[20px] flex justify-between">
-                                       <h4 class="font-quicksand tracking-[0.03rem] leading-[1.2] text-[20px] font-bold text-[#3d4750] uppercase">Recent View Product</h4>
-                                    </div>
-                                 </div>
-                                 <div class="w-full px-[12px] mb-[24px]">
-                                    <div class="group p-[15px] overflow-hidden bg-[#f8f8fb] border border-[#eee] rounded-[12px] flex items-center 
-                                       transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-white">
-                                       <span class="pro-img mr-[12px] overflow-hidden rounded-[10px]">
-                                       <img src="assets/img/product/refrigerator/WNR-6D6-GDFS-DI.jpg"
-                                          class="w-[80px] border border-[#eee] rounded-[10px] 
-                                          transition-all duration-300 group-hover:scale-110">
-                                       </span>
-                                       <div class="side-contact flex flex-col">
-                                          <h4 class="text-[15px]">
-                                             <a href="product.php">
-                                                <p class="font-Poppins text-[15px] leading-[24px] font-medium text-[#3d4750] 
-                                                   transition-all duration-300 group-hover:text-[#6c7fd8]">
-                                                   WNR-6D6-GDFS-DI
-                                                </p>
-                                                <p class="text-[16px] font-bold text-[#686e7d] 
-                                                   transition-all duration-300 group-hover:text-black">
-                                                   ৳149990
-                                                </p>
-                                             </a>
-                                          </h4>
+                                 {{ related }}
+                              </div>
+                              <div class="w-full">
+                                 <div class="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 px-4 py-2">
+                                    <div class="flex items-center justify-center text-start gap-2 mb-1 bg-[#f8f9ff] rounded-xl border border-dashed border-[#6c7fd8] p-1">
+                                       <img src="extension/blueberry/catalog/view/img/product/refrigerator/bsti.png" alt="BSTI LOGO" class="">
+                                       <div>
+                                          <h3 class="text-[15px] font-semibold text-gray-800 leading-none"> BSTI Verified </h3>
+                                          <span class="font-medium text-[#6c7fd8]">Scan to verify</span>
                                        </div>
                                     </div>
-                                 </div>
-                                 <div class="w-full px-[12px] mb-[24px]">
-                                    <div class="group p-[15px] overflow-hidden bg-[#f8f8fb] border border-[#eee] rounded-[12px] flex items-center 
-                                       transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-white">
-                                       <span class="pro-img mr-[12px] overflow-hidden rounded-[10px]">
-                                       <img src="assets/img/product/refrigerator/WNR-6D6-GDFS-DI.jpg"
-                                          class="w-[80px] border border-[#eee] rounded-[10px] 
-                                          transition-all duration-300 group-hover:scale-110">
-                                       </span>
-                                       <div class="side-contact flex flex-col">
-                                          <h4 class="text-[15px]">
-                                             <a href="product.php">
-                                                <p class="font-Poppins text-[15px] leading-[24px] font-medium text-[#3d4750] 
-                                                   transition-all duration-300 group-hover:text-[#6c7fd8]">
-                                                   WNR-6D6-GDFS-DI
-                                                </p>
-                                                <p class="text-[16px] font-bold text-[#686e7d] 
-                                                   transition-all duration-300 group-hover:text-black">
-                                                   ৳149990
-                                                </p>
-                                             </a>
-                                          </h4>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="w-full px-[12px] mb-[24px]">
-                                    <div class="group p-[15px] overflow-hidden bg-[#f8f8fb] border border-[#eee] rounded-[12px] flex items-center 
-                                       transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-white">
-                                       <span class="pro-img mr-[12px] overflow-hidden rounded-[10px]">
-                                       <img src="assets/img/product/refrigerator/WNR-6D6-GDFS-DI.jpg"
-                                          class="w-[80px] border border-[#eee] rounded-[10px] 
-                                          transition-all duration-300 group-hover:scale-110">
-                                       </span>
-                                       <div class="side-contact flex flex-col">
-                                          <h4 class="text-[15px]">
-                                             <a href="product.php">
-                                                <p class="font-Poppins text-[15px] leading-[24px] font-medium text-[#3d4750] 
-                                                   transition-all duration-300 group-hover:text-[#6c7fd8]">
-                                                   WNR-6D6-GDFS-DI
-                                                </p>
-                                                <p class="text-[16px] font-bold text-[#686e7d] 
-                                                   transition-all duration-300 group-hover:text-black">
-                                                   ৳149990
-                                                </p>
-                                             </a>
-                                          </h4>
-                                       </div>
+                                    <div class="">
+                                       <img src="extension/blueberry/catalog/view/img/product/refrigerator/wfc-3f5.png" alt="BSTI QR" class="w-[160px] h-[160px] object-contain mx-auto bg-[#f8f9ff] rounded-xl border border-dashed border-[#6c7fd8]">
                                     </div>
                                  </div>
                               </div>
@@ -753,7 +649,7 @@
          </section>
 
       
-      {{ related }}
+      {# {{ related }} #}
       {{ content_bottom }}
    </div>
    {# {{ column_right }} #}

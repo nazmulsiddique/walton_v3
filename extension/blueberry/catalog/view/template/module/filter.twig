@@ -63,6 +63,9 @@
 
 
 <script type="text/javascript"><!--
+$(document).ready(function () {
+    $('#input-sort, #input-limit').addClass('block');
+});
 (function() {
     var baseUrl = '{{ action|escape('js') }}';
     var debounceTimer = null;
@@ -73,7 +76,6 @@
 
         $('#category-products').css('opacity', '0.5');
         $('input[name^=\'filter\'], #input-sort, #input-limit').prop('disabled', true);
-
         $.ajax({
             url: ajaxUrl,
             type: 'get',
@@ -88,7 +90,8 @@
             complete: function() {
                 $('#category-products').css('opacity', '1');
                 $('input[name^=\'filter\'], #input-sort, #input-limit').prop('disabled', false);
-                $('#input-sort, #input-limit').removeClass('hide-select').addClass('block');
+                // $('#input-sort, #input-limit').removeClass('hide-select').addClass('block');
+                $('#input-sort, #input-limit').addClass('block');
                 $('#category-products .pro-bb-content').removeClass('width-100');
                 
                 updateClearLink();

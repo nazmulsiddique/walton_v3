@@ -71,13 +71,13 @@
                                 {% if category.thumb is defined and category.thumb %}
                                     <img src="{{ category.thumb }}"
                                          alt="{{ category.name }}"
-                                         class="w-[80px] h-[80px] object-contain
+                                         class="w-[150px] h-[150px] object-contain
                                                 max-[1399px]:h-[65px] max-[1399px]:w-[65px]
                                                 max-[1199px]:h-[50px] max-[1199px]:w-[50px]">
                                 {% else %}
-                                    <img src="catalog/view/theme/your_theme/assets/img/category/default-category.png"
+                                    <img src="extension/blueberry/catalog/view/img/no-image/no_image.png"
                                          alt="{{ category.name }}"
-                                         class="w-[80px] h-[80px] object-contain
+                                         class="w-[150px] h-[150px] object-contain
                                                 max-[1399px]:h-[65px] max-[1399px]:w-[65px]
                                                 max-[1199px]:h-[50px] max-[1199px]:w-[50px]">
                                 {% endif %}
@@ -109,7 +109,21 @@
 
         {% if column_left %}
             <aside id="mobile_filter_content_top" class="col-span-12 lg:col-span-3 hidden lg:block">
-                <div class="bb-shop-wrap bg-[#f8f8fb] border border-solid border-[#eee] rounded-[20px] sticky top-0 p-[20px]">
+                <div class="w-full">
+                    <div class="bb-pro-list-top mb-[24px] rounded-[20px] flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between">
+                        <div class="flex lg:flex-wrap justify-between w-full">
+                              <a href="{{ compare }}"
+                                  id="compare-total"
+                                  class="inline-flex items-center gap-2 px-4 py-4 text-dark rounded-md transition duration-200">
+                                      <i class="ri-arrow-left-right-line text-lg"></i>
+                                      <span class="hidden xl:inline">
+                                          {{ text_compare }}
+                                      </span>
+                              </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="column_left_content" class="bb-shop-wrap bg-[#f8f8fb] border border-solid border-[#eee] rounded-[20px] sticky top-0 p-[20px]">
                     {{ column_left }}
                 </div>
             </aside>
@@ -170,3 +184,8 @@
 
     });
 </script>
+<style>
+#input-sort{
+   display:block !important;
+}
+</style>

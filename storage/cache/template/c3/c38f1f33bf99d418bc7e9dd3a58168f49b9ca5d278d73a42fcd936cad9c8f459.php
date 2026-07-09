@@ -41,14 +41,14 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
         // line 1
         yield "<div id=\"carousel-banner-";
         yield ($context["module"] ?? null);
-        yield "\" class=\"relative w-full overflow-hidden max-w-[1320px] mx-auto pb-5\">
+        yield "\" class=\"relative w-full overflow-hidden max-w-[1320px] mx-auto pb-3\">
 
   ";
         // line 4
         yield "  ";
         if ((($context["indicators"] ?? null) && (Twig\Extension\CoreExtension::length($this->env->getCharset(), Twig\Extension\CoreExtension::batch(($context["banners"] ?? null), ($context["items"] ?? null))) > 1))) {
             // line 5
-            yield "    <div class=\"absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2\" id=\"carousel-indicators-";
+            yield "    <div class=\"absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2\" id=\"carousel-indicators-";
             yield ($context["module"] ?? null);
             yield "\">
       ";
@@ -202,7 +202,7 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
       class=\"carousel-prev-";
             // line 50
             yield ($context["module"] ?? null);
-            yield " absolute left-2 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer\"
+            yield " absolute left-5 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer\"
       aria-label=\"Previous\"
     >
       <i class=\"ri-arrow-left-s-line\"></i>
@@ -212,7 +212,7 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
       class=\"carousel-next-";
             // line 57
             yield ($context["module"] ?? null);
-            yield " absolute right-2 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer\"
+            yield " absolute right-5 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer\"
       aria-label=\"Next\"
     >
       <i class=\"ri-arrow-right-s-line\"></i>
@@ -348,11 +348,11 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
 
     public function getSourceContext(): Source
     {
-        return new Source("<div id=\"carousel-banner-{{ module }}\" class=\"relative w-full overflow-hidden max-w-[1320px] mx-auto pb-5\">
+        return new Source("<div id=\"carousel-banner-{{ module }}\" class=\"relative w-full overflow-hidden max-w-[1320px] mx-auto pb-3\">
 
   {# Indicators #}
   {% if indicators and banners|batch(items)|length > 1 %}
-    <div class=\"absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2\" id=\"carousel-indicators-{{ module }}\">
+    <div class=\"absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2\" id=\"carousel-indicators-{{ module }}\">
       {% for i in range(0, banners|batch(items)|length - 1) %}
         <button
           type=\"button\"
@@ -397,14 +397,14 @@ class __TwigTemplate_3acd84432261edab4cb25456abbe6e377758f3f1b85c64bb6bd548d7e09
   {% if controls and banners|batch(items)|length > 1 %}
     <button
       type=\"button\"
-      class=\"carousel-prev-{{ module }} absolute left-2 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer\"
+      class=\"carousel-prev-{{ module }} absolute left-5 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer\"
       aria-label=\"Previous\"
     >
       <i class=\"ri-arrow-left-s-line\"></i>
     </button>
     <button
       type=\"button\"
-      class=\"carousel-next-{{ module }} absolute right-2 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer\"
+      class=\"carousel-next-{{ module }} absolute right-5 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors cursor-pointer\"
       aria-label=\"Next\"
     >
       <i class=\"ri-arrow-right-s-line\"></i>

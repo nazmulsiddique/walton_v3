@@ -108,16 +108,9 @@ class __TwigTemplate_3882da2f6b46ef8c63a0afb5965a3ba267362cf1414c6426696dc024b6d
         ";
             } else {
                 // line 26
-                yield "            <a href=\"";
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "href", [], "any", false, false, false, 26);
-                yield "\"
-               class=\"block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 border-b border-gray-200 transition\">
-                ";
-                // line 28
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 28);
-                yield "
-            </a>
-        ";
+                yield "            ";
+                // line 30
+                yield "        ";
             }
             // line 31
             yield "    ";
@@ -151,7 +144,7 @@ class __TwigTemplate_3882da2f6b46ef8c63a0afb5965a3ba267362cf1414c6426696dc024b6d
      */
     public function getDebugInfo(): array
     {
-        return array (  129 => 32,  123 => 31,  117 => 28,  111 => 26,  107 => 24,  104 => 23,  98 => 22,  92 => 19,  86 => 17,  80 => 14,  74 => 12,  71 => 11,  66 => 10,  64 => 9,  58 => 6,  52 => 4,  49 => 3,  45 => 2,  42 => 1,);
+        return array (  122 => 32,  116 => 31,  113 => 30,  111 => 26,  107 => 24,  104 => 23,  98 => 22,  92 => 19,  86 => 17,  80 => 14,  74 => 12,  71 => 11,  66 => 10,  64 => 9,  58 => 6,  52 => 4,  49 => 3,  45 => 2,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -181,10 +174,10 @@ class __TwigTemplate_3882da2f6b46ef8c63a0afb5965a3ba267362cf1414c6426696dc024b6d
             {% endif %}
 
         {% else %}
-            <a href=\"{{ category.href }}\"
+            {# <a href=\"{{ category.href }}\"
                class=\"block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 border-b border-gray-200 transition\">
                 {{ category.name }}
-            </a>
+            </a> #}
         {% endif %}
     {% endfor %}
 </div>", "extension/blueberry/catalog/view/template/module/category.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\module\\category.twig");

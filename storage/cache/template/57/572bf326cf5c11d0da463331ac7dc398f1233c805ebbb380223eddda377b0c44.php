@@ -213,18 +213,18 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
                 // line 73
                 yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 73);
                 yield "\"
-                                         class=\"w-[80px] h-[80px] object-contain
+                                         class=\"w-[150px] h-[150px] object-contain
                                                 max-[1399px]:h-[65px] max-[1399px]:w-[65px]
                                                 max-[1199px]:h-[50px] max-[1199px]:w-[50px]\">
                                 ";
             } else {
                 // line 78
-                yield "                                    <img src=\"catalog/view/theme/your_theme/assets/img/category/default-category.png\"
+                yield "                                    <img src=\"extension/blueberry/catalog/view/img/no-image/no_image.png\"
                                          alt=\"";
                 // line 79
                 yield CoreExtension::getAttribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, false, 79);
                 yield "\"
-                                         class=\"w-[80px] h-[80px] object-contain
+                                         class=\"w-[150px] h-[150px] object-contain
                                                 max-[1399px]:h-[65px] max-[1399px]:w-[65px]
                                                 max-[1199px]:h-[50px] max-[1199px]:w-[50px]\">
                                 ";
@@ -288,69 +288,89 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
         if (($context["column_left"] ?? null)) {
             // line 111
             yield "            <aside id=\"mobile_filter_content_top\" class=\"col-span-12 lg:col-span-3 hidden lg:block\">
-                <div class=\"bb-shop-wrap bg-[#f8f8fb] border border-solid border-[#eee] rounded-[20px] sticky top-0 p-[20px]\">
+                <div class=\"w-full\">
+                    <div class=\"bb-pro-list-top mb-[24px] rounded-[20px] flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between\">
+                        <div class=\"flex lg:flex-wrap justify-between w-full\">
+                              <a href=\"";
+            // line 115
+            yield ($context["compare"] ?? null);
+            yield "\"
+                                  id=\"compare-total\"
+                                  class=\"inline-flex items-center gap-2 px-4 py-4 text-dark rounded-md transition duration-200\">
+                                      <i class=\"ri-arrow-left-right-line text-lg\"></i>
+                                      <span class=\"hidden xl:inline\">
+                                          ";
+            // line 120
+            yield ($context["text_compare"] ?? null);
+            yield "
+                                      </span>
+                              </a>
+                        </div>
+                    </div>
+                </div>
+                <div id=\"column_left_content\" class=\"bb-shop-wrap bg-[#f8f8fb] border border-solid border-[#eee] rounded-[20px] sticky top-0 p-[20px]\">
                     ";
-            // line 113
+            // line 127
             yield ($context["column_left"] ?? null);
             yield "
                 </div>
             </aside>
         ";
         }
-        // line 117
+        // line 131
         yield "
         <div class=\"
             ";
-        // line 119
+        // line 133
         if ((($context["column_left"] ?? null) && ($context["column_right"] ?? null))) {
-            // line 120
+            // line 134
             yield "                col-span-12 lg:col-span-6
             ";
-        } elseif ((        // line 121
+        } elseif ((        // line 135
 ($context["column_left"] ?? null) || ($context["column_right"] ?? null))) {
-            // line 122
+            // line 136
             yield "                col-span-12 lg:col-span-9
             ";
         } else {
-            // line 124
+            // line 138
             yield "                col-span-12
             ";
         }
-        // line 126
+        // line 140
         yield "        \">
             <div id=\"category-products\" class=\"px-2\">
                 ";
-        // line 128
+        // line 142
         yield ($context["products_html"] ?? null);
         yield "
             </div>
         </div>
 
         ";
-        // line 132
+        // line 146
         if (($context["column_right"] ?? null)) {
-            // line 133
+            // line 147
             yield "            <aside class=\"col-span-12 lg:col-span-3\">
                 ";
-            // line 134
+            // line 148
             yield ($context["column_right"] ?? null);
             yield "
             </aside>
         ";
         }
-        // line 137
+        // line 151
         yield "
     </div>
 
     ";
-        // line 140
+        // line 154
         yield ($context["content_bottom"] ?? null);
         yield "
     
 </div>
 </div>
 ";
-        // line 144
+        // line 158
         yield ($context["footer"] ?? null);
         yield "
 <script>
@@ -381,7 +401,11 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
 
     });
 </script>
-";
+<style>
+#input-sort{
+   display:block !important;
+}
+</style>";
         yield from [];
     }
 
@@ -406,7 +430,7 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
      */
     public function getDebugInfo(): array
     {
-        return array (  354 => 144,  347 => 140,  342 => 137,  336 => 134,  333 => 133,  331 => 132,  324 => 128,  320 => 126,  316 => 124,  312 => 122,  310 => 121,  307 => 120,  305 => 119,  301 => 117,  294 => 113,  290 => 111,  288 => 110,  278 => 102,  261 => 98,  255 => 95,  252 => 94,  250 => 93,  244 => 90,  239 => 88,  233 => 84,  225 => 79,  222 => 78,  214 => 73,  209 => 72,  207 => 71,  201 => 68,  194 => 65,  191 => 64,  188 => 63,  170 => 62,  167 => 55,  155 => 45,  146 => 38,  131 => 36,  125 => 33,  119 => 31,  113 => 28,  110 => 27,  108 => 26,  105 => 25,  99 => 21,  96 => 20,  79 => 19,  75 => 18,  64 => 9,  61 => 8,  58 => 7,  55 => 6,  52 => 5,  49 => 4,  47 => 3,  42 => 1,);
+        return array (  374 => 158,  367 => 154,  362 => 151,  356 => 148,  353 => 147,  351 => 146,  344 => 142,  340 => 140,  336 => 138,  332 => 136,  330 => 135,  327 => 134,  325 => 133,  321 => 131,  314 => 127,  304 => 120,  296 => 115,  290 => 111,  288 => 110,  278 => 102,  261 => 98,  255 => 95,  252 => 94,  250 => 93,  244 => 90,  239 => 88,  233 => 84,  225 => 79,  222 => 78,  214 => 73,  209 => 72,  207 => 71,  201 => 68,  194 => 65,  191 => 64,  188 => 63,  170 => 62,  167 => 55,  155 => 45,  146 => 38,  131 => 36,  125 => 33,  119 => 31,  113 => 28,  110 => 27,  108 => 26,  105 => 25,  99 => 21,  96 => 20,  79 => 19,  75 => 18,  64 => 9,  61 => 8,  58 => 7,  55 => 6,  52 => 5,  49 => 4,  47 => 3,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -484,13 +508,13 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
                                 {% if category.thumb is defined and category.thumb %}
                                     <img src=\"{{ category.thumb }}\"
                                          alt=\"{{ category.name }}\"
-                                         class=\"w-[80px] h-[80px] object-contain
+                                         class=\"w-[150px] h-[150px] object-contain
                                                 max-[1399px]:h-[65px] max-[1399px]:w-[65px]
                                                 max-[1199px]:h-[50px] max-[1199px]:w-[50px]\">
                                 {% else %}
-                                    <img src=\"catalog/view/theme/your_theme/assets/img/category/default-category.png\"
+                                    <img src=\"extension/blueberry/catalog/view/img/no-image/no_image.png\"
                                          alt=\"{{ category.name }}\"
-                                         class=\"w-[80px] h-[80px] object-contain
+                                         class=\"w-[150px] h-[150px] object-contain
                                                 max-[1399px]:h-[65px] max-[1399px]:w-[65px]
                                                 max-[1199px]:h-[50px] max-[1199px]:w-[50px]\">
                                 {% endif %}
@@ -522,7 +546,21 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
 
         {% if column_left %}
             <aside id=\"mobile_filter_content_top\" class=\"col-span-12 lg:col-span-3 hidden lg:block\">
-                <div class=\"bb-shop-wrap bg-[#f8f8fb] border border-solid border-[#eee] rounded-[20px] sticky top-0 p-[20px]\">
+                <div class=\"w-full\">
+                    <div class=\"bb-pro-list-top mb-[24px] rounded-[20px] flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between\">
+                        <div class=\"flex lg:flex-wrap justify-between w-full\">
+                              <a href=\"{{ compare }}\"
+                                  id=\"compare-total\"
+                                  class=\"inline-flex items-center gap-2 px-4 py-4 text-dark rounded-md transition duration-200\">
+                                      <i class=\"ri-arrow-left-right-line text-lg\"></i>
+                                      <span class=\"hidden xl:inline\">
+                                          {{ text_compare }}
+                                      </span>
+                              </a>
+                        </div>
+                    </div>
+                </div>
+                <div id=\"column_left_content\" class=\"bb-shop-wrap bg-[#f8f8fb] border border-solid border-[#eee] rounded-[20px] sticky top-0 p-[20px]\">
                     {{ column_left }}
                 </div>
             </aside>
@@ -583,6 +621,10 @@ class __TwigTemplate_8ba95b0109346400a90a0a65f0cb54bb2311c52ec5900f3e72c11e9b647
 
     });
 </script>
-", "extension/blueberry/catalog/view/template/product/category.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\product\\category.twig");
+<style>
+#input-sort{
+   display:block !important;
+}
+</style>", "extension/blueberry/catalog/view/template/product/category.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\product\\category.twig");
     }
 }

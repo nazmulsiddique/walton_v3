@@ -44,9 +44,9 @@ class __TwigTemplate_852812149bc973a76e773ab11867398748c5cb872150a4e8179ca8eb05d
             yield "
   <div class=\"w-full px-[12px] mb-[24px]\">
       <div class=\"bb-shop-pro-inner\">
-          <div class=\"flex flex-wrap mx-[-12px] mb-[-24px]\">
+          <div class=\"flex flex-wrap px-[-12px] mb-[-24px]\">
                 <div class=\"w-full\">
-                    <div class=\"bb-pro-list-top mb-[24px] rounded-[20px] flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between\">
+                    <div class=\"bb-pro-list-top mb-[24px] rounded-[20px] hidden lg:flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between\">
                         <div class=\"flex lg:flex-wrap justify-between w-full\">
                           <div class=\"w-[50%] md:w-[20%] px-[12px] max-[420px]:w-full\">
                               <div class=\"bb-bl-btn py-[10px] flex max-[420px]:justify-center\">
@@ -59,103 +59,112 @@ class __TwigTemplate_852812149bc973a76e773ab11867398748c5cb872150a4e8179ca8eb05d
                               </div>
                           </div>
 
-                          <div class=\"w-[50%] md:w-[30%] px-[12px] max-[420px]:w-full\">
-                              <a href=\"";
-            // line 21
-            yield ($context["compare"] ?? null);
-            yield "\"
-                                  id=\"compare-total\"
-                                  class=\"inline-flex items-center gap-2 mt-2 px-4 py-2 text-dark rounded-md transition duration-200\">
-                                      <i class=\"ri-arrow-left-right-line text-lg\"></i>
-                                      <span class=\"hidden xl:inline\">
-                                          ";
-            // line 26
-            yield ($context["text_compare"] ?? null);
-            yield "
-                                      </span>
-                              </a>
-                          </div>
-
-                          <div class=\"w-[50%] md:w-[35%] px-[12px] max-[420px]:w-full hidden md:block\">
-                            <div class=\"bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center\">
-                              <div class=\"w-[130px] mr-[30px] flex justify-end text-[#777]  items-center text-[14px] relative max-[420px]:w-[100px] max-[420px]:justify-left\">
-                                  <select id=\"input-sort\" class=\"w-full mt-2 px-3 py-2 text-gray-700 bg-transparent border-none rounded-md\">
-                                       ";
-            // line 35
+                            <div class=\"w-[50%] md:w-[35%] px-[12px] max-[420px]:w-full hidden md:block\">
+                                <div class=\"bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center\">
+                                    <div class=\"relative w-[180px] max-[420px]:w-[120px]\">
+                                        <select id=\"input-sort\"
+                                            class=\"w-full appearance-none bg-white border border-[#e5e7eb] rounded-xl px-4 py-2.5 pr-10 text-[14px] font-medium text-[#3d4750] shadow-sm cursor-pointer transition-all duration-300 hover:border-[#6c7fd8] focus:border-[#6c7fd8] focus:ring-2 focus:ring-[#6c7fd8]/20 focus:outline-none\">
+                                            ";
+            // line 25
             $context['_parent'] = $context;
             $context['_seq'] = CoreExtension::ensureTraversable($context["sorts"]);
             foreach ($context['_seq'] as $context["_key"] => $context["sorts"]) {
-                // line 36
-                yield "                                            <option value=\"";
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["sorts"], "href", [], "any", false, false, false, 36);
-                yield "\"";
-                if ((CoreExtension::getAttribute($this->env, $this->source, $context["sorts"], "value", [], "any", false, false, false, 36) == Twig\Extension\CoreExtension::sprintf("%s-%s", ($context["sort"] ?? null), ($context["order"] ?? null)))) {
+                // line 26
+                yield "                                                <option value=\"";
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["sorts"], "href", [], "any", false, false, false, 26);
+                yield "\"
+                                                    ";
+                // line 27
+                if ((CoreExtension::getAttribute($this->env, $this->source, $context["sorts"], "value", [], "any", false, false, false, 27) == Twig\Extension\CoreExtension::sprintf("%s-%s", ($context["sort"] ?? null), ($context["order"] ?? null)))) {
                     yield " selected";
                 }
-                yield ">";
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["sorts"], "text", [], "any", false, false, false, 36);
-                yield "</option>
-                                        ";
+                yield ">
+                                                    ";
+                // line 28
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["sorts"], "text", [], "any", false, false, false, 28);
+                yield "
+                                                </option>
+                                            ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_key'], $context['sorts'], $context['_parent']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 38
-            yield "                                  </select>
-                              </div>
+            // line 31
+            yield "                                        </select>
+                                        <i class=\"ri-arrow-down-s-line absolute right-3 top-1/2 -translate-y-1/2 text-[#6c7fd8] text-[18px] pointer-events-none\"></i>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
 
-                            <div class=\"w-[50%] md:w-[35%] px-[12px] hidden max-[991px]:flex\">
+                            ";
+            // line 52
+            yield "
+                        </div>
+                    </div>
+                    <div class=\"bb-pro-list-top mb-[24px] rounded-[20px] flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between items-center lg:hidden\">
+                            <div class=\"px-[12px]\">
                                 <a href=\"javascript:void(0)\" class=\"bb-toggle-filter\">
-                                    <div class=\"py-[10px] flex items-center justify-end max-[420px]:justify-center\"> <i class=\"ri-filter-3-fill text-[22px] text-[#6c7fd8]\"></i> </div>
+                                    <span class=\"bg-white border border-[#6c7fd8] rounded-xl px-4 py-2 text-[18px]\"> <i class=\"ri-filter-3-fill mt-1 text-[#6c7fd8]\"></i> Filter</span>
                                 </a>
                             </div>
 
+                            <div class=\"bb-pro-list-top px-[12px]\">
+                                    <a href=\"";
+            // line 63
+            yield ($context["compare"] ?? null);
+            yield "\"
+                                        id=\"compare-total\"
+                                        class=\"inline-flex items-center gap-2 text-dark transition duration-200 bg-white border border-[#6c7fd8] rounded-xl px-4 py-2 text-[14px]\">
+                                            <i class=\"ri-arrow-left-right-line text-lg\"></i>
+                                    </a>
+                            </div>
 
-                          <div class=\"w-[50%] md:w-[15%] px-[12px] max-[420px]:w-full\">
-                            <div class=\"bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center\">
-                              <div class=\"w-[130px] mr-[30px] flex justify-end text-[#777]  items-center text-[14px] relative max-[420px]:w-[100px] max-[420px]:justify-left\">
-                                  <select id=\"input-limit\" class=\"w-full mt-2 px-3 py-2 text-gray-700 bg-transparent border-none rounded-md\">
-                                      ";
-            // line 54
+                            <div class=\"px-[12px]\">
+                                <div class=\"bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center\">
+                                    <div class=\"relative w-[180px] max-[420px]:w-[120px]\">
+                                        <select id=\"input-sort\"
+                                            class=\"w-full appearance-none bg-white border border-[#6c7fd8] rounded-xl px-4 py-2.5 pr-10 text-[14px] font-medium text-[#3d4750] shadow-sm cursor-pointer transition-all duration-300 hover:border-[#6c7fd8] focus:border-[#6c7fd8] focus:ring-2 focus:ring-[#6c7fd8]/20 focus:outline-none\">
+                                            ";
+            // line 75
             $context['_parent'] = $context;
-            $context['_seq'] = CoreExtension::ensureTraversable($context["limits"]);
-            foreach ($context['_seq'] as $context["_key"] => $context["limits"]) {
-                // line 55
-                yield "                                          <option value=\"";
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["limits"], "href", [], "any", false, false, false, 55);
-                yield "\"";
-                if ((CoreExtension::getAttribute($this->env, $this->source, $context["limits"], "value", [], "any", false, false, false, 55) == ($context["limit"] ?? null))) {
+            $context['_seq'] = CoreExtension::ensureTraversable($context["sorts"]);
+            foreach ($context['_seq'] as $context["_key"] => $context["sorts"]) {
+                // line 76
+                yield "                                                <option value=\"";
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["sorts"], "href", [], "any", false, false, false, 76);
+                yield "\"
+                                                    ";
+                // line 77
+                if ((CoreExtension::getAttribute($this->env, $this->source, $context["sorts"], "value", [], "any", false, false, false, 77) == Twig\Extension\CoreExtension::sprintf("%s-%s", ($context["sort"] ?? null), ($context["order"] ?? null)))) {
                     yield " selected";
                 }
                 yield ">
-                                              ";
-                // line 56
-                yield CoreExtension::getAttribute($this->env, $this->source, $context["limits"], "text", [], "any", false, false, false, 56);
+                                                    ";
+                // line 78
+                yield CoreExtension::getAttribute($this->env, $this->source, $context["sorts"], "text", [], "any", false, false, false, 78);
                 yield "
-                                          </option>
-                                      ";
+                                                </option>
+                                            ";
             }
             $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_key'], $context['limits'], $context['_parent']);
+            unset($context['_seq'], $context['_key'], $context['sorts'], $context['_parent']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 59
-            yield "                                  </select>
-                              </div>
+            // line 81
+            yield "                                        </select>
+                                        <i class=\"ri-arrow-down-s-line absolute right-3 top-1/2 -translate-y-1/2 text-[#6c7fd8] text-[18px] pointer-events-none\"></i>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                        </div>
                     </div>
                 </div>
 
-                <div id=\"product-list\" class=\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6\">
+                <div id=\"product-list\" class=\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full\">
                     ";
-            // line 68
+            // line 90
             $context['_parent'] = $context;
             $context['_seq'] = CoreExtension::ensureTraversable(($context["products"] ?? null));
             foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-                // line 69
+                // line 91
                 yield "                        ";
                 yield $context["product"];
                 yield "
@@ -164,7 +173,7 @@ class __TwigTemplate_852812149bc973a76e773ab11867398748c5cb872150a4e8179ca8eb05d
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_key'], $context['product'], $context['_parent']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 71
+            // line 93
             yield "                    
                 </div>
 
@@ -172,19 +181,19 @@ class __TwigTemplate_852812149bc973a76e773ab11867398748c5cb872150a4e8179ca8eb05d
                   <div class=\"bb-pro-pagination mb-[24px] flex justify-between items-center max-[575px]:flex-col max-[575px]:items-center\">
 
                       ";
-            // line 78
+            // line 100
             yield "                      <p class=\"font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem] max-[575px]:mb-[10px]\">
                           ";
-            // line 79
+            // line 101
             yield ($context["results"] ?? null);
             yield "
                       </p>
 
                       ";
-            // line 83
+            // line 105
             yield "                      <div class=\"bb-pagination\">
                           ";
-            // line 84
+            // line 106
             yield ($context["pagination"] ?? null);
             yield "
                       </div>
@@ -199,28 +208,28 @@ class __TwigTemplate_852812149bc973a76e773ab11867398748c5cb872150a4e8179ca8eb05d
 
  ";
         }
-        // line 96
+        // line 118
         yield "
 
 
 ";
-        // line 99
+        // line 121
         if (( !($context["categories"] ?? null) &&  !($context["products"] ?? null))) {
-            // line 100
+            // line 122
             yield "<div class=\"space-y-4\">
     <p>";
-            // line 101
+            // line 123
             yield ($context["text_no_results"] ?? null);
             yield "</p>
 
     <div class=\"text-right\">
         <a href=\"";
-            // line 104
+            // line 126
             yield ($context["continue"] ?? null);
             yield "\"
            class=\"inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition\">
             ";
-            // line 106
+            // line 128
             yield ($context["button_continue"] ?? null);
             yield "
         </a>
@@ -228,7 +237,7 @@ class __TwigTemplate_852812149bc973a76e773ab11867398748c5cb872150a4e8179ca8eb05d
 </div>
 ";
         }
-        // line 111
+        // line 133
         yield "
 
 
@@ -238,50 +247,10 @@ class __TwigTemplate_852812149bc973a76e773ab11867398748c5cb872150a4e8179ca8eb05d
         <span class=\"menu_title font-Poppins flex items-center text-[16px] text-[#3d4750] font-semibold leading-[26px] tracking-[0.02rem]\">My Filter</span> 
         <button type=\"button\" class=\"bb-close-filter relative border-[0] text-[30px] leading-[1] text-[#ff0000] bg-transparent\">×</button> 
     </div>
-   <div class=\"bb-filter-inner\">
-        ";
-        // line 121
-        yield ($context["column_left"] ?? null);
-        yield "
-        <h1>Filter Content</h1>
-        <h2>Filter Content</h2>
-        <h3>Filter Content</h3>
+   <div id=\"column_left_content_show\" class=\"bb-filter-inner\">
    </div>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-    const filterBtn = document.querySelector('.bb-toggle-filter');
-    const filterPanel = document.getElementById('bb-mobile-filter');
-    const overlay = document.querySelector('.bb-mobile-filter-overlay');
-    const closeBtn = document.querySelector('.bb-close-filter');
-
-    if (filterBtn) {
-        filterBtn.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            overlay.classList.remove('hidden');
-            filterPanel.classList.add('bb-filter-open');
-        });
-    }
-
-    if (overlay) {
-        overlay.addEventListener('click', function () {
-            overlay.classList.add('hidden');
-            filterPanel.classList.remove('bb-filter-open');
-        });
-    }
-
-    if (closeBtn) {
-        closeBtn.addEventListener('click', function () {
-            overlay.classList.add('hidden');
-            filterPanel.classList.remove('bb-filter-open');
-        });
-    }
-
-});
-</script>       ";
+";
         yield from [];
     }
 
@@ -306,7 +275,7 @@ class __TwigTemplate_852812149bc973a76e773ab11867398748c5cb872150a4e8179ca8eb05d
      */
     public function getDebugInfo(): array
     {
-        return array (  244 => 121,  232 => 111,  224 => 106,  219 => 104,  213 => 101,  210 => 100,  208 => 99,  203 => 96,  188 => 84,  185 => 83,  179 => 79,  176 => 78,  168 => 71,  159 => 69,  155 => 68,  144 => 59,  135 => 56,  126 => 55,  122 => 54,  104 => 38,  89 => 36,  85 => 35,  73 => 26,  65 => 21,  44 => 2,  42 => 1,);
+        return array (  241 => 133,  233 => 128,  228 => 126,  222 => 123,  219 => 122,  217 => 121,  212 => 118,  197 => 106,  194 => 105,  188 => 101,  185 => 100,  177 => 93,  168 => 91,  164 => 90,  153 => 81,  144 => 78,  138 => 77,  133 => 76,  129 => 75,  114 => 63,  101 => 52,  93 => 31,  84 => 28,  78 => 27,  73 => 26,  69 => 25,  44 => 2,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -315,9 +284,9 @@ class __TwigTemplate_852812149bc973a76e773ab11867398748c5cb872150a4e8179ca8eb05d
 
   <div class=\"w-full px-[12px] mb-[24px]\">
       <div class=\"bb-shop-pro-inner\">
-          <div class=\"flex flex-wrap mx-[-12px] mb-[-24px]\">
+          <div class=\"flex flex-wrap px-[-12px] mb-[-24px]\">
                 <div class=\"w-full\">
-                    <div class=\"bb-pro-list-top mb-[24px] rounded-[20px] flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between\">
+                    <div class=\"bb-pro-list-top mb-[24px] rounded-[20px] hidden lg:flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between\">
                         <div class=\"flex lg:flex-wrap justify-between w-full\">
                           <div class=\"w-[50%] md:w-[20%] px-[12px] max-[420px]:w-full\">
                               <div class=\"bb-bl-btn py-[10px] flex max-[420px]:justify-center\">
@@ -330,54 +299,76 @@ class __TwigTemplate_852812149bc973a76e773ab11867398748c5cb872150a4e8179ca8eb05d
                               </div>
                           </div>
 
-                          <div class=\"w-[50%] md:w-[30%] px-[12px] max-[420px]:w-full\">
-                              <a href=\"{{ compare }}\"
-                                  id=\"compare-total\"
-                                  class=\"inline-flex items-center gap-2 mt-2 px-4 py-2 text-dark rounded-md transition duration-200\">
-                                      <i class=\"ri-arrow-left-right-line text-lg\"></i>
-                                      <span class=\"hidden xl:inline\">
-                                          {{ text_compare }}
-                                      </span>
-                              </a>
-                          </div>
-
-                          <div class=\"w-[50%] md:w-[35%] px-[12px] max-[420px]:w-full hidden md:block\">
-                            <div class=\"bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center\">
-                              <div class=\"w-[130px] mr-[30px] flex justify-end text-[#777]  items-center text-[14px] relative max-[420px]:w-[100px] max-[420px]:justify-left\">
-                                  <select id=\"input-sort\" class=\"w-full mt-2 px-3 py-2 text-gray-700 bg-transparent border-none rounded-md\">
-                                       {% for sorts in sorts %}
-                                            <option value=\"{{ sorts.href }}\"{% if sorts.value == '%s-%s'|format(sort, order) %} selected{% endif %}>{{ sorts.text }}</option>
-                                        {% endfor %}
-                                  </select>
-                              </div>
+                            <div class=\"w-[50%] md:w-[35%] px-[12px] max-[420px]:w-full hidden md:block\">
+                                <div class=\"bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center\">
+                                    <div class=\"relative w-[180px] max-[420px]:w-[120px]\">
+                                        <select id=\"input-sort\"
+                                            class=\"w-full appearance-none bg-white border border-[#e5e7eb] rounded-xl px-4 py-2.5 pr-10 text-[14px] font-medium text-[#3d4750] shadow-sm cursor-pointer transition-all duration-300 hover:border-[#6c7fd8] focus:border-[#6c7fd8] focus:ring-2 focus:ring-[#6c7fd8]/20 focus:outline-none\">
+                                            {% for sorts in sorts %}
+                                                <option value=\"{{ sorts.href }}\"
+                                                    {% if sorts.value == '%s-%s'|format(sort, order) %} selected{% endif %}>
+                                                    {{ sorts.text }}
+                                                </option>
+                                            {% endfor %}
+                                        </select>
+                                        <i class=\"ri-arrow-down-s-line absolute right-3 top-1/2 -translate-y-1/2 text-[#6c7fd8] text-[18px] pointer-events-none\"></i>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
 
-                            <div class=\"w-[50%] md:w-[35%] px-[12px] hidden max-[991px]:flex\">
+                            {# <div class=\"w-[50%] md:w-[15%] px-[12px] max-[420px]:w-full\">
+                                <div class=\"bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center\">
+                                    <div class=\"relative w-[130px] max-[420px]:w-[100px]\">
+                                        <select id=\"input-limit\"
+                                            class=\"w-full appearance-none bg-white border border-[#e5e7eb] rounded-xl px-4 py-2.5 pr-10 text-[14px] font-medium text-[#3d4750] shadow-sm cursor-pointer transition-all duration-300 hover:border-[#6c7fd8] focus:border-[#6c7fd8] focus:ring-2 focus:ring-[#6c7fd8]/20 focus:outline-none\">
+                                            {% for limits in limits %}
+                                                <option value=\"{{ limits.href }}\"{% if limits.value == limit %} selected{% endif %}>
+                                                    {{ limits.text }}
+                                                </option>
+                                            {% endfor %}
+                                        </select>
+                                        <i class=\"ri-arrow-down-s-line absolute right-3 top-1/2 -translate-y-1/2 text-[#6c7fd8] text-[18px] pointer-events-none\"></i>
+                                    </div>
+                                </div>
+                            </div> #}
+
+                        </div>
+                    </div>
+                    <div class=\"bb-pro-list-top mb-[24px] rounded-[20px] flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between items-center lg:hidden\">
+                            <div class=\"px-[12px]\">
                                 <a href=\"javascript:void(0)\" class=\"bb-toggle-filter\">
-                                    <div class=\"py-[10px] flex items-center justify-end max-[420px]:justify-center\"> <i class=\"ri-filter-3-fill text-[22px] text-[#6c7fd8]\"></i> </div>
+                                    <span class=\"bg-white border border-[#6c7fd8] rounded-xl px-4 py-2 text-[18px]\"> <i class=\"ri-filter-3-fill mt-1 text-[#6c7fd8]\"></i> Filter</span>
                                 </a>
                             </div>
 
-
-                          <div class=\"w-[50%] md:w-[15%] px-[12px] max-[420px]:w-full\">
-                            <div class=\"bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center\">
-                              <div class=\"w-[130px] mr-[30px] flex justify-end text-[#777]  items-center text-[14px] relative max-[420px]:w-[100px] max-[420px]:justify-left\">
-                                  <select id=\"input-limit\" class=\"w-full mt-2 px-3 py-2 text-gray-700 bg-transparent border-none rounded-md\">
-                                      {% for limits in limits %}
-                                          <option value=\"{{ limits.href }}\"{% if limits.value == limit %} selected{% endif %}>
-                                              {{ limits.text }}
-                                          </option>
-                                      {% endfor %}
-                                  </select>
-                              </div>
+                            <div class=\"bb-pro-list-top px-[12px]\">
+                                    <a href=\"{{ compare }}\"
+                                        id=\"compare-total\"
+                                        class=\"inline-flex items-center gap-2 text-dark transition duration-200 bg-white border border-[#6c7fd8] rounded-xl px-4 py-2 text-[14px]\">
+                                            <i class=\"ri-arrow-left-right-line text-lg\"></i>
+                                    </a>
                             </div>
-                          </div>
-                        </div>
+
+                            <div class=\"px-[12px]\">
+                                <div class=\"bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center\">
+                                    <div class=\"relative w-[180px] max-[420px]:w-[120px]\">
+                                        <select id=\"input-sort\"
+                                            class=\"w-full appearance-none bg-white border border-[#6c7fd8] rounded-xl px-4 py-2.5 pr-10 text-[14px] font-medium text-[#3d4750] shadow-sm cursor-pointer transition-all duration-300 hover:border-[#6c7fd8] focus:border-[#6c7fd8] focus:ring-2 focus:ring-[#6c7fd8]/20 focus:outline-none\">
+                                            {% for sorts in sorts %}
+                                                <option value=\"{{ sorts.href }}\"
+                                                    {% if sorts.value == '%s-%s'|format(sort, order) %} selected{% endif %}>
+                                                    {{ sorts.text }}
+                                                </option>
+                                            {% endfor %}
+                                        </select>
+                                        <i class=\"ri-arrow-down-s-line absolute right-3 top-1/2 -translate-y-1/2 text-[#6c7fd8] text-[18px] pointer-events-none\"></i>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
 
-                <div id=\"product-list\" class=\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6\">
+                <div id=\"product-list\" class=\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full\">
                     {% for product in products %}
                         {{ product }}
                     {% endfor %}
@@ -430,46 +421,9 @@ class __TwigTemplate_852812149bc973a76e773ab11867398748c5cb872150a4e8179ca8eb05d
         <span class=\"menu_title font-Poppins flex items-center text-[16px] text-[#3d4750] font-semibold leading-[26px] tracking-[0.02rem]\">My Filter</span> 
         <button type=\"button\" class=\"bb-close-filter relative border-[0] text-[30px] leading-[1] text-[#ff0000] bg-transparent\">×</button> 
     </div>
-   <div class=\"bb-filter-inner\">
-        {{ column_left }}
-        <h1>Filter Content</h1>
-        <h2>Filter Content</h2>
-        <h3>Filter Content</h3>
+   <div id=\"column_left_content_show\" class=\"bb-filter-inner\">
    </div>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-    const filterBtn = document.querySelector('.bb-toggle-filter');
-    const filterPanel = document.getElementById('bb-mobile-filter');
-    const overlay = document.querySelector('.bb-mobile-filter-overlay');
-    const closeBtn = document.querySelector('.bb-close-filter');
-
-    if (filterBtn) {
-        filterBtn.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            overlay.classList.remove('hidden');
-            filterPanel.classList.add('bb-filter-open');
-        });
-    }
-
-    if (overlay) {
-        overlay.addEventListener('click', function () {
-            overlay.classList.add('hidden');
-            filterPanel.classList.remove('bb-filter-open');
-        });
-    }
-
-    if (closeBtn) {
-        closeBtn.addEventListener('click', function () {
-            overlay.classList.add('hidden');
-            filterPanel.classList.remove('bb-filter-open');
-        });
-    }
-
-});
-</script>       ", "extension/blueberry/catalog/view/template/product/category_products.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\product\\category_products.twig");
+", "extension/blueberry/catalog/view/template/product/category_products.twig", "C:\\xampp\\htdocs\\walton_v3\\extension\\blueberry\\catalog\\view\\template\\product\\category_products.twig");
     }
 }

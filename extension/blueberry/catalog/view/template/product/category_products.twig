@@ -2,9 +2,9 @@
 
   <div class="w-full px-[12px] mb-[24px]">
       <div class="bb-shop-pro-inner">
-          <div class="flex flex-wrap mx-[-12px] mb-[-24px]">
+          <div class="flex flex-wrap px-[-12px] mb-[-24px]">
                 <div class="w-full">
-                    <div class="bb-pro-list-top mb-[24px] rounded-[20px] flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between">
+                    <div class="bb-pro-list-top mb-[24px] rounded-[20px] hidden lg:flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between">
                         <div class="flex lg:flex-wrap justify-between w-full">
                           <div class="w-[50%] md:w-[20%] px-[12px] max-[420px]:w-full">
                               <div class="bb-bl-btn py-[10px] flex max-[420px]:justify-center">
@@ -17,54 +17,76 @@
                               </div>
                           </div>
 
-                          <div class="w-[50%] md:w-[30%] px-[12px] max-[420px]:w-full">
-                              <a href="{{ compare }}"
-                                  id="compare-total"
-                                  class="inline-flex items-center gap-2 mt-2 px-4 py-2 text-dark rounded-md transition duration-200">
-                                      <i class="ri-arrow-left-right-line text-lg"></i>
-                                      <span class="hidden xl:inline">
-                                          {{ text_compare }}
-                                      </span>
-                              </a>
-                          </div>
-
-                          <div class="w-[50%] md:w-[35%] px-[12px] max-[420px]:w-full hidden md:block">
-                            <div class="bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center">
-                              <div class="w-[130px] mr-[30px] flex justify-end text-[#777]  items-center text-[14px] relative max-[420px]:w-[100px] max-[420px]:justify-left">
-                                  <select id="input-sort" class="w-full mt-2 px-3 py-2 text-gray-700 bg-transparent border-none rounded-md">
-                                       {% for sorts in sorts %}
-                                            <option value="{{ sorts.href }}"{% if sorts.value == '%s-%s'|format(sort, order) %} selected{% endif %}>{{ sorts.text }}</option>
-                                        {% endfor %}
-                                  </select>
-                              </div>
+                            <div class="w-[50%] md:w-[35%] px-[12px] max-[420px]:w-full hidden md:block">
+                                <div class="bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center">
+                                    <div class="relative w-[180px] max-[420px]:w-[120px]">
+                                        <select id="input-sort"
+                                            class="w-full appearance-none bg-white border border-[#e5e7eb] rounded-xl px-4 py-2.5 pr-10 text-[14px] font-medium text-[#3d4750] shadow-sm cursor-pointer transition-all duration-300 hover:border-[#6c7fd8] focus:border-[#6c7fd8] focus:ring-2 focus:ring-[#6c7fd8]/20 focus:outline-none">
+                                            {% for sorts in sorts %}
+                                                <option value="{{ sorts.href }}"
+                                                    {% if sorts.value == '%s-%s'|format(sort, order) %} selected{% endif %}>
+                                                    {{ sorts.text }}
+                                                </option>
+                                            {% endfor %}
+                                        </select>
+                                        <i class="ri-arrow-down-s-line absolute right-3 top-1/2 -translate-y-1/2 text-[#6c7fd8] text-[18px] pointer-events-none"></i>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
 
-                            <div class="w-[50%] md:w-[35%] px-[12px] hidden max-[991px]:flex">
+                            {# <div class="w-[50%] md:w-[15%] px-[12px] max-[420px]:w-full">
+                                <div class="bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center">
+                                    <div class="relative w-[130px] max-[420px]:w-[100px]">
+                                        <select id="input-limit"
+                                            class="w-full appearance-none bg-white border border-[#e5e7eb] rounded-xl px-4 py-2.5 pr-10 text-[14px] font-medium text-[#3d4750] shadow-sm cursor-pointer transition-all duration-300 hover:border-[#6c7fd8] focus:border-[#6c7fd8] focus:ring-2 focus:ring-[#6c7fd8]/20 focus:outline-none">
+                                            {% for limits in limits %}
+                                                <option value="{{ limits.href }}"{% if limits.value == limit %} selected{% endif %}>
+                                                    {{ limits.text }}
+                                                </option>
+                                            {% endfor %}
+                                        </select>
+                                        <i class="ri-arrow-down-s-line absolute right-3 top-1/2 -translate-y-1/2 text-[#6c7fd8] text-[18px] pointer-events-none"></i>
+                                    </div>
+                                </div>
+                            </div> #}
+
+                        </div>
+                    </div>
+                    <div class="bb-pro-list-top mb-[24px] rounded-[20px] flex bg-[#f8f8fb] border-[1px] border-solid border-[#eee] justify-between items-center lg:hidden">
+                            <div class="px-[12px]">
                                 <a href="javascript:void(0)" class="bb-toggle-filter">
-                                    <div class="py-[10px] flex items-center justify-end max-[420px]:justify-center"> <i class="ri-filter-3-fill text-[22px] text-[#6c7fd8]"></i> </div>
+                                    <span class="bg-white border border-[#6c7fd8] rounded-xl px-4 py-2 text-[18px]"> <i class="ri-filter-3-fill mt-1 text-[#6c7fd8]"></i> Filter</span>
                                 </a>
                             </div>
 
-
-                          <div class="w-[50%] md:w-[15%] px-[12px] max-[420px]:w-full">
-                            <div class="bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center">
-                              <div class="w-[130px] mr-[30px] flex justify-end text-[#777]  items-center text-[14px] relative max-[420px]:w-[100px] max-[420px]:justify-left">
-                                  <select id="input-limit" class="w-full mt-2 px-3 py-2 text-gray-700 bg-transparent border-none rounded-md">
-                                      {% for limits in limits %}
-                                          <option value="{{ limits.href }}"{% if limits.value == limit %} selected{% endif %}>
-                                              {{ limits.text }}
-                                          </option>
-                                      {% endfor %}
-                                  </select>
-                              </div>
+                            <div class="bb-pro-list-top px-[12px]">
+                                    <a href="{{ compare }}"
+                                        id="compare-total"
+                                        class="inline-flex items-center gap-2 text-dark transition duration-200 bg-white border border-[#6c7fd8] rounded-xl px-4 py-2 text-[14px]">
+                                            <i class="ri-arrow-left-right-line text-lg"></i>
+                                    </a>
                             </div>
-                          </div>
-                        </div>
+
+                            <div class="px-[12px]">
+                                <div class="bb-select-inner h-full py-[10px] flex items-center justify-end max-[420px]:justify-center">
+                                    <div class="relative w-[180px] max-[420px]:w-[120px]">
+                                        <select id="input-sort"
+                                            class="w-full appearance-none bg-white border border-[#6c7fd8] rounded-xl px-4 py-2.5 pr-10 text-[14px] font-medium text-[#3d4750] shadow-sm cursor-pointer transition-all duration-300 hover:border-[#6c7fd8] focus:border-[#6c7fd8] focus:ring-2 focus:ring-[#6c7fd8]/20 focus:outline-none">
+                                            {% for sorts in sorts %}
+                                                <option value="{{ sorts.href }}"
+                                                    {% if sorts.value == '%s-%s'|format(sort, order) %} selected{% endif %}>
+                                                    {{ sorts.text }}
+                                                </option>
+                                            {% endfor %}
+                                        </select>
+                                        <i class="ri-arrow-down-s-line absolute right-3 top-1/2 -translate-y-1/2 text-[#6c7fd8] text-[18px] pointer-events-none"></i>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
 
-                <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
                     {% for product in products %}
                         {{ product }}
                     {% endfor %}
@@ -117,44 +139,6 @@
         <span class="menu_title font-Poppins flex items-center text-[16px] text-[#3d4750] font-semibold leading-[26px] tracking-[0.02rem]">My Filter</span> 
         <button type="button" class="bb-close-filter relative border-[0] text-[30px] leading-[1] text-[#ff0000] bg-transparent">×</button> 
     </div>
-   <div class="bb-filter-inner">
-        {{ column_left }}
-        <h1>Filter Content</h1>
-        <h2>Filter Content</h2>
-        <h3>Filter Content</h3>
+   <div id="column_left_content_show" class="bb-filter-inner">
    </div>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-    const filterBtn = document.querySelector('.bb-toggle-filter');
-    const filterPanel = document.getElementById('bb-mobile-filter');
-    const overlay = document.querySelector('.bb-mobile-filter-overlay');
-    const closeBtn = document.querySelector('.bb-close-filter');
-
-    if (filterBtn) {
-        filterBtn.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            overlay.classList.remove('hidden');
-            filterPanel.classList.add('bb-filter-open');
-        });
-    }
-
-    if (overlay) {
-        overlay.addEventListener('click', function () {
-            overlay.classList.add('hidden');
-            filterPanel.classList.remove('bb-filter-open');
-        });
-    }
-
-    if (closeBtn) {
-        closeBtn.addEventListener('click', function () {
-            overlay.classList.add('hidden');
-            filterPanel.classList.remove('bb-filter-open');
-        });
-    }
-
-});
-</script>       

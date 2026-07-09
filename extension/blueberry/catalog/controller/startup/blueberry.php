@@ -18,6 +18,10 @@ class Blueberry extends \Opencart\System\Engine\Controller {
 
 	public function event(string &$route, array &$args, mixed &$output): void {
 
+		if ($route == 'common/header') {
+			$args['menupopup'] = $this->load->controller('extension/blueberry/common/menupopup');
+		}
+
 		if (in_array($route, [
 			'common/header',
 			'common/footer',
@@ -25,13 +29,16 @@ class Blueberry extends \Opencart\System\Engine\Controller {
 			'common/pagination',
 			'common/search',
 			'common/menu',
+			'common/menu_popup',
 			'information/information',
 			'product/category',
 			'product/product',
 			'product/thumb',
     		'product/product_quickview',
     		'product/compare',
-			'product/search'
+			'product/search',
+			'product/related',
+			'product/thumb_related'
 			])) {
 			$route = 'extension/blueberry/' . $route;
 		}
@@ -43,13 +50,25 @@ class Blueberry extends \Opencart\System\Engine\Controller {
 		);
 	}
 
-public function controller(string &$route, array &$args): void {
+	public function controller(string &$route, array &$args): void {
 
-	if ($route == 'product/category') {
-			$route = 'extension/blueberry/product/category';
+		switch ($route) {
+			case 'product/category':
+				$route = 'extension/blueberry/product/category';
+				break;
+
+			case 'product/product':
+				$route = 'extension/blueberry/product/product';
+				break;
+
+			// case 'common/menupopup':
+			// 	$route = 'extension/blueberry/common/menupopup';
+			// 	break;
+
+			// case 'common/header':
+			// $route = 'extension/blueberry/common/header';
+			// break;
+
 		}
-
 	}
-
-
 }

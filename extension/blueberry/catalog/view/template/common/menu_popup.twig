@@ -1,0 +1,60 @@
+{% if categories %}
+    <div id="productCategorySection">
+        <div class="w-full px-[12px]">
+            <div class="flex flex-wrap w-full items-stretch max-h-[358px] overflow-auto">
+                <div class="w-full">
+                    <div class="sub-title mb-[20px] flex justify-between">
+                        <h4 class="font-quicksand tracking-[0.03rem] leading-[1.2] text-[20px] font-bold text-[#3d4750] capitalize">EXPLORE CATEGORIES</h4>
+                    </div>
+                </div>
+
+                {% for category in categories %}
+                    <div class="min-[1200px]:w-[16.66%] min-[768px]:w-[33.33%] min-[576px]:w-[50%] w-full px-[8px] mb-[10px]">
+                        <div class="bb-category-box bg-[#fbf9e4] p-[10px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] tab-btn{% if loop.first %} ring-2 ring-[#6c7fd8] scale-105{% endif %} cursor-pointer" data-tab="topmenu-cat-{{ category.category_id }}">
+                            <div class="category-image mb-[12px]">
+                                {% if category.thumb %}
+                                    <img src="{{ category.thumb }}" alt="{{ category.name }}" class="w-[80px] h-[80px] object-contain">
+                                {% else %}
+                                    <img src="extension/blueberry/catalog/view/img/no-image/no_image.png" alt="{{ category.name }}" class="w-[80px] h-[80px] object-contain">
+                                {% endif %}
+                            </div>
+                            <div class="category-sub-contact h-[35px]">
+                                <h5 class="mb-[2px] text-[12px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2]">{{ category.name }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="w-full">
+            {% for category in categories %}
+                <div class="flex flex-wrap w-full tab-content{% if not loop.first %} hidden{% endif %}" id="topmenu-cat-{{ category.category_id }}">
+                    <div class="w-full px-[12px]">
+                        <div class="sub-title my-[20px] flex justify-between">
+                            <h4 class="font-quicksand tracking-[0.03rem] leading-[1.2] text-[20px] font-bold text-[#3d4750] capitalize">{{ category.name }}</h4>
+                        </div>
+                    </div>
+
+                    {% if category.children %}
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                            {% for child in category.children %}
+                                <div class="w-full">
+                                    <div class="bb-category-cart p-4 bg-[#f8f8fb] border border-[#eee] rounded-[10px] h-full">
+                                        <a href="{{ child.href }}"
+                                        class="block text-[12px] font-medium text-[#3d4750] hover:text-[#6c7fd8] transition">
+                                            {{ child.name }}
+                                        </a>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="w-full px-[12px] mb-[10px]">
+                            <a href="{{ category.href }}" class="transition-all duration-[0.3s] ease-in-out flex font-Poppins text-[12px] leading-[28px] tracking-[0.03rem] font-medium text-[#6c7fd8]">{{ category.name }}</a>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}
