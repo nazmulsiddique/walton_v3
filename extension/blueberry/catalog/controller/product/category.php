@@ -182,10 +182,17 @@ class Category extends \Opencart\System\Engine\Controller {
 					'filter_category_id'  => $result['category_id'],
 					'filter_sub_category' => false
 				];
-
+                
+                if ($result['image'] && is_file(DIR_IMAGE . html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8'))) {
+                    $subCategoryImage = $result['image'];
+                } else {
+                    $subCategoryImage = 'placeholder.png';
+                }
+                
 				$data['categories'][] = [
 					'name' => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
-					'href' => $this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+					'href' => $this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url),
+                    'thumb'=> $this->model_tool_image->resize($subCategoryImage, $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height')),
 				];
 			}
 

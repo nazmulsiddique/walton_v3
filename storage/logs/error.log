@@ -5734,3 +5734,81 @@ Backtrace: 3
 File: C:\xampp\htdocs\walton_v3\wadmin\index.php
 Line: 20
 Function: require_once
+2026-07-13 19:49:36 - Error: Error: Could not call registry key model_extension_blueberry_other_attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\controller.php
+Line: 43
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\quickview.php
+Line: 31
+Class: Opencart\System\Engine\Controller
+Function: __get
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Quickview
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 19:49:54 - Error: Error: Could not call registry key model_extension_blueberry_other_attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\controller.php
+Line: 43
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\quickview.php
+Line: 31
+Class: Opencart\System\Engine\Controller
+Function: __get
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Quickview
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 19:50:21 - Error: Error: Could not call registry key model_extension_blueberry_other_attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\controller.php
+Line: 43
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\quickview.php
+Line: 31
+Class: Opencart\System\Engine\Controller
+Function: __get
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Quickview
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once

@@ -28,7 +28,9 @@ class Quickview extends \Opencart\System\Engine\Controller {
 
             $data['thumb'] = $this->config->get('config_url') . 'image/' . $product_info['image'];
 
-            $data['attribute_groups'] = $this->model_catalog_product->getAttributes($product_id);
+            $this->load->model('extension/blueberry/other/attribute_sort');
+            
+            $data['sort_description_attributes'] = $this->model_extension_blueberry_other_attribute_sort->getShortDescriptionAttributes($product_id);
 
             $this->response->setOutput(
                 $this->load->view('extension/blueberry/product/quickview', $data)

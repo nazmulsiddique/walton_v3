@@ -23,16 +23,11 @@
                                 <div class="bb-quickview-desc mb-[10px] text-[15px] leading-[24px] text-[#777] font-light">
                                     
                                     <ul class="font-Poppins text-[14px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem] list-disc pl-5 space-y-1">
-                                        {% if attribute_groups %}
-                                            {% set count = 0 %}
-                                            {% for attribute_group in attribute_groups %}
-                                                    {% for attribute in attribute_group.attribute %}
-                                                        {% if count < 5 %}
+                                        
+                                        {% if sort_description_attributes %}
+                                                {% for attribute in sort_description_attributes %}
                                                         <li> {{ attribute.name }} : {{ attribute.text|nl2br }} </li>
-                                                        {% set count = count + 1 %}
-                                                        {% endif %}
-                                                    {% endfor %}
-                                            {% endfor %}
+                                                {% endfor %}
                                         {% endif %}
                                     </ul>
                                 </div>
