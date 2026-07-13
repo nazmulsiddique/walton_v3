@@ -440,6 +440,10 @@ class Product extends \Opencart\System\Engine\Controller {
 
 			$data['attribute_groups'] = $this->model_catalog_product->getAttributes($product_id);
 
+			$this->load->model('extension/blueberry/other/attribute_sort');
+
+			$data['sort_description_attributes'] = $this->model_extension_blueberry_other_attribute_sort->getShortDescriptionAttributes($product_id);
+
 			$data['related'] = $this->load->controller('extension/blueberry/product/related');
 
 			$data['tags'] = [];

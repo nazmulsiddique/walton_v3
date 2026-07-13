@@ -38,3 +38,9 @@ define('DB_SSL_CA', '');
 
 // OpenCart API
 define('OPENCART_SERVER', 'https://www.opencart.com/');
+
+// Radis
+define('CACHE_HOSTNAME', '127.0.0.1');
+define('CACHE_PORT', '6379');
+define('CACHE_PREFIX', 'waltonbd.com_');
+define('CACHE_EXPIRE', 1800);

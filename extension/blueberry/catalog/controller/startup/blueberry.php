@@ -22,6 +22,12 @@ class Blueberry extends \Opencart\System\Engine\Controller {
 			$args['menupopup'] = $this->load->controller('extension/blueberry/common/menupopup');
 		}
 
+		if ($route == 'common/menu' && !empty($args['categories'])) {
+			$args['categories'] = array_values(array_filter($args['categories'], function ($category) {
+				return !empty($category['menu_status']);
+			}));
+		}
+		
 		if (in_array($route, [
 			'common/header',
 			'common/footer',
@@ -38,7 +44,9 @@ class Blueberry extends \Opencart\System\Engine\Controller {
     		'product/compare',
 			'product/search',
 			'product/related',
-			'product/thumb_related'
+			'product/thumb_related',
+			'cms/blog',
+			'cms/blog_info'
 			])) {
 			$route = 'extension/blueberry/' . $route;
 		}

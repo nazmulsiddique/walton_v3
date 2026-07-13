@@ -33,3 +33,9 @@ define('DB_PREFIX', 'wl_');
 define('DB_SSL_KEY', '');
 define('DB_SSL_CERT', '');
 define('DB_SSL_CA', '');
+
+// Radis
+define('CACHE_HOSTNAME', '127.0.0.1');
+define('CACHE_PORT', '6379');
+define('CACHE_PREFIX', 'waltonbd.com_');
+define('CACHE_EXPIRE', 1800);

@@ -30,12 +30,22 @@ class Menupopup extends \Opencart\System\Engine\Controller {
 		$categories = $this->model_catalog_category->getCategories(0);
 
 		foreach ($categories as $category) {
+			// Only show this category in the top menu if the admin enabled "Show in Top Menu"
+			if (empty($category['top_menu_status'])) {
+				continue;
+			}
+
 			// Level 2
 			$children_data = [];
 
 			$children = $this->model_catalog_category->getCategories($category['category_id']);
 
 			foreach ($children as $child) {
+				// Same rule applies to sub-categories
+				if (empty($child['top_menu_status'])) {
+					continue;
+				}
+				
 				$filter_data = [
 					'filter_category_id'  => $child['category_id'],
 					'filter_sub_category' => true

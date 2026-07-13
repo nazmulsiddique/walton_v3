@@ -5119,3 +5119,618 @@ Line: 20
 Function: require_once
 2026-07-09 15:19:04 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
 2026-07-09 15:19:04 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-09 16:58:13 - PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 200
+2026-07-09 16:58:13 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 200
+2026-07-09 16:58:42 - PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 200
+2026-07-09 16:58:42 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 200
+2026-07-09 16:58:59 - PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 200
+2026-07-09 16:58:59 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 200
+2026-07-09 16:59:08 - PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 200
+2026-07-09 16:59:08 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 200
+2026-07-09 16:59:16 - PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 200
+2026-07-09 16:59:16 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 200
+2026-07-13 03:32:16 - Error: Class "Redis" not found
+File: C:\xampp\htdocs\walton_v3\system\library\cache\redis.php
+Line: 26
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\cache.php
+Line: 31
+Class: Opencart\System\Library\Cache\Redis
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 179
+Class: Opencart\System\Library\Cache
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 03:32:27 - Error: Class "Redis" not found
+File: C:\xampp\htdocs\walton_v3\system\library\cache\redis.php
+Line: 26
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\cache.php
+Line: 31
+Class: Opencart\System\Library\Cache\Redis
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 179
+Class: Opencart\System\Library\Cache
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\wadmin\index.php
+Line: 20
+Function: require_once
+2026-07-13 03:32:36 - Error: Class "Redis" not found
+File: C:\xampp\htdocs\walton_v3\system\library\cache\redis.php
+Line: 26
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\cache.php
+Line: 31
+Class: Opencart\System\Library\Cache\Redis
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 179
+Class: Opencart\System\Library\Cache
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\wadmin\index.php
+Line: 20
+Function: require_once
+2026-07-13 03:34:37 - Error: Class "Redis" not found
+File: C:\xampp\htdocs\walton_v3\system\library\cache\redis.php
+Line: 26
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\cache.php
+Line: 31
+Class: Opencart\System\Library\Cache\Redis
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 179
+Class: Opencart\System\Library\Cache
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 03:34:41 - Error: Class "Redis" not found
+File: C:\xampp\htdocs\walton_v3\system\library\cache\redis.php
+Line: 26
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\cache.php
+Line: 31
+Class: Opencart\System\Library\Cache\Redis
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 179
+Class: Opencart\System\Library\Cache
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 03:36:16 - Error: Class "Redis" not found
+File: C:\xampp\htdocs\walton_v3\system\library\cache\redis.php
+Line: 26
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\cache.php
+Line: 31
+Class: Opencart\System\Library\Cache\Redis
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 179
+Class: Opencart\System\Library\Cache
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 03:36:19 - Error: Class "Redis" not found
+File: C:\xampp\htdocs\walton_v3\system\library\cache\redis.php
+Line: 26
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\cache.php
+Line: 31
+Class: Opencart\System\Library\Cache\Redis
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 179
+Class: Opencart\System\Library\Cache
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 03:36:23 - Error: Class "Redis" not found
+File: C:\xampp\htdocs\walton_v3\system\library\cache\redis.php
+Line: 26
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\cache.php
+Line: 31
+Class: Opencart\System\Library\Cache\Redis
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 179
+Class: Opencart\System\Library\Cache
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 03:40:15 - Error: Class "Redis" not found
+File: C:\xampp\htdocs\walton_v3\system\library\cache\redis.php
+Line: 26
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\system\library\cache.php
+Line: 31
+Class: Opencart\System\Library\Cache\Redis
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 179
+Class: Opencart\System\Library\Cache
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:07:49 - Error: Error: Could not load model extension/blueberry/other/attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 148
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: model
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Product
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:09:05 - Error: Error: Could not load model extension/blueberry/other/attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 148
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: model
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Product
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:10:31 - Error: Error: Could not load model extension/blueberry/other/attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 148
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: model
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Product
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:10:53 - Error: Error: Could not load model extension/blueberry/other/attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 148
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: model
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Product
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:13:05 - Error: Error: Could not load model extension/blueberry/other/attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 148
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: model
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Product
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:14:15 - Error: Error: Could not load model extension/blueberry/other/attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 148
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: model
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Product
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:14:41 - Error: Error: Could not load model extension/blueberry/other/attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 148
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: model
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Product
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:16:34 - Error: Error: Could not load model extension/blueberry/other/attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 148
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: model
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Product
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:17:59 - Error: Error: Could not load model extension/blueberry/other/attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 148
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: model
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Product
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:18:19 - Error: Error: Could not load model extension/blueberry/other/attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 148
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: model
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Product
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:18:35 - Error: Error: Could not load model extension/blueberry/other/attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 148
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: model
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Product
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:19:15 - Error: Error: Could not load model extension/blueberry/other/attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 148
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: model
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Product
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:19:30 - Error: Error: Could not load model extension/blueberry/other/attribute_sort!
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 148
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\catalog\controller\product\product.php
+Line: 443
+Class: Opencart\System\Engine\Loader
+Function: model
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Extension\Blueberry\Product\Product
+Function: index
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:33:03 - PHP Unknown:  ZipArchive::open(): Using empty file as ZipArchive is deprecated in C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php on line 252
+2026-07-13 14:33:03 - PHP Warning:  move_uploaded_file(C:\xampp\tmp\php148C.tmp): Failed to open stream: No such file or directory in C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php on line 300
+2026-07-13 14:33:03 - PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\php148C.tmp&quot; to &quot;C:/xampp/htdocs/walton_v3/storage/marketplace/final_blueberry.ocmod.zip&quot; in C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php on line 300
+2026-07-13 14:33:03 - Error: Invalid or uninitialized Zip object
+File: C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php
+Line: 306
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php
+Line: 306
+Class: ZipArchive
+Function: getFromName
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Admin\Controller\Marketplace\Installer
+Function: upload
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\wadmin\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:33:43 - PHP Unknown:  ZipArchive::open(): Using empty file as ZipArchive is deprecated in C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php on line 252
+2026-07-13 14:33:43 - PHP Warning:  move_uploaded_file(C:\xampp\tmp\phpB300.tmp): Failed to open stream: No such file or directory in C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php on line 300
+2026-07-13 14:33:43 - PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\phpB300.tmp&quot; to &quot;C:/xampp/htdocs/walton_v3/storage/marketplace/final_blueberry.ocmod.zip&quot; in C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php on line 300
+2026-07-13 14:33:43 - Error: Invalid or uninitialized Zip object
+File: C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php
+Line: 306
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php
+Line: 306
+Class: ZipArchive
+Function: getFromName
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Admin\Controller\Marketplace\Installer
+Function: upload
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\wadmin\index.php
+Line: 20
+Function: require_once
+2026-07-13 14:35:26 - PHP Unknown:  ZipArchive::open(): Using empty file as ZipArchive is deprecated in C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php on line 252
+2026-07-13 14:35:26 - PHP Warning:  move_uploaded_file(C:\xampp\tmp\php44DC.tmp): Failed to open stream: No such file or directory in C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php on line 300
+2026-07-13 14:35:26 - PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\php44DC.tmp&quot; to &quot;C:/xampp/htdocs/walton_v3/storage/marketplace/final_blueberry.ocmod.zip&quot; in C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php on line 300
+2026-07-13 14:35:26 - Error: Invalid or uninitialized Zip object
+File: C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php
+Line: 306
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\wadmin\controller\marketplace\installer.php
+Line: 306
+Class: ZipArchive
+Function: getFromName
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Admin\Controller\Marketplace\Installer
+Function: upload
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\wadmin\index.php
+Line: 20
+Function: require_once

@@ -1,33 +1,94 @@
 {{ header }}
-<div id="cms-blog" class="container">
-  <ul class="breadcrumb">
-    {% for breadcrumb in breadcrumbs %}
-      <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
-    {% endfor %}
-  </ul>
-  <div class="row">
-    {{ column_left }}
-    <div id="content" class="col">
-      {{ content_top }}
-      <h1>{{ heading_title }}</h1>
-      {% if image %}
-        <img src="{{ image }}" alt="{{ heading_title }}" title="{{ heading_title }}" class="img-thumbnail mb-2"/>
-      {% endif %}
-      <p>{{ text_by }} <a href="{{ filter_author }}">{{ author }}</a> - {{ date_added }} - {{ comment_total }} {{ text_comment }}</p>
-      <div>{{ description }}</div>
-      {% if tags %}
-        <p>{{ text_tags }}
-          {% for tag in tags %}
-            <a href="{{ tag.href }}">{{ tag.tag }}</a>{% if not loop.last %},{% endif %}
-          {% endfor %}
-        </p>
-      {% endif %}
-      {% if comment %}
-        <div id="comment-container">{{ comment }}</div>
-      {% endif %}
-      {{ content_bottom }}
+
+<div id="cms-blog" class="bg-white">
+
+    <!-- Breadcrumb -->
+    <section class="mb-5 border-b border-[#eee] bg-[#f8f8fb]">
+        <div class="mx-auto max-w-[1320px] px-4">
+            <div class="py-5">
+                <ul class="flex flex-wrap items-center gap-2 text-sm">
+                    <li>
+                        <a href="{{ base }}"
+                           class="font-semibold text-[#686e7d] hover:text-[#6c7fd8] transition">
+                            Home
+                        </a>
+                    </li>
+
+                    {% for breadcrumb in breadcrumbs %}
+                        {% if not loop.first %}
+                            <li>
+                                <i class="ri-arrow-right-double-fill text-[#999]"></i>
+                            </li>
+                        {% endif %}
+
+                        <li>
+                            {% if loop.last %}
+                                <span class="text-[#686e7d]">
+                                    {{ breadcrumb.text }}
+                                </span>
+                            {% else %}
+                                <a href="{{ breadcrumb.href }}"
+                                   class="font-semibold text-[#686e7d] hover:text-[#6c7fd8] transition">
+                                    {{ breadcrumb.text }}
+                                </a>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="mx-auto max-w-[1320px] px-4 pb-10">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Content -->
+            <main id="content" class="flex-1 min-w-0">
+
+                {{ content_top }}
+
+                <h1 class="mb-6 text-3xl font-bold text-gray-800">
+                    {{ heading_title }}
+                </h1>
+
+                {% if image %}
+                    <div class="mb-6 overflow-hidden rounded-xl border border-gray-200">
+                        <img src="{{ image }}"
+                             alt="{{ heading_title }}"
+                             title="{{ heading_title }}"
+                             class="w-full h-auto object-cover">
+                    </div>
+                {% endif %}
+                <!-- Description -->
+                <div class="prose prose-lg max-w-none mb-8">
+                    {{ description }}
+                </div>
+                <!-- Tags -->
+                {% if tags %}
+                    <div class="mb-8">
+
+                        <span class="font-semibold text-gray-700">
+                            {{ text_tags }}
+                        </span>
+
+                        <div class="mt-3 flex flex-wrap gap-2">
+
+                            {% for tag in tags %}
+                                <a href="{{ tag.href }}"
+                                   class="rounded-full bg-[#f3f4f6] px-4 py-2 text-sm text-gray-700 hover:bg-[#6c7fd8] hover:text-white transition">
+                                    {{ tag.tag }}
+                                </a>
+                            {% endfor %}
+
+                        </div>
+
+                    </div>
+                {% endif %}
+            </main>
+        </div>
+
     </div>
-    {{ column_right }}
-  </div>
+
 </div>
+
 {{ footer }}
