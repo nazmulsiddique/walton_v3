@@ -5812,3 +5812,141 @@ Backtrace: 3
 File: C:\xampp\htdocs\walton_v3\index.php
 Line: 20
 Function: require_once
+2026-07-14 10:10:54 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-14 10:10:54 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-14 10:10:54 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+2026-07-14 10:10:54 - Error: oc_strlen(): Argument #1 ($string) must be of type string, null given, called in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+File: C:\xampp\htdocs\walton_v3\system\helper\general.php
+Line: 45
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php
+Line: 225
+Function: oc_strlen
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 343
+Class: Opencart\Admin\Model\Catalog\Category
+Function: editCategory
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\engine\proxy.php
+Line: 87
+Class: Opencart\System\Engine\Loader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\wadmin\controller\catalog\category.php
+Line: 513
+Class: Opencart\System\Engine\Proxy
+Function: __call
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Admin\Controller\Catalog\Category
+Function: save
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\wadmin\index.php
+Line: 20
+Function: require_once
+2026-07-14 10:11:06 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-14 10:11:06 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-14 10:11:06 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+2026-07-14 10:11:06 - Error: oc_strlen(): Argument #1 ($string) must be of type string, null given, called in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+File: C:\xampp\htdocs\walton_v3\system\helper\general.php
+Line: 45
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php
+Line: 225
+Function: oc_strlen
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 343
+Class: Opencart\Admin\Model\Catalog\Category
+Function: editCategory
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\engine\proxy.php
+Line: 87
+Class: Opencart\System\Engine\Loader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\wadmin\controller\catalog\category.php
+Line: 513
+Class: Opencart\System\Engine\Proxy
+Function: __call
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Admin\Controller\Catalog\Category
+Function: save
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\wadmin\index.php
+Line: 20
+Function: require_once
+2026-07-14 10:38:49 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-14 10:38:49 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 223
+2026-07-14 10:38:49 - PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+2026-07-14 10:38:49 - Error: oc_strlen(): Argument #1 ($string) must be of type string, null given, called in C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php on line 225
+File: C:\xampp\htdocs\walton_v3\system\helper\general.php
+Line: 45
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\wadmin\model\catalog\category.php
+Line: 225
+Function: oc_strlen
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 343
+Class: Opencart\Admin\Model\Catalog\Category
+Function: editCategory
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\system\engine\proxy.php
+Line: 87
+Class: Opencart\System\Engine\Loader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\wadmin\controller\catalog\category.php
+Line: 513
+Class: Opencart\System\Engine\Proxy
+Function: __call
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Admin\Controller\Catalog\Category
+Function: save
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\wadmin\index.php
+Line: 20
+Function: require_once
