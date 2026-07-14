@@ -200,6 +200,14 @@ class Product extends \Opencart\System\Engine\Model {
 			$sql .= " AND `p`.`manufacturer_id` = '" . (int)$data['filter_manufacturer_id'] . "'";
 		}
 
+		if (isset($data['filter_price_min']) && $data['filter_price_min'] !== '' && $data['filter_price_min'] !== null) {
+			$sql .= " AND `p`.`price` >= '" . (float)$data['filter_price_min'] . "'";
+		}
+
+		if (isset($data['filter_price_max']) && $data['filter_price_max'] !== '' && $data['filter_price_max'] !== null) {
+			$sql .= " AND `p`.`price` <= '" . (float)$data['filter_price_max'] . "'";
+		}
+
 		$sql .= " GROUP BY `p`.`product_id`";
 
 		$sort_data = [
@@ -375,9 +383,60 @@ class Product extends \Opencart\System\Engine\Model {
 			$sql .= " AND `p`.`manufacturer_id` = '" . (int)$data['filter_manufacturer_id'] . "'";
 		}
 
+		if (isset($data['filter_price_min']) && $data['filter_price_min'] !== '' && $data['filter_price_min'] !== null) {
+			$sql .= " AND `p`.`price` >= '" . (float)$data['filter_price_min'] . "'";
+		}
+
+		if (isset($data['filter_price_max']) && $data['filter_price_max'] !== '' && $data['filter_price_max'] !== null) {
+			$sql .= " AND `p`.`price` <= '" . (float)$data['filter_price_max'] . "'";
+		}
+
 		$query = $this->db->query($sql);
 
 		return (int)$query->row['total'];
+	}
+
+	/**
+	 * Get Price Range
+	 *
+	 * Min/max product price for a category (ignores any active price filter
+	 * itself, so the slider bounds stay stable while price_min/price_max
+	 * are being applied).
+	 *
+	 * @param array<string, mixed> $data
+	 *
+	 * @return array<string, float>
+	 */
+	public function getPriceRange(array $data = []): array {
+		$sql = "SELECT MIN(`p`.`price`) AS `min_price`, MAX(`p`.`price`) AS `max_price`";
+
+		if (!empty($data['filter_category_id'])) {
+			$sql .= " FROM `" . DB_PREFIX . "category_to_store` `c2s`";
+
+			if (!empty($data['filter_sub_category'])) {
+				$sql .= " LEFT JOIN `" . DB_PREFIX . "category_path` `cp` ON (`cp`.`category_id` = `c2s`.`category_id` AND `c2s`.`store_id` = '" . (int)$this->config->get('config_store_id') . "') LEFT JOIN `" . DB_PREFIX . "product_to_category` `p2c` ON (`p2c`.`category_id` = `cp`.`category_id`)";
+			} else {
+				$sql .= " LEFT JOIN `" . DB_PREFIX . "product_to_category` `p2c` ON (`p2c`.`category_id` = `c2s`.`category_id`)";
+			}
+
+			$sql .= " LEFT JOIN `" . DB_PREFIX . "product_to_store` `p2s` ON (`p2s`.`product_id` = `p2c`.`product_id`)";
+			$sql .= " LEFT JOIN `" . DB_PREFIX . "product` `p` ON (`p`.`product_id` = `p2s`.`product_id` AND `p`.`status` = '1' AND `p`.`date_available` <= NOW() AND `p2s`.`store_id` = '" . (int)$this->config->get('config_store_id') . "')";
+
+			if (!empty($data['filter_sub_category'])) {
+				$sql .= " WHERE `cp`.`path_id` = '" . (int)$data['filter_category_id'] . "'";
+			} else {
+				$sql .= " WHERE `p2c`.`category_id` = '" . (int)$data['filter_category_id'] . "'";
+			}
+		} else {
+			$sql .= " FROM `" . DB_PREFIX . "product_to_store` `p2s` LEFT JOIN `" . DB_PREFIX . "product` `p` ON (`p`.`product_id` = `p2s`.`product_id` AND `p`.`status` = '1' AND `p2s`.`store_id` = '" . (int)$this->config->get('config_store_id') . "' AND `p`.`date_available` <= NOW())";
+		}
+
+		$query = $this->db->query($sql);
+
+		return [
+			'min' => $query->row['min_price'] !== null ? (float)$query->row['min_price'] : 0,
+			'max' => $query->row['max_price'] !== null ? (float)$query->row['max_price'] : 0
+		];
 	}
 
 	/**

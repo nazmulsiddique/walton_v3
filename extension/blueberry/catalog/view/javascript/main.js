@@ -670,17 +670,30 @@ $acTabs.find("li").click(function () {
 
     /* Range slider */
     $(function () {
-        $("#slider-range").slider({
-            range: true,
-            min: 130,
-            max: 500,
-            values: [130, 250],
-            slide: function (event, ui) {
-                $("#amount").val("৳" + ui.values[0] + " - ৳" + ui.values[1]);
-            }
-        });
-        $("#amount").val("৳" + $("#slider-range").slider("values", 0) +
-            " - ৳" + $("#slider-range").slider("values", 1));
+        var $sliderRange = $("#slider-range");
+
+        if ($sliderRange.length) {
+            var sliderMin = parseInt($sliderRange.data('min'), 10) || 0;
+            var sliderMax = parseInt($sliderRange.data('max'), 10) || 0;
+            var valueMin = $sliderRange.data('value-min');
+            var valueMax = $sliderRange.data('value-max');
+
+            valueMin = (valueMin !== undefined && valueMin !== '') ? parseInt(valueMin, 10) : sliderMin;
+            valueMax = (valueMax !== undefined && valueMax !== '') ? parseInt(valueMax, 10) : sliderMax;
+
+            $sliderRange.slider({
+                range: true,
+                min: sliderMin,
+                max: sliderMax,
+                values: [valueMin, valueMax],
+                slide: function (event, ui) {
+                    $("#amount").val("৳" + ui.values[0] + " - ৳" + ui.values[1]);
+                }
+            });
+
+            $("#amount").val("৳" + $sliderRange.slider("values", 0) +
+                " - ৳" + $sliderRange.slider("values", 1));
+        }
     });
 
     /* Shop sidebar JS */

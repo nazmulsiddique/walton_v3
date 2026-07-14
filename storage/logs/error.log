@@ -5950,3 +5950,71 @@ Backtrace: 6
 File: C:\xampp\htdocs\walton_v3\wadmin\index.php
 Line: 20
 Function: require_once
+2026-07-14 15:05:13 - Error: Unable to find template "extension/blueberry/admin/view/template/other/product_ribbon.twig" (looked into: .).
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 234
+
+Backtrace: 0
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 138
+Class: Twig\Loader\FilesystemLoader
+Function: findTemplate
+
+Backtrace: 1
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 304
+Class: Twig\Loader\FilesystemLoader
+Function: getCacheKey
+
+Backtrace: 2
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 357
+Class: Twig\Environment
+Function: getTemplateClass
+
+Backtrace: 3
+File: C:\xampp\htdocs\walton_v3\storage\vendor\twig\twig\src\Environment.php
+Line: 320
+Class: Twig\Environment
+Function: load
+
+Backtrace: 4
+File: C:\xampp\htdocs\walton_v3\system\library\template\twig.php
+Line: 119
+Class: Twig\Environment
+Function: render
+
+Backtrace: 5
+File: C:\xampp\htdocs\walton_v3\system\library\template.php
+Line: 58
+Class: Opencart\System\Library\Template\Twig
+Function: render
+
+Backtrace: 6
+File: C:\xampp\htdocs\walton_v3\system\engine\loader.php
+Line: 187
+Class: Opencart\System\Library\Template
+Function: render
+
+Backtrace: 7
+File: C:\xampp\htdocs\walton_v3\extension\blueberry\admin\controller\other\product_ribbon.php
+Line: 60
+Class: Opencart\System\Engine\Loader
+Function: view
+
+Backtrace: 8
+File: C:\xampp\htdocs\walton_v3\system\engine\action.php
+Line: 96
+Class: Opencart\Admin\Controller\Extension\Blueberry\Other\ProductRibbon
+Function: index
+
+Backtrace: 9
+File: C:\xampp\htdocs\walton_v3\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 10
+File: C:\xampp\htdocs\walton_v3\wadmin\index.php
+Line: 20
+Function: require_once

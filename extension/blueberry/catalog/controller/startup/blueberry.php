@@ -27,6 +27,92 @@ class Blueberry extends \Opencart\System\Engine\Controller {
 				return !empty($category['menu_status']);
 			}));
 		}
+
+		if ($route == 'extension/opencart/module/filter' && !empty($args['filter_groups'])) {
+			$price_min = (isset($this->request->get['price_min']) && is_numeric($this->request->get['price_min'])) ? (string)(float)$this->request->get['price_min'] : '';
+			$price_max = (isset($this->request->get['price_max']) && is_numeric($this->request->get['price_max'])) ? (string)(float)$this->request->get['price_max'] : '';
+
+			$this->load->model('extension/blueberry/other/price_filter');
+
+			$category_id = 0;
+
+			if (isset($this->request->get['path'])) {
+				$parts = explode('_', (string)$this->request->get['path']);
+				$category_id = (int)end($parts);
+			}
+
+			$new_groups = [];
+
+			foreach ($args['filter_groups'] as $group) {
+				$new_filters = [];
+
+				foreach ($group['filter'] as $filter) {
+					$count = $this->model_extension_blueberry_other_price_filter->getTotalProducts([
+						'filter_category_id' => $category_id,
+						'filter_filter'      => $filter['filter_id'],
+						'filter_price_min'   => $price_min,
+						'filter_price_max'   => $price_max
+					]);
+
+					if ($count > 0) {
+						$base_name = preg_replace('/\s\(\d+\)$/', '', (string)$filter['name']);
+
+						$new_filters[] = [
+							'filter_id' => $filter['filter_id'],
+							'name'      => $this->config->get('config_product_count') ? ($base_name . ' (' . $count . ')') : $base_name
+						];
+					}
+				}
+
+				if ($new_filters) {
+					$new_groups[] = [
+						'filter_group_id' => $group['filter_group_id'],
+						'name'            => $group['name'],
+						'filter'          => $new_filters
+					];
+				}
+			}
+
+			$args['filter_groups'] = $new_groups;
+		}
+
+		if ($route == 'extension/opencart/module/category' && !empty($args['categories'])) {
+			$price_min = (isset($this->request->get['price_min']) && is_numeric($this->request->get['price_min'])) ? (string)(float)$this->request->get['price_min'] : '';
+			$price_max = (isset($this->request->get['price_max']) && is_numeric($this->request->get['price_max'])) ? (string)(float)$this->request->get['price_max'] : '';
+
+			$this->load->model('extension/blueberry/other/price_filter');
+
+			foreach ($args['categories'] as &$category) {
+				if (empty($category['children'])) {
+					continue;
+				}
+
+				$new_children = [];
+
+				foreach ($category['children'] as $child) {
+					$count = $this->model_extension_blueberry_other_price_filter->getTotalProducts([
+						'filter_category_id'  => $child['category_id'],
+						'filter_sub_category' => true,
+						'filter_price_min'    => $price_min,
+						'filter_price_max'    => $price_max
+					]);
+
+					if ($count > 0) {
+						$base_name = preg_replace('/\s\(\d+\)$/', '', (string)$child['name']);
+
+						$new_children[] = [
+							'category_id' => $child['category_id'],
+							'name'        => $this->config->get('config_product_count') ? ($base_name . ' (' . $count . ')') : $base_name,
+							'href'        => $child['href']
+						];
+					}
+				}
+
+				$category['children'] = $new_children;
+			}
+
+			unset($category);
+		}
 		
 		if (in_array($route, [
 			'common/header',

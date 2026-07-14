@@ -136,7 +136,11 @@
                         </div>
                         <!-- Slider -->
                         <div class="mb-2">
-                            <div id="slider-range"></div>
+                            <div id="slider-range"
+                                 data-min="{{ price_range.min|default(0) }}"
+                                 data-max="{{ price_range.max|default(0) }}"
+                                 data-value-min="{{ price_min|default('') }}"
+                                 data-value-max="{{ price_max|default('') }}"></div>
                         </div>
                         <!-- Price -->
                         <div class="mb-2">
@@ -221,6 +225,137 @@
         }, 300);
 
     });
+
+    (function () {
+        var baseUrl = "{{ ajax_base_url|escape('js') }}";
+
+        window.buildFilterUrl = function () {
+            var filter = [];
+
+            if (window.jQuery) {
+                jQuery('input[name^=\'filter\']:checked').each(function () {
+                    filter.push(this.value);
+                });
+            }
+
+            var url = baseUrl;
+
+            if (filter.length > 0) {
+                url += '&filter=' + filter.join(',');
+            }
+
+            if (window.bbPriceFilter && window.bbPriceFilter.min !== null && window.bbPriceFilter.min !== undefined) {
+                url += '&price_min=' + window.bbPriceFilter.min;
+            }
+
+            if (window.bbPriceFilter && window.bbPriceFilter.max !== null && window.bbPriceFilter.max !== undefined) {
+                url += '&price_max=' + window.bbPriceFilter.max;
+            }
+
+            return url;
+        };
+
+        window.loadCategoryProducts = function (url) {
+            if (!window.jQuery) { return; }
+
+            var separator = url.indexOf('?') > -1 ? '&' : '?';
+            var ajaxUrl = url + separator + 'ajax=1';
+
+            jQuery('#category-products').css('opacity', '0.5');
+            jQuery('input[name^=\'filter\'], #input-sort, #input-limit').prop('disabled', true);
+
+            jQuery.ajax({
+                url: ajaxUrl,
+                type: 'get',
+                dataType: 'json',
+                success: function (json) {
+                    if (json['success']) {
+                        jQuery('#category-products').html(json['html']);
+                        if (typeof json['column_left'] !== 'undefined') {
+                            jQuery('#column_left_dynamic').html(json['column_left']);
+                        }
+
+                        history.pushState({}, '', url);
+                    }
+                },
+                error: function () {},
+                complete: function () {
+                    jQuery('#category-products').css('opacity', '1');
+                    jQuery('input[name^=\'filter\'], #input-sort, #input-limit').prop('disabled', false);
+                    jQuery('#input-sort, #input-limit').addClass('block');
+                    jQuery('#category-products .pro-bb-content').removeClass('width-100');
+                }
+            });
+        };
+
+        window.addEventListener('popstate', function () {
+            var url = window.location.href;
+            url = url.replace(/[&?]ajax=\d/, '');
+            window.loadCategoryProducts(url);
+        });
+
+        if (window.jQuery) {
+            jQuery(document).on('change', '#input-sort', function () {
+                window.loadCategoryProducts(this.value);
+            });
+
+            jQuery(document).on('change', '#input-limit', function () {
+                window.loadCategoryProducts(this.value);
+            });
+
+            jQuery(document).on('click', '.pagination a', function (e) {
+                e.preventDefault();
+                window.loadCategoryProducts(jQuery(this).attr('href'));
+            });
+        }
+    })();
+
+    // Price range filter (Apply/Reset buttons in the sidebar card above).
+    (function () {
+        var initialMin = "{{ price_min|default('') }}";
+        var initialMax = "{{ price_max|default('') }}";
+
+        window.bbPriceFilter = {
+            min: initialMin !== '' ? parseFloat(initialMin) : null,
+            max: initialMax !== '' ? parseFloat(initialMax) : null
+        };
+
+        var applyBtn = document.getElementById('apply-price');
+        var resetBtn = document.getElementById('reset-price');
+        var slider = document.getElementById('slider-range');
+
+        function reload() {
+            window.loadCategoryProducts(window.buildFilterUrl());
+        }
+
+        if (applyBtn && slider) {
+            applyBtn.addEventListener('click', function () {
+                if (!window.jQuery || !jQuery(slider).hasClass('ui-slider')) { return; }
+
+                var values = jQuery(slider).slider('values');
+
+                window.bbPriceFilter = { min: values[0], max: values[1] };
+
+                reload();
+            });
+        }
+
+        if (resetBtn && slider) {
+            resetBtn.addEventListener('click', function () {
+                if (!window.jQuery || !jQuery(slider).hasClass('ui-slider')) { return; }
+
+                var min = parseInt(jQuery(slider).data('min'), 10) || 0;
+                var max = parseInt(jQuery(slider).data('max'), 10) || 0;
+
+                jQuery(slider).slider('values', [min, max]);
+                jQuery('#amount').val('৳' + min + ' - ৳' + max);
+
+                window.bbPriceFilter = { min: null, max: null };
+
+                reload();
+            });
+        }
+    })();
 </script>
 <style>
 #input-sort{

@@ -26,6 +26,18 @@ class Category extends \Opencart\System\Engine\Controller {
 			$filter = '';
 		}
 
+		if (isset($this->request->get['price_min']) && is_numeric($this->request->get['price_min'])) {
+			$price_min = (string)(float)$this->request->get['price_min'];
+		} else {
+			$price_min = '';
+		}
+
+		if (isset($this->request->get['price_max']) && is_numeric($this->request->get['price_max'])) {
+			$price_max = (string)(float)$this->request->get['price_max'];
+		} else {
+			$price_max = '';
+		}
+
 		if (isset($this->request->get['sort'])) {
 			$sort = $this->request->get['sort'];
 		} else {
@@ -85,6 +97,8 @@ class Category extends \Opencart\System\Engine\Controller {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
 
+			$data['ajax_base_url'] = str_replace('&amp;', '&', $this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $this->request->get['path'] . $url));
+
 			$path = '';
 
 			foreach ($parts as $path_id) {
@@ -112,6 +126,14 @@ class Category extends \Opencart\System\Engine\Controller {
 
 			if (isset($this->request->get['filter'])) {
 				$url .= '&filter=' . $this->request->get['filter'];
+			}
+
+			if ($price_min !== '') {
+				$url .= '&price_min=' . $price_min;
+			}
+
+			if ($price_max !== '') {
+				$url .= '&price_max=' . $price_max;
 			}
 
 			if (isset($this->request->get['sort'])) {
@@ -158,6 +180,14 @@ class Category extends \Opencart\System\Engine\Controller {
 				$url .= '&filter=' . $this->request->get['filter'];
 			}
 
+			if ($price_min !== '') {
+				$url .= '&price_min=' . $price_min;
+			}
+
+			if ($price_max !== '') {
+				$url .= '&price_max=' . $price_max;
+			}
+
 			if (isset($this->request->get['sort'])) {
 				$url .= '&sort=' . $this->request->get['sort'];
 			}
@@ -174,6 +204,8 @@ class Category extends \Opencart\System\Engine\Controller {
 
 			// Product
 			$this->load->model('catalog/product');
+			$this->load->model('extension/blueberry/other/price_filter');
+
 
 			$results = $this->model_catalog_category->getCategories($category_id);
 
@@ -206,6 +238,14 @@ class Category extends \Opencart\System\Engine\Controller {
 				$url .= '&filter=' . $this->request->get['filter'];
 			}
 
+			if ($price_min !== '') {
+				$url .= '&price_min=' . $price_min;
+			}
+
+			if ($price_max !== '') {
+				$url .= '&price_max=' . $price_max;
+			}
+
 			if (isset($this->request->get['sort'])) {
 				$url .= '&sort=' . $this->request->get['sort'];
 			}
@@ -229,13 +269,22 @@ class Category extends \Opencart\System\Engine\Controller {
 				'filter_category_id'  => $category_id,
 				'filter_sub_category' => true,
 				'filter_filter'       => $filter,
+				'filter_price_min'    => $price_min,
+				'filter_price_max'    => $price_max,
 				'sort'                => $sort,
 				'order'               => $order,
 				'start'               => ($page - 1) * $limit,
 				'limit'               => $limit
 			];
 
-			$results = $this->model_catalog_product->getProducts($filter_data);
+			$data['price_min'] = $price_min;
+			$data['price_max'] = $price_max;
+			$data['price_range'] = $this->model_extension_blueberry_other_price_filter->getPriceRange([
+				'filter_category_id'  => $category_id,
+				'filter_sub_category' => true
+			]);
+
+			$results = $this->model_extension_blueberry_other_price_filter->getProducts($filter_data);
 
 			foreach ($results as $result) {
 				$description = trim(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')));
@@ -290,6 +339,14 @@ class Category extends \Opencart\System\Engine\Controller {
 
 			if (isset($this->request->get['filter'])) {
 				$url .= '&filter=' . $this->request->get['filter'];
+			}
+
+			if ($price_min !== '') {
+				$url .= '&price_min=' . $price_min;
+			}
+
+			if ($price_max !== '') {
+				$url .= '&price_max=' . $price_max;
 			}
 
 			if (isset($this->request->get['limit'])) {
@@ -364,6 +421,14 @@ class Category extends \Opencart\System\Engine\Controller {
 				$url .= '&filter=' . $this->request->get['filter'];
 			}
 
+			if ($price_min !== '') {
+				$url .= '&price_min=' . $price_min;
+			}
+
+			if ($price_max !== '') {
+				$url .= '&price_max=' . $price_max;
+			}
+
 			if (isset($this->request->get['sort'])) {
 				$url .= '&sort=' . $this->request->get['sort'];
 			}
@@ -396,6 +461,14 @@ class Category extends \Opencart\System\Engine\Controller {
 				$url .= '&filter=' . $this->request->get['filter'];
 			}
 
+			if ($price_min !== '') {
+				$url .= '&price_min=' . $price_min;
+			}
+
+			if ($price_max !== '') {
+				$url .= '&price_max=' . $price_max;
+			}
+
 			if (isset($this->request->get['sort'])) {
 				$url .= '&sort=' . $this->request->get['sort'];
 			}
@@ -408,7 +481,7 @@ class Category extends \Opencart\System\Engine\Controller {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
 
-			$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
+			$product_total = $this->model_extension_blueberry_other_price_filter->getTotalProducts($filter_data);
 
 			$data['pagination'] = $this->load->controller('common/pagination', [
 				'total' => $product_total,
@@ -446,8 +519,9 @@ class Category extends \Opencart\System\Engine\Controller {
 				$this->response->addHeader('Content-Type: application/json');
 
 				$json = [
-					'success' => true,
-					'html'    => $this->load->view('extension/blueberry/product/category_products', $data)
+					'success'     => true,
+					'html'        => $this->load->view('extension/blueberry/product/category_products', $data),
+					'column_left' => $this->load->controller('common/column_left')
 				];
 
 				$this->response->setOutput(json_encode($json));
